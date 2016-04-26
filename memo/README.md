@@ -6,6 +6,7 @@
 ## 利用できそうな技術
 * タグ付け:ctags, gtags
 * 呼び出し関係:ctrace, Itrace, strace, ktrace, trusss
+* 依存関係を調べるもの:[Doxygen](http://www.doxygen.jp/), Understand
 
 ## 提案手法の評価基準
 ### 長さ
@@ -22,8 +23,7 @@
 
 ### 信頼性
 * ~~無理かも~~
-* 妥協案  
-最終状態がmergeかcloseか(not open)
+* 妥協案: 最終状態がmergeかcloseか(not open)
 mergeなら最終的に使えるものにしたということになる
 
 
