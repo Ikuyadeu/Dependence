@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_calc_science_cource" kind="class" language="Java" prot="public">
+    <compoundname>CalcScienceCource</compoundname>
+    <basecompoundref refid="class_calc_graduation" prot="public" virt="non-virtual">CalcGraduation</basecompoundref>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_calc_science_cource_1ab2be5bdbf05d3b457c81d21eb20e018b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcScienceCource.calcNeedSum</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" line="7" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_science_cource_1ad957f629eedf3ab8689421d2cf1e498c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcScienceCource.calcNeedBasic</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedBasic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" line="12" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_science_cource_1acdadecc0afbfccc809d95230743999a9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcScienceCource.calcNeedSpeciallty</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedSpeciallty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" line="17" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_science_cource_1ad1f310571736de2b0433017d1c8dacc1" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcScienceCource.calcNeedElective</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedElective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" line="22" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_science_cource_1a31cd45d7e8cd77c78f8306d8cc659760" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CalcScienceCource.judgeGraduation</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>judgeGraduation</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" bodystart="27" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>工学コースでの判定方法を実装したクラス </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>CalcScienceCource</label>
+        <link refid="class_calc_science_cource"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CalcGraduation</label>
+        <link refid="class_calc_graduation"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>CalcScienceCource</label>
+        <link refid="class_calc_science_cource"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CalcGraduation</label>
+        <link refid="class_calc_graduation"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" line="4" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcScienceCource.java" bodystart="4" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_calc_graduation_1a12e48af5b7564eea3efff69b68e66fce" prot="protected" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcCreditBasic</name></member>
+      <member refid="class_calc_graduation_1a3d3e1a7eda245ffbf6fa77d8856678a7" prot="protected" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcCreditSpecilallty</name></member>
+      <member refid="class_calc_graduation_1acb2e54e00da35e1df260fac1d0dd0827" prot="protected" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcCreditSum</name></member>
+      <member refid="class_calc_science_cource_1ad957f629eedf3ab8689421d2cf1e498c" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcNeedBasic</name></member>
+      <member refid="class_calc_science_cource_1ad1f310571736de2b0433017d1c8dacc1" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcNeedElective</name></member>
+      <member refid="class_calc_science_cource_1acdadecc0afbfccc809d95230743999a9" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcNeedSpeciallty</name></member>
+      <member refid="class_calc_science_cource_1ab2be5bdbf05d3b457c81d21eb20e018b" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>calcNeedSum</name></member>
+      <member refid="class_calc_graduation_1a4be37878252cbe30ba5bc90d2d6250a3" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>judgeBasic</name></member>
+      <member refid="class_calc_graduation_1aad2870aafa2d1d9046f87c8c059107f4" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>judgeElective</name></member>
+      <member refid="class_calc_science_cource_1a31cd45d7e8cd77c78f8306d8cc659760" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>judgeGraduation</name></member>
+      <member refid="class_calc_graduation_1a78c894ef2fa214307704d7cb308302dc" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>judgeSpeciallty</name></member>
+      <member refid="class_calc_graduation_1ae665b9babe7d53a0f32949864ef7f221" prot="package" virt="non-virtual"><scope>CalcScienceCource</scope><name>judgeSum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

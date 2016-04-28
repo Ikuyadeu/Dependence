@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_graduation_check_u_i" kind="class" language="Java" prot="public">
+    <compoundname>GraduationCheckUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JFrame</basecompoundref>
+    <innerclass refid="class_graduation_check_u_i_1_1_button_event" prot="package">GraduationCheckUI::ButtonEvent</innerclass>
+    <innerclass refid="class_graduation_check_u_i_1_1_graduation_window_listener" prot="package">GraduationCheckUI::GraduationWindowListener</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_graduation_check_u_i_1a23f0fd98e3d5c6e92284316b42c2ee88" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long GraduationCheckUI.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デフォルトシリアルバージョンID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="12" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_graduation_check_u_i_1ac2d55ab455fce2a3350bcd2699b64568" prot="private" static="no" mutable="no">
+        <type>NumberFormat</type>
+        <definition>NumberFormat GraduationCheckUI.nf</definition>
+        <argsstring></argsstring>
+        <name>nf</name>
+        <initializer>= NumberFormat.getNumberInstance()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>入力フォームのフォーマット </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="14" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1a1148175cee920ce009d9d830f5fe27f3" prot="private" static="no" mutable="no">
+        <type>JLabel</type>
+        <definition>JLabel GraduationCheckUI.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>中心で出力される文字列 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="16" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1ae17362dd2f0d755404e62c5c87363490" prot="private" static="no" mutable="no">
+        <type>JPanel</type>
+        <definition>JPanel GraduationCheckUI.southPanel</definition>
+        <argsstring></argsstring>
+        <name>southPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ボタンやレイアウトを整える集合 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="18" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1ae467280cb72ca0ada2b8c96662bb90f8" prot="private" static="no" mutable="no">
+        <type>ButtonGroup</type>
+        <definition>ButtonGroup GraduationCheckUI.bg</definition>
+        <argsstring></argsstring>
+        <name>bg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ラジオボタンの集合 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="20" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1aa84f7ba224877146156d81e310a70891" prot="private" static="no" mutable="no">
+        <type>JRadioButton</type>
+        <definition>JRadioButton GraduationCheckUI.sciencebtn</definition>
+        <argsstring></argsstring>
+        <name>sciencebtn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>工学コース・システムコースのラジオボタン </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="22" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1a0a11a1090beab13fbb5462df4f1929ec" prot="private" static="no" mutable="no">
+        <type>JButton</type>
+        <definition>JButton GraduationCheckUI.calcbtn</definition>
+        <argsstring></argsstring>
+        <name>calcbtn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>動作を決定するときのボタン </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1a6c4d9c7ad04972a2950879dc3b8565c6" prot="private" static="no" mutable="no">
+        <type>JTextField[]</type>
+        <definition>JTextField [] GraduationCheckUI.creditNum</definition>
+        <argsstring></argsstring>
+        <name>creditNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>６つの科目の単位数の入力を受け付ける入力フォーム </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_graduation_check_u_i_1abbfe1183d610890226ac12767481c0d6" prot="package" static="no" mutable="no">
+        <type>JPanel</type>
+        <definition>JPanel GraduationCheckUI.buttonPanel</definition>
+        <argsstring></argsstring>
+        <name>buttonPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="18" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1aea2544bfd7c64c1cacf69498b6c6295c" prot="package" static="no" mutable="no">
+        <type>JPanel</type>
+        <definition>JPanel GraduationCheckUI.creditPanel</definition>
+        <argsstring></argsstring>
+        <name>creditPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="18" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_u_i_1a6aec017248aba463f66d7e49c858f35a" prot="package" static="no" mutable="no">
+        <type>JRadioButton</type>
+        <definition>JRadioButton GraduationCheckUI.systembtn</definition>
+        <argsstring></argsstring>
+        <name>systembtn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="22" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_graduation_check_u_i_1a735e23e1ddc26b8a21e162e28f9a7c72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void GraduationCheckUI.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>アプリケーションを起動すると実行される。 実行方法: java <ref refid="class_graduation_check_u_i" kindref="compound">GraduationCheckUI</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>起動時に文字列の配列として渡される引数。計算方法（システムコースまたは工学コース）を指定する。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="34" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="34" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_graduation_check_u_i_1a3c3f17f32f770a7041fd51deba9fac17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GraduationCheckUI.GraduationCheckUI</definition>
+        <argsstring>()</argsstring>
+        <name>GraduationCheckUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>見た目を設定する </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="41" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="41" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>実際に入出力をされるものを管理する役割のクラス </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>JFrame</label>
+      </node>
+      <node id="36">
+        <label>GraduationCheckUI</label>
+        <link refid="class_graduation_check_u_i"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>JFrame</label>
+      </node>
+      <node id="38">
+        <label>GraduationCheckUI</label>
+        <link refid="class_graduation_check_u_i"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" line="10" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheckUI.java" bodystart="10" bodyend="161"/>
+    <listofallmembers>
+      <member refid="class_graduation_check_u_i_1ae467280cb72ca0ada2b8c96662bb90f8" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>bg</name></member>
+      <member refid="class_graduation_check_u_i_1abbfe1183d610890226ac12767481c0d6" prot="package" virt="non-virtual"><scope>GraduationCheckUI</scope><name>buttonPanel</name></member>
+      <member refid="class_graduation_check_u_i_1a0a11a1090beab13fbb5462df4f1929ec" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>calcbtn</name></member>
+      <member refid="class_graduation_check_u_i_1a6c4d9c7ad04972a2950879dc3b8565c6" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>creditNum</name></member>
+      <member refid="class_graduation_check_u_i_1aea2544bfd7c64c1cacf69498b6c6295c" prot="package" virt="non-virtual"><scope>GraduationCheckUI</scope><name>creditPanel</name></member>
+      <member refid="class_graduation_check_u_i_1a3c3f17f32f770a7041fd51deba9fac17" prot="public" virt="non-virtual"><scope>GraduationCheckUI</scope><name>GraduationCheckUI</name></member>
+      <member refid="class_graduation_check_u_i_1a735e23e1ddc26b8a21e162e28f9a7c72" prot="public" virt="non-virtual"><scope>GraduationCheckUI</scope><name>main</name></member>
+      <member refid="class_graduation_check_u_i_1ac2d55ab455fce2a3350bcd2699b64568" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>nf</name></member>
+      <member refid="class_graduation_check_u_i_1aa84f7ba224877146156d81e310a70891" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>sciencebtn</name></member>
+      <member refid="class_graduation_check_u_i_1a23f0fd98e3d5c6e92284316b42c2ee88" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>serialVersionUID</name></member>
+      <member refid="class_graduation_check_u_i_1ae17362dd2f0d755404e62c5c87363490" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>southPanel</name></member>
+      <member refid="class_graduation_check_u_i_1a6aec017248aba463f66d7e49c858f35a" prot="package" virt="non-virtual"><scope>GraduationCheckUI</scope><name>systembtn</name></member>
+      <member refid="class_graduation_check_u_i_1a1148175cee920ce009d9d830f5fe27f3" prot="private" virt="non-virtual"><scope>GraduationCheckUI</scope><name>title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

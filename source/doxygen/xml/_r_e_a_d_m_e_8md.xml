@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>GraduationChecker</highlight></codeline>
+<codeline><highlight class="normal">ソフトウェア工学で作成した卒業研究に参加可能かどうかをチェックするシステム</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">単位数を入力することで参加可能判定、必要な単位数、不足分単位数を出力<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>開発環境<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>言語：　Java7<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eclipse:<sp/>Luna<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>実行方法<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>```</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$<sp/>cd<sp/>src<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$<sp/>java<sp/>GraduationChecker.java</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>追加予定機能<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">1.学務情報システムからのCSV形式のデータ読み込み（.txt,.csv対応）<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">2.出力データの保存(.txt,.csv形式)<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">3.他学科・他学部への対応<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">4.必修科目の出力</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/README.md"/>
+  </compounddef>
+</doxygen>

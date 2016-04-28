@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="class_graduation_check_u_i_1_1_button_event" kind="class"><name>GraduationCheckUI::ButtonEvent</name>
+    <member refid="class_graduation_check_u_i_1_1_button_event_1a181c8486cad0ede6a951ebe612eca582" kind="function"><name>actionPerformed</name></member>
+  </compound>
+  <compound refid="class_calc_graduation" kind="class"><name>CalcGraduation</name>
+    <member refid="class_calc_graduation_1a96604df704647c6aa35ef9f05384c2a7" kind="function"><name>calcNeedSum</name></member>
+    <member refid="class_calc_graduation_1abe4c58e0e4c238793b4b26727989d27e" kind="function"><name>calcNeedBasic</name></member>
+    <member refid="class_calc_graduation_1a2cff84190b0bfb19aaed0b8d58d486fb" kind="function"><name>calcNeedSpeciallty</name></member>
+    <member refid="class_calc_graduation_1a72c2b5a81ea75e1a6035836a0e8fd21d" kind="function"><name>calcNeedElective</name></member>
+    <member refid="class_calc_graduation_1ae665b9babe7d53a0f32949864ef7f221" kind="function"><name>judgeSum</name></member>
+    <member refid="class_calc_graduation_1a4be37878252cbe30ba5bc90d2d6250a3" kind="function"><name>judgeBasic</name></member>
+    <member refid="class_calc_graduation_1a78c894ef2fa214307704d7cb308302dc" kind="function"><name>judgeSpeciallty</name></member>
+    <member refid="class_calc_graduation_1aad2870aafa2d1d9046f87c8c059107f4" kind="function"><name>judgeElective</name></member>
+    <member refid="class_calc_graduation_1a8469ca1026ac3bf73139791b2588edbd" kind="function"><name>judgeGraduation</name></member>
+    <member refid="class_calc_graduation_1acb2e54e00da35e1df260fac1d0dd0827" kind="function"><name>calcCreditSum</name></member>
+    <member refid="class_calc_graduation_1a12e48af5b7564eea3efff69b68e66fce" kind="function"><name>calcCreditBasic</name></member>
+    <member refid="class_calc_graduation_1a3d3e1a7eda245ffbf6fa77d8856678a7" kind="function"><name>calcCreditSpecilallty</name></member>
+  </compound>
+  <compound refid="class_calc_science_cource" kind="class"><name>CalcScienceCource</name>
+    <member refid="class_calc_science_cource_1ab2be5bdbf05d3b457c81d21eb20e018b" kind="function"><name>calcNeedSum</name></member>
+    <member refid="class_calc_science_cource_1ad957f629eedf3ab8689421d2cf1e498c" kind="function"><name>calcNeedBasic</name></member>
+    <member refid="class_calc_science_cource_1acdadecc0afbfccc809d95230743999a9" kind="function"><name>calcNeedSpeciallty</name></member>
+    <member refid="class_calc_science_cource_1ad1f310571736de2b0433017d1c8dacc1" kind="function"><name>calcNeedElective</name></member>
+    <member refid="class_calc_science_cource_1a31cd45d7e8cd77c78f8306d8cc659760" kind="function"><name>judgeGraduation</name></member>
+  </compound>
+  <compound refid="class_calc_science_cource_test" kind="class"><name>CalcScienceCourceTest</name>
+    <member refid="class_calc_science_cource_test_1a703c5dd75651c1ad78525b9eba1ba46b" kind="variable"><name>calc</name></member>
+    <member refid="class_calc_science_cource_test_1a656df0d8d51233ed3afb71ffae36a961" kind="variable"><name>p</name></member>
+    <member refid="class_calc_science_cource_test_1a3159b926ca9836fa3717ee2fadc6df45" kind="function"><name>makeCalc</name></member>
+    <member refid="class_calc_science_cource_test_1a34a4ffd6ed525fecac69739e12be47fc" kind="function"><name>makePerson</name></member>
+    <member refid="class_calc_science_cource_test_1ac36011ba8616136741fad145a76f7e29" kind="function"><name>setPerfectPerson</name></member>
+    <member refid="class_calc_science_cource_test_1a8b74155aa3f896c9e3ec95a9601d4bb4" kind="function"><name>setBadPerson</name></member>
+    <member refid="class_calc_science_cource_test_1a67cadb5bea847a1501e38e5d1ad483f6" kind="function"><name>testJudgeGraduation1</name></member>
+    <member refid="class_calc_science_cource_test_1aea180f5ae88b610ceccab189d4094bbe" kind="function"><name>testJudgeGraduation2</name></member>
+    <member refid="class_calc_science_cource_test_1a7e85243e1ee7655a09bd74fdfca514be" kind="function"><name>testJudgeGraduation3</name></member>
+    <member refid="class_calc_science_cource_test_1a79d0cfb075bc814d463fec2422d99d02" kind="function"><name>testJudgeGraduation4</name></member>
+    <member refid="class_calc_science_cource_test_1a57f3e52165e5302ebacc044927f37b1a" kind="function"><name>testJudgeGraduation5</name></member>
+  </compound>
+  <compound refid="class_calc_system_cource" kind="class"><name>CalcSystemCource</name>
+    <member refid="class_calc_system_cource_1ac7437354a156dbc8d4f988be825c2641" kind="function"><name>calcNeedSum</name></member>
+    <member refid="class_calc_system_cource_1a2f97039c1b23ef1c5fea8e0cdb87ac1b" kind="function"><name>calcNeedBasic</name></member>
+    <member refid="class_calc_system_cource_1a9aad7d4a923d0dfccbd7ecf9b7a7ea6f" kind="function"><name>calcNeedSpeciallty</name></member>
+    <member refid="class_calc_system_cource_1ad454276af88704b9eef6b8a652b68575" kind="function"><name>calcNeedElective</name></member>
+    <member refid="class_calc_system_cource_1a4ff5330cbbd043eb2cca6e503831099e" kind="function"><name>judgeGraduation</name></member>
+  </compound>
+  <compound refid="class_calc_system_cource_test" kind="class"><name>CalcSystemCourceTest</name>
+    <member refid="class_calc_system_cource_test_1aea77d3b43d4ed0656be3d1881f9595cf" kind="variable"><name>calc</name></member>
+    <member refid="class_calc_system_cource_test_1ab6033f4959f2cc2460c7be443332c9ce" kind="variable"><name>p</name></member>
+    <member refid="class_calc_system_cource_test_1ab74c4470e146977aadab9c08aa13f2a2" kind="function"><name>makeCalc</name></member>
+    <member refid="class_calc_system_cource_test_1ac3ccbb2bad7740904e60bb6c208f5940" kind="function"><name>makePerson</name></member>
+    <member refid="class_calc_system_cource_test_1acc6652351710d14f0fa7a7bb596f4d7a" kind="function"><name>setPerfectPerson</name></member>
+    <member refid="class_calc_system_cource_test_1abd85a29776708ea0b80e8f68b2dc914a" kind="function"><name>setBadPerson</name></member>
+    <member refid="class_calc_system_cource_test_1a77f199df3d1e8bad33ea08860b09736d" kind="function"><name>testJudgeGraduation1</name></member>
+    <member refid="class_calc_system_cource_test_1a473d3d629938276ecede1239eeac0dec" kind="function"><name>testJudgeGraduation2</name></member>
+    <member refid="class_calc_system_cource_test_1a6b69bcb33d6964c21dd756886ad34f66" kind="function"><name>testJudgeGraduation3</name></member>
+    <member refid="class_calc_system_cource_test_1a4f6b1153d978b4421187743d60c66c78" kind="function"><name>testJudgeGraduation4</name></member>
+  </compound>
+  <compound refid="class_credit" kind="class"><name>Credit</name>
+    <member refid="class_credit_1a409ac2a41988209f521d6402927872fe" kind="variable"><name>name</name></member>
+    <member refid="class_credit_1aedebf4095f59146948c25a2507e90c20" kind="variable"><name>category</name></member>
+    <member refid="class_credit_1add1e1314494ec01eebd5aa7904a652f5" kind="variable"><name>category2</name></member>
+    <member refid="class_credit_1a673791d83da8162830ebe69b3bb9f83a" kind="variable"><name>creditnum</name></member>
+    <member refid="class_credit_1a2b069f36cb61c49acc3a8009d5ae28d7" kind="function"><name>Credit</name></member>
+  </compound>
+  <compound refid="class_data_documentation" kind="class"><name>DataDocumentation</name>
+    <member refid="class_data_documentation_1a1161fc586dd61ee72a1f0a3d7d076197" kind="function"><name>getNeedCredit</name></member>
+    <member refid="class_data_documentation_1a1c3a314e171a31dbb6c27750942a105c" kind="function"><name>makeJudge</name></member>
+  </compound>
+  <compound refid="class_graduation_check" kind="class"><name>GraduationCheck</name>
+    <member refid="class_graduation_check_1a1598941ec854c9a5595b1fb574658fbb" kind="variable"><name>p</name></member>
+    <member refid="class_graduation_check_1a268bf4b4413b1430ae1d92b26fdedb99" kind="variable"><name>calc</name></member>
+    <member refid="class_graduation_check_1af8712c2600c3bb864c891897555dc75d" kind="variable"><name>dd</name></member>
+    <member refid="class_graduation_check_1a44b3bdd95a9cc666f03a91e821382a6d" kind="variable"><name>result</name></member>
+    <member refid="class_graduation_check_1a4b42e8a04c062d621b7ecd68a161c0a1" kind="function"><name>doInit</name></member>
+    <member refid="class_graduation_check_1a600acf8d7b520bec402ae5c7d6cdd512" kind="function"><name>doCheak</name></member>
+    <member refid="class_graduation_check_1a8ea0909d309e28e5107e4f1b5c1578a4" kind="function"><name>getResult</name></member>
+    <member refid="class_graduation_check_1add178aac3c0e60c9cda51311d99248a4" kind="function"><name>calcNeedSum</name></member>
+    <member refid="class_graduation_check_1aa4bccab5fda17cd6b90fe4b3f942ee01" kind="function"><name>calcNeedBasic</name></member>
+    <member refid="class_graduation_check_1aa11f6953494082cf1bd80b71f737de9f" kind="function"><name>calcNeedSpeciallty</name></member>
+    <member refid="class_graduation_check_1ac3fb05e0d5a6514bc5404606aee464c0" kind="function"><name>judgeGraduation</name></member>
+  </compound>
+  <compound refid="class_graduation_check_u_i" kind="class"><name>GraduationCheckUI</name>
+    <member refid="class_graduation_check_u_i_1a23f0fd98e3d5c6e92284316b42c2ee88" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="class_graduation_check_u_i_1ac2d55ab455fce2a3350bcd2699b64568" kind="variable"><name>nf</name></member>
+    <member refid="class_graduation_check_u_i_1a1148175cee920ce009d9d830f5fe27f3" kind="variable"><name>title</name></member>
+    <member refid="class_graduation_check_u_i_1ae17362dd2f0d755404e62c5c87363490" kind="variable"><name>southPanel</name></member>
+    <member refid="class_graduation_check_u_i_1ae467280cb72ca0ada2b8c96662bb90f8" kind="variable"><name>bg</name></member>
+    <member refid="class_graduation_check_u_i_1aa84f7ba224877146156d81e310a70891" kind="variable"><name>sciencebtn</name></member>
+    <member refid="class_graduation_check_u_i_1a0a11a1090beab13fbb5462df4f1929ec" kind="variable"><name>calcbtn</name></member>
+    <member refid="class_graduation_check_u_i_1a6c4d9c7ad04972a2950879dc3b8565c6" kind="variable"><name>creditNum</name></member>
+    <member refid="class_graduation_check_u_i_1abbfe1183d610890226ac12767481c0d6" kind="variable"><name>buttonPanel</name></member>
+    <member refid="class_graduation_check_u_i_1aea2544bfd7c64c1cacf69498b6c6295c" kind="variable"><name>creditPanel</name></member>
+    <member refid="class_graduation_check_u_i_1a6aec017248aba463f66d7e49c858f35a" kind="variable"><name>systembtn</name></member>
+    <member refid="class_graduation_check_u_i_1a735e23e1ddc26b8a21e162e28f9a7c72" kind="function"><name>main</name></member>
+    <member refid="class_graduation_check_u_i_1a3c3f17f32f770a7041fd51deba9fac17" kind="function"><name>GraduationCheckUI</name></member>
+  </compound>
+  <compound refid="class_graduation_check_u_i_1_1_graduation_window_listener" kind="class"><name>GraduationCheckUI::GraduationWindowListener</name>
+    <member refid="class_graduation_check_u_i_1_1_graduation_window_listener_1a7705fba0223fe50d5f5de5444652a815" kind="function"><name>windowClosing</name></member>
+  </compound>
+  <compound refid="class_person" kind="class"><name>Person</name>
+    <member refid="class_person_1a642c17e4ffc7f4dc6b349670845ffa85" kind="variable"><name>basic</name></member>
+    <member refid="class_person_1a07ce66d3629ad1f8f295a1f9848a8ee0" kind="variable"><name>liberal</name></member>
+    <member refid="class_person_1a9efbe27f4b131fef692618462b31ae76" kind="variable"><name>specialltyBasic</name></member>
+    <member refid="class_person_1a161b641022a7767dae9b32e09e05450c" kind="variable"><name>specialltyEducation</name></member>
+    <member refid="class_person_1abbb06fcb87ad4f93946bcb22d31fe648" kind="variable"><name>compulsory</name></member>
+    <member refid="class_person_1a58e5f81efdc73ac8fb4b41bfc359d115" kind="variable"><name>elective</name></member>
+    <member refid="class_person_1a2f450e595dee80d56ac8871046e9fece" kind="variable"><name>judge</name></member>
+    <member refid="class_person_1a7110eb365c23da72546103298af918b9" kind="function"><name>getBasic</name></member>
+    <member refid="class_person_1ae1d85bc384d1415f1e428a26b7e85236" kind="function"><name>getLiberal</name></member>
+    <member refid="class_person_1a2c3264f5bbb5c9b161cd6cf71f9e3d20" kind="function"><name>getSpecialltyBasic</name></member>
+    <member refid="class_person_1a453c4ac730d0623f4dbf2171b60a85d5" kind="function"><name>getSpecialltyEducation</name></member>
+    <member refid="class_person_1a68a225a15b43998203f6173cfc820fe8" kind="function"><name>getCompulsory</name></member>
+    <member refid="class_person_1a77524536a5680580871e48b32417c415" kind="function"><name>getElective</name></member>
+    <member refid="class_person_1a4806c3eea3f3470ca3ac4f77c3977c3a" kind="function"><name>getJudge</name></member>
+    <member refid="class_person_1a5ff25b7cb82bcd890ad9279773a7575b" kind="function"><name>setBasic</name></member>
+    <member refid="class_person_1a6b766052e54fc763326b597d5f0427eb" kind="function"><name>setLiberal</name></member>
+    <member refid="class_person_1aeb6ca19ec977a5b4fbcbece6844cc25d" kind="function"><name>setSpecialltyBasic</name></member>
+    <member refid="class_person_1a9aeef3ecd617d493acbc828bbdbb4628" kind="function"><name>setSpecialltyEducation</name></member>
+    <member refid="class_person_1a0ba404243097ab2b1818640d1899c909" kind="function"><name>setCompulsory</name></member>
+    <member refid="class_person_1a325f68d274a2a697174647e299f31ccb" kind="function"><name>setElective</name></member>
+    <member refid="class_person_1ae7e107062cdd604305a72cce4a9a064d" kind="function"><name>setJudge</name></member>
+  </compound>
+  <compound refid="namespacejava_1_1awt" kind="namespace"><name>java::awt</name>
+  </compound>
+  <compound refid="namespacejava_1_1awt_1_1event" kind="namespace"><name>java::awt::event</name>
+  </compound>
+  <compound refid="namespacejavax_1_1swing" kind="namespace"><name>javax::swing</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_calc_graduation_8java" kind="file"><name>CalcGraduation.java</name>
+  </compound>
+  <compound refid="_calc_science_cource_8java" kind="file"><name>CalcScienceCource.java</name>
+  </compound>
+  <compound refid="_calc_system_cource_8java" kind="file"><name>CalcSystemCource.java</name>
+  </compound>
+  <compound refid="_credit_8java" kind="file"><name>Credit.java</name>
+  </compound>
+  <compound refid="_data_documentation_8java" kind="file"><name>DataDocumentation.java</name>
+  </compound>
+  <compound refid="_graduation_check_8java" kind="file"><name>GraduationCheck.java</name>
+  </compound>
+  <compound refid="_graduation_check_u_i_8java" kind="file"><name>GraduationCheckUI.java</name>
+  </compound>
+  <compound refid="_person_8java" kind="file"><name>Person.java</name>
+  </compound>
+  <compound refid="_calc_science_cource_test_8java" kind="file"><name>CalcScienceCourceTest.java</name>
+  </compound>
+  <compound refid="_calc_system_cource_test_8java" kind="file"><name>CalcSystemCourceTest.java</name>
+  </compound>
+  <compound refid="md_C:_Users_YukiUeda_Source_Reseach_source_GraduationChecker_README" kind="page"><name>md_C:_Users_YukiUeda_Source_Reseach_source_GraduationChecker_README</name>
+  </compound>
+  <compound refid="dir_9ffa071976ddfee0a561dab6c8a2b6b4" kind="dir"><name>C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker</name>
+  </compound>
+  <compound refid="dir_27d814e78c17d52447cb9b904e289f6f" kind="dir"><name>C:/Users/YukiUeda/Source/Reseach</name>
+  </compound>
+  <compound refid="dir_90ab0432be0f40d26b9689f307b225e2" kind="dir"><name>C:/Users/YukiUeda/Source/Reseach/source</name>
+  </compound>
+  <compound refid="dir_6dfe07e8ca2289ca55311dc48c83e3bc" kind="dir"><name>C:/Users/YukiUeda/Source</name>
+  </compound>
+  <compound refid="dir_845fcbee5d0cd21ce0a01f795ad7d6e4" kind="dir"><name>C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src</name>
+  </compound>
+  <compound refid="dir_115b377e5a53f3c55df408840d07ea15" kind="dir"><name>C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/test</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+  <compound refid="dir_25a3cbfd3976b0bf58279b4245968313" kind="dir"><name>C:/Users/YukiUeda</name>
+  </compound>
+</doxygenindex>

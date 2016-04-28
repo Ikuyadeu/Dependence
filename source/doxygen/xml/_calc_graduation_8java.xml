@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_calc_graduation_8java" kind="file" language="Java">
+    <compoundname>CalcGraduation.java</compoundname>
+    <innerclass refid="class_calc_graduation" prot="public">CalcGraduation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4" refid="class_calc_graduation" refkind="compound"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_calc_graduation" kindref="compound">CalcGraduation</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>calcNeedSum();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>calcNeedBasic();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>calcNeedSpeciallty();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>calcNeedElective();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>judgeSum(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_calc_graduation_1acb2e54e00da35e1df260fac1d0dd0827" kindref="member">calcCreditSum</ref>(p)<sp/>-<sp/>calcNeedSum();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>judgeBasic(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_calc_graduation_1a12e48af5b7564eea3efff69b68e66fce" kindref="member">calcCreditBasic</ref>(p)<sp/>-<sp/>calcNeedBasic();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>judgeSpeciallty(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_calc_graduation_1a3d3e1a7eda245ffbf6fa77d8856678a7" kindref="member">calcCreditSpecilallty</ref>(p)<sp/>-<sp/>calcNeedSpeciallty();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>judgeElective(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.<ref refid="class_person_1a77524536a5680580871e48b32417c415" kindref="member">getElective</ref>()<sp/>-<sp/>calcNeedElective();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>judgeGraduation(<ref refid="class_person" kindref="compound">Person</ref><sp/>p);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_calc_graduation_1acb2e54e00da35e1df260fac1d0dd0827" kindref="member">calcCreditSum</ref>(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.<ref refid="class_person_1a7110eb365c23da72546103298af918b9" kindref="member">getBasic</ref>()<sp/>+<sp/>p.<ref refid="class_person_1ae1d85bc384d1415f1e428a26b7e85236" kindref="member">getLiberal</ref>()<sp/>+<sp/>p.<ref refid="class_person_1a68a225a15b43998203f6173cfc820fe8" kindref="member">getCompulsory</ref>()</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>p.<ref refid="class_person_1a2c3264f5bbb5c9b161cd6cf71f9e3d20" kindref="member">getSpecialltyBasic</ref>()<sp/>+<sp/>p.<ref refid="class_person_1a453c4ac730d0623f4dbf2171b60a85d5" kindref="member">getSpecialltyEducation</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>p.<ref refid="class_person_1a77524536a5680580871e48b32417c415" kindref="member">getElective</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_calc_graduation_1a12e48af5b7564eea3efff69b68e66fce" kindref="member">calcCreditBasic</ref>(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.<ref refid="class_person_1a7110eb365c23da72546103298af918b9" kindref="member">getBasic</ref>()<sp/>+<sp/>p.<ref refid="class_person_1ae1d85bc384d1415f1e428a26b7e85236" kindref="member">getLiberal</ref>()<sp/>+<sp/>p.<ref refid="class_person_1a2c3264f5bbb5c9b161cd6cf71f9e3d20" kindref="member">getSpecialltyBasic</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_calc_graduation_1a3d3e1a7eda245ffbf6fa77d8856678a7" kindref="member">calcCreditSpecilallty</ref>(<ref refid="class_person" kindref="compound">Person</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.<ref refid="class_person_1a2c3264f5bbb5c9b161cd6cf71f9e3d20" kindref="member">getSpecialltyBasic</ref>()<sp/>+<sp/>p.<ref refid="class_person_1a453c4ac730d0623f4dbf2171b60a85d5" kindref="member">getSpecialltyEducation</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java"/>
+  </compounddef>
+</doxygen>

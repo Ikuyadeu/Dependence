@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_calc_graduation" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>CalcGraduation</compoundname>
+    <derivedcompoundref refid="class_calc_science_cource" prot="public" virt="non-virtual">CalcScienceCource</derivedcompoundref>
+    <derivedcompoundref refid="class_calc_system_cource" prot="public" virt="non-virtual">CalcSystemCource</derivedcompoundref>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_calc_graduation_1a96604df704647c6aa35ef9f05384c2a7" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract int</type>
+        <definition>abstract int CalcGraduation.calcNeedSum</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>各コースの必要合計単位数を返す</para><para><simplesect kind="return"><para>　必要合計単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1abe4c58e0e4c238793b4b26727989d27e" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract int</type>
+        <definition>abstract int CalcGraduation.calcNeedBasic</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedBasic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>各コースの必要基礎・教養育成・専門基礎科目単位数を返す</para><para><simplesect kind="return"><para>　必要基礎・教養育成・専門基礎科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a2cff84190b0bfb19aaed0b8d58d486fb" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract int</type>
+        <definition>abstract int CalcGraduation.calcNeedSpeciallty</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedSpeciallty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>各コースの必要専門教育・専門必修科目単位数を返す</para><para><simplesect kind="return"><para>　必要専門教育・専門必修科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a72c2b5a81ea75e1a6035836a0e8fd21d" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract int</type>
+        <definition>abstract int CalcGraduation.calcNeedElective</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedElective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要選択科目単位数を返す</para><para><simplesect kind="return"><para>　必要選択科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1ae665b9babe7d53a0f32949864ef7f221" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.judgeSum</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>judgeSum</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要合計単位と実際の単位数の差を返す 足りていない場合は不の値を返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数情報 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>　単位数の差 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="40" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a4be37878252cbe30ba5bc90d2d6250a3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.judgeBasic</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>judgeBasic</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要な基礎・教養育成・専門基礎科目単位と実際の単位数の差を返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数情報 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>　単位数の差 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="50" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a78c894ef2fa214307704d7cb308302dc" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.judgeSpeciallty</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>judgeSpeciallty</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要な専門教育・専門単位と実際の単位数の差を返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数情報 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>　単位数の差 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="60" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1aad2870aafa2d1d9046f87c8c059107f4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.judgeElective</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>judgeElective</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要な選択科目単位と実際の単位数の差を返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数情報 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>　単位数の差 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="70" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a8469ca1026ac3bf73139791b2588edbd" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract boolean</type>
+        <definition>abstract boolean CalcGraduation.judgeGraduation</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>judgeGraduation</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>卒業研究着手可能かの判定を返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数情報 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>判定結果 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_calc_graduation_1acb2e54e00da35e1df260fac1d0dd0827" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.calcCreditSum</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>calcCreditSum</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>合計単位数を計算して返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数状況 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>合計単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="90" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a12e48af5b7564eea3efff69b68e66fce" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.calcCreditBasic</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>calcCreditBasic</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>基礎科目、教養育成科目及び専門基礎科目単位数を計算して返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数状況 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>基礎科目、教養育成科目及び専門基礎科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="103" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calc_graduation_1a3d3e1a7eda245ffbf6fa77d8856678a7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CalcGraduation.calcCreditSpecilallty</definition>
+        <argsstring>(Person p)</argsstring>
+        <name>calcCreditSpecilallty</name>
+        <param>
+          <type><ref refid="class_person" kindref="compound">Person</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>基礎科目、教養育成科目及び専門基礎科目単位数を計算して返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>個人の単位数状況 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>基礎科目、教養育成科目及び専門基礎科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="114" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="114" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>必要な単位数や卒業研究着手可能かを調べて返す抽象クラス </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>CalcSystemCource</label>
+        <link refid="class_calc_system_cource"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CalcScienceCource</label>
+        <link refid="class_calc_science_cource"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CalcGraduation</label>
+        <link refid="class_calc_graduation"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" line="4" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/CalcGraduation.java" bodystart="4" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_calc_graduation_1a12e48af5b7564eea3efff69b68e66fce" prot="protected" virt="non-virtual"><scope>CalcGraduation</scope><name>calcCreditBasic</name></member>
+      <member refid="class_calc_graduation_1a3d3e1a7eda245ffbf6fa77d8856678a7" prot="protected" virt="non-virtual"><scope>CalcGraduation</scope><name>calcCreditSpecilallty</name></member>
+      <member refid="class_calc_graduation_1acb2e54e00da35e1df260fac1d0dd0827" prot="protected" virt="non-virtual"><scope>CalcGraduation</scope><name>calcCreditSum</name></member>
+      <member refid="class_calc_graduation_1abe4c58e0e4c238793b4b26727989d27e" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>calcNeedBasic</name></member>
+      <member refid="class_calc_graduation_1a72c2b5a81ea75e1a6035836a0e8fd21d" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>calcNeedElective</name></member>
+      <member refid="class_calc_graduation_1a2cff84190b0bfb19aaed0b8d58d486fb" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>calcNeedSpeciallty</name></member>
+      <member refid="class_calc_graduation_1a96604df704647c6aa35ef9f05384c2a7" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>calcNeedSum</name></member>
+      <member refid="class_calc_graduation_1a4be37878252cbe30ba5bc90d2d6250a3" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>judgeBasic</name></member>
+      <member refid="class_calc_graduation_1aad2870aafa2d1d9046f87c8c059107f4" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>judgeElective</name></member>
+      <member refid="class_calc_graduation_1a8469ca1026ac3bf73139791b2588edbd" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>judgeGraduation</name></member>
+      <member refid="class_calc_graduation_1a78c894ef2fa214307704d7cb308302dc" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>judgeSpeciallty</name></member>
+      <member refid="class_calc_graduation_1ae665b9babe7d53a0f32949864ef7f221" prot="package" virt="non-virtual"><scope>CalcGraduation</scope><name>judgeSum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

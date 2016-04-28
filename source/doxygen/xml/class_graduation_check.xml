@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_graduation_check" kind="class" language="Java" prot="public">
+    <compoundname>GraduationCheck</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_graduation_check_1a1598941ec854c9a5595b1fb574658fbb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_person" kindref="compound">Person</ref></type>
+        <definition>Person GraduationCheck.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="6" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_1a268bf4b4413b1430ae1d92b26fdedb99" prot="private" static="no" mutable="no">
+        <type><ref refid="class_calc_graduation" kindref="compound">CalcGraduation</ref></type>
+        <definition>CalcGraduation GraduationCheck.calc</definition>
+        <argsstring></argsstring>
+        <name>calc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="7" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_1af8712c2600c3bb864c891897555dc75d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_data_documentation" kindref="compound">DataDocumentation</ref></type>
+        <definition>DataDocumentation GraduationCheck.dd</definition>
+        <argsstring></argsstring>
+        <name>dd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="8" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graduation_check_1a44b3bdd95a9cc666f03a91e821382a6d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String GraduationCheck.result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="9" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_graduation_check_1a4b42e8a04c062d621b7ecd68a161c0a1" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GraduationCheck.doInit</definition>
+        <argsstring>(String method)</argsstring>
+        <name>doInit</name>
+        <param>
+          <type>String</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>実際の仕事を担う3つのクラスのインスタンスを作り、変数を代入する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>　必要単位の計算方法の名称 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="17" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="17" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graduation_check_1a600acf8d7b520bec402ae5c7d6cdd512" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GraduationCheck.doCheak</definition>
+        <argsstring>(int[] credit)</argsstring>
+        <name>doCheak</name>
+        <param>
+          <type>int[]</type>
+          <declname>credit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンス変数に保持したオブジェクトのメソッドを使い、卒業研究着手判定の処理を行う </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="36" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graduation_check_1a8ea0909d309e28e5107e4f1b5c1578a4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String GraduationCheck.getResult</definition>
+        <argsstring>()</argsstring>
+        <name>getResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>判定結果を返す。</para><para><simplesect kind="return"><para>判定結果 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="97" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="97" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_graduation_check_1add178aac3c0e60c9cda51311d99248a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GraduationCheck.calcNeedSum</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要合計単位の計算を行う</para><para><simplesect kind="return"><para>必要合計単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="61" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graduation_check_1aa4bccab5fda17cd6b90fe4b3f942ee01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GraduationCheck.calcNeedBasic</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedBasic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要基礎・教養育成・専門基礎科目単位数を返す</para><para><simplesect kind="return"><para>　必要基礎・教養育成・専門基礎科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="70" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graduation_check_1aa11f6953494082cf1bd80b71f737de9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GraduationCheck.calcNeedSpeciallty</definition>
+        <argsstring>()</argsstring>
+        <name>calcNeedSpeciallty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要専門教育・専門必修科目単位数を返す</para><para><simplesect kind="return"><para>　必要専門教育・専門必修科目単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="79" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graduation_check_1ac3fb05e0d5a6514bc5404606aee464c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean GraduationCheck.judgeGraduation</definition>
+        <argsstring>()</argsstring>
+        <name>judgeGraduation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>卒業研究着手可能の判定をする</para><para><simplesect kind="return"><para>卒業研究着手可能かの判定結果 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="88" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="88" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>各インスタンスを呼び出すメインのクラス </para>    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" line="4" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/GraduationCheck.java" bodystart="4" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_graduation_check_1a268bf4b4413b1430ae1d92b26fdedb99" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>calc</name></member>
+      <member refid="class_graduation_check_1aa4bccab5fda17cd6b90fe4b3f942ee01" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>calcNeedBasic</name></member>
+      <member refid="class_graduation_check_1aa11f6953494082cf1bd80b71f737de9f" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>calcNeedSpeciallty</name></member>
+      <member refid="class_graduation_check_1add178aac3c0e60c9cda51311d99248a4" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>calcNeedSum</name></member>
+      <member refid="class_graduation_check_1af8712c2600c3bb864c891897555dc75d" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>dd</name></member>
+      <member refid="class_graduation_check_1a600acf8d7b520bec402ae5c7d6cdd512" prot="package" virt="non-virtual"><scope>GraduationCheck</scope><name>doCheak</name></member>
+      <member refid="class_graduation_check_1a4b42e8a04c062d621b7ecd68a161c0a1" prot="package" virt="non-virtual"><scope>GraduationCheck</scope><name>doInit</name></member>
+      <member refid="class_graduation_check_1a8ea0909d309e28e5107e4f1b5c1578a4" prot="package" virt="non-virtual"><scope>GraduationCheck</scope><name>getResult</name></member>
+      <member refid="class_graduation_check_1ac3fb05e0d5a6514bc5404606aee464c0" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>judgeGraduation</name></member>
+      <member refid="class_graduation_check_1a1598941ec854c9a5595b1fb574658fbb" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>p</name></member>
+      <member refid="class_graduation_check_1a44b3bdd95a9cc666f03a91e821382a6d" prot="private" virt="non-virtual"><scope>GraduationCheck</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

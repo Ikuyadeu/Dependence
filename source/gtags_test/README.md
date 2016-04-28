@@ -10,3 +10,6 @@ $ htags -afFnvsx
 // -x xml形式で出力
 $ java -jar TestMaker.java  
 ```
+
+D:abstractメソッド
+Sをみればよさそう

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_credit" kind="class" language="Java" prot="public">
+    <compoundname>Credit</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_credit_1a409ac2a41988209f521d6402927872fe" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Credit.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>科目名 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" line="7" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_credit_1aedebf4095f59146948c25a2507e90c20" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Credit.category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>科目分類 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" line="9" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_credit_1add1e1314494ec01eebd5aa7904a652f5" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Credit.category2</definition>
+        <argsstring></argsstring>
+        <name>category2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>科目分類2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" line="11" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_credit_1a673791d83da8162830ebe69b3bb9f83a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Credit.creditnum</definition>
+        <argsstring></argsstring>
+        <name>creditnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>取得単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" line="13" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_credit_1a2b069f36cb61c49acc3a8009d5ae28d7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Credit.Credit</definition>
+        <argsstring>(String name, String category, String category2, int creditnum)</argsstring>
+        <name>Credit</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>category2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>creditnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" line="15" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" bodystart="15" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>単位の情報を格納するクラス </para>    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" line="5" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Credit.java" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_credit_1aedebf4095f59146948c25a2507e90c20" prot="public" virt="non-virtual"><scope>Credit</scope><name>category</name></member>
+      <member refid="class_credit_1add1e1314494ec01eebd5aa7904a652f5" prot="public" virt="non-virtual"><scope>Credit</scope><name>category2</name></member>
+      <member refid="class_credit_1a2b069f36cb61c49acc3a8009d5ae28d7" prot="package" virt="non-virtual"><scope>Credit</scope><name>Credit</name></member>
+      <member refid="class_credit_1a673791d83da8162830ebe69b3bb9f83a" prot="public" virt="non-virtual"><scope>Credit</scope><name>creditnum</name></member>
+      <member refid="class_credit_1a409ac2a41988209f521d6402927872fe" prot="public" virt="non-virtual"><scope>Credit</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

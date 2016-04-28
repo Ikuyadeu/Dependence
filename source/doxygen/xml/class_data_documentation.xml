@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_data_documentation" kind="class" language="Java" prot="public">
+    <compoundname>DataDocumentation</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_documentation_1a1161fc586dd61ee72a1f0a3d7d076197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String DataDocumentation.getNeedCredit</definition>
+        <argsstring>(int sum, int basic, int speciallty, int elective)</argsstring>
+        <name>getNeedCredit</name>
+        <param>
+          <type>int</type>
+          <declname>sum</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>basic</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>speciallty</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>elective</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>必要単位数をあらわす文字列を返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>必要合計単位数 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>basic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>必要基礎科目、教養育成科目及び専門基礎科目 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speciallty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>必要専門教育科目　専門必修 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/DataDocumentation.java" line="15" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/DataDocumentation.java" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_documentation_1a1c3a314e171a31dbb6c27750942a105c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String DataDocumentation.makeJudge</definition>
+        <argsstring>(boolean j, int sum, int basic, int specially, int elective)</argsstring>
+        <name>makeJudge</name>
+        <param>
+          <type>boolean</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sum</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>basic</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>specially</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>elective</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>判定結果の文字列を作成して返す</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>卒業研究に着手できるかどうか </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>合計単位数の必要分との差 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>basic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>基礎科目、教養育成科目および専門基礎科目の必要分との差 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specially</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>専門教育、専門必修の必要分との差 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elective</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>選択科目の必要分との差 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>　判定結果の文字列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/DataDocumentation.java" line="41" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/DataDocumentation.java" bodystart="41" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>数値を得て、文字列にまとめた結果を返す役割を担うクラス </para>    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/DataDocumentation.java" line="4" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/DataDocumentation.java" bodystart="4" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_data_documentation_1a1161fc586dd61ee72a1f0a3d7d076197" prot="public" virt="non-virtual"><scope>DataDocumentation</scope><name>getNeedCredit</name></member>
+      <member refid="class_data_documentation_1a1c3a314e171a31dbb6c27750942a105c" prot="public" virt="non-virtual"><scope>DataDocumentation</scope><name>makeJudge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

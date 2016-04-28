@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_person" kind="class" language="Java" prot="public">
+    <compoundname>Person</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_person_1a642c17e4ffc7f4dc6b349670845ffa85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person.basic</definition>
+        <argsstring></argsstring>
+        <name>basic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>基礎科目単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="7" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1a07ce66d3629ad1f8f295a1f9848a8ee0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person.liberal</definition>
+        <argsstring></argsstring>
+        <name>liberal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>教養教育単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="9" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1a9efbe27f4b131fef692618462b31ae76" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person.specialltyBasic</definition>
+        <argsstring></argsstring>
+        <name>specialltyBasic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門基礎単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="11" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1a161b641022a7767dae9b32e09e05450c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person.specialltyEducation</definition>
+        <argsstring></argsstring>
+        <name>specialltyEducation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門教育単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="13" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1abbb06fcb87ad4f93946bcb22d31fe648" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person.compulsory</definition>
+        <argsstring></argsstring>
+        <name>compulsory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門必修単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="15" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1a58e5f81efdc73ac8fb4b41bfc359d115" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person.elective</definition>
+        <argsstring></argsstring>
+        <name>elective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>選択科目単位数 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="17" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1a2f450e595dee80d56ac8871046e9fece" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean Person.judge</definition>
+        <argsstring></argsstring>
+        <name>judge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>判定 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="20" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_person_1a7110eb365c23da72546103298af918b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Person.getBasic</definition>
+        <argsstring>()</argsstring>
+        <name>getBasic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>基礎科目の単位数を得る</para><para><simplesect kind="return"><para>単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1ae1d85bc384d1415f1e428a26b7e85236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Person.getLiberal</definition>
+        <argsstring>()</argsstring>
+        <name>getLiberal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>教養教育科目の単位数を得る</para><para><simplesect kind="return"><para>単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a2c3264f5bbb5c9b161cd6cf71f9e3d20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Person.getSpecialltyBasic</definition>
+        <argsstring>()</argsstring>
+        <name>getSpecialltyBasic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門基礎科目の単位数を得る</para><para><simplesect kind="return"><para>単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="45" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a453c4ac730d0623f4dbf2171b60a85d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Person.getSpecialltyEducation</definition>
+        <argsstring>()</argsstring>
+        <name>getSpecialltyEducation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門教育科目の単位数を得る</para><para><simplesect kind="return"><para>単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="54" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a68a225a15b43998203f6173cfc820fe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Person.getCompulsory</definition>
+        <argsstring>()</argsstring>
+        <name>getCompulsory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門必修科目の単位数を得る</para><para><simplesect kind="return"><para>単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="63" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a77524536a5680580871e48b32417c415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Person.getElective</definition>
+        <argsstring>()</argsstring>
+        <name>getElective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>専門必修科目の単位数を得る</para><para><simplesect kind="return"><para>単位数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="72" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a4806c3eea3f3470ca3ac4f77c3977c3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Person.getJudge</definition>
+        <argsstring>()</argsstring>
+        <name>getJudge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>卒業研究着手判定の結果を得る</para><para><simplesect kind="return"><para>着手判定の結果 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="81" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a5ff25b7cb82bcd890ad9279773a7575b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setBasic</definition>
+        <argsstring>(int basic)</argsstring>
+        <name>setBasic</name>
+        <param>
+          <type>int</type>
+          <declname>basic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの基礎科目の値を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>basic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>基礎科目 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="91" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a6b766052e54fc763326b597d5f0427eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setLiberal</definition>
+        <argsstring>(int liberal)</argsstring>
+        <name>setLiberal</name>
+        <param>
+          <type>int</type>
+          <declname>liberal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの教養教育科目の単位数の値を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liberal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>教養教育科目単位数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="101" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1aeb6ca19ec977a5b4fbcbece6844cc25d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setSpecialltyBasic</definition>
+        <argsstring>(int specialltyBasic)</argsstring>
+        <name>setSpecialltyBasic</name>
+        <param>
+          <type>int</type>
+          <declname>specialltyBasic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの専門基礎科目単位数の値を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>specialltyBasic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>専門基礎科目単位数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="111" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a9aeef3ecd617d493acbc828bbdbb4628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setSpecialltyEducation</definition>
+        <argsstring>(int specialltyEducation)</argsstring>
+        <name>setSpecialltyEducation</name>
+        <param>
+          <type>int</type>
+          <declname>specialltyEducation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの専門教育科目単位数の値を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>specialltyEducation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>専門教育科目単位数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="121" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a0ba404243097ab2b1818640d1899c909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setCompulsory</definition>
+        <argsstring>(int compulsory)</argsstring>
+        <name>setCompulsory</name>
+        <param>
+          <type>int</type>
+          <declname>compulsory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの専門必修科目の単位数の値を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compulsory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>　専門必修科目単位数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="131" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1a325f68d274a2a697174647e299f31ccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setElective</definition>
+        <argsstring>(int elective)</argsstring>
+        <name>setElective</name>
+        <param>
+          <type>int</type>
+          <declname>elective</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの選択科目の単位数の値を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elective</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>　選択科目単位数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="141" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_person_1ae7e107062cdd604305a72cce4a9a064d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Person.setJudge</definition>
+        <argsstring>(boolean judge)</argsstring>
+        <name>setJudge</name>
+        <param>
+          <type>boolean</type>
+          <declname>judge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスタンスの卒業研究着可能か判定の結果を設定する</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>judge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>卒業研究着可能かの判定の結果 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="151" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="151" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>入力データである単位数、計算結果である卒業研究着手可能判定結果を保持するクラス </para>    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" line="4" column="1" bodyfile="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/src/Person.java" bodystart="4" bodyend="155"/>
+    <listofallmembers>
+      <member refid="class_person_1a642c17e4ffc7f4dc6b349670845ffa85" prot="private" virt="non-virtual"><scope>Person</scope><name>basic</name></member>
+      <member refid="class_person_1abbb06fcb87ad4f93946bcb22d31fe648" prot="private" virt="non-virtual"><scope>Person</scope><name>compulsory</name></member>
+      <member refid="class_person_1a58e5f81efdc73ac8fb4b41bfc359d115" prot="private" virt="non-virtual"><scope>Person</scope><name>elective</name></member>
+      <member refid="class_person_1a7110eb365c23da72546103298af918b9" prot="public" virt="non-virtual"><scope>Person</scope><name>getBasic</name></member>
+      <member refid="class_person_1a68a225a15b43998203f6173cfc820fe8" prot="public" virt="non-virtual"><scope>Person</scope><name>getCompulsory</name></member>
+      <member refid="class_person_1a77524536a5680580871e48b32417c415" prot="public" virt="non-virtual"><scope>Person</scope><name>getElective</name></member>
+      <member refid="class_person_1a4806c3eea3f3470ca3ac4f77c3977c3a" prot="public" virt="non-virtual"><scope>Person</scope><name>getJudge</name></member>
+      <member refid="class_person_1ae1d85bc384d1415f1e428a26b7e85236" prot="public" virt="non-virtual"><scope>Person</scope><name>getLiberal</name></member>
+      <member refid="class_person_1a2c3264f5bbb5c9b161cd6cf71f9e3d20" prot="public" virt="non-virtual"><scope>Person</scope><name>getSpecialltyBasic</name></member>
+      <member refid="class_person_1a453c4ac730d0623f4dbf2171b60a85d5" prot="public" virt="non-virtual"><scope>Person</scope><name>getSpecialltyEducation</name></member>
+      <member refid="class_person_1a2f450e595dee80d56ac8871046e9fece" prot="private" virt="non-virtual"><scope>Person</scope><name>judge</name></member>
+      <member refid="class_person_1a07ce66d3629ad1f8f295a1f9848a8ee0" prot="private" virt="non-virtual"><scope>Person</scope><name>liberal</name></member>
+      <member refid="class_person_1a5ff25b7cb82bcd890ad9279773a7575b" prot="public" virt="non-virtual"><scope>Person</scope><name>setBasic</name></member>
+      <member refid="class_person_1a0ba404243097ab2b1818640d1899c909" prot="public" virt="non-virtual"><scope>Person</scope><name>setCompulsory</name></member>
+      <member refid="class_person_1a325f68d274a2a697174647e299f31ccb" prot="public" virt="non-virtual"><scope>Person</scope><name>setElective</name></member>
+      <member refid="class_person_1ae7e107062cdd604305a72cce4a9a064d" prot="public" virt="non-virtual"><scope>Person</scope><name>setJudge</name></member>
+      <member refid="class_person_1a6b766052e54fc763326b597d5f0427eb" prot="public" virt="non-virtual"><scope>Person</scope><name>setLiberal</name></member>
+      <member refid="class_person_1aeb6ca19ec977a5b4fbcbece6844cc25d" prot="public" virt="non-virtual"><scope>Person</scope><name>setSpecialltyBasic</name></member>
+      <member refid="class_person_1a9aeef3ecd617d493acbc828bbdbb4628" prot="public" virt="non-virtual"><scope>Person</scope><name>setSpecialltyEducation</name></member>
+      <member refid="class_person_1a9efbe27f4b131fef692618462b31ae76" prot="private" virt="non-virtual"><scope>Person</scope><name>specialltyBasic</name></member>
+      <member refid="class_person_1a161b641022a7767dae9b32e09e05450c" prot="private" virt="non-virtual"><scope>Person</scope><name>specialltyEducation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
