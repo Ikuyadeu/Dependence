@@ -7,11 +7,15 @@
     - [ ] doxygenによる依存関係の解析
 
 - [ ] 論文関係
-    1. [ ]  V. Balachandran: 
+    1. [ ]  V. Balachandran  
     Reducing Human Effort and Improving Quality
     in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation
-    - [ ] Patanamon Thongtanunam, etc...:
+    - [ ] Patanamon Thongtanunam, etc...  
     Who Should Review My Code?
     A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review
-    - [ ] V. Balachandran:
+    - [ ] V. Balachandran  
     Fix-it: An Extensible Code Auto-Fix Component in Review Bot
+    
+- [ ] 研究方針
+    - [ ] 信頼性の定義
+    - [ ] 利用するOSSプロジェクトの決定
