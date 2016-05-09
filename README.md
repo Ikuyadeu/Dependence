@@ -31,7 +31,7 @@
 * [mention-bot](https://github.com/facebook/mention-bot)(javascript):facebook製.git blameから過去を遡ってレビュアーを選定する
 * hobbit-bot:ランダムにレビュアーを選定する
 
-## 利用できそうな技術(太字は利用テスト中)
+## 利用できそうな技術(**太字**は利用テスト中)
 * タグ付け:ctags, **gtags**
 * 呼び出し関係:ctrace, Itrace, strace, ktrace, trusss
 * 依存関係を調べるもの:**[Doxygen](http://www.doxygen.jp/)(ドキシジェン)**, Understand
