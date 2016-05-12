@@ -44,8 +44,10 @@ else:
 filename = r'source\doxygen\xml\_calc_graduation_8java.xml'
 tree = ET.parse(filename)
 root = tree.getroot()
-print(root.tag) # => doxygen
-print(root.attrib) # => {'version': '1.8.11', '{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation': 'compound.xsd'}
+
+for location in root.iter('location'):
+    file = location.get('file')
+    print("file = %s" % file)
 
 for line in root.iter('codeline'):
     lineno = int(line.get("lineno"))
@@ -54,7 +56,7 @@ for line in root.iter('codeline'):
         continue
     elif lineno > eline:
         break
-    
+        
     for ref in line.iter('ref'):
         refid = ref.get('refid')
         kindref = ref.get('kindref')
