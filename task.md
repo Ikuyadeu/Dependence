@@ -3,8 +3,8 @@
 ## ５月
 - [ ] doxygen関連
     - [ ] doxygenマニュアルの読了
-    - [ ] doxygen実行
-    - [ ] doxygenによる依存関係の解析
+    - [x] doxygen実行
+    - [x] doxygenによる依存関係の解析
 
 - [ ] 論文関係
     1. [ ]  V. Balachandran  
