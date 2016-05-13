@@ -45,11 +45,11 @@ filename = r'source\doxygen\xml\_calc_graduation_8java.xml'
 tree = ET.parse(filename)
 root = tree.getroot()
 
-for location in root.iter('location'):
+for location in root.findall('./compounddef/location'):
     file = location.get('file')
     print("file = %s" % file)
 
-for line in root.iter('codeline'):
+for line in root.findall("./compounddef/programlisting/codeline"):
     lineno = int(line.get("lineno"))
     
     if lineno < sline:
@@ -57,7 +57,7 @@ for line in root.iter('codeline'):
     elif lineno > eline:
         break
         
-    for ref in line.iter('ref'):
+    for ref in line.findall('./highlight/ref'):
         refid = ref.get('refid')
         kindref = ref.get('kindref')
         print(lineno, refid, kindref)
