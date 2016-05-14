@@ -6,8 +6,8 @@ def diffFileLine(gitdata):
     pass
     
 # ファイル・行から参照するxmlファイル名を生成
-def makeXMLName(linepass):
-    pass
+def makeXMLName(filename):
+    return filename
     
 # 解析するxmlファイルを開く
 def openXML(filename):
@@ -32,18 +32,25 @@ def countReviewersExp(reviewer, paraname):
 argv = sys.argv
 argc = len(argv)
 
-if argc == 3:
-    sline = int(argv[1])
-    eline = int(argv[2])
+if argc == 4:
+    filename = (argv[1])
+    sline = int(argv[2])
+    eline = int(argv[3])
 else:
-    print("Usage: %s startlineNomber endlineNomber" % argv[0])
+    print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
 
 # raw文字列(r)にしておくとエスケープが無効になる
+filename = makeXMLName(filename)
 filename = r'source\doxygen\xml\_calc_graduation_8java.xml'
 tree = ET.parse(filename)
 root = tree.getroot()
+
+for compounddef in root.findall('./compounddef'):
+    compoundname = compounddef.get('compoundname')
+    innerclass = compounddef.findall('innerclass')
+    
 
 for location in root.findall('./compounddef/location'):
     file = location.get('file')
