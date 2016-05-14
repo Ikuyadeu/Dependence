@@ -33,9 +33,9 @@ argv = sys.argv
 argc = len(argv)
 
 if argc == 4:
-    filename = (argv[1])
-    sline = int(argv[2])
-    eline = int(argv[3])
+    filename = (argv[1]) # ファイル名
+    sline = int(argv[2]) # 変更開始行
+    eline = int(argv[3]) # 変更終了行
 else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
@@ -47,6 +47,7 @@ filename = r'source\doxygen\xml\_calc_graduation_8java.xml'
 tree = ET.parse(filename)
 root = tree.getroot()
 
+# 値の設定
 for compounddef in root.findall('./compounddef'):
     compoundname = compounddef.get('compoundname')
     innerclass = compounddef.findall('innerclass')

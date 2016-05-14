@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45ce91a3-f730-4f99-853d-aa4cdc5390d1}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>DiffDependency.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <CommandLineArguments>file 10 100</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DiffDependency.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="source\doxygen\html\annotated.html" />
+    <Content Include="source\doxygen\html\arrowdown.png" />
+    <Content Include="source\doxygen\html\arrowright.png" />
+    <Content Include="source\doxygen\html\bc_s.png" />
+    <Content Include="source\doxygen\html\bdwn.png" />
+    <Content Include="source\doxygen\html\classes.html" />
+    <Content Include="source\doxygen\html\class_calc_graduation-members.html" />
+    <Content Include="source\doxygen\html\class_calc_graduation.html" />
+    <Content Include="source\doxygen\html\class_calc_graduation.png" />
+    <Content Include="source\doxygen\html\class_calc_science_cource-members.html" />
+    <Content Include="source\doxygen\html\class_calc_science_cource.html" />
+    <Content Include="source\doxygen\html\class_calc_science_cource.png" />
+    <Content Include="source\doxygen\html\class_calc_science_cource_test-members.html" />
+    <Content Include="source\doxygen\html\class_calc_science_cource_test.html" />
+    <Content Include="source\doxygen\html\class_calc_science_cource_test.png" />
+    <Content Include="source\doxygen\html\class_calc_system_cource-members.html" />
+    <Content Include="source\doxygen\html\class_calc_system_cource.html" />
+    <Content Include="source\doxygen\html\class_calc_system_cource.png" />
+    <Content Include="source\doxygen\html\class_calc_system_cource_test-members.html" />
+    <Content Include="source\doxygen\html\class_calc_system_cource_test.html" />
+    <Content Include="source\doxygen\html\class_calc_system_cource_test.png" />
+    <Content Include="source\doxygen\html\class_credit-members.html" />
+    <Content Include="source\doxygen\html\class_credit.html" />
+    <Content Include="source\doxygen\html\class_data_documentation-members.html" />
+    <Content Include="source\doxygen\html\class_data_documentation.html" />
+    <Content Include="source\doxygen\html\class_graduation_check-members.html" />
+    <Content Include="source\doxygen\html\class_graduation_check.html" />
+    <Content Include="source\doxygen\html\class_graduation_check_u_i-members.html" />
+    <Content Include="source\doxygen\html\class_graduation_check_u_i.html" />
+    <Content Include="source\doxygen\html\class_graduation_check_u_i.png" />
+    <Content Include="source\doxygen\html\class_person-members.html" />
+    <Content Include="source\doxygen\html\class_person.html" />
+    <Content Include="source\doxygen\html\closed.png" />
+    <Content Include="source\doxygen\html\dir_115b377e5a53f3c55df408840d07ea15.html" />
+    <Content Include="source\doxygen\html\dir_25a3cbfd3976b0bf58279b4245968313.html" />
+    <Content Include="source\doxygen\html\dir_27d814e78c17d52447cb9b904e289f6f.html" />
+    <Content Include="source\doxygen\html\dir_6dfe07e8ca2289ca55311dc48c83e3bc.html" />
+    <Content Include="source\doxygen\html\dir_845fcbee5d0cd21ce0a01f795ad7d6e4.html" />
+    <Content Include="source\doxygen\html\dir_90ab0432be0f40d26b9689f307b225e2.html" />
+    <Content Include="source\doxygen\html\dir_9ffa071976ddfee0a561dab6c8a2b6b4.html" />
+    <Content Include="source\doxygen\html\dir_d522931ffa1371640980b621734a4381.html" />
+    <Content Include="source\doxygen\html\doc.png" />
+    <Content Include="source\doxygen\html\doxygen.css" />
+    <Content Include="source\doxygen\html\doxygen.png" />
+    <Content Include="source\doxygen\html\dynsections.js" />
+    <Content Include="source\doxygen\html\files.html" />
+    <Content Include="source\doxygen\html\folderclosed.png" />
+    <Content Include="source\doxygen\html\folderopen.png" />
+    <Content Include="source\doxygen\html\functions.html" />
+    <Content Include="source\doxygen\html\functions_func.html" />
+    <Content Include="source\doxygen\html\functions_vars.html" />
+    <Content Include="source\doxygen\html\hierarchy.html" />
+    <Content Include="source\doxygen\html\index.html" />
+    <Content Include="source\doxygen\html\jquery.js" />
+    <Content Include="source\doxygen\html\nav_f.png" />
+    <Content Include="source\doxygen\html\nav_g.png" />
+    <Content Include="source\doxygen\html\nav_h.png" />
+    <Content Include="source\doxygen\html\open.png" />
+    <Content Include="source\doxygen\html\pages.html" />
+    <Content Include="source\doxygen\html\search\all_0.html" />
+    <Content Include="source\doxygen\html\search\all_0.js" />
+    <Content Include="source\doxygen\html\search\all_1.html" />
+    <Content Include="source\doxygen\html\search\all_1.js" />
+    <Content Include="source\doxygen\html\search\all_2.html" />
+    <Content Include="source\doxygen\html\search\all_2.js" />
+    <Content Include="source\doxygen\html\search\all_3.html" />
+    <Content Include="source\doxygen\html\search\all_3.js" />
+    <Content Include="source\doxygen\html\search\all_4.html" />
+    <Content Include="source\doxygen\html\search\all_4.js" />
+    <Content Include="source\doxygen\html\search\all_5.html" />
+    <Content Include="source\doxygen\html\search\all_5.js" />
+    <Content Include="source\doxygen\html\search\all_6.html" />
+    <Content Include="source\doxygen\html\search\all_6.js" />
+    <Content Include="source\doxygen\html\search\all_7.html" />
+    <Content Include="source\doxygen\html\search\all_7.js" />
+    <Content Include="source\doxygen\html\search\all_8.html" />
+    <Content Include="source\doxygen\html\search\all_8.js" />
+    <Content Include="source\doxygen\html\search\classes_0.html" />
+    <Content Include="source\doxygen\html\search\classes_0.js" />
+    <Content Include="source\doxygen\html\search\classes_1.html" />
+    <Content Include="source\doxygen\html\search\classes_1.js" />
+    <Content Include="source\doxygen\html\search\classes_2.html" />
+    <Content Include="source\doxygen\html\search\classes_2.js" />
+    <Content Include="source\doxygen\html\search\classes_3.html" />
+    <Content Include="source\doxygen\html\search\classes_3.js" />
+    <Content Include="source\doxygen\html\search\close.png" />
+    <Content Include="source\doxygen\html\search\files_0.html" />
+    <Content Include="source\doxygen\html\search\files_0.js" />
+    <Content Include="source\doxygen\html\search\files_1.html" />
+    <Content Include="source\doxygen\html\search\files_1.js" />
+    <Content Include="source\doxygen\html\search\files_2.html" />
+    <Content Include="source\doxygen\html\search\files_2.js" />
+    <Content Include="source\doxygen\html\search\files_3.html" />
+    <Content Include="source\doxygen\html\search\files_3.js" />
+    <Content Include="source\doxygen\html\search\files_4.html" />
+    <Content Include="source\doxygen\html\search\files_4.js" />
+    <Content Include="source\doxygen\html\search\functions_0.html" />
+    <Content Include="source\doxygen\html\search\functions_0.js" />
+    <Content Include="source\doxygen\html\search\functions_1.html" />
+    <Content Include="source\doxygen\html\search\functions_1.js" />
+    <Content Include="source\doxygen\html\search\functions_2.html" />
+    <Content Include="source\doxygen\html\search\functions_2.js" />
+    <Content Include="source\doxygen\html\search\functions_3.html" />
+    <Content Include="source\doxygen\html\search\functions_3.js" />
+    <Content Include="source\doxygen\html\search\functions_4.html" />
+    <Content Include="source\doxygen\html\search\functions_4.js" />
+    <Content Include="source\doxygen\html\search\mag_sel.png" />
+    <Content Include="source\doxygen\html\search\nomatches.html" />
+    <Content Include="source\doxygen\html\search\pages_0.html" />
+    <Content Include="source\doxygen\html\search\pages_0.js" />
+    <Content Include="source\doxygen\html\search\search.css" />
+    <Content Include="source\doxygen\html\search\search.js" />
+    <Content Include="source\doxygen\html\search\searchdata.js" />
+    <Content Include="source\doxygen\html\search\search_l.png" />
+    <Content Include="source\doxygen\html\search\search_m.png" />
+    <Content Include="source\doxygen\html\search\search_r.png" />
+    <Content Include="source\doxygen\html\search\variables_0.html" />
+    <Content Include="source\doxygen\html\search\variables_0.js" />
+    <Content Include="source\doxygen\html\search\variables_1.html" />
+    <Content Include="source\doxygen\html\search\variables_1.js" />
+    <Content Include="source\doxygen\html\splitbar.png" />
+    <Content Include="source\doxygen\html\sync_off.png" />
+    <Content Include="source\doxygen\html\sync_on.png" />
+    <Content Include="source\doxygen\html\tabs.css" />
+    <Content Include="source\doxygen\html\tab_a.png" />
+    <Content Include="source\doxygen\html\tab_b.png" />
+    <Content Include="source\doxygen\html\tab_h.png" />
+    <Content Include="source\doxygen\html\tab_s.png" />
+    <Content Include="source\doxygen\html\_calc_graduation_8java.html" />
+    <Content Include="source\doxygen\html\_calc_science_cource_8java.html" />
+    <Content Include="source\doxygen\html\_calc_science_cource_test_8java.html" />
+    <Content Include="source\doxygen\html\_calc_system_cource_8java.html" />
+    <Content Include="source\doxygen\html\_calc_system_cource_test_8java.html" />
+    <Content Include="source\doxygen\html\_credit_8java.html" />
+    <Content Include="source\doxygen\html\_data_documentation_8java.html" />
+    <Content Include="source\doxygen\html\_graduation_check_8java.html" />
+    <Content Include="source\doxygen\html\_graduation_check_u_i_8java.html" />
+    <Content Include="source\doxygen\html\_person_8java.html" />
+    <Content Include="source\doxygen\html\_r_e_a_d_m_e_8md.html" />
+    <Content Include="source\doxygen\xml\class_calc_graduation.xml" />
+    <Content Include="source\doxygen\xml\class_calc_science_cource.xml" />
+    <Content Include="source\doxygen\xml\class_calc_science_cource_test.xml" />
+    <Content Include="source\doxygen\xml\class_calc_system_cource.xml" />
+    <Content Include="source\doxygen\xml\class_calc_system_cource_test.xml" />
+    <Content Include="source\doxygen\xml\class_credit.xml" />
+    <Content Include="source\doxygen\xml\class_data_documentation.xml" />
+    <Content Include="source\doxygen\xml\class_graduation_check.xml" />
+    <Content Include="source\doxygen\xml\class_graduation_check_u_i.xml" />
+    <Content Include="source\doxygen\xml\class_graduation_check_u_i_1_1_button_event.xml" />
+    <Content Include="source\doxygen\xml\class_graduation_check_u_i_1_1_graduation_window_listener.xml" />
+    <Content Include="source\doxygen\xml\class_person.xml" />
+    <Content Include="source\doxygen\xml\dir_115b377e5a53f3c55df408840d07ea15.xml" />
+    <Content Include="source\doxygen\xml\dir_25a3cbfd3976b0bf58279b4245968313.xml" />
+    <Content Include="source\doxygen\xml\dir_27d814e78c17d52447cb9b904e289f6f.xml" />
+    <Content Include="source\doxygen\xml\dir_6dfe07e8ca2289ca55311dc48c83e3bc.xml" />
+    <Content Include="source\doxygen\xml\dir_845fcbee5d0cd21ce0a01f795ad7d6e4.xml" />
+    <Content Include="source\doxygen\xml\dir_90ab0432be0f40d26b9689f307b225e2.xml" />
+    <Content Include="source\doxygen\xml\dir_9ffa071976ddfee0a561dab6c8a2b6b4.xml" />
+    <Content Include="source\doxygen\xml\dir_d522931ffa1371640980b621734a4381.xml" />
+    <Content Include="source\doxygen\xml\index.xml" />
+    <Content Include="source\doxygen\xml\namespacejavax_1_1swing.xml" />
+    <Content Include="source\doxygen\xml\namespacejava_1_1awt.xml" />
+    <Content Include="source\doxygen\xml\namespacejava_1_1awt_1_1event.xml" />
+    <Content Include="source\doxygen\xml\_calc_graduation_8java.xml" />
+    <Content Include="source\doxygen\xml\_calc_science_cource_8java.xml" />
+    <Content Include="source\doxygen\xml\_calc_science_cource_test_8java.xml" />
+    <Content Include="source\doxygen\xml\_calc_system_cource_8java.xml" />
+    <Content Include="source\doxygen\xml\_calc_system_cource_test_8java.xml" />
+    <Content Include="source\doxygen\xml\_credit_8java.xml" />
+    <Content Include="source\doxygen\xml\_data_documentation_8java.xml" />
+    <Content Include="source\doxygen\xml\_graduation_check_8java.xml" />
+    <Content Include="source\doxygen\xml\_graduation_check_u_i_8java.xml" />
+    <Content Include="source\doxygen\xml\_person_8java.xml" />
+    <Content Include="source\doxygen\xml\_r_e_a_d_m_e_8md.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="source\" />
+    <Folder Include="source\doxygen\" />
+    <Folder Include="source\doxygen\html" />
+    <Folder Include="source\doxygen\html\search" />
+    <Folder Include="source\doxygen\xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
