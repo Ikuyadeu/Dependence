@@ -1,5 +1,7 @@
 import sys
 import xml.etree.ElementTree as ET
+from _collections import defaultdict
+import Dependency as Dp
 
 # 変更されたファイルと行の定義
 def diffFileLine(gitdata):
@@ -40,6 +42,7 @@ else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
+dependency_array = defaultdict(lambda: 0)
 
 # raw文字列(r)にしておくとエスケープが無効になる
 filename = makeXMLName(filename)
@@ -68,4 +71,4 @@ for line in root.findall("./compounddef/programlisting/codeline"):
     for ref in line.findall('./highlight/ref'):
         refid = ref.get('refid')
         kindref = ref.get('kindref')
-        print(lineno, refid, kindref)
+        dependency_array[refid] = Dp.Dependency(refid, kindref, lineno)
