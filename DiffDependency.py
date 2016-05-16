@@ -1,34 +1,53 @@
 import sys
 import xml.etree.ElementTree as ET
-from _collections import defaultdict
 import Dependency as Dp
+ 
+def ref_to_XMLname(refid):
+    """refidからXMLファイル名を生成
+    Args:
+        refid:refのid
+    Returns:
+        XMLのファイル名
+    """
+    return doxygenfile + refid + r".xml"
 
-# 変更されたファイルと行の定義
-def diffFileLine(gitdata):
-    pass
-    
-# ファイル・行から参照するxmlファイル名を生成
-def makeXMLName(filename):
-    return filename
-    
-# 解析するxmlファイルを開く
-def openXML(filename):
-    pass
-    
-# 関係のあるcodeline=xのxを利用して見つける
-def parseXML(file):
-    pass
-    
-#  要素のオブジェクトを生成
-def makeParamaterObject(paraname):
-    pass
+
+def get_file_ref(filename, indexroot):
+    """ファイル名からファイルのrefidを探す
+    Args:
+        filename:検索するファイル名
+        indexroot:検索するindexのroot
+    Return:
+        ファイルのrefid
+    """
+    for compound in indexroot.findall('./compound'):
+        if compound.get('kind') == "file" and filename == compound.find('name').text:
+            return compound.get('refid')
+
+    return None
+
+def id_to_kind(refid, kindref,indexroot):
+    """refidからrefの種類(class, function, variable)を取得する
+    Args:
+        refid:検索するid
+        kindref:memberかcompoundかの種類
+        indexroot:検索するindexのroot
+    Return:
+        refの種類(class, function, variable)
+    """
+    if kindref == "compound":
+        return "class"
+
+    for member in indexroot.findall('./compound/member'):
+        if member.get('refid') == refid:
+            return member.get('kind')
     
 # git blameを利用してレビュアーを分析
-def relatedReviewer(linepass):
+def related_reviewer(linepass):
     pass
     
 # 参加したレビュアーに対して要素ごとにカウントを付加
-def countReviewersExp(reviewer, paraname):
+def count_reviewers_exp(reviewer, paraname):
     pass
 
 argv = sys.argv
@@ -42,20 +61,25 @@ else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
-dependency_array = defaultdict(Dp.Dependency)
+dependency_array = {}
 
 # raw文字列(r)にしておくとエスケープが無効になる
-filename = makeXMLName(filename)
-filename = r'source\doxygen\xml\_calc_graduation_8java.xml'
-tree = ET.parse(filename)
-root = tree.getroot()
+doxygenfile = r'source\doxygen\xml\\'
+indexfile = ref_to_XMLname('index')
+indexroot = ET.parse(indexfile).getroot()
+fileref = get_file_ref(filename, indexroot)
+
+if fileref is None:
+    sys.exit()
+
+filename = ref_to_XMLname(fileref)
+root = ET.parse(filename).getroot()
 
 # 値の設定
 for compounddef in root.findall('./compounddef'):
     compoundname = compounddef.find('compoundname').text
     innerclass = compounddef.find('innerclass')
-    innerclassid = innerclass.get('refid')
-    innnerclass_prot = innerclass.get('prot')
+    innerclass_refid = innerclass.get('refid')
     print(compoundname, innerclass.text)
     
 
@@ -75,8 +99,10 @@ for compounddef in root.findall('./compounddef'):
             refid = ref.get('refid')
             kindref = ref.get('kindref')
             reftext = ref.text
-            dependency_array[refid] = Dp.Dependency(refid, kindref, lineno, reftext)
-            #print(dependency_array[refid].get_lineno(), dependency_array[refid], dependency_array[refid].get_kindref())
-
+            if refid not in dependency_array:
+                dependency_array[refid] = Dp.Dependency(refid, kindref, lineno, reftext)
+                kind = id_to_kind(refid ,dependency_array[refid].get_kindref(), indexroot)
+                dependency_array[refid].set_kind(kind)
+           
 for id, dependency in dependency_array.items():
-    print(dependency.get_lineno(), dependency._text, id, dependency.get_kindref())
+    print(dependency.get_lineno(), dependency, dependency.get_kind())
