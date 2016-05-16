@@ -29,6 +29,7 @@
     <Compile Include="DiffDependency.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README.md" />
     <Content Include="source\doxygen\html\annotated.html" />
     <Content Include="source\doxygen\html\arrowdown.png" />
     <Content Include="source\doxygen\html\arrowright.png" />
@@ -203,6 +204,7 @@
     <Content Include="source\doxygen\xml\_graduation_check_u_i_8java.xml" />
     <Content Include="source\doxygen\xml\_person_8java.xml" />
     <Content Include="source\doxygen\xml\_r_e_a_d_m_e_8md.xml" />
+    <Content Include="task.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="source\" />

@@ -15,6 +15,9 @@
     A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review
     - [ ] V. Balachandran  
     Fix-it: An Extensible Code Auto-Fix Component in Review Bot
+	- [ ] Patanamon Thongtanunam1, Shane McIntosh, Ahmed E. Hassan, Hajimu Iida
+	Revisiting Code Ownership and its Relationship with Software Quality in the Scope of Modern Code Review
+
     
 - [ ] 研究方針
     - [ ] 信頼性の定義

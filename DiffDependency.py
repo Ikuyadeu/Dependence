@@ -42,7 +42,7 @@ else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
-dependency_array = defaultdict(lambda: 0)
+dependency_array = defaultdict(Dp.Dependency)
 
 # raw文字列(r)にしておくとエスケープが無効になる
 filename = makeXMLName(filename)
@@ -52,23 +52,31 @@ root = tree.getroot()
 
 # 値の設定
 for compounddef in root.findall('./compounddef'):
-    compoundname = compounddef.get('compoundname')
-    innerclass = compounddef.findall('innerclass')
+    compoundname = compounddef.find('compoundname').text
+    innerclass = compounddef.find('innerclass')
+    innerclassid = innerclass.get('refid')
+    innnerclass_prot = innerclass.get('prot')
+    print(compoundname, innerclass.text)
     
 
-for location in root.findall('./compounddef/location'):
-    file = location.get('file')
-    print("file = %s" % file)
+    for location in compounddef.findall('./location'):
+        file = location.get('file')
+        print("file = %s" % file)
 
-for line in root.findall("./compounddef/programlisting/codeline"):
-    lineno = int(line.get("lineno"))
+    for line in compounddef.findall("./programlisting/codeline"):
+        lineno = int(line.get("lineno"))
     
-    if lineno < sline:
-        continue
-    elif lineno > eline:
-        break
+        if lineno < sline:
+            continue
+        elif lineno > eline:
+            break
         
-    for ref in line.findall('./highlight/ref'):
-        refid = ref.get('refid')
-        kindref = ref.get('kindref')
-        dependency_array[refid] = Dp.Dependency(refid, kindref, lineno)
+        for ref in line.findall('./highlight/ref'):
+            refid = ref.get('refid')
+            kindref = ref.get('kindref')
+            reftext = ref.text
+            dependency_array[refid] = Dp.Dependency(refid, kindref, lineno, reftext)
+            #print(dependency_array[refid].get_lineno(), dependency_array[refid], dependency_array[refid].get_kindref())
+
+for id, dependency in dependency_array.items():
+    print(dependency.get_lineno(), dependency._text, id, dependency.get_kindref())
