@@ -35,12 +35,28 @@ def id_to_kind(refid, kindref,indexroot):
     Return:
         refの種類(class, function, variable)
     """
-    if kindref == "compound":
-        return "class"
+    
+    findtag = './compound'
+    if kindref == "member":
+        findtag += '/member'
 
-    for member in indexroot.findall('./compound/member'):
+    for member in indexroot.findall(findtag):
         if member.get('refid') == refid:
             return member.get('kind')
+
+def output_by_kind(dd, kind):
+    print(kind)
+    kind_dependency = dict(((id, dd[id]) for id in dd if dd[id].get_kind() == kind))
+    
+    if len(kind_dependency) == 0:
+        print(None)
+        return
+
+    print("lineno, text")
+    for id, dependency in kind_dependency.items():
+        print(dependency.get_lineno(), dependency)
+    print()
+
     
 # git blameを利用してレビュアーを分析
 def related_reviewer(linepass):
@@ -61,7 +77,7 @@ else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
-dependency_array = {}
+dependency_dict = {}
 
 # raw文字列(r)にしておくとエスケープが無効になる
 doxygenfile = r'source\doxygen\xml\\'
@@ -97,12 +113,14 @@ for compounddef in root.findall('./compounddef'):
         
         for ref in line.findall('./highlight/ref'):
             refid = ref.get('refid')
+            if refid in dependency_dict:
+                continue
+                
             kindref = ref.get('kindref')
             reftext = ref.text
-            if refid not in dependency_array:
-                dependency_array[refid] = Dp.Dependency(refid, kindref, lineno, reftext)
-                kind = id_to_kind(refid ,dependency_array[refid].get_kindref(), indexroot)
-                dependency_array[refid].set_kind(kind)
-           
-for id, dependency in dependency_array.items():
-    print(dependency.get_lineno(), dependency, dependency.get_kind())
+            kind = id_to_kind(refid , kindref, indexroot)
+            dependency_dict[refid] = Dp.Dependency(refid, reftext, lineno, kind)
+
+output_by_kind(dependency_dict, "class")
+output_by_kind(dependency_dict, "function")
+output_by_kind(dependency_dict, "variable")
