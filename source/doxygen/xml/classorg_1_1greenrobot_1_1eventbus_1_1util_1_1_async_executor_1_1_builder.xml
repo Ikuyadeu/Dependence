@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::util::AsyncExecutor::Builder</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1ac2b39d90b38b862d3b9a83d06f28d2a0" prot="private" static="no" mutable="no">
+        <type>Executor</type>
+        <definition>Executor org.greenrobot.eventbus.util.AsyncExecutor.Builder.threadPool</definition>
+        <argsstring></argsstring>
+        <name>threadPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a452e642a617b0777a2432b419945ffab" prot="private" static="no" mutable="no">
+        <type>Class&lt;?&gt;</type>
+        <definition>Class&lt;?&gt; org.greenrobot.eventbus.util.AsyncExecutor.Builder.failureEventType</definition>
+        <argsstring></argsstring>
+        <name>failureEventType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="37" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1af9a330568362afcb93b2f630ae87ec64" prot="private" static="no" mutable="no">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>EventBus org.greenrobot.eventbus.util.AsyncExecutor.Builder.eventBus</definition>
+        <argsstring></argsstring>
+        <name>eventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="38" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1ab74e8376d8afcad72fb5c23b3889c9a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.util.AsyncExecutor.Builder.Builder</definition>
+        <argsstring>()</argsstring>
+        <name>Builder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="40" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="40" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1ac043424bdb5e7f3a05677dec9e2a1ec1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Builder</type>
+        <definition>Builder org.greenrobot.eventbus.util.AsyncExecutor.Builder.threadPool</definition>
+        <argsstring>(Executor threadPool)</argsstring>
+        <name>threadPool</name>
+        <param>
+          <type>Executor</type>
+          <declname>threadPool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="43" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a85b3dbe89dcab32e7e308cfabb7aab6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Builder</type>
+        <definition>Builder org.greenrobot.eventbus.util.AsyncExecutor.Builder.failureEventType</definition>
+        <argsstring>(Class&lt;?&gt; failureEventType)</argsstring>
+        <name>failureEventType</name>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>failureEventType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="48" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a23dce10d46a0a94d4f8b92dc82c4530b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Builder</type>
+        <definition>Builder org.greenrobot.eventbus.util.AsyncExecutor.Builder.eventBus</definition>
+        <argsstring>(EventBus eventBus)</argsstring>
+        <name>eventBus</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+          <declname>eventBus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="53" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1abbed4b32668d4a0db0f910b3e467e1d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor" kindref="compound">AsyncExecutor</ref></type>
+        <definition>AsyncExecutor org.greenrobot.eventbus.util.AsyncExecutor.Builder.build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="58" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a5ab0a696f65db457b8adb29d7baa8c9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor" kindref="compound">AsyncExecutor</ref></type>
+        <definition>AsyncExecutor org.greenrobot.eventbus.util.AsyncExecutor.Builder.buildForActivityScope</definition>
+        <argsstring>(Activity activity)</argsstring>
+        <name>buildForActivityScope</name>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="62" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1accd097c2feeca534895e8c47e8613315" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor" kindref="compound">AsyncExecutor</ref></type>
+        <definition>AsyncExecutor org.greenrobot.eventbus.util.AsyncExecutor.Builder.buildForScope</definition>
+        <argsstring>(Object executionContext)</argsstring>
+        <name>buildForScope</name>
+        <param>
+          <type>Object</type>
+          <declname>executionContext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="66" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="66" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" line="35" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/AsyncExecutor.java" bodystart="35" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1abbed4b32668d4a0db0f910b3e467e1d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>build</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1ab74e8376d8afcad72fb5c23b3889c9a8" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>Builder</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a5ab0a696f65db457b8adb29d7baa8c9a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>buildForActivityScope</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1accd097c2feeca534895e8c47e8613315" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>buildForScope</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1af9a330568362afcb93b2f630ae87ec64" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a23dce10d46a0a94d4f8b92dc82c4530b" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a452e642a617b0777a2432b419945ffab" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>failureEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1a85b3dbe89dcab32e7e308cfabb7aab6f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>failureEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1ac2b39d90b38b862d3b9a83d06f28d2a0" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>threadPool</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_async_executor_1_1_builder_1ac043424bdb5e7f3a05677dec9e2a1ec1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::AsyncExecutor::Builder</scope><name>threadPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::StickySubscriber</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1a9d2fcc77e8d79796777db94860f0e19b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceDisabledTest.StickySubscriber.onEvent</definition>
+        <argsstring>(Object event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="184" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1aa622ce57c38d326bcdb543082c2e4e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceDisabledTest.StickySubscriber.onEvent</definition>
+        <argsstring>(MyEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEvent</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="189" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1a0bca4a1dab906e4bfab5e8bb09e95d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceDisabledTest.StickySubscriber.onEvent</definition>
+        <argsstring>(MyEventExtended event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEventExtended</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="194" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="194" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1afa4eb322d55076da86343c2d765772eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceDisabledTest.StickySubscriber.onEvent</definition>
+        <argsstring>(MyEventInterface event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEventInterface</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="199" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1ac8b01288c30dbbc929a9e25161bfc9e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceDisabledTest.StickySubscriber.onEvent</definition>
+        <argsstring>(MyEventInterfaceExtended event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEventInterfaceExtended</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="204" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="204" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="182" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="182" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1a9d2fcc77e8d79796777db94860f0e19b" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::StickySubscriber</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1aa622ce57c38d326bcdb543082c2e4e30" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::StickySubscriber</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1a0bca4a1dab906e4bfab5e8bb09e95d7a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::StickySubscriber</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1afa4eb322d55076da86343c2d765772eb" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::StickySubscriber</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_sticky_subscriber_1ac8b01288c30dbbc929a9e25161bfc9e0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::StickySubscriber</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

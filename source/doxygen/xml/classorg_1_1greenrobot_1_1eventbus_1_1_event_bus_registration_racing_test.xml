@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusRegistrationRacingTest</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.AbstractEventBusTest</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_registration_racing_test_with_index" prot="public" virt="non-virtual">org.greenrobot.eventbus.indexed.EventBusRegistrationRacingTestWithIndex</derivedcompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread" prot="public">org::greenrobot::eventbus::EventBusRegistrationRacingTest::SubscriberThread</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a498a306d37891a5e027c0120f15163f6" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int org.greenrobot.eventbus.EventBusRegistrationRacingTest.ITERATIONS</definition>
+        <argsstring></argsstring>
+        <name>ITERATIONS</name>
+        <initializer>= <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" kindref="member">LONG_TESTS</ref> ? 1000 : 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="35" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a5aea7ac0ba0c81908a2e58bd150c6c80" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int org.greenrobot.eventbus.EventBusRegistrationRacingTest.THREAD_COUNT</definition>
+        <argsstring></argsstring>
+        <name>THREAD_COUNT</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a40ff8327d32589aeec892cbb0b4ae90a" prot="package" static="no" mutable="no">
+        <type>CountDownLatch</type>
+        <definition>volatile CountDownLatch org.greenrobot.eventbus.EventBusRegistrationRacingTest.startLatch</definition>
+        <argsstring></argsstring>
+        <name>startLatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="38" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a539f3ec4435c0290356eaa4036e4a26a" prot="package" static="no" mutable="no">
+        <type>CountDownLatch</type>
+        <definition>volatile CountDownLatch org.greenrobot.eventbus.EventBusRegistrationRacingTest.registeredLatch</definition>
+        <argsstring></argsstring>
+        <name>registeredLatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="39" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1aeae2e7ddc6fe2a8768019576740872aa" prot="package" static="no" mutable="no">
+        <type>CountDownLatch</type>
+        <definition>volatile CountDownLatch org.greenrobot.eventbus.EventBusRegistrationRacingTest.canUnregisterLatch</definition>
+        <argsstring></argsstring>
+        <name>canUnregisterLatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="40" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a99bcb6c8985948435564798f6800baee" prot="package" static="no" mutable="no">
+        <type>CountDownLatch</type>
+        <definition>volatile CountDownLatch org.greenrobot.eventbus.EventBusRegistrationRacingTest.unregisteredLatch</definition>
+        <argsstring></argsstring>
+        <name>unregisteredLatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="41" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1afa1339f7f6c2b9355b9a13bb4d53b89a" prot="package" static="no" mutable="no">
+        <type>final Executor</type>
+        <definition>final Executor org.greenrobot.eventbus.EventBusRegistrationRacingTest.threadPool</definition>
+        <argsstring></argsstring>
+        <name>threadPool</name>
+        <initializer>= Executors.newCachedThreadPool()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="43" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1aa7b039c0ccd892edd6fe35f704819a0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusRegistrationRacingTest.testRacingRegistrations</definition>
+        <argsstring>()</argsstring>
+        <name>testRacingRegistrations</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="46" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="46" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1afe359b7722af446507a2ff7f9004ae27" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread" kindref="compound">SubscriberThread</ref> &gt;</type>
+        <definition>List&lt;SubscriberThread&gt; org.greenrobot.eventbus.EventBusRegistrationRacingTest.startThreads</definition>
+        <argsstring>()</argsstring>
+        <name>startThreads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="68" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="68" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Markus Junginger, greenrobot </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="327">
+        <label>org.greenrobot.eventbus.EventBusRegistrationRacingTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test"/>
+        <childnode refid="328" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>org.greenrobot.eventbus.indexed.EventBusRegistrationRacingTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_registration_racing_test_with_index"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="333">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="330">
+        <label>org.greenrobot.eventbus.EventBusRegistrationRacingTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test"/>
+        <childnode refid="331" relation="public-inheritance">
+        </childnode>
+        <childnode refid="335" relation="usage">
+          <edgelabel>canUnregisterLatch</edgelabel>
+          <edgelabel>startLatch</edgelabel>
+          <edgelabel>registeredLatch</edgelabel>
+          <edgelabel>unregisteredLatch</edgelabel>
+        </childnode>
+        <childnode refid="336" relation="usage">
+          <edgelabel>threadPool</edgelabel>
+        </childnode>
+      </node>
+      <node id="335">
+        <label>CountDownLatch</label>
+      </node>
+      <node id="332">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="334">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="334" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="336">
+        <label>Executor</label>
+      </node>
+      <node id="331">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="332" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="333" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="334" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="31" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="31" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1aeae2e7ddc6fe2a8768019576740872aa" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>canUnregisterLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a498a306d37891a5e027c0120f15163f6" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>ITERATIONS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a539f3ec4435c0290356eaa4036e4a26a" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>registeredLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a40ff8327d32589aeec892cbb0b4ae90a" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>startLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1afe359b7722af446507a2ff7f9004ae27" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>startThreads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1aa7b039c0ccd892edd6fe35f704819a0d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>testRacingRegistrations</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a5aea7ac0ba0c81908a2e58bd150c6c80" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>THREAD_COUNT</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1afa1339f7f6c2b9355b9a13bb4d53b89a" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>threadPool</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1a99bcb6c8985948435564798f6800baee" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>unregisteredLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::util::ErrorDialogFragments</compoundname>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1_1_honeycomb" prot="public">org::greenrobot::eventbus::util::ErrorDialogFragments::Honeycomb</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1_1_support" prot="public">org::greenrobot::eventbus::util::ErrorDialogFragments::Support</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1a3ba9032fc38ab056ae871e8c321835b3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.util.ErrorDialogFragments.ERROR_DIALOG_ICON</definition>
+        <argsstring></argsstring>
+        <name>ERROR_DIALOG_ICON</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO Use config: Icon res ID to use for all error dialogs. May be configured by each app (optional). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" line="34" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1a384040b73a880ad2a6fa0743f15f960a" prot="public" static="yes" mutable="no">
+        <type>Class&lt;?&gt;</type>
+        <definition>Class&lt;?&gt; org.greenrobot.eventbus.util.ErrorDialogFragments.EVENT_TYPE_ON_CLICK</definition>
+        <argsstring></argsstring>
+        <name>EVENT_TYPE_ON_CLICK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO Use config: Event class to be fired on dismissing the dialog by the user. May be configured by each app. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" line="37" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1ad039bfafad6d807c59f7b6694ad2b883" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dialog</type>
+        <definition>static Dialog org.greenrobot.eventbus.util.ErrorDialogFragments.createDialog</definition>
+        <argsstring>(Context context, Bundle arguments, OnClickListener onClickListener)</argsstring>
+        <name>createDialog</name>
+        <param>
+          <type>Context</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>arguments</declname>
+        </param>
+        <param>
+          <type>OnClickListener</type>
+          <declname>onClickListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" line="39" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1a957ab7e45dea0898d7863e972056ec4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void org.greenrobot.eventbus.util.ErrorDialogFragments.handleOnClick</definition>
+        <argsstring>(DialogInterface dialog, int which, Activity activity, Bundle arguments)</argsstring>
+        <name>handleOnClick</name>
+        <param>
+          <type>DialogInterface</type>
+          <declname>dialog</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" line="50" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" bodystart="50" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" line="32" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragments.java" bodystart="32" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1ad039bfafad6d807c59f7b6694ad2b883" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragments</scope><name>createDialog</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1a3ba9032fc38ab056ae871e8c321835b3" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragments</scope><name>ERROR_DIALOG_ICON</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1a384040b73a880ad2a6fa0743f15f960a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragments</scope><name>EVENT_TYPE_ON_CLICK</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragments_1a957ab7e45dea0898d7863e972056ec4e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragments</scope><name>handleOnClick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

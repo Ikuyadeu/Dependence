@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Fragment</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a0591326345309d9e5763e0d532d205d5" prot="protected" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.finishAfterDialog</definition>
+        <argsstring></argsstring>
+        <name>finishAfterDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="49" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1ad58d08a7c7506d8bcf515d51b49c095d" prot="protected" static="no" mutable="no">
+        <type>Bundle</type>
+        <definition>Bundle org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.argumentsForErrorDialog</definition>
+        <argsstring></argsstring>
+        <name>argumentsForErrorDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="50" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a4bef8f7ce99cd8549c04e44e66e7c524" prot="private" static="no" mutable="no">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>EventBus org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.eventBus</definition>
+        <argsstring></argsstring>
+        <name>eventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="51" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1ab4ae5e6d05e2e46bdbff24ea2c8154ab" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.skipRegisterOnNextResume</definition>
+        <argsstring></argsstring>
+        <name>skipRegisterOnNextResume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="52" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a79ffc7fc8c1b40d9abb07b4b657c7a69" prot="private" static="no" mutable="no">
+        <type>Object</type>
+        <definition>Object org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.executionScope</definition>
+        <argsstring></argsstring>
+        <name>executionScope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="53" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1aa56cf545ecf5c99eef1e7a388a28dfec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="56" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1ae7d78de1ea21090c7253604a735f8d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.onResume</definition>
+        <argsstring>()</argsstring>
+        <name>onResume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="64" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="64" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a796ae377b05484f7e02c03125931e4cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.onPause</definition>
+        <argsstring>()</argsstring>
+        <name>onPause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="76" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a365d940b1b0013965245443dd4bde716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.onEventMainThread</definition>
+        <argsstring>(ThrowableFailureEvent event)</argsstring>
+        <name>onEventMainThread</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_throwable_failure_event" kindref="compound">ThrowableFailureEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="81" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="81" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a5039e5712aac03ac5c21f8631738d9c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment.attachTo</definition>
+        <argsstring>(Activity activity, Object executionScope, boolean finishAfterDialog, Bundle argumentsForErrorDialog)</argsstring>
+        <name>attachTo</name>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>executionScope</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>finishAfterDialog</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>argumentsForErrorDialog</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="103" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="103" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="783">
+        <label>org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment</label>
+        <childnode refid="784" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>Fragment</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="785">
+        <label>org.greenrobot.eventbus.util.ErrorDialogManager.SupportManagerFragment</label>
+        <childnode refid="786" relation="public-inheritance">
+        </childnode>
+        <childnode refid="787" relation="usage">
+          <edgelabel>argumentsForErrorDialog</edgelabel>
+        </childnode>
+      </node>
+      <node id="787">
+        <label>Bundle</label>
+      </node>
+      <node id="786">
+        <label>Fragment</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" line="48" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogManager.java" bodystart="48" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1ad58d08a7c7506d8bcf515d51b49c095d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>argumentsForErrorDialog</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a5039e5712aac03ac5c21f8631738d9c1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>attachTo</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a4bef8f7ce99cd8549c04e44e66e7c524" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a79ffc7fc8c1b40d9abb07b4b657c7a69" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>executionScope</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a0591326345309d9e5763e0d532d205d5" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>finishAfterDialog</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1aa56cf545ecf5c99eef1e7a388a28dfec" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>onCreate</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a365d940b1b0013965245443dd4bde716" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>onEventMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1a796ae377b05484f7e02c03125931e4cf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>onPause</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1ae7d78de1ea21090c7253604a735f8d35" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>onResume</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_manager_1_1_support_manager_fragment_1ab4ae5e6d05e2e46bdbff24ea2c8154ab" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogManager::SupportManagerFragment</scope><name>skipRegisterOnNextResume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

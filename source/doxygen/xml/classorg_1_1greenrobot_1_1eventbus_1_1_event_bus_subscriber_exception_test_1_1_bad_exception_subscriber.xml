@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_exception_test_1_1_bad_exception_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusSubscriberExceptionTest::BadExceptionSubscriber</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_exception_test_1_1_bad_exception_subscriber_1a172c22492d9485d8e4fb83c0668ea025" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusSubscriberExceptionTest.BadExceptionSubscriber.onEvent</definition>
+        <argsstring>(SubscriberExceptionEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_exception_event" kindref="compound">SubscriberExceptionEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberExceptionTest.java" line="62" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberExceptionTest.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberExceptionTest.java" line="60" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberExceptionTest.java" bodystart="60" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_exception_test_1_1_bad_exception_subscriber_1a172c22492d9485d8e4fb83c0668ea025" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberExceptionTest::BadExceptionSubscriber</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

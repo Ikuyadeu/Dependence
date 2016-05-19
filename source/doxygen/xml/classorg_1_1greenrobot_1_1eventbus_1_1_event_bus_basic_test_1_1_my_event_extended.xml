@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_my_event_extended" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusBasicTest::MyEventExtended</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_my_event" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusBasicTest.MyEvent</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="467">
+        <label>org.greenrobot.eventbus.EventBusBasicTest.MyEvent</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_my_event"/>
+      </node>
+      <node id="466">
+        <label>org.greenrobot.eventbus.EventBusBasicTest.MyEventExtended</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_my_event_extended"/>
+        <childnode refid="467" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="469">
+        <label>org.greenrobot.eventbus.EventBusBasicTest.MyEvent</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_my_event"/>
+      </node>
+      <node id="468">
+        <label>org.greenrobot.eventbus.EventBusBasicTest.MyEventExtended</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_my_event_extended"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" line="295" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" bodystart="295" bodyend="296"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

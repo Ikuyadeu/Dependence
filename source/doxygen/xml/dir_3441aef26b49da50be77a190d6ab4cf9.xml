@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_3441aef26b49da50be77a190d6ab4cf9" kind="dir">
+    <compoundname>C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTestSubscriberInJar/src/org</compoundname>
+    <innerdir refid="dir_c23e3d637a75af8b0aa5e731f82eab99">C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTestSubscriberInJar/src/org/greenrobot</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTestSubscriberInJar/src/org/"/>
+  </compounddef>
+</doxygen>

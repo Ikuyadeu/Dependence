@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusStickyEventTest</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.AbstractEventBusTest</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_sticky_event_test_with_index" prot="public" virt="non-virtual">org.greenrobot.eventbus.indexed.EventBusStickyEventTestWithIndex</derivedcompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_non_sticky_subscriber" prot="public">org::greenrobot::eventbus::EventBusStickyEventTest::NonStickySubscriber</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_remove_sticky_subscriber" prot="public">org::greenrobot::eventbus::EventBusStickyEventTest::RemoveStickySubscriber</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_sticky_int_test_subscriber" prot="public">org::greenrobot::eventbus::EventBusStickyEventTest::StickyIntTestSubscriber</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ad078f43e38e3102164a5cc33afb1df95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostSticky</definition>
+        <argsstring>()</argsstring>
+        <name>testPostSticky</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ad39d1ce4692aff0640c7e6868114eb48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyTwoEvents</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyTwoEvents</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a9326ca4a9228c5d6d72578ad7fe62700" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyTwoSubscribers</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyTwoSubscribers</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="44" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="44" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1aa8c44a7b7bd9c3f328ea89f9b34c6bff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyRegisterNonSticky</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyRegisterNonSticky</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="60" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a2d1ba4c6c60af51643296ad99c1b28c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostNonStickyRegisterSticky</definition>
+        <argsstring>()</argsstring>
+        <name>testPostNonStickyRegisterSticky</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="68" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a30ef912cb020ac42eefc92bf3c10e27d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyTwice</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyTwice</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="76" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a515bbdd3136246982165593ec392d3d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyThenPostNormal</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyThenPostNormal</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="84" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ac358c6e0ff898f80f7466c4858081802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyWithRegisterAndUnregister</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyWithRegisterAndUnregister</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="92" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="92" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a416d1c8d272f737517652f9101aeb402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyAndGet</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyAndGet</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="113" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ad0cf338dd5ebc66b41537ae0d1dda2e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyRemoveClass</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyRemoveClass</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="119" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="119" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a58b886c1ab6a06588f561b4d0a6fa984" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyRemoveEvent</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyRemoveEvent</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="129" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="129" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1aaaef33d6b1fe0c3c8ffaf72ba869c0f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testPostStickyRemoveAll</definition>
+        <argsstring>()</argsstring>
+        <name>testPostStickyRemoveAll</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="139" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="139" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a359580980ef4c30d661bb12dbdf11c86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.testRemoveStickyEventInSubscriber</definition>
+        <argsstring>()</argsstring>
+        <name>testRemoveStickyEventInSubscriber</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="151" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="151" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1aef8aa120b360054a32f8f6ca8e578c16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.onEvent</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="161" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a03530580e2223b21d58f6a2a4cf65d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.onEvent</definition>
+        <argsstring>(IntTestEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="166" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="166" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Markus Junginger, greenrobot </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="350">
+        <label>org.greenrobot.eventbus.indexed.EventBusStickyEventTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_sticky_event_test_with_index"/>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>org.greenrobot.eventbus.EventBusStickyEventTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test"/>
+        <childnode refid="349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="354">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="353">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="355">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="355" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="351">
+        <label>org.greenrobot.eventbus.EventBusStickyEventTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test"/>
+        <childnode refid="352" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="353" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="354" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="355" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="25" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1aef8aa120b360054a32f8f6ca8e578c16" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a03530580e2223b21d58f6a2a4cf65d13" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a2d1ba4c6c60af51643296ad99c1b28c2" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostNonStickyRegisterSticky</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ad078f43e38e3102164a5cc33afb1df95" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostSticky</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a416d1c8d272f737517652f9101aeb402" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyAndGet</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1aa8c44a7b7bd9c3f328ea89f9b34c6bff" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyRegisterNonSticky</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1aaaef33d6b1fe0c3c8ffaf72ba869c0f4" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyRemoveAll</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ad0cf338dd5ebc66b41537ae0d1dda2e3" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyRemoveClass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a58b886c1ab6a06588f561b4d0a6fa984" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyRemoveEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a515bbdd3136246982165593ec392d3d6" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyThenPostNormal</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a30ef912cb020ac42eefc92bf3c10e27d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyTwice</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ad39d1ce4692aff0640c7e6868114eb48" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyTwoEvents</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a9326ca4a9228c5d6d72578ad7fe62700" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyTwoSubscribers</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1ac358c6e0ff898f80f7466c4858081802" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testPostStickyWithRegisterAndUnregister</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1a359580980ef4c30d661bb12dbdf11c86" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>testRemoveStickyEventInSubscriber</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

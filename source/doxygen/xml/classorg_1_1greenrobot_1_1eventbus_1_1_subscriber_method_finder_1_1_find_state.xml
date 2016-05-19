@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state" kind="class" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1af94127af29864652a0275cfefe99fe50" prot="package" static="no" mutable="no">
+        <type>final List&lt; <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kindref="compound">SubscriberMethod</ref> &gt;</type>
+        <definition>final List&lt;SubscriberMethod&gt; org.greenrobot.eventbus.SubscriberMethodFinder.FindState.subscriberMethods</definition>
+        <argsstring></argsstring>
+        <name>subscriberMethods</name>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="192" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a7b3aca8abbd74aacc18a82c6492f1dc0" prot="package" static="no" mutable="no">
+        <type>final Map&lt; Class, Object &gt;</type>
+        <definition>final Map&lt;Class, Object&gt; org.greenrobot.eventbus.SubscriberMethodFinder.FindState.anyMethodByEventType</definition>
+        <argsstring></argsstring>
+        <name>anyMethodByEventType</name>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="193" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1acacad9fd8a9091d820309fefb13c674e" prot="package" static="no" mutable="no">
+        <type>final Map&lt; String, Class &gt;</type>
+        <definition>final Map&lt;String, Class&gt; org.greenrobot.eventbus.SubscriberMethodFinder.FindState.subscriberClassByMethodKey</definition>
+        <argsstring></argsstring>
+        <name>subscriberClassByMethodKey</name>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="194" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a27aa0ed29ce6b12a22c82af10fd2b303" prot="package" static="no" mutable="no">
+        <type>final StringBuilder</type>
+        <definition>final StringBuilder org.greenrobot.eventbus.SubscriberMethodFinder.FindState.methodKeyBuilder</definition>
+        <argsstring></argsstring>
+        <name>methodKeyBuilder</name>
+        <initializer>= new StringBuilder(128)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="195" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1aa0e455d56a5355d12ad898683c1ee952" prot="package" static="no" mutable="no">
+        <type>Class&lt;?&gt;</type>
+        <definition>Class&lt;?&gt; org.greenrobot.eventbus.SubscriberMethodFinder.FindState.subscriberClass</definition>
+        <argsstring></argsstring>
+        <name>subscriberClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="197" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1ac2075d23f5f33128e10db5343ba6dd17" prot="package" static="no" mutable="no">
+        <type>Class&lt;?&gt;</type>
+        <definition>Class&lt;?&gt; org.greenrobot.eventbus.SubscriberMethodFinder.FindState.clazz</definition>
+        <argsstring></argsstring>
+        <name>clazz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="198" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1af11e4e4e909b33998453d89891d20717" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.SubscriberMethodFinder.FindState.skipSuperClasses</definition>
+        <argsstring></argsstring>
+        <name>skipSuperClasses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="199" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1ab5d67fb2a341c368dffd2c792908e39a" prot="package" static="no" mutable="no">
+        <type><ref refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info" kindref="compound">SubscriberInfo</ref></type>
+        <definition>SubscriberInfo org.greenrobot.eventbus.SubscriberMethodFinder.FindState.subscriberInfo</definition>
+        <argsstring></argsstring>
+        <name>subscriberInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="200" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a3df76d6c44b2c24269d3a4ea3cefea46" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.SubscriberMethodFinder.FindState.initForSubscriber</definition>
+        <argsstring>(Class&lt;?&gt; subscriberClass)</argsstring>
+        <name>initForSubscriber</name>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>subscriberClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="202" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a8085407888f68c973930d414e4352c34" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.SubscriberMethodFinder.FindState.recycle</definition>
+        <argsstring>()</argsstring>
+        <name>recycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="208" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="208" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a49db02b4de729ed7719d1746304d8ccf" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.SubscriberMethodFinder.FindState.checkAdd</definition>
+        <argsstring>(Method method, Class&lt;?&gt; eventType)</argsstring>
+        <name>checkAdd</name>
+        <param>
+          <type>Method</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="219" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="219" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a060d3ab7f2ef17df04c572e766f23fcd" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.SubscriberMethodFinder.FindState.moveToSuperclass</definition>
+        <argsstring>()</argsstring>
+        <name>moveToSuperclass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Skip system classes, this just degrades performance. </para>        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="256" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="256" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1ac0d130e4ef24af5d25df6e2e1cbcbf5d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.SubscriberMethodFinder.FindState.checkAddWithMethodSignature</definition>
+        <argsstring>(Method method, Class&lt;?&gt; eventType)</argsstring>
+        <name>checkAddWithMethodSignature</name>
+        <param>
+          <type>Method</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="238" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="238" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="411">
+        <label>List&lt; org.greenrobot.eventbus.SubscriberMethod &gt;</label>
+      </node>
+      <node id="410">
+        <label>org.greenrobot.eventbus.SubscriberMethodFinder.FindState</label>
+        <childnode refid="411" relation="usage">
+          <edgelabel>subscriberMethods</edgelabel>
+        </childnode>
+        <childnode refid="412" relation="usage">
+          <edgelabel>anyMethodByEventType</edgelabel>
+        </childnode>
+        <childnode refid="413" relation="usage">
+          <edgelabel>subscriberClassByMethodKey</edgelabel>
+        </childnode>
+        <childnode refid="414" relation="usage">
+          <edgelabel>subscriberInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="412">
+        <label>Map&lt; Class, Object &gt;</label>
+      </node>
+      <node id="414">
+        <label>org.greenrobot.eventbus.meta.SubscriberInfo</label>
+        <link refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info"/>
+      </node>
+      <node id="413">
+        <label>Map&lt; String, Class &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" line="191" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethodFinder.java" bodystart="191" bodyend="268"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a7b3aca8abbd74aacc18a82c6492f1dc0" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>anyMethodByEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a49db02b4de729ed7719d1746304d8ccf" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>checkAdd</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1ac0d130e4ef24af5d25df6e2e1cbcbf5d" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>checkAddWithMethodSignature</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1ac2075d23f5f33128e10db5343ba6dd17" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>clazz</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a3df76d6c44b2c24269d3a4ea3cefea46" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>initForSubscriber</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a27aa0ed29ce6b12a22c82af10fd2b303" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>methodKeyBuilder</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a060d3ab7f2ef17df04c572e766f23fcd" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>moveToSuperclass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1a8085407888f68c973930d414e4352c34" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>recycle</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1af11e4e4e909b33998453d89891d20717" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>skipSuperClasses</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1aa0e455d56a5355d12ad898683c1ee952" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>subscriberClass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1acacad9fd8a9091d820309fefb13c674e" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>subscriberClassByMethodKey</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1ab5d67fb2a341c368dffd2c792908e39a" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>subscriberInfo</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder_1_1_find_state_1af94127af29864652a0275cfefe99fe50" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethodFinder::FindState</scope><name>subscriberMethods</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

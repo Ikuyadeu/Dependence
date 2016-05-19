@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription" kind="class" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::Subscription</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a6b86bc909b9053e4de8ef74055859255" prot="package" static="no" mutable="no">
+        <type>final Object</type>
+        <definition>final Object org.greenrobot.eventbus.Subscription.subscriber</definition>
+        <argsstring></argsstring>
+        <name>subscriber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="19" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a493569b4a6afc7cec235a0b60cb1fae6" prot="package" static="no" mutable="no">
+        <type>final <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kindref="compound">SubscriberMethod</ref></type>
+        <definition>final SubscriberMethod org.greenrobot.eventbus.Subscription.subscriberMethod</definition>
+        <argsstring></argsstring>
+        <name>subscriberMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="20" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a002cdd78ad46f8a4a4292613d637f425" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>volatile boolean org.greenrobot.eventbus.Subscription.active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Becomes false as soon as <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1a8d6587258db6f3be8c2fc0f01a24625a" kindref="member">EventBus#unregister(Object)</ref> is called, which is checked by queued event delivery <ref refid="" kindref="compound">EventBus#invokeSubscriber(PendingPost)</ref> to prevent race conditions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a964e962c1d11b94aca0d9e29353a8675" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.Subscription.Subscription</definition>
+        <argsstring>(Object subscriber, SubscriberMethod subscriberMethod)</argsstring>
+        <name>Subscription</name>
+        <param>
+          <type>Object</type>
+          <declname>subscriber</declname>
+        </param>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kindref="compound">SubscriberMethod</ref></type>
+          <declname>subscriberMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="27" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a1a0ddad43158670e6a190a83ca012ad9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.Subscription.equals</definition>
+        <argsstring>(Object other)</argsstring>
+        <name>equals</name>
+        <param>
+          <type>Object</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="34" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="34" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a538b8cd5a53fbfbb93351fc074ca1b37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.Subscription.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="45" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="769">
+        <label>org.greenrobot.eventbus.Subscription</label>
+        <childnode refid="770" relation="usage">
+          <edgelabel>subscriberMethod</edgelabel>
+        </childnode>
+      </node>
+      <node id="770">
+        <label>org.greenrobot.eventbus.SubscriberMethod</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method"/>
+        <childnode refid="771" relation="usage">
+          <edgelabel>threadMode</edgelabel>
+        </childnode>
+        <childnode refid="772" relation="usage">
+          <edgelabel>method</edgelabel>
+        </childnode>
+      </node>
+      <node id="772">
+        <label>Method</label>
+      </node>
+      <node id="771">
+        <label>org.greenrobot.eventbus.ThreadMode</label>
+        <link refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" line="18" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscription.java" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a002cdd78ad46f8a4a4292613d637f425" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscription</scope><name>active</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a1a0ddad43158670e6a190a83ca012ad9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscription</scope><name>equals</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a538b8cd5a53fbfbb93351fc074ca1b37" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscription</scope><name>hashCode</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a6b86bc909b9053e4de8ef74055859255" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscription</scope><name>subscriber</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a493569b4a6afc7cec235a0b60cb1fae6" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscription</scope><name>subscriberMethod</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription_1a964e962c1d11b94aca0d9e29353a8675" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscription</scope><name>Subscription</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusMultithreadedTest</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.AbstractEventBusTest</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_multithreaded_test_with_index" prot="public" virt="non-virtual">org.greenrobot.eventbus.indexed.EventBusMultithreadedTestWithIndex</derivedcompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1_1_poster_thread" prot="package">org::greenrobot::eventbus::EventBusMultithreadedTest::PosterThread</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1_1_subscribe_unsubscribe_thread" prot="public">org::greenrobot::eventbus::EventBusMultithreadedTest::SubscribeUnsubscribeThread</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a101f1f5c9c221ecb315580fc63795e6d" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int org.greenrobot.eventbus.EventBusMultithreadedTest.COUNT</definition>
+        <argsstring></argsstring>
+        <name>COUNT</name>
+        <initializer>= <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" kindref="member">LONG_TESTS</ref> ? 100000 : 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="35" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a6b8b54c64cf13591a2729ffa0dab4828" prot="private" static="no" mutable="no">
+        <type>final AtomicInteger</type>
+        <definition>final AtomicInteger org.greenrobot.eventbus.EventBusMultithreadedTest.countStringEvent</definition>
+        <argsstring></argsstring>
+        <name>countStringEvent</name>
+        <initializer>= new AtomicInteger()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="37" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a42526a707bcddab428c9f0d310840b70" prot="private" static="no" mutable="no">
+        <type>final AtomicInteger</type>
+        <definition>final AtomicInteger org.greenrobot.eventbus.EventBusMultithreadedTest.countIntegerEvent</definition>
+        <argsstring></argsstring>
+        <name>countIntegerEvent</name>
+        <initializer>= new AtomicInteger()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="38" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aa5829fded6e307218edae1e47ec098d3" prot="private" static="no" mutable="no">
+        <type>final AtomicInteger</type>
+        <definition>final AtomicInteger org.greenrobot.eventbus.EventBusMultithreadedTest.countObjectEvent</definition>
+        <argsstring></argsstring>
+        <name>countObjectEvent</name>
+        <initializer>= new AtomicInteger()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="39" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aa31f192fd082e872a78bb5d809ec68b9" prot="private" static="no" mutable="no">
+        <type>final AtomicInteger</type>
+        <definition>final AtomicInteger org.greenrobot.eventbus.EventBusMultithreadedTest.countIntTestEvent</definition>
+        <argsstring></argsstring>
+        <name>countIntTestEvent</name>
+        <initializer>= new AtomicInteger()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="40" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a85737af29f56199bdcc3ee29d1a12c48" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbus.EventBusMultithreadedTest.lastStringEvent</definition>
+        <argsstring></argsstring>
+        <name>lastStringEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="42" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a97abf982ce01e60481cecbd0c810f26d" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer org.greenrobot.eventbus.EventBusMultithreadedTest.lastIntegerEvent</definition>
+        <argsstring></argsstring>
+        <name>lastIntegerEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="43" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ac65d49d3534b288105750b7f27807119" prot="private" static="no" mutable="no">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+        <definition>IntTestEvent org.greenrobot.eventbus.EventBusMultithreadedTest.lastIntTestEvent</definition>
+        <argsstring></argsstring>
+        <name>lastIntTestEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="45" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ae4781aa8b9b50707ca11b8aa69146f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testPost01Thread</definition>
+        <argsstring>()</argsstring>
+        <name>testPost01Thread</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="48" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ac87cfa99600e1f452aa9ded80e32357b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testPost04Threads</definition>
+        <argsstring>()</argsstring>
+        <name>testPost04Threads</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="53" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a40e7df27d51324ff7576b7398dcc74ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testPost40Threads</definition>
+        <argsstring>()</argsstring>
+        <name>testPost40Threads</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="58" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aaa2d9ea21b614c8df967edce8ef87fcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testPostMixedEventType01Thread</definition>
+        <argsstring>()</argsstring>
+        <name>testPostMixedEventType01Thread</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="63" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a1c969225bf1b1a9a8721b479f8569a58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testPostMixedEventType04Threads</definition>
+        <argsstring>()</argsstring>
+        <name>testPostMixedEventType04Threads</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="68" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ae8a9e7eb00f6703389360cf9ef209d8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testPostMixedEventType40Threads</definition>
+        <argsstring>()</argsstring>
+        <name>testPostMixedEventType40Threads</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="73" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aa29b863730e1c5f4d06e3cf666e5c346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.testSubscribeUnSubscribeAndPostMixedEventType</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscribeUnSubscribeAndPostMixedEventType</name>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="78" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="78" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a15c16c52bbe4beb0d598fc8a9bf534f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.onEventBackgroundThread</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEventBackgroundThread</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="178" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a4d7aead5a418147aad7224ea15ebb002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.onEventMainThread</definition>
+        <argsstring>(Integer event)</argsstring>
+        <name>onEventMainThread</name>
+        <param>
+          <type>Integer</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="185" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="185" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a03c898faaca9f0c67c9ff6c0ef2be82e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.onEventAsync</definition>
+        <argsstring>(IntTestEvent event)</argsstring>
+        <name>onEventAsync</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="192" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="192" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a63d5866a90fb706422b1455b3d321a4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.onEvent</definition>
+        <argsstring>(Object event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="199" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="199" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1afc5dcac6ae130bd4d5c51d60437636a0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.runThreadsSingleEventType</definition>
+        <argsstring>(int threadCount)</argsstring>
+        <name>runThreadsSingleEventType</name>
+        <param>
+          <type>int</type>
+          <declname>threadCount</declname>
+        </param>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="98" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="98" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1abf69af9eca2ae561d66feb1c5dd72983" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.runThreadsMixedEventType</definition>
+        <argsstring>(int threadCount)</argsstring>
+        <name>runThreadsMixedEventType</name>
+        <param>
+          <type>int</type>
+          <declname>threadCount</declname>
+        </param>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="116" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a6ab861082d859c63f847f5d50c347508" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMultithreadedTest.runThreadsMixedEventType</definition>
+        <argsstring>(int count, int threadCount)</argsstring>
+        <name>runThreadsMixedEventType</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threadCount</declname>
+        </param>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="120" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="120" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a8f720b774127fa9dea755b49f2cde3ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long org.greenrobot.eventbus.EventBusMultithreadedTest.triggerAndWaitForThreads</definition>
+        <argsstring>(List&lt; PosterThread &gt; threads, CountDownLatch latch)</argsstring>
+        <name>triggerAndWaitForThreads</name>
+        <param>
+          <type>List&lt; PosterThread &gt;</type>
+          <declname>threads</declname>
+        </param>
+        <param>
+          <type>CountDownLatch</type>
+          <declname>latch</declname>
+        </param>
+        <exceptions> throws InterruptedException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="154" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="154" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1acdaf4a9dc6652b41e9f7b7bcfe9778c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; PosterThread &gt;</type>
+        <definition>List&lt;PosterThread&gt; org.greenrobot.eventbus.EventBusMultithreadedTest.startThreads</definition>
+        <argsstring>(CountDownLatch latch, int threadCount, int iterations, Object eventToPost)</argsstring>
+        <name>startThreads</name>
+        <param>
+          <type>CountDownLatch</type>
+          <declname>latch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threadCount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>eventToPost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="167" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="167" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Markus Junginger, greenrobot </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="274">
+        <label>org.greenrobot.eventbus.EventBusMultithreadedTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test"/>
+        <childnode refid="275" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>org.greenrobot.eventbus.indexed.EventBusMultithreadedTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_multithreaded_test_with_index"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="280">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="279">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="281">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="281" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="277">
+        <label>org.greenrobot.eventbus.EventBusMultithreadedTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test"/>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="279" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="280" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="281" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" line="33" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMultithreadedTest.java" bodystart="33" bodyend="277"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a101f1f5c9c221ecb315580fc63795e6d" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>COUNT</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a42526a707bcddab428c9f0d310840b70" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>countIntegerEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aa31f192fd082e872a78bb5d809ec68b9" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>countIntTestEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aa5829fded6e307218edae1e47ec098d3" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>countObjectEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a6b8b54c64cf13591a2729ffa0dab4828" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>countStringEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a97abf982ce01e60481cecbd0c810f26d" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>lastIntegerEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ac65d49d3534b288105750b7f27807119" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>lastIntTestEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a85737af29f56199bdcc3ee29d1a12c48" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>lastStringEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a63d5866a90fb706422b1455b3d321a4f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a03c898faaca9f0c67c9ff6c0ef2be82e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>onEventAsync</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a15c16c52bbe4beb0d598fc8a9bf534f7" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>onEventBackgroundThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a4d7aead5a418147aad7224ea15ebb002" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>onEventMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1abf69af9eca2ae561d66feb1c5dd72983" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>runThreadsMixedEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a6ab861082d859c63f847f5d50c347508" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>runThreadsMixedEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1afc5dcac6ae130bd4d5c51d60437636a0" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>runThreadsSingleEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1acdaf4a9dc6652b41e9f7b7bcfe9778c2" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>startThreads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ae4781aa8b9b50707ca11b8aa69146f43" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testPost01Thread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ac87cfa99600e1f452aa9ded80e32357b" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testPost04Threads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a40e7df27d51324ff7576b7398dcc74ba" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testPost40Threads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aaa2d9ea21b614c8df967edce8ef87fcc" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testPostMixedEventType01Thread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a1c969225bf1b1a9a8721b479f8569a58" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testPostMixedEventType04Threads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1ae8a9e7eb00f6703389360cf9ef209d8d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testPostMixedEventType40Threads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1aa29b863730e1c5f4d06e3cf666e5c346" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>testSubscribeUnSubscribeAndPostMixedEventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test_1a8f720b774127fa9dea755b49f2cde3ea" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>triggerAndWaitForThreads</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMultithreadedTest</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

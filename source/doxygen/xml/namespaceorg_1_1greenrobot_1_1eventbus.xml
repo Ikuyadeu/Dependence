@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceorg_1_1greenrobot_1_1eventbus" kind="namespace" language="Java">
+    <compoundname>org::greenrobot::eventbus</compoundname>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public">org::greenrobot::eventbus::AbstractEventBusTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_async_poster" prot="package">org::greenrobot::eventbus::AsyncPoster</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster" prot="package">org::greenrobot::eventbus::BackgroundPoster</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_class_map_perf_test" prot="public">org::greenrobot::eventbus::ClassMapPerfTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" prot="public">org::greenrobot::eventbus::EventBus</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test" prot="public">org::greenrobot::eventbus::EventBusBackgroundThreadTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test" prot="public">org::greenrobot::eventbus::EventBusBasicTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder" prot="public">org::greenrobot::eventbus::EventBusBuilder</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test" prot="public">org::greenrobot::eventbus::EventBusBuilderTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test" prot="public">org::greenrobot::eventbus::EventBusCancelEventDeliveryTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception" prot="public">org::greenrobot::eventbus::EventBusException</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test" prot="public">org::greenrobot::eventbus::EventBusFallbackToReflectionTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test" prot="public">org::greenrobot::eventbus::EventBusGenericsTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test" prot="public">org::greenrobot::eventbus::EventBusIndexTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test" prot="public">org::greenrobot::eventbus::EventBusInheritanceDisabledTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test" prot="public">org::greenrobot::eventbus::EventBusMainThreadRacingTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test" prot="public">org::greenrobot::eventbus::EventBusMainThreadTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_method_modifiers_test" prot="public">org::greenrobot::eventbus::EventBusMethodModifiersTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_multithreaded_test" prot="public">org::greenrobot::eventbus::EventBusMultithreadedTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test" prot="public">org::greenrobot::eventbus::EventBusNoSubscriberEventTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test" prot="public">org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test" prot="public">org::greenrobot::eventbus::EventBusRegistrationRacingTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test" prot="public">org::greenrobot::eventbus::EventBusStickyEventTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_exception_test" prot="public">org::greenrobot::eventbus::EventBusSubscriberExceptionTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_in_jar_test" prot="public">org::greenrobot::eventbus::EventBusSubscriberInJarTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test" prot="public">org::greenrobot::eventbus::EventBusSubscriberLegalTest</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_handler_poster" prot="package">org::greenrobot::eventbus::HandlerPoster</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" prot="public">org::greenrobot::eventbus::IntTestEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event" prot="public">org::greenrobot::eventbus::NoSubscriberEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_pending_post" prot="package">org::greenrobot::eventbus::PendingPost</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_pending_post_queue" prot="package">org::greenrobot::eventbus::PendingPostQueue</innerclass>
+    <innerclass refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe" prot="public">org::greenrobot::eventbus::Subscribe</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_exception_event" prot="public">org::greenrobot::eventbus::SubscriberExceptionEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_in_jar" prot="public">org::greenrobot::eventbus::SubscriberInJar</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" prot="public">org::greenrobot::eventbus::SubscriberMethod</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_finder" prot="package">org::greenrobot::eventbus::SubscriberMethodFinder</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscription" prot="package">org::greenrobot::eventbus::Subscription</innerclass>
+    <innerclass refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" prot="public">org::greenrobot::eventbus::ThreadMode</innerclass>
+    <innernamespace refid="namespaceorg_1_1greenrobot_1_1eventbus_1_1annotationprocessor">org::greenrobot::eventbus::annotationprocessor</innernamespace>
+    <innernamespace refid="namespaceorg_1_1greenrobot_1_1eventbus_1_1indexed">org::greenrobot::eventbus::indexed</innernamespace>
+    <innernamespace refid="namespaceorg_1_1greenrobot_1_1eventbus_1_1meta">org::greenrobot::eventbus::meta</innernamespace>
+    <innernamespace refid="namespaceorg_1_1greenrobot_1_1eventbus_1_1util">org::greenrobot::eventbus::util</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Simple event storing an int value. More efficient than Integer because of the its flat hierarchy. </para>    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/AsyncPoster.java" line="16" column="1"/>
+  </compounddef>
+</doxygen>

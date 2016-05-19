@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_my_event_interface" kind="interface" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusInheritanceDisabledTest::MyEventInterface</compoundname>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_my_event" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusInheritanceDisabledTest.MyEvent</derivedcompoundref>
+    <derivedcompoundref refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_disabled_test_1_1_my_event_interface_extended" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusInheritanceDisabledTest.MyEventInterfaceExtended</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="487">
+        <label>org.greenrobot.eventbus.EventBusInheritanceDisabledTest.MyEvent</label>
+        <childnode refid="486" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>org.greenrobot.eventbus.EventBusInheritanceDisabledTest.MyEventInterface</label>
+      </node>
+      <node id="488">
+        <label>org.greenrobot.eventbus.EventBusInheritanceDisabledTest.MyEventExtended</label>
+        <childnode refid="487" relation="public-inheritance">
+        </childnode>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>org.greenrobot.eventbus.EventBusInheritanceDisabledTest.MyEventInterfaceExtended</label>
+        <childnode refid="486" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" line="158" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceDisabledTest.java" bodystart="158" bodyend="159"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

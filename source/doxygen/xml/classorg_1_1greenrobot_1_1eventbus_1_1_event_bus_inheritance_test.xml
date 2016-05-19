@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusInheritanceTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_subscriber_extended" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusInheritanceTest.SubscriberExtended</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_subscriber_extended_without_new_subscriber_method" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusInheritanceTest.SubscriberExtendedWithoutNewSubscriberMethod</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_inheritance_test_with_index" prot="public" virt="non-virtual">org.greenrobot.eventbus.indexed.EventBusInheritanceTestWithIndex</derivedcompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_my_event" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest::MyEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_my_event_extended" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest::MyEventExtended</innerclass>
+    <innerclass refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_my_event_interface" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest::MyEventInterface</innerclass>
+    <innerclass refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_my_event_interface_extended" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest::MyEventInterfaceExtended</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_sticky_subscriber" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest::StickySubscriber</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_subscriber_extended" prot="public">org::greenrobot::eventbus::EventBusInheritanceTest::SubscriberExtended</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_subscriber_extended_without_new_subscriber_method" prot="package">org::greenrobot::eventbus::EventBusInheritanceTest::SubscriberExtendedWithoutNewSubscriberMethod</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1aeb58dd78321244fd47e776aaea724f82" prot="protected" static="no" mutable="no">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>EventBus org.greenrobot.eventbus.EventBusInheritanceTest.eventBus</definition>
+        <argsstring></argsstring>
+        <name>eventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a3595a589ac7bd8fc16d32eded96456e4" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusInheritanceTest.countMyEventExtended</definition>
+        <argsstring></argsstring>
+        <name>countMyEventExtended</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="29" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a396417667c96e750b6371e19aebd1be5" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusInheritanceTest.countMyEvent</definition>
+        <argsstring></argsstring>
+        <name>countMyEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="30" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a201d2ccd67541b478ee2a24ba615a615" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusInheritanceTest.countObjectEvent</definition>
+        <argsstring></argsstring>
+        <name>countObjectEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="31" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a9cf307536dfcb7de4b448b319a1f1828" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusInheritanceTest.countMyEventInterface</definition>
+        <argsstring></argsstring>
+        <name>countMyEventInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="32" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a954abbeb2d40b06eab5bce2a65d39213" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusInheritanceTest.countMyEventInterfaceExtended</definition>
+        <argsstring></argsstring>
+        <name>countMyEventInterfaceExtended</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="33" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1ac70186b6cd3773970d8e37d467838a93" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="35" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1aa616308dfbd3cdefac6863dbcc1419af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.testEventClassHierarchy</definition>
+        <argsstring>()</argsstring>
+        <name>testEventClassHierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="41" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="41" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1af75a3da22836fd0179d3bf88d0f9bf10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.testEventClassHierarchySticky</definition>
+        <argsstring>()</argsstring>
+        <name>testEventClassHierarchySticky</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="58" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a1a76cc97535028ff7e79cf3b3b8eecff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.testEventInterfaceHierarchy</definition>
+        <argsstring>()</argsstring>
+        <name>testEventInterfaceHierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="69" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="69" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a470782a64969fdb01f7335d17ba3e897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.testEventSuperInterfaceHierarchy</definition>
+        <argsstring>()</argsstring>
+        <name>testEventSuperInterfaceHierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="81" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a8cda5681dcce30c6eb924e818f34dcbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.testSubscriberClassHierarchy</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberClassHierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="91" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="91" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a992e1a2514f4e0221fba93b2b9351d1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.testSubscriberClassHierarchyWithoutNewSubscriberMethod</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberClassHierarchyWithoutNewSubscriberMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="111" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="111" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a9f591c873e06b6b9c45a80d9279bae05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.onEvent</definition>
+        <argsstring>(Object event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="129" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a3969bba24153e78848fe9f6f1d5904d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.onEvent</definition>
+        <argsstring>(MyEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEvent</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="134" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1ac808cb419e5e91978a5c501d658213c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.onEvent</definition>
+        <argsstring>(MyEventExtended event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEventExtended</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="139" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1af06e267e51ebb1b93c05b7a52eaeb9e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.onEvent</definition>
+        <argsstring>(MyEventInterface event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEventInterface</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="144" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1ab3f58c68a623b51836cf9ca040a127de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusInheritanceTest.onEvent</definition>
+        <argsstring>(MyEventInterfaceExtended event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>MyEventInterfaceExtended</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="149" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="149" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Markus Junginger, greenrobot </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="210">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.SubscriberExtended</label>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.SubscriberExtendedWithoutNewSubscriberMethod</label>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>TestCase</label>
+      </node>
+      <node id="208">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test"/>
+        <childnode refid="209" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>org.greenrobot.eventbus.indexed.EventBusInheritanceTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_inheritance_test_with_index"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="215">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="215" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="214">
+        <label>TestCase</label>
+      </node>
+      <node id="213">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+        <childnode refid="215" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="25" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a396417667c96e750b6371e19aebd1be5" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>countMyEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a3595a589ac7bd8fc16d32eded96456e4" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>countMyEventExtended</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a9cf307536dfcb7de4b448b319a1f1828" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>countMyEventInterface</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a954abbeb2d40b06eab5bce2a65d39213" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>countMyEventInterfaceExtended</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a201d2ccd67541b478ee2a24ba615a615" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>countObjectEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1aeb58dd78321244fd47e776aaea724f82" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a9f591c873e06b6b9c45a80d9279bae05" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a3969bba24153e78848fe9f6f1d5904d6" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1ac808cb419e5e91978a5c501d658213c8" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1af06e267e51ebb1b93c05b7a52eaeb9e0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1ab3f58c68a623b51836cf9ca040a127de" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1ac70186b6cd3773970d8e37d467838a93" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>setUp</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1aa616308dfbd3cdefac6863dbcc1419af" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>testEventClassHierarchy</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1af75a3da22836fd0179d3bf88d0f9bf10" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>testEventClassHierarchySticky</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a1a76cc97535028ff7e79cf3b3b8eecff" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>testEventInterfaceHierarchy</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a470782a64969fdb01f7335d17ba3e897" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>testEventSuperInterfaceHierarchy</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a8cda5681dcce30c6eb924e818f34dcbc" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>testSubscriberClassHierarchy</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1a992e1a2514f4e0221fba93b2b9351d1d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusInheritanceTest</scope><name>testSubscriberClassHierarchyWithoutNewSubscriberMethod</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

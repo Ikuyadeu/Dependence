@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_honeycomb" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory" prot="public" virt="non-virtual">org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; android.app.Fragment &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_honeycomb_1ae3235d1739c8afca5b127278d574afd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.Honeycomb.Honeycomb</definition>
+        <argsstring>(ErrorDialogConfig config)</argsstring>
+        <name>Honeycomb</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config" kindref="compound">ErrorDialogConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="103" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="103" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_honeycomb_1ae1021207f154791a454cdbfe0e0ee9b9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>android.app.Fragment</type>
+        <definition>android.app.Fragment org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.Honeycomb.createErrorFragment</definition>
+        <argsstring>(ThrowableFailureEvent event, Bundle arguments)</argsstring>
+        <name>createErrorFragment</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_throwable_failure_event" kindref="compound">ThrowableFailureEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="107" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="107" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="441">
+        <label>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; android.app.Fragment &gt;</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory"/>
+      </node>
+      <node id="440">
+        <label>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.Honeycomb</label>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="443">
+        <label>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; android.app.Fragment &gt;</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory"/>
+      </node>
+      <node id="442">
+        <label>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.Honeycomb</label>
+        <childnode refid="443" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="101" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="101" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a4e8cedbc5ca5f1a577296d040e723f9a" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>config</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_honeycomb_1ae1021207f154791a454cdbfe0e0ee9b9" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>createErrorFragment</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1ac891f3a013203afc344567a52546b90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>ErrorDialogFragmentFactory</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a87a2655ab0a2338d53d2e4bd0624173b" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>getMessageFor</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1ad47166fc07a519953a73cb76b358c721" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>getTitleFor</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_honeycomb_1ae3235d1739c8afca5b127278d574afd9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>Honeycomb</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a3dbd91027b49c72bff89562c0a9630ca" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</scope><name>prepareErrorFragment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_fe82b28acb098b7640a82ac43c458caf" kind="dir">
+    <compoundname>C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util</compoundname>
+    <innerfile refid="_async_executor_8java">AsyncExecutor.java</innerfile>
+    <innerfile refid="_error_dialog_config_8java">ErrorDialogConfig.java</innerfile>
+    <innerfile refid="_error_dialog_fragment_factory_8java">ErrorDialogFragmentFactory.java</innerfile>
+    <innerfile refid="_error_dialog_fragments_8java">ErrorDialogFragments.java</innerfile>
+    <innerfile refid="_error_dialog_manager_8java">ErrorDialogManager.java</innerfile>
+    <innerfile refid="_exception_to_resource_mapping_8java">ExceptionToResourceMapping.java</innerfile>
+    <innerfile refid="_has_execution_scope_8java">HasExecutionScope.java</innerfile>
+    <innerfile refid="_throwable_failure_event_8java">ThrowableFailureEvent.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster" kind="class" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a6a8f919ec42c59392cec865aee00d349" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>volatile boolean org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="73" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a3f05bd190e5ddb4c8f2a46e7eff7b430" prot="private" static="no" mutable="no">
+        <type>final List&lt; Object &gt;</type>
+        <definition>final List&lt;Object&gt; org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.eventQ</definition>
+        <argsstring></argsstring>
+        <name>eventQ</name>
+        <initializer>= new ArrayList&lt;Object&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="74" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1aa81068411b5efa2304fe89bb92db3c30" prot="private" static="no" mutable="no">
+        <type>final List&lt; Object &gt;</type>
+        <definition>final List&lt;Object&gt; org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.eventsDone</definition>
+        <argsstring></argsstring>
+        <name>eventsDone</name>
+        <initializer>= new ArrayList&lt;Object&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="75" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a07d7331c6c65d5044b54c00d802f1fa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.BackgroundPoster</definition>
+        <argsstring>()</argsstring>
+        <name>BackgroundPoster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="77" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a81508f79b9cf7ed7830374ebfba21bfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="82" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="82" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1ada46c2dc33b875bd41c911615150c83e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized Object</type>
+        <definition>synchronized Object org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.pollEvent</definition>
+        <argsstring>()</argsstring>
+        <name>pollEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="95" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="95" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1aac13a20408f4a1d2e6d0f8608885ef1c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="111" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="111" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1afefa8b32d71deb1f0e9b5da306cc464c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster.post</definition>
+        <argsstring>(Object event)</argsstring>
+        <name>post</name>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="118" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="118" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster</label>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Thread</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>org.greenrobot.eventbus.EventBusMainThreadTest.BackgroundPoster</label>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Thread</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" line="72" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadTest.java" bodystart="72" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a07d7331c6c65d5044b54c00d802f1fa9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>BackgroundPoster</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a3f05bd190e5ddb4c8f2a46e7eff7b430" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>eventQ</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1aa81068411b5efa2304fe89bb92db3c30" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>eventsDone</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1ada46c2dc33b875bd41c911615150c83e" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>pollEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1afefa8b32d71deb1f0e9b5da306cc464c" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>post</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a81508f79b9cf7ed7830374ebfba21bfd" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>run</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1a6a8f919ec42c59392cec865aee00d349" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>running</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_test_1_1_background_poster_1aac13a20408f4a1d2e6d0f8608885ef1c" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadTest::BackgroundPoster</scope><name>shutdown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

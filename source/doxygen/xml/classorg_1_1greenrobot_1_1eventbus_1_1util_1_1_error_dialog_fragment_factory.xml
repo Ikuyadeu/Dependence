@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</compoundname>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_honeycomb" prot="public">org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Honeycomb</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1_1_support" prot="public">org::greenrobot::eventbus::util::ErrorDialogFragmentFactory::Support</innerclass>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a4e8cedbc5ca5f1a577296d040e723f9a" prot="protected" static="no" mutable="no">
+        <type>final <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config" kindref="compound">ErrorDialogConfig</ref></type>
+        <definition>final ErrorDialogConfig org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="29" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1ac891f3a013203afc344567a52546b90f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.ErrorDialogFragmentFactory</definition>
+        <argsstring>(ErrorDialogConfig config)</argsstring>
+        <name>ErrorDialogFragmentFactory</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config" kindref="compound">ErrorDialogConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="31" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a3dbd91027b49c72bff89562c0a9630ca" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.prepareErrorFragment</definition>
+        <argsstring>(ThrowableFailureEvent event, boolean finishAfterDialog, Bundle argumentsForErrorDialog)</argsstring>
+        <name>prepareErrorFragment</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_throwable_failure_event" kindref="compound">ThrowableFailureEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>finishAfterDialog</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>argumentsForErrorDialog</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepares the fragment&apos;s arguments and creates the fragment. May be overridden to provide custom error fragments. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="38" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="38" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1aeb3413e213e082e09de3395493e1915f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract T</type>
+        <definition>abstract T org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.createErrorFragment</definition>
+        <argsstring>(ThrowableFailureEvent event, Bundle arguments)</argsstring>
+        <name>createErrorFragment</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_throwable_failure_event" kindref="compound">ThrowableFailureEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns either a new Honeycomb+ or a new support library DialogFragment. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1ad47166fc07a519953a73cb76b358c721" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.getTitleFor</definition>
+        <argsstring>(ThrowableFailureEvent event, Bundle arguments)</argsstring>
+        <name>getTitleFor</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_throwable_failure_event" kindref="compound">ThrowableFailureEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>May be overridden to provide custom error title. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="76" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a87a2655ab0a2338d53d2e4bd0624173b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;.getMessageFor</definition>
+        <argsstring>(ThrowableFailureEvent event, Bundle arguments)</argsstring>
+        <name>getMessageFor</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_throwable_failure_event" kindref="compound">ThrowableFailureEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>May be overridden to provide custom error messages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="81" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Factory to allow injecting a more complex exception mapping; typically you would subclass one of <ref refid="" kindref="compound">Honeycomb</ref> or <ref refid="" kindref="compound">Support</ref>. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="85">
+        <label>Map&lt; Class&lt;?extends Throwable &gt;, Integer &gt;</label>
+      </node>
+      <node id="82">
+        <label>org.greenrobot.eventbus.util.ErrorDialogFragmentFactory&lt; T &gt;</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>org.greenrobot.eventbus.util.ExceptionToResourceMapping</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>throwableToMsgIdMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Resources</label>
+      </node>
+      <node id="83">
+        <label>org.greenrobot.eventbus.util.ErrorDialogConfig</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>mapping</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogFragmentFactory.java" bodystart="28" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a4e8cedbc5ca5f1a577296d040e723f9a" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</scope><name>config</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1aeb3413e213e082e09de3395493e1915f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</scope><name>createErrorFragment</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1ac891f3a013203afc344567a52546b90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</scope><name>ErrorDialogFragmentFactory</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a87a2655ab0a2338d53d2e4bd0624173b" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</scope><name>getMessageFor</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1ad47166fc07a519953a73cb76b358c721" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</scope><name>getTitleFor</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_fragment_factory_1a3dbd91027b49c72bff89562c0a9630ca" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogFragmentFactory</scope><name>prepareErrorFragment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

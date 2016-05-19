@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state" kind="class" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::EventBus::PostingThreadState</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1ac5aadd66aa97333d37bae6ed973dc7d8" prot="package" static="no" mutable="no">
+        <type>final List&lt; Object &gt;</type>
+        <definition>final List&lt;Object&gt; org.greenrobot.eventbus.EventBus.PostingThreadState.eventQueue</definition>
+        <argsstring></argsstring>
+        <name>eventQueue</name>
+        <initializer>= new ArrayList&lt;Object&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="521" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a17882f4f2429c35d6eb6d6127771b26e" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.EventBus.PostingThreadState.isPosting</definition>
+        <argsstring></argsstring>
+        <name>isPosting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="522" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a69061f9d14397984ad7930217eb164b4" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.EventBus.PostingThreadState.isMainThread</definition>
+        <argsstring></argsstring>
+        <name>isMainThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="523" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a8c255a330dd5d8bab03d218bfac25c75" prot="package" static="no" mutable="no">
+        <type>Subscription</type>
+        <definition>Subscription org.greenrobot.eventbus.EventBus.PostingThreadState.subscription</definition>
+        <argsstring></argsstring>
+        <name>subscription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="524" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a611d46f2521da0d8c3cf334db3a6cf88" prot="package" static="no" mutable="no">
+        <type>Object</type>
+        <definition>Object org.greenrobot.eventbus.EventBus.PostingThreadState.event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="525" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a3fcda769815d76d37da320e1618bdd44" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.EventBus.PostingThreadState.canceled</definition>
+        <argsstring></argsstring>
+        <name>canceled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="526" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>For ThreadLocal, much faster to set (and get multiple values). </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="576">
+        <label>org.greenrobot.eventbus.Subscription</label>
+        <childnode refid="577" relation="usage">
+          <edgelabel>subscriberMethod</edgelabel>
+        </childnode>
+      </node>
+      <node id="575">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="577">
+        <label>org.greenrobot.eventbus.SubscriberMethod</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method"/>
+        <childnode refid="578" relation="usage">
+          <edgelabel>threadMode</edgelabel>
+        </childnode>
+        <childnode refid="579" relation="usage">
+          <edgelabel>method</edgelabel>
+        </childnode>
+      </node>
+      <node id="579">
+        <label>Method</label>
+      </node>
+      <node id="574">
+        <label>org.greenrobot.eventbus.EventBus.PostingThreadState</label>
+        <childnode refid="575" relation="usage">
+          <edgelabel>eventQueue</edgelabel>
+        </childnode>
+        <childnode refid="576" relation="usage">
+          <edgelabel>subscription</edgelabel>
+        </childnode>
+      </node>
+      <node id="578">
+        <label>org.greenrobot.eventbus.ThreadMode</label>
+        <link refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="520" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="520" bodyend="527"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a3fcda769815d76d37da320e1618bdd44" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostingThreadState</scope><name>canceled</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a611d46f2521da0d8c3cf334db3a6cf88" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostingThreadState</scope><name>event</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1ac5aadd66aa97333d37bae6ed973dc7d8" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostingThreadState</scope><name>eventQueue</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a69061f9d14397984ad7930217eb164b4" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostingThreadState</scope><name>isMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a17882f4f2429c35d6eb6d6127771b26e" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostingThreadState</scope><name>isPosting</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_posting_thread_state_1a8c255a330dd5d8bab03d218bfac25c75" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostingThreadState</scope><name>subscription</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

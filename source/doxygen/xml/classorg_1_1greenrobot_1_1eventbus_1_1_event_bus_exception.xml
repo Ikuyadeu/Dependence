@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RuntimeException</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1ac0bca3e4807fcbc07ce14469d777c997" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long org.greenrobot.eventbus.EventBusException.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <initializer>= -2912559384646531479L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1a942cd0df9ed5fbe96c9456e085208186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.EventBusException.EventBusException</definition>
+        <argsstring>(String detailMessage)</argsstring>
+        <name>EventBusException</name>
+        <param>
+          <type>String</type>
+          <declname>detailMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1a15779feb93b6ee9bb81360f3bece2cba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.EventBusException.EventBusException</definition>
+        <argsstring>(Throwable throwable)</argsstring>
+        <name>EventBusException</name>
+        <param>
+          <type>Throwable</type>
+          <declname>throwable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" line="32" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1a9a0374a7fa0ad844a8b2f8ededa0019b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.EventBusException.EventBusException</definition>
+        <argsstring>(String detailMessage, Throwable throwable)</argsstring>
+        <name>EventBusException</name>
+        <param>
+          <type>String</type>
+          <declname>detailMessage</declname>
+        </param>
+        <param>
+          <type>Throwable</type>
+          <declname>throwable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An <ref refid="" kindref="compound">RuntimeException</ref> thrown in cases something went wrong inside <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref>.</para><para><simplesect kind="author"><para>Markus </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="157">
+        <label>org.greenrobot.eventbus.EventBusException</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>RuntimeException</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="159">
+        <label>org.greenrobot.eventbus.EventBusException</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>RuntimeException</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBusException.java" bodystart="24" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1a942cd0df9ed5fbe96c9456e085208186" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusException</scope><name>EventBusException</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1a15779feb93b6ee9bb81360f3bece2cba" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusException</scope><name>EventBusException</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1a9a0374a7fa0ad844a8b2f8ededa0019b" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusException</scope><name>EventBusException</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_exception_1ac0bca3e4807fcbc07ce14469d777c997" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusException</scope><name>serialVersionUID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

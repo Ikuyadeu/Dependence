@@ -7,27 +7,88 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">#<sp/>GraduationChecker</highlight></codeline>
-<codeline><highlight class="normal">ソフトウェア工学で作成した卒業研究に参加可能かどうかをチェックするシステム</highlight></codeline>
+<codeline><highlight class="normal">EventBus</highlight></codeline>
+<codeline><highlight class="normal">========</highlight></codeline>
+<codeline><highlight class="normal">EventBus<sp/>is<sp/>a<sp/>publish/subscribe<sp/>event<sp/>bus<sp/>optimized<sp/>for<sp/>Android.&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>src=&quot;EventBus-Publish-Subscribe.png&quot;<sp/>width=&quot;500&quot;<sp/>height=&quot;187&quot;/&gt;</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">単位数を入力することで参加可能判定、必要な単位数、不足分単位数を出力<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">EventBus...</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">*<sp/>開発環境<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>言語：　Java7<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>eclipse:<sp/>Luna<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>実行方法<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>```</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>$<sp/>cd<sp/>src<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>$<sp/>java<sp/>GraduationChecker.java</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>```</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>simplifies<sp/>the<sp/>communication<sp/>between<sp/>components</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>decouples<sp/>event<sp/>senders<sp/>and<sp/>receivers</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>performs<sp/>well<sp/>with<sp/>Activities,<sp/>Fragments,<sp/>and<sp/>background<sp/>threads</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>avoids<sp/>complex<sp/>and<sp/>error-prone<sp/>dependencies<sp/>and<sp/>life<sp/>cycle<sp/>issues</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>makes<sp/>your<sp/>code<sp/>simpler</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>is<sp/>fast</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>is<sp/>tiny<sp/>(~50k<sp/>jar)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>is<sp/>proven<sp/>in<sp/>practice<sp/>by<sp/>apps<sp/>with<sp/>100,000,000+<sp/>installs</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>has<sp/>advanced<sp/>features<sp/>like<sp/>delivery<sp/>threads,<sp/>subscriber<sp/>priorities,<sp/>etc.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">*<sp/>追加予定機能<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">1.学務情報システムからのCSV形式のデータ読み込み（.txt,.csv対応）<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">2.出力データの保存(.txt,.csv形式)<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">3.他学科・他学部への対応<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">4.必修科目の出力</highlight></codeline>
+<codeline><highlight class="normal"><sp/>[![Build<sp/>Status](https://travis-ci.org/greenrobot/EventBus.svg?branch=master)](https://travis-ci.org/greenrobot/EventBus)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EventBus<sp/>in<sp/>3<sp/>steps</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Define<sp/>events:&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;code&gt;public<sp/>class<sp/>MessageEvent<sp/>{<sp/>/*<sp/>Additional<sp/>fields<sp/>if<sp/>needed<sp/>*/<sp/>}&lt;/code&gt;&lt;br/&gt;&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Prepare<sp/>subscribers&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">Register<sp/>your<sp/>subscriber<sp/>(in<sp/>your<sp/>onCreate<sp/>or<sp/>in<sp/>a<sp/>constructor):&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;code&gt;eventBus.register(this);&lt;/code&gt;&lt;br/&gt;&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">Declare<sp/>your<sp/>subscribing<sp/>method:&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;code&gt;@Subscribe&lt;/code&gt;&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;code&gt;public<sp/>void<sp/>onEvent(AnyEventType<sp/>event)<sp/>{/*<sp/>Do<sp/>something<sp/>*/};&lt;/code&gt;&lt;br/&gt;&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Post<sp/>events:&lt;br/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;code&gt;eventBus.post(event);&lt;/code&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>[getting<sp/>started<sp/>guide](http://greenrobot.org/eventbus/documentation/how-to-get-started/)<sp/>shows<sp/>these<sp/>3<sp/>steps<sp/>in<sp/>more<sp/>detail.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Add<sp/>EventBus<sp/>to<sp/>your<sp/>project</highlight></codeline>
+<codeline><highlight class="normal">----------------------------</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>ensure<sp/>that<sp/>you<sp/>are<sp/>using<sp/>the<sp/>latest<sp/>version<sp/>by<sp/>[checking<sp/>here](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.greenrobot%22%20AND%20a%3A%22eventbus%22)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Gradle:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>compile<sp/>&apos;org.greenrobot:eventbus:3.0.0&apos;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Maven:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">&lt;dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.greenrobot&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;artifactId&gt;eventbus&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;version&gt;3.0.0&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Or<sp/>download<sp/>EventBus<sp/>from<sp/>Maven<sp/>Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.greenrobot%22%20AND%20a%3A%22eventbus%22)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Homepage,<sp/>Documentation,<sp/>Links</highlight></codeline>
+<codeline><highlight class="normal">------------------------------</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>details<sp/>on<sp/>EventBus<sp/>please<sp/>check<sp/>[EventBus&apos;<sp/>website](http://greenrobot.org/eventbus).<sp/>Here<sp/>are<sp/>some<sp/>direct<sp/>links<sp/>you<sp/>may<sp/>find<sp/>useful:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Features](http://greenrobot.org/eventbus/features/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Documentation](http://greenrobot.org/eventbus/documentation/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Changelog](http://greenrobot.org/eventbus/changelog/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[FAQ](http://greenrobot.org/eventbus/documentation/faq/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">How<sp/>does<sp/>EventBus<sp/>compare<sp/>to<sp/>other<sp/>solutions,<sp/>like<sp/>Otto<sp/>from<sp/>Square?<sp/>Check<sp/>this<sp/>[comparison](COMPARISON.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">License</highlight></codeline>
+<codeline><highlight class="normal">-------</highlight></codeline>
+<codeline><highlight class="normal">Copyright<sp/>(C)<sp/>2012-2016<sp/>Markus<sp/>Junginger,<sp/>greenrobot<sp/>(http://greenrobot.org)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EventBus<sp/>binaries<sp/>and<sp/>source<sp/>code<sp/>can<sp/>be<sp/>used<sp/>according<sp/>to<sp/>the<sp/>[Apache<sp/>License,<sp/>Version<sp/>2.0](LICENSE).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>Open<sp/>Source<sp/>by<sp/>greenrobot</highlight></codeline>
+<codeline><highlight class="normal">==============================</highlight></codeline>
+<codeline><highlight class="normal">[__greenrobot-common__](https://github.com/greenrobot/greenrobot-common)<sp/>is<sp/>a<sp/>set<sp/>of<sp/>utility<sp/>classes<sp/>and<sp/>hash<sp/>functions<sp/>for<sp/>Android<sp/>&amp;<sp/>Java<sp/>projects.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[__greenDAO__](https://github.com/greenrobot/greenDAO)<sp/>is<sp/>an<sp/>ORM<sp/>optimized<sp/>for<sp/>Android:<sp/>it<sp/>maps<sp/>database<sp/>tables<sp/>to<sp/>Java<sp/>objects<sp/>and<sp/>uses<sp/>code<sp/>generation<sp/>for<sp/>optimal<sp/>speed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Follow<sp/>us<sp/>on<sp/>Google+](https://plus.google.com/b/114381455741141514652/+GreenrobotDe/posts)<sp/>or<sp/>check<sp/>our<sp/>[homepage](http://greenrobot.org/)<sp/>to<sp/>stay<sp/>up<sp/>to<sp/>date.</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/YukiUeda/Source/Reseach/source/GraduationChecker/README.md"/>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/README.md"/>
   </compounddef>
 </doxygen>

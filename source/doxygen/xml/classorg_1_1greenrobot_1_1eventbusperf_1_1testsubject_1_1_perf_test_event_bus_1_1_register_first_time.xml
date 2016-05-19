@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_first_time" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterOneByOne</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_first_time_1a21529862dac4ac731c59b65f6b7f6dc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterFirstTime.RegisterFirstTime</definition>
+        <argsstring>(Context context, TestParams params)</argsstring>
+        <name>RegisterFirstTime</name>
+        <param>
+          <type>Context</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_params" kindref="compound">TestParams</ref></type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="190" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="190" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_first_time_1ad675a94aadcfe8d468562a51f5b74802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterFirstTime.getDisplayName</definition>
+        <argsstring>()</argsstring>
+        <name>getDisplayName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="202" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="202" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="624">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterFirstTime</label>
+        <childnode refid="625" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="627">
+        <label>org.greenrobot.eventbusperf.Test</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test"/>
+      </node>
+      <node id="626">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus"/>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="625">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterOneByOne</label>
+        <childnode refid="626" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="628">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterFirstTime</label>
+        <childnode refid="629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>Serializable</label>
+      </node>
+      <node id="635">
+        <label>AtomicLong</label>
+      </node>
+      <node id="636">
+        <label>Method</label>
+      </node>
+      <node id="631">
+        <label>org.greenrobot.eventbusperf.Test</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test"/>
+        <childnode refid="632" relation="usage">
+          <edgelabel>params</edgelabel>
+        </childnode>
+        <childnode refid="634" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="635" relation="usage">
+          <edgelabel>eventsReceivedCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="634">
+        <label>Context</label>
+      </node>
+      <node id="630">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>org.greenrobot.eventbusperf.TestParams</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_params"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="629">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.RegisterOneByOne</label>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="636" relation="usage">
+          <edgelabel>clearCachesMethod</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="188" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="188" bodyend="206"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1aadd012e4f848985eadae573654c21c0e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>cancel</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a78d508ab5fa1c7e943d1362b8a09fbbe" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>canceled</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_one_by_one_1abd4440086ff69131c91b75b64cec1371" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>clearCachesMethod</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1abdbb7fc3a6e7c286dbc0f050bbebb3bc" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>context</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a18fb87917c635d287d52e422e8925387" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>eventsReceivedCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_first_time_1ad675a94aadcfe8d468562a51f5b74802" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>getDisplayName</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1aab632bd8cedb1489212a02554aa4f0bf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>getOtherTestResults</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a7b27454636c2534e0da6b7ae596c200e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>getPrimaryResultMicros</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a33c71de2016713f9b891e48921626307" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>getPrimaryResultRate</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a9274b5f74d00d1149b26d07651e79297" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>otherTestResults</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1aef501e9cf699df778904032661ff38f2" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>params</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1a933850d9ef6eccf86e2539db8bdf8ea9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>PerfTestEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1a77232a9add35dfb4fc73fbf95ba65efe" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>prepareTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a306fd5067c9f980f4b3a30963479510b" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>primaryResultCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1ab8290752cfd6037a04ddcbb1c508bac6" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>primaryResultMicros</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_first_time_1a21529862dac4ac731c59b65f6b7f6dc1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>RegisterFirstTime</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_one_by_one_1ad2478cacd71d2aeeccf296457bbc9ac7" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>RegisterOneByOne</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_register_one_by_one_1a48c602c0300ec349df4ea455aaf9d8ac" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>runTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a4384b83909dff855df55497f24cd6c0c" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>Test</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a5ea8d9a084512b505524dd3f647e42b2" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::RegisterFirstTime</scope><name>waitForReceivedEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

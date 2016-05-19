@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_float_event_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusGenericsTest::GenericFloatEventSubscriber</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_number_event_subscriber" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusGenericsTest.GenericNumberEventSubscriber&lt; Float &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="422">
+        <label>org.greenrobot.eventbus.EventBusGenericsTest.GenericNumberEventSubscriber&lt; Float &gt;</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_number_event_subscriber"/>
+      </node>
+      <node id="421">
+        <label>org.greenrobot.eventbus.EventBusGenericsTest.GenericFloatEventSubscriber</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_float_event_subscriber"/>
+        <childnode refid="422" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="424">
+        <label>org.greenrobot.eventbus.EventBusGenericsTest.GenericNumberEventSubscriber&lt; Float &gt;</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_number_event_subscriber"/>
+      </node>
+      <node id="423">
+        <label>org.greenrobot.eventbus.EventBusGenericsTest.GenericFloatEventSubscriber</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_float_event_subscriber"/>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusGenericsTest.java" line="47" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusGenericsTest.java" bodystart="47" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_generics_test_1_1_generic_number_event_subscriber_1a63e948b6c67787e5adc70881d7902d86" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusGenericsTest::GenericFloatEventSubscriber</scope><name>onGenericEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

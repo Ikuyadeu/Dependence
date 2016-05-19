@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Activity</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a16e88a0358442154d11db1a00305fe03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.Subscriber</definition>
+        <argsstring>()</argsstring>
+        <name>Subscriber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="186" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="186" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a08e7c3e428f812a4322e300852f77b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.onEvent</definition>
+        <argsstring>(TestEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_event" kindref="compound">TestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="190" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="190" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a76ad1f4265a7298e342890956188067c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.dummy</definition>
+        <argsstring>()</argsstring>
+        <name>dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="194" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="194" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a3e051280d7de83977da240fc0ae1f4f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.dummy2</definition>
+        <argsstring>()</argsstring>
+        <name>dummy2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="197" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="197" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a661b7c21709f8caf98bfe3f93515eb61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.dummy3</definition>
+        <argsstring>()</argsstring>
+        <name>dummy3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="200" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="200" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a2a841a5245e9ace04a950a277fbcacd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.dummy4</definition>
+        <argsstring>()</argsstring>
+        <name>dummy4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="203" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="203" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1ae42d1385f79af6a2af86faf41784ec1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber.dummy5</definition>
+        <argsstring>()</argsstring>
+        <name>dummy5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="206" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="206" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="703">
+        <label>Activity</label>
+      </node>
+      <node id="702">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber"/>
+        <childnode refid="703" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="705">
+        <label>Activity</label>
+      </node>
+      <node id="704">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestOtto.Subscriber</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber"/>
+        <childnode refid="705" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" line="185" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestOtto.java" bodystart="185" bodyend="209"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a76ad1f4265a7298e342890956188067c" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>dummy</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a3e051280d7de83977da240fc0ae1f4f9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>dummy2</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a661b7c21709f8caf98bfe3f93515eb61" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>dummy3</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a2a841a5245e9ace04a950a277fbcacd2" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>dummy4</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1ae42d1385f79af6a2af86faf41784ec1d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>dummy5</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a08e7c3e428f812a4322e300852f77b88" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_otto_1_1_subscriber_1a16e88a0358442154d11db1a00305fe03" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestOtto::Subscriber</scope><name>Subscriber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

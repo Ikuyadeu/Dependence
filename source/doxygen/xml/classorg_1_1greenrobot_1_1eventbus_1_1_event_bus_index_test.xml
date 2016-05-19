@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusIndexTest</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test_1a1446641623edba85d9a4af44d4fb754d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbus.EventBusIndexTest.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test_1acddd3c0621a7ac69c280a5e8b570512c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusIndexTest.testManualIndexWithoutAnnotation</definition>
+        <argsstring>()</argsstring>
+        <name>testManualIndexWithoutAnnotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensures the index is actually used and no reflection fall-back kicks in. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" line="31" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" bodystart="31" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test_1ac9affb10ec3daaf59f67027bbc9382ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusIndexTest.someMethodWithoutAnnotation</definition>
+        <argsstring>(String value)</argsstring>
+        <name>someMethodWithoutAnnotation</name>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" line="51" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" bodystart="51" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusIndexTest.java" bodystart="26" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test_1ac9affb10ec3daaf59f67027bbc9382ac" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusIndexTest</scope><name>someMethodWithoutAnnotation</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test_1acddd3c0621a7ac69c280a5e8b570512c" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusIndexTest</scope><name>testManualIndexWithoutAnnotation</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_index_test_1a1446641623edba85d9a4af44d4fb754d" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusIndexTest</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

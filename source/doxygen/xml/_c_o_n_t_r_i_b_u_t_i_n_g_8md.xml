@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_c_o_n_t_r_i_b_u_t_i_n_g_8md" kind="file" language="Markdown">
+    <compoundname>CONTRIBUTING.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">Before<sp/>you<sp/>create<sp/>an<sp/>Issue...</highlight></codeline>
+<codeline><highlight class="normal">=============================</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">There<sp/>are<sp/>better<sp/>Places<sp/>for<sp/>Support</highlight></codeline>
+<codeline><highlight class="normal">-----------------------------------</highlight></codeline>
+<codeline><highlight class="normal">We<sp/>want<sp/>your<sp/>question<sp/>to<sp/>be<sp/>answered,<sp/>so<sp/>it<sp/>is<sp/>important<sp/>that<sp/>you<sp/>ask<sp/>at<sp/>the<sp/>right<sp/>place.<sp/>Be<sp/>aware<sp/>that<sp/>an<sp/>issue<sp/>tracker<sp/>is<sp/>not<sp/>the<sp/>best<sp/>place<sp/>to<sp/>ask<sp/>for<sp/>support.<sp/>An<sp/>issue<sp/>tracker<sp/>is<sp/>used<sp/>to<sp/>track<sp/>issues<sp/>(bugs<sp/>or<sp/>feature<sp/>requests).</highlight></codeline>
+<codeline><highlight class="normal">Instead,<sp/>please<sp/>use<sp/>[stackoverflow.com](http://stackoverflow.com/questions/tagged/greenrobot-eventbus?sort=frequent)<sp/>and<sp/>use<sp/>the<sp/>tag<sp/>[greenrobot-eventbus](http://stackoverflow.com/tags/greenrobot-eventbus/info)<sp/>for<sp/>your<sp/>question.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>professional<sp/>support,<sp/>check<sp/>http://greenrobot.org/contact-support/.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Examples<sp/>for<sp/>support<sp/>questions<sp/>that<sp/>are<sp/>more<sp/>likely<sp/>to<sp/>be<sp/>answered<sp/>on<sp/>StackOverflow:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Asking<sp/>how<sp/>something<sp/>works</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Asking<sp/>how<sp/>to<sp/>use<sp/>EventBus<sp/>in<sp/>a<sp/>specific<sp/>scenario</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Your<sp/>app<sp/>crashes/misbehaves<sp/>and<sp/>you<sp/>are<sp/>not<sp/>sure<sp/>why</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>perfect<sp/>Issue<sp/>Report</highlight></codeline>
+<codeline><highlight class="normal">------------------------</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>couple<sp/>of<sp/>simple<sp/>steps<sp/>can<sp/>save<sp/>time<sp/>for<sp/>everyone.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>before<sp/>reporting:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>It&apos;s<sp/>not<sp/>a<sp/>support<sp/>inquiry</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>You<sp/>have<sp/>read<sp/>the<sp/>docs</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>You<sp/>searched<sp/>the<sp/>web<sp/>and<sp/>stackoverflow</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>You<sp/>searched<sp/>existing<sp/>issues<sp/>to<sp/>avoid<sp/>duplicates</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Reporting<sp/>bugs:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Please<sp/>investigate<sp/>if<sp/>is<sp/>the<sp/>bug<sp/>is<sp/>really<sp/>caused<sp/>by<sp/>the<sp/>library.<sp/>Isolate<sp/>the<sp/>issue:<sp/>what&apos;s<sp/>the<sp/>minimal<sp/>code<sp/>to<sp/>reproduce<sp/>the<sp/>bug?</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Bonus<sp/>steps<sp/>to<sp/>gain<sp/>extra<sp/>karma<sp/>points:<sp/>once<sp/>you<sp/>isolated<sp/>and<sp/>identified<sp/>the<sp/>issue,<sp/>you<sp/>can<sp/>prepare<sp/>an<sp/>push<sp/>request.<sp/>Submit<sp/>an<sp/>unit<sp/>test<sp/>causing<sp/>the<sp/>bug,<sp/>and<sp/>ideally<sp/>a<sp/>fix<sp/>for<sp/>the<sp/>bug.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Requesting<sp/>features:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Ask<sp/>yourself:<sp/>is<sp/>the<sp/>feature<sp/>useful<sp/>for<sp/>a<sp/>majority<sp/>users?<sp/>One<sp/>of<sp/>our<sp/>major<sp/>goals<sp/>is<sp/>to<sp/>keep<sp/>the<sp/>API<sp/>simple<sp/>and<sp/>concise.<sp/>We<sp/>do<sp/>not<sp/>want<sp/>to<sp/>cover<sp/>all<sp/>possible<sp/>use<sp/>cases,<sp/>but<sp/>those<sp/>that<sp/>make<sp/>80%<sp/>of<sp/>users<sp/>happy.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>Note<sp/>on<sp/>Pull<sp/>Requests</highlight></codeline>
+<codeline><highlight class="normal">=======================</highlight></codeline>
+<codeline><highlight class="normal">Pull<sp/>requests<sp/>(and<sp/>issues)<sp/>may<sp/>queue<sp/>up<sp/>up<sp/>a<sp/>bit.<sp/>Usually,<sp/>pull<sp/>requests<sp/>and<sp/>issues<sp/>are<sp/>checked<sp/>when<sp/>new<sp/>releases<sp/>are<sp/>planned.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>bigger<sp/>pull<sp/>requests,<sp/>it&apos;s<sp/>a<sp/>good<sp/>idea<sp/>to<sp/>check<sp/>with<sp/>the<sp/>maintainer<sp/>upfront<sp/>about<sp/>the<sp/>idea<sp/>and<sp/>the<sp/>implementation<sp/>outline.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Thanks<sp/>for<sp/>reading!</highlight></codeline>
+<codeline><highlight class="normal">===================</highlight></codeline>
+<codeline><highlight class="normal">It&apos;s<sp/>your<sp/>contributions<sp/>and<sp/>feedback<sp/>that<sp/>makes<sp/>maintaining<sp/>this<sp/>library<sp/>fun.</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/CONTRIBUTING.md"/>
+  </compounddef>
+</doxygen>

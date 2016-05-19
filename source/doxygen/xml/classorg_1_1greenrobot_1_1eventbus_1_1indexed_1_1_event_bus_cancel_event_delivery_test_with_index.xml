@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_cancel_event_delivery_test_with_index" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusCancelEventDeliveryTest</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_cancel_event_delivery_test_with_index_1a696098ffa7ef55585b4719e8c7b40ba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.indexed.EventBusCancelEventDeliveryTestWithIndex.overwriteEventBus</definition>
+        <argsstring>()</argsstring>
+        <name>overwriteEventBus</name>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusCancelEventDeliveryTestWithIndex.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusCancelEventDeliveryTestWithIndex.java" bodystart="24" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="148">
+        <label>org.greenrobot.eventbus.indexed.EventBusCancelEventDeliveryTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_cancel_event_delivery_test_with_index"/>
+        <childnode refid="149" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>org.greenrobot.eventbus.EventBusCancelEventDeliveryTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="151">
+        <label>org.greenrobot.eventbus.indexed.EventBusCancelEventDeliveryTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_cancel_event_delivery_test_with_index"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="154">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="156">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="156" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="152">
+        <label>org.greenrobot.eventbus.EventBusCancelEventDeliveryTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="154" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="155" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="156" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusCancelEventDeliveryTestWithIndex.java" line="22" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusCancelEventDeliveryTestWithIndex.java" bodystart="22" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_cancel_event_delivery_test_with_index_1a696098ffa7ef55585b4719e8c7b40ba4" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>overwriteEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1afe98d8baee96a907951378eda7a6eb6a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>testCancel</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1affee73dcd6648f97a550d003777ad8ad" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>testCancelInBetween</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1a1d9174081aff05eea5bc3f413c6cfe9a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>testCancelInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1a734fb41a1f72e06ff2bca305111fa53b" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>testCancelOutsideEventHandler</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1a194a87c19b31ffde3c1502b3984c7caf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>testCancelWrongEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusCancelEventDeliveryTestWithIndex</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

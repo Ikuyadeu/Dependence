@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceorg_1_1greenrobot" kind="namespace" language="Java">
+    <compoundname>org::greenrobot</compoundname>
+    <innernamespace refid="namespaceorg_1_1greenrobot_1_1eventbus">org::greenrobot::eventbus</innernamespace>
+    <innernamespace refid="namespaceorg_1_1greenrobot_1_1eventbusperf">org::greenrobot::eventbusperf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

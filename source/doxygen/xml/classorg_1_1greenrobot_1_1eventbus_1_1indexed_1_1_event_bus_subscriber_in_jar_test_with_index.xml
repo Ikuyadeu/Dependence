@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_subscriber_in_jar_test_with_index" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::indexed::EventBusSubscriberInJarTestWithIndex</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_in_jar_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusSubscriberInJarTest</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_subscriber_in_jar_test_with_index_1ae9cebcecac590d5af1e0e565f1ff4bea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.indexed.EventBusSubscriberInJarTestWithIndex.overwriteEventBus</definition>
+        <argsstring>()</argsstring>
+        <name>overwriteEventBus</name>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusSubscriberInJarTestWithIndex.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusSubscriberInJarTestWithIndex.java" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="389">
+        <label>org.greenrobot.eventbus.EventBusSubscriberInJarTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_in_jar_test"/>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>TestCase</label>
+      </node>
+      <node id="388">
+        <label>org.greenrobot.eventbus.indexed.EventBusSubscriberInJarTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_subscriber_in_jar_test_with_index"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="394">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="394" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="392">
+        <label>org.greenrobot.eventbus.EventBusSubscriberInJarTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_in_jar_test"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+        <childnode refid="394" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+      <node id="393">
+        <label>TestCase</label>
+      </node>
+      <node id="391">
+        <label>org.greenrobot.eventbus.indexed.EventBusSubscriberInJarTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_subscriber_in_jar_test_with_index"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusSubscriberInJarTestWithIndex.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusSubscriberInJarTestWithIndex.java" bodystart="24" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_in_jar_test_1a1ed6f30d56dc9d24fe2d50644e47cd21" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusSubscriberInJarTestWithIndex</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_subscriber_in_jar_test_with_index_1ae9cebcecac590d5af1e0e565f1ff4bea" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusSubscriberInJarTestWithIndex</scope><name>overwriteEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_in_jar_test_1a55692eeaa52b4ca9faed6108a700ca90" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusSubscriberInJarTestWithIndex</scope><name>testSubscriberInJar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

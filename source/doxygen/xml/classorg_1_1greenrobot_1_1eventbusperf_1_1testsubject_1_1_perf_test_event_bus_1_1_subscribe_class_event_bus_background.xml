@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a0e6276e41a937889123dbcf61c7e2b97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.SubscribeClassEventBusBackground.onEventBackgroundThread</definition>
+        <argsstring>(TestEvent event)</argsstring>
+        <name>onEventBackgroundThread</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_event" kindref="compound">TestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="232" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a2d5e35b28f81c007a7769382a7384d07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.SubscribeClassEventBusBackground.dummy</definition>
+        <argsstring>()</argsstring>
+        <name>dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="236" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="236" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a52ee60498191f7fe40b98b7f86531759" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.SubscribeClassEventBusBackground.dummy2</definition>
+        <argsstring>()</argsstring>
+        <name>dummy2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="239" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="239" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a340eb87303cd4f432af07f28c39ee0f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.SubscribeClassEventBusBackground.dummy3</definition>
+        <argsstring>()</argsstring>
+        <name>dummy3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="242" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="242" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1aa76c4e38bc5e77985e9693a11ca24270" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.SubscribeClassEventBusBackground.dummy4</definition>
+        <argsstring>()</argsstring>
+        <name>dummy4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="245" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="245" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a71c74dc9d3fb5749fee90b73d9c9abcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.SubscribeClassEventBusBackground.dummy5</definition>
+        <argsstring>()</argsstring>
+        <name>dummy5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="248" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="248" bodyend="249"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="230" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="230" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a2d5e35b28f81c007a7769382a7384d07" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</scope><name>dummy</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a52ee60498191f7fe40b98b7f86531759" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</scope><name>dummy2</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a340eb87303cd4f432af07f28c39ee0f2" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</scope><name>dummy3</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1aa76c4e38bc5e77985e9693a11ca24270" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</scope><name>dummy4</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a71c74dc9d3fb5749fee90b73d9c9abcf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</scope><name>dummy5</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_subscribe_class_event_bus_background_1a0e6276e41a937889123dbcf61c7e2b97" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::SubscribeClassEventBusBackground</scope><name>onEventBackgroundThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
