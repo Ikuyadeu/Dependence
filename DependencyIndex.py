@@ -15,9 +15,10 @@ class DependencyIndex(object):
             return refid
   
         for compound in self.__root.findall(self.__compoundname):
-            for member in compound.findall(self.__membername):
+            for member in compound.findall('.' + self.__membername):
                 if member.get(self.__refidname) == refid:
-                    return compound.get(self.__refidname)
+                    return compound.find('name').text
+                    # return compound.get(self.__refidname)
 
     def id_to_kind(self, refid, kindref):
         """refidからrefの種類(class, function, variable)を取得する

@@ -22,7 +22,7 @@ def output_dependency(dependency_dict):
 
     print("lineno, text")
     for id, dependency in dependency_dict.items():
-        print(dependency.get_lineno(), dependency)
+        print(dependency.get_lineno(), dependency, dependency.get_compound())
     print()
 
     
@@ -90,7 +90,8 @@ for compounddef in root.findall('./compounddef'):
             kindref = ref.get('kindref')
             reftext = ref.text
             kind = index.id_to_kind(refid , kindref)
-            dependency_dict[refid] = Dp.Dependency(refid, reftext, lineno, kind)
+            compound = index.ref_to_compound(refid, kindref)
+            dependency_dict[refid] = Dp.Dependency(refid, reftext, lineno, kind, compound)
 
 output_dependency(filter_dict_kind(dependency_dict, "class"))
 output_dependency(filter_dict_kind(dependency_dict, "function"))
