@@ -10,7 +10,7 @@ class DependencyIndex(object):
     def get_root(self):
         return self.__root
 
-    def ref_to_compound(self, refid, kindref):
+    def ref_to_compound(self, refid: str, kindref: str) -> str:
         if kindref == "compound":
             return refid
   
@@ -20,7 +20,7 @@ class DependencyIndex(object):
                     return compound.find('name').text
                     # return compound.get(self.__refidname)
 
-    def id_to_kind(self, refid, kindref):
+    def id_to_kind(self, refid: str, kindref: str) -> str:
         """refidからrefの種類(class, function, variable)を取得する
         Args:
             refid:検索するid
@@ -37,7 +37,7 @@ class DependencyIndex(object):
             if tag.get(self.__refidname) == refid:
                 return tag.get(self.__kindname)
 
-    def get_file_ref(self, filename):
+    def get_file_ref(self, filename: str):
         """ファイル名からファイルのrefidを探す
         Args:
             filename:検索するファイル名

@@ -2,8 +2,9 @@ import sys
 import xml.etree.ElementTree as ET
 import Dependency as Dp
 import DependencyIndex as DpI
+from typing import TypeVar
  
-def ref_to_XMLname(refid):
+def ref_to_XMLname(refid: str):
     """refidからXMLファイル名を生成
     Args:
         refid:refのid
@@ -15,7 +16,7 @@ def ref_to_XMLname(refid):
 def filter_dict_kind(dd, kind):
     return dict(((id, dd[id]) for id in dd if dd[id].get_kind() == kind))
 
-def output_dependency(dependency_dict):
+def output_dependency(dependency_dict: dict):
     if len(dependency_dict) == 0:
         print(None)
         return
@@ -45,14 +46,14 @@ else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
-dependency_dict = {} # 依存関係の辞書リスト
+dependency_dict = {}
 
 # raw文字列(r)にしておくとエスケープが無効になる
 doxygenfile = r'source\doxygen\xml\\'
 indexfile = ref_to_XMLname('index')
 indexroot = ET.parse(indexfile).getroot()
 
-index = DpI.DependencyIndex(indexroot)
+index = DpI.DependencyIndex(indexroot) 
 
 fileref = index.get_file_ref(filename)
 
