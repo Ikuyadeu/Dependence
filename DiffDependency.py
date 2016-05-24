@@ -1,6 +1,6 @@
 import sys
 import xml.etree.ElementTree as ET
-import Dependency as Dp
+from Dependency import Dependency as Dp
 import DependencyIndex as DpI
 from typing import TypeVar
  
