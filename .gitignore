@@ -1,8 +1,6 @@
-.__pycache__/
-.vs/
-./source
+/__pycache__
+/.vs
+/source
 P-C-Dependency.pyproj
 P-C-Dependency.pyproj.user
 P-C-Dependency.sln
-/source
-/__pycache__
