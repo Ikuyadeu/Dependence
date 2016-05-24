@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::util::ErrorDialogConfig</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a0d7c153e7c6e1c778b52211a8bb10a58" prot="package" static="no" mutable="no">
+        <type>final Resources</type>
+        <definition>final Resources org.greenrobot.eventbus.util.ErrorDialogConfig.resources</definition>
+        <argsstring></argsstring>
+        <name>resources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a84a417161564947097ba30c44048bc0e" prot="package" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int org.greenrobot.eventbus.util.ErrorDialogConfig.defaultTitleId</definition>
+        <argsstring></argsstring>
+        <name>defaultTitleId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a449df9ec4a827ab26b271b5a2a068576" prot="package" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int org.greenrobot.eventbus.util.ErrorDialogConfig.defaultErrorMsgId</definition>
+        <argsstring></argsstring>
+        <name>defaultErrorMsgId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ac47913cc9bc65c472c175925e4f26438" prot="package" static="no" mutable="no">
+        <type>final <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping" kindref="compound">ExceptionToResourceMapping</ref></type>
+        <definition>final ExceptionToResourceMapping org.greenrobot.eventbus.util.ErrorDialogConfig.mapping</definition>
+        <argsstring></argsstring>
+        <name>mapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a99e60a18b97764a5e3786a5955587e7c" prot="package" static="no" mutable="no">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>EventBus org.greenrobot.eventbus.util.ErrorDialogConfig.eventBus</definition>
+        <argsstring></argsstring>
+        <name>eventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="30" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1afa048349e4d912f09466664060c0250e" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.util.ErrorDialogConfig.logExceptions</definition>
+        <argsstring></argsstring>
+        <name>logExceptions</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="31" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a3e7472f371f0665119950f2b7c6c5c80" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbus.util.ErrorDialogConfig.tagForLoggingExceptions</definition>
+        <argsstring></argsstring>
+        <name>tagForLoggingExceptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="32" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ab4f894d1a7befa3bb343fdcb98540c60" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.util.ErrorDialogConfig.defaultDialogIconId</definition>
+        <argsstring></argsstring>
+        <name>defaultDialogIconId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="33" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a3c0a9d8ccff31551924386537a1996ee" prot="package" static="no" mutable="no">
+        <type>Class&lt;?&gt;</type>
+        <definition>Class&lt;?&gt; org.greenrobot.eventbus.util.ErrorDialogConfig.defaultEventTypeOnDialogClosed</definition>
+        <argsstring></argsstring>
+        <name>defaultEventTypeOnDialogClosed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="34" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a41d87b9dfd3e0ea2e89b23473bd36742" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.util.ErrorDialogConfig.ErrorDialogConfig</definition>
+        <argsstring>(Resources resources, int defaultTitleId, int defaultMsgId)</argsstring>
+        <name>ErrorDialogConfig</name>
+        <param>
+          <type>Resources</type>
+          <declname>resources</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultTitleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultMsgId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ad1ff63370446d724f63d66f1baa31b57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config" kindref="compound">ErrorDialogConfig</ref></type>
+        <definition>ErrorDialogConfig org.greenrobot.eventbus.util.ErrorDialogConfig.addMapping</definition>
+        <argsstring>(Class&lt;?extends Throwable &gt; clazz, int msgId)</argsstring>
+        <name>addMapping</name>
+        <param>
+          <type>Class&lt;?extends Throwable &gt;</type>
+          <declname>clazz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>msgId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="43" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a08793b3c1e8792dd42a85fd5b959c106" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.util.ErrorDialogConfig.getMessageIdForThrowable</definition>
+        <argsstring>(final Throwable throwable)</argsstring>
+        <name>getMessageIdForThrowable</name>
+        <param>
+          <type>final Throwable</type>
+          <declname>throwable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="48" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ab0db2c60c1c9f48e6849275e39d6a40c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogConfig.setDefaultDialogIconId</definition>
+        <argsstring>(int defaultDialogIconId)</argsstring>
+        <name>setDefaultDialogIconId</name>
+        <param>
+          <type>int</type>
+          <declname>defaultDialogIconId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="58" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a1b42f4d3642760bba6f946b87cf95b77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogConfig.setDefaultEventTypeOnDialogClosed</definition>
+        <argsstring>(Class&lt;?&gt; defaultEventTypeOnDialogClosed)</argsstring>
+        <name>setDefaultEventTypeOnDialogClosed</name>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>defaultEventTypeOnDialogClosed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="62" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ac6d6eea712ff7b93b790a136b591df18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogConfig.disableExceptionLogging</definition>
+        <argsstring>()</argsstring>
+        <name>disableExceptionLogging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="66" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a42ccbd03f5b014a2f4f2f4b2b9dd8914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogConfig.setTagForLoggingExceptions</definition>
+        <argsstring>(String tagForLoggingExceptions)</argsstring>
+        <name>setTagForLoggingExceptions</name>
+        <param>
+          <type>String</type>
+          <declname>tagForLoggingExceptions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="70" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a0ba07327cc055a721d34194ce7a13081" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.util.ErrorDialogConfig.setEventBus</definition>
+        <argsstring>(EventBus eventBus)</argsstring>
+        <name>setEventBus</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+          <declname>eventBus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="74" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a06bf5777f1dfad861012367bde7a6ae9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>EventBus org.greenrobot.eventbus.util.ErrorDialogConfig.getEventBus</definition>
+        <argsstring>()</argsstring>
+        <name>getEventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>eventBus!=null ? eventBus: <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1aeffc3ac0b632907cca6144c7a1c93f89" kindref="member">EventBus.getDefault()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="79" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="78">
+        <label>Map&lt; Class&lt;?extends Throwable &gt;, Integer &gt;</label>
+      </node>
+      <node id="77">
+        <label>org.greenrobot.eventbus.util.ExceptionToResourceMapping</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>throwableToMsgIdMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="80">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="80" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>Resources</label>
+      </node>
+      <node id="76">
+        <label>org.greenrobot.eventbus.util.ErrorDialogConfig</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config"/>
+        <childnode refid="77" relation="usage">
+          <edgelabel>mapping</edgelabel>
+        </childnode>
+        <childnode refid="79" relation="usage">
+          <edgelabel>resources</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ErrorDialogConfig.java" bodystart="24" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ad1ff63370446d724f63d66f1baa31b57" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>addMapping</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ab4f894d1a7befa3bb343fdcb98540c60" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>defaultDialogIconId</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a449df9ec4a827ab26b271b5a2a068576" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>defaultErrorMsgId</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a3c0a9d8ccff31551924386537a1996ee" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>defaultEventTypeOnDialogClosed</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a84a417161564947097ba30c44048bc0e" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>defaultTitleId</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ac6d6eea712ff7b93b790a136b591df18" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>disableExceptionLogging</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a41d87b9dfd3e0ea2e89b23473bd36742" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>ErrorDialogConfig</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a99e60a18b97764a5e3786a5955587e7c" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a06bf5777f1dfad861012367bde7a6ae9" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>getEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a08793b3c1e8792dd42a85fd5b959c106" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>getMessageIdForThrowable</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1afa048349e4d912f09466664060c0250e" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>logExceptions</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ac47913cc9bc65c472c175925e4f26438" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>mapping</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a0d7c153e7c6e1c778b52211a8bb10a58" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>resources</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1ab0db2c60c1c9f48e6849275e39d6a40c" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>setDefaultDialogIconId</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a1b42f4d3642760bba6f946b87cf95b77" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>setDefaultEventTypeOnDialogClosed</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a0ba07327cc055a721d34194ce7a13081" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>setEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a42ccbd03f5b014a2f4f2f4b2b9dd8914" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>setTagForLoggingExceptions</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_error_dialog_config_1a3e7472f371f0665119950f2b7c6c5c80" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ErrorDialogConfig</scope><name>tagForLoggingExceptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

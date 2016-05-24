@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test_1_1_no_subscriber_event_tracker" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusBuilderTest::NoSubscriberEventTracker</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test_1_1_no_subscriber_event_tracker_1aef1b6c74115a8cac57c55c20b00a90c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusBuilderTest.NoSubscriberEventTracker.onEvent</definition>
+        <argsstring>(NoSubscriberEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event" kindref="compound">NoSubscriberEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" line="90" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" line="88" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" bodystart="88" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test_1_1_no_subscriber_event_tracker_1aef1b6c74115a8cac57c55c20b00a90c4" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusBuilderTest::NoSubscriberEventTracker</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

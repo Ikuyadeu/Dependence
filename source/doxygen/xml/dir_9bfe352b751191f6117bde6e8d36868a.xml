@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9bfe352b751191f6117bde6e8d36868a" kind="dir">
+    <compoundname>C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest</compoundname>
+    <innerdir refid="dir_94c147d66eb8bfc8aca86ec8436e9651">C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/"/>
+  </compounddef>
+</doxygen>

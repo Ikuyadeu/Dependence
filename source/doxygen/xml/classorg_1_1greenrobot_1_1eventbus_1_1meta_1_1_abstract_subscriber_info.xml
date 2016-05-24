@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</compoundname>
+    <basecompoundref refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info" prot="public" virt="non-virtual">org.greenrobot.eventbus.meta.SubscriberInfo</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_simple_subscriber_info" prot="public" virt="non-virtual">org.greenrobot.eventbus.meta.SimpleSubscriberInfo</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a4b96bb0ea9bb4aa8976f720f8c3d99bd" prot="private" static="no" mutable="no">
+        <type>final Class</type>
+        <definition>final Class org.greenrobot.eventbus.meta.AbstractSubscriberInfo.subscriberClass</definition>
+        <argsstring></argsstring>
+        <name>subscriberClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1af6a322bc207cad6a40624a7ead18fde0" prot="private" static="no" mutable="no">
+        <type>final Class&lt;?extends <ref refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info" kindref="compound">SubscriberInfo</ref> &gt;</type>
+        <definition>final Class&lt;? extends SubscriberInfo&gt; org.greenrobot.eventbus.meta.AbstractSubscriberInfo.superSubscriberInfoClass</definition>
+        <argsstring></argsstring>
+        <name>superSubscriberInfoClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a9b0d53ada966fbd676ab4c7118d2341e" prot="private" static="no" mutable="no">
+        <type>final boolean</type>
+        <definition>final boolean org.greenrobot.eventbus.meta.AbstractSubscriberInfo.shouldCheckSuperclass</definition>
+        <argsstring></argsstring>
+        <name>shouldCheckSuperclass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a446a04e3a55a760bee1710ea5006ba2a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.meta.AbstractSubscriberInfo.AbstractSubscriberInfo</definition>
+        <argsstring>(Class subscriberClass, Class&lt;?extends SubscriberInfo &gt; superSubscriberInfoClass, boolean shouldCheckSuperclass)</argsstring>
+        <name>AbstractSubscriberInfo</name>
+        <param>
+          <type>Class</type>
+          <declname>subscriberClass</declname>
+        </param>
+        <param>
+          <type>Class&lt;?extends <ref refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info" kindref="compound">SubscriberInfo</ref> &gt;</type>
+          <declname>superSubscriberInfoClass</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>shouldCheckSuperclass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="30" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a3debb8530428c6024b00b2bc4d02697c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kindref="compound">SubscriberMethod</ref></type>
+        <definition>SubscriberMethod org.greenrobot.eventbus.meta.AbstractSubscriberInfo.createSubscriberMethod</definition>
+        <argsstring>(String methodName, Class&lt;?&gt; eventType)</argsstring>
+        <name>createSubscriberMethod</name>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="59" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1aa6c9693691673fec0425fe28f1a2fbe5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kindref="compound">SubscriberMethod</ref></type>
+        <definition>SubscriberMethod org.greenrobot.eventbus.meta.AbstractSubscriberInfo.createSubscriberMethod</definition>
+        <argsstring>(String methodName, Class&lt;?&gt; eventType, ThreadMode threadMode)</argsstring>
+        <name>createSubscriberMethod</name>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref></type>
+          <declname>threadMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="63" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1afaed6c8353fd1637ac46a9adb55e58e0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kindref="compound">SubscriberMethod</ref></type>
+        <definition>SubscriberMethod org.greenrobot.eventbus.meta.AbstractSubscriberInfo.createSubscriberMethod</definition>
+        <argsstring>(String methodName, Class&lt;?&gt; eventType, ThreadMode threadMode, int priority, boolean sticky)</argsstring>
+        <name>createSubscriberMethod</name>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref></type>
+          <declname>threadMode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>sticky</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="67" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="67" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a1ea239cbdc5e5920612e836787c9de3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Class</type>
+        <definition>Class org.greenrobot.eventbus.meta.AbstractSubscriberInfo.getSubscriberClass</definition>
+        <argsstring>()</argsstring>
+        <name>getSubscriberClass</name>
+        <reimplements refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info_1a921b0d410985e5fdb6e9ba2fa67b1ce2">getSubscriberClass</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="38" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a912be377e40fa70f5a57b5354f1a6e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info" kindref="compound">SubscriberInfo</ref></type>
+        <definition>SubscriberInfo org.greenrobot.eventbus.meta.AbstractSubscriberInfo.getSuperSubscriberInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getSuperSubscriberInfo</name>
+        <reimplements refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info_1a47a4bea4d4b6aadfce1ade168095dfa5">getSuperSubscriberInfo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="43" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="43" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a2a32c5e42e0949966bedf391977a2085" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.meta.AbstractSubscriberInfo.shouldCheckSuperclass</definition>
+        <argsstring>()</argsstring>
+        <name>shouldCheckSuperclass</name>
+        <reimplements refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info_1a309fa999b799f2db61ab924f245dba26">shouldCheckSuperclass</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="55" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for generated subscriber meta info classes created by annotation processing. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>org.greenrobot.eventbus.meta.SubscriberInfo</label>
+        <link refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info"/>
+      </node>
+      <node id="40">
+        <label>org.greenrobot.eventbus.meta.AbstractSubscriberInfo</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>org.greenrobot.eventbus.meta.SimpleSubscriberInfo</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_simple_subscriber_info"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>org.greenrobot.eventbus.meta.SubscriberInfo</label>
+        <link refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info"/>
+      </node>
+      <node id="43">
+        <label>org.greenrobot.eventbus.meta.AbstractSubscriberInfo</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/meta/AbstractSubscriberInfo.java" bodystart="25" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a446a04e3a55a760bee1710ea5006ba2a" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>AbstractSubscriberInfo</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a3debb8530428c6024b00b2bc4d02697c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>createSubscriberMethod</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1aa6c9693691673fec0425fe28f1a2fbe5" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>createSubscriberMethod</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1afaed6c8353fd1637ac46a9adb55e58e0" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>createSubscriberMethod</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a1ea239cbdc5e5920612e836787c9de3e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>getSubscriberClass</name></member>
+      <member refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_subscriber_info_1a3cbee8392598082b6e00f868c1cb4adc" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>getSubscriberMethods</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a912be377e40fa70f5a57b5354f1a6e4a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>getSuperSubscriberInfo</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a9b0d53ada966fbd676ab4c7118d2341e" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>shouldCheckSuperclass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a2a32c5e42e0949966bedf391977a2085" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>shouldCheckSuperclass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1a4b96bb0ea9bb4aa8976f720f8c3d99bd" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>subscriberClass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1meta_1_1_abstract_subscriber_info_1af6a322bc207cad6a40624a7ead18fde0" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::meta::AbstractSubscriberInfo</scope><name>superSubscriberInfoClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

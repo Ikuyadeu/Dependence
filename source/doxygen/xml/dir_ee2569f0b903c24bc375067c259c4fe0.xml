@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_ee2569f0b903c24bc375067c259c4fe0" kind="dir">
+    <compoundname>C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus</compoundname>
+    <innerdir refid="dir_252b3b7580df19ad088da5e81473f401">C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed</innerdir>
+    <innerfile refid="_abstract_event_bus_test_8java">AbstractEventBusTest.java</innerfile>
+    <innerfile refid="_class_map_perf_test_8java">ClassMapPerfTest.java</innerfile>
+    <innerfile refid="_event_bus_background_thread_test_8java">EventBusBackgroundThreadTest.java</innerfile>
+    <innerfile refid="_event_bus_basic_test_8java">EventBusBasicTest.java</innerfile>
+    <innerfile refid="_event_bus_builder_test_8java">EventBusBuilderTest.java</innerfile>
+    <innerfile refid="_event_bus_cancel_event_delivery_test_8java">EventBusCancelEventDeliveryTest.java</innerfile>
+    <innerfile refid="_event_bus_fallback_to_reflection_test_8java">EventBusFallbackToReflectionTest.java</innerfile>
+    <innerfile refid="_event_bus_generics_test_8java">EventBusGenericsTest.java</innerfile>
+    <innerfile refid="_event_bus_index_test_8java">EventBusIndexTest.java</innerfile>
+    <innerfile refid="_event_bus_inheritance_disabled_test_8java">EventBusInheritanceDisabledTest.java</innerfile>
+    <innerfile refid="_event_bus_inheritance_test_8java">EventBusInheritanceTest.java</innerfile>
+    <innerfile refid="_event_bus_main_thread_racing_test_8java">EventBusMainThreadRacingTest.java</innerfile>
+    <innerfile refid="_event_bus_main_thread_test_8java">EventBusMainThreadTest.java</innerfile>
+    <innerfile refid="_event_bus_method_modifiers_test_8java">EventBusMethodModifiersTest.java</innerfile>
+    <innerfile refid="_event_bus_multithreaded_test_8java">EventBusMultithreadedTest.java</innerfile>
+    <innerfile refid="_event_bus_no_subscriber_event_test_8java">EventBusNoSubscriberEventTest.java</innerfile>
+    <innerfile refid="_event_bus_ordered_subscriptions_test_8java">EventBusOrderedSubscriptionsTest.java</innerfile>
+    <innerfile refid="_event_bus_registration_racing_test_8java">EventBusRegistrationRacingTest.java</innerfile>
+    <innerfile refid="_event_bus_sticky_event_test_8java">EventBusStickyEventTest.java</innerfile>
+    <innerfile refid="_event_bus_subscriber_exception_test_8java">EventBusSubscriberExceptionTest.java</innerfile>
+    <innerfile refid="_event_bus_subscriber_in_jar_test_8java">EventBusSubscriberInJarTest.java</innerfile>
+    <innerfile refid="_event_bus_subscriber_legal_test_8java">EventBusSubscriberLegalTest.java</innerfile>
+    <innerfile refid="_int_test_event_8java">IntTestEvent.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/"/>
+  </compounddef>
+</doxygen>

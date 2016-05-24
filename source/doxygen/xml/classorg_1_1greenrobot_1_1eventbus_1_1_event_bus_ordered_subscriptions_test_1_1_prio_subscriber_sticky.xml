@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a234777bcd11a7b395d7ee9cfd38f0d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventP1</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEventP1</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="148" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a477c6efc6817f07ffb7fee4779fa97df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventM1</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEventM1</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="154" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a1e8aed8c75e88a7ec498b97cb9aa6c48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventP0</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEventP0</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="159" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a98ca9ceb16320dd8e0bfa7cc2660daf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventP10</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEventP10</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="164" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a8f6c3554c8ca66fb87ad36332ff8a399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventM100</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEventM100</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="169" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a5746fe589343a1815d73b9b86c51c20e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventMainThreadM1</definition>
+        <argsstring>(IntTestEvent event)</argsstring>
+        <name>onEventMainThreadM1</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="174" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a49d5952336751f61be2d45d83934ff79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventMainThreadP0</definition>
+        <argsstring>(IntTestEvent event)</argsstring>
+        <name>onEventMainThreadP0</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="179" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1abc24dedd4e282141c8c6f48ed3386e7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventMainThreadP1</definition>
+        <argsstring>(IntTestEvent event)</argsstring>
+        <name>onEventMainThreadP1</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="184" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a81ae4cc8c42d47f021fcecade9285ff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventBackgroundThreadP1</definition>
+        <argsstring>(Integer event)</argsstring>
+        <name>onEventBackgroundThreadP1</name>
+        <param>
+          <type>Integer</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="189" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1af574432af88d749060bacbeda4195429" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventBackgroundThreadP0</definition>
+        <argsstring>(Integer event)</argsstring>
+        <name>onEventBackgroundThreadP0</name>
+        <param>
+          <type>Integer</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="194" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="194" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1af810e71cf861a92e90a4b43c2353ead0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.onEventBackgroundThreadM1</definition>
+        <argsstring>(Integer event)</argsstring>
+        <name>onEventBackgroundThreadM1</name>
+        <param>
+          <type>Integer</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="199" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="199" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a45d1375d7368c62738e9251b625ccf32" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusOrderedSubscriptionsTest.PrioSubscriberSticky.handleEvent</definition>
+        <argsstring>(int prio, Object event)</argsstring>
+        <name>handleEvent</name>
+        <param>
+          <type>int</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="203" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="203" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" line="146" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusOrderedSubscriptionsTest.java" bodystart="146" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a45d1375d7368c62738e9251b625ccf32" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>handleEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1af810e71cf861a92e90a4b43c2353ead0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventBackgroundThreadM1</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1af574432af88d749060bacbeda4195429" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventBackgroundThreadP0</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a81ae4cc8c42d47f021fcecade9285ff5" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventBackgroundThreadP1</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a477c6efc6817f07ffb7fee4779fa97df" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventM1</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a8f6c3554c8ca66fb87ad36332ff8a399" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventM100</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a5746fe589343a1815d73b9b86c51c20e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventMainThreadM1</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a49d5952336751f61be2d45d83934ff79" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventMainThreadP0</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1abc24dedd4e282141c8c6f48ed3386e7b" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventMainThreadP1</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a1e8aed8c75e88a7ec498b97cb9aa6c48" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventP0</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a234777bcd11a7b395d7ee9cfd38f0d24" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventP1</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_ordered_subscriptions_test_1_1_prio_subscriber_sticky_1a98ca9ceb16320dd8e0bfa7cc2660daf0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusOrderedSubscriptionsTest::PrioSubscriberSticky</scope><name>onEventP10</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

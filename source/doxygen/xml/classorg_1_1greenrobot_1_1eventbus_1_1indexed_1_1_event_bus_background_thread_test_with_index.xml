@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusBackgroundThreadTest</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index_1aa5541f35b0940a882444a033b6792c7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.indexed.EventBusBackgroundThreadTestWithIndex.overwriteEventBus</definition>
+        <argsstring>()</argsstring>
+        <name>overwriteEventBus</name>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusBackgroundThreadTestWithIndex.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusBackgroundThreadTestWithIndex.java" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index_1a4acb904ee82cb5ba13c7934ae11a06df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.indexed.EventBusBackgroundThreadTestWithIndex.testIndex</definition>
+        <argsstring>()</argsstring>
+        <name>testIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusBackgroundThreadTestWithIndex.java" line="32" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusBackgroundThreadTestWithIndex.java" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="107">
+        <label>org.greenrobot.eventbus.indexed.EventBusBackgroundThreadTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>org.greenrobot.eventbus.EventBusBackgroundThreadTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="114">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="110">
+        <label>org.greenrobot.eventbus.indexed.EventBusBackgroundThreadTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="115">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="115" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>org.greenrobot.eventbus.EventBusBackgroundThreadTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="113" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusBackgroundThreadTestWithIndex.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/indexed/EventBusBackgroundThreadTestWithIndex.java" bodystart="25" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test_1aa3d634ed91345245fce52848ef2e2644" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>onEventBackgroundThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index_1aa5541f35b0940a882444a033b6792c7f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>overwriteEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_background_thread_test_with_index_1a4acb904ee82cb5ba13c7934ae11a06df" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>testIndex</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test_1afcb264f602efdef5da3dd28224d1220f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>testPostFromMain</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_background_thread_test_1af446e9ab93ecb0dea1b040f54d37bf61" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>testPostInCurrentThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::indexed::EventBusBackgroundThreadTestWithIndex</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

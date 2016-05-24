@@ -32,6 +32,7 @@
     <Compile Include="DiffDependency.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="README.md" />
     <Content Include="source\doxygen\xml\classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus.xml" />
     <Content Include="source\doxygen\xml\classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post.xml" />

@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::SubscriberMethod</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1ac3bce9fce138b2507f3e8e0817cbbd8d" prot="package" static="no" mutable="no">
+        <type>final Method</type>
+        <definition>final Method org.greenrobot.eventbus.SubscriberMethod.method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="22" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1ad8fb5e44e9cf1ea755eaaf0d2067fc4f" prot="package" static="no" mutable="no">
+        <type>final <ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref></type>
+        <definition>final ThreadMode org.greenrobot.eventbus.SubscriberMethod.threadMode</definition>
+        <argsstring></argsstring>
+        <name>threadMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="23" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a8d1eb7d5ad87fd18744dfcb5d3ede073" prot="package" static="no" mutable="no">
+        <type>final Class&lt;?&gt;</type>
+        <definition>final Class&lt;?&gt; org.greenrobot.eventbus.SubscriberMethod.eventType</definition>
+        <argsstring></argsstring>
+        <name>eventType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a479eca6e7b9b19097aaad3a1c41ff2e2" prot="package" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int org.greenrobot.eventbus.SubscriberMethod.priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a48c594474bbe0c4e59aa8c5bb336e2fa" prot="package" static="no" mutable="no">
+        <type>final boolean</type>
+        <definition>final boolean org.greenrobot.eventbus.SubscriberMethod.sticky</definition>
+        <argsstring></argsstring>
+        <name>sticky</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1aed62bc375733ae704d7e6a3090a2b94a" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbus.SubscriberMethod.methodString</definition>
+        <argsstring></argsstring>
+        <name>methodString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for efficient comparison </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a0fd914bcd771de107df3d05e6955fe9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.SubscriberMethod.SubscriberMethod</definition>
+        <argsstring>(Method method, Class&lt;?&gt; eventType, ThreadMode threadMode, int priority, boolean sticky)</argsstring>
+        <name>SubscriberMethod</name>
+        <param>
+          <type>Method</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref></type>
+          <declname>threadMode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>sticky</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="30" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a059c9388e103e424879b1a6263b8a13a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.SubscriberMethod.equals</definition>
+        <argsstring>(Object other)</argsstring>
+        <name>equals</name>
+        <param>
+          <type>Object</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="39" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a5d1275afa338438e9553b131cfc17138" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.SubscriberMethod.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="65" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a436591e79219e405a8465be8d2161391" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>synchronized void org.greenrobot.eventbus.SubscriberMethod.checkMethodString</definition>
+        <argsstring>()</argsstring>
+        <name>checkMethodString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="53" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="53" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Used internally by <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref> and generated subscriber indexes. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="752">
+        <label>org.greenrobot.eventbus.SubscriberMethod</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method"/>
+        <childnode refid="753" relation="usage">
+          <edgelabel>threadMode</edgelabel>
+        </childnode>
+        <childnode refid="754" relation="usage">
+          <edgelabel>method</edgelabel>
+        </childnode>
+      </node>
+      <node id="754">
+        <label>Method</label>
+      </node>
+      <node id="753">
+        <label>org.greenrobot.eventbus.ThreadMode</label>
+        <link refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" line="21" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/SubscriberMethod.java" bodystart="21" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a436591e79219e405a8465be8d2161391" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>checkMethodString</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a059c9388e103e424879b1a6263b8a13a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>equals</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a8d1eb7d5ad87fd18744dfcb5d3ede073" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>eventType</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a5d1275afa338438e9553b131cfc17138" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>hashCode</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1ac3bce9fce138b2507f3e8e0817cbbd8d" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>method</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1aed62bc375733ae704d7e6a3090a2b94a" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>methodString</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a479eca6e7b9b19097aaad3a1c41ff2e2" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>priority</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a48c594474bbe0c4e59aa8c5bb336e2fa" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>sticky</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1a0fd914bcd771de107df3d05e6955fe9f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>SubscriberMethod</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_method_1ad8fb5e44e9cf1ea755eaaf0d2067fc4f" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::SubscriberMethod</scope><name>threadMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

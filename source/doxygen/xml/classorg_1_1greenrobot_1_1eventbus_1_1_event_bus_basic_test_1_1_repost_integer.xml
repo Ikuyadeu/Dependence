@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusBasicTest::RepostInteger</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer_1a3b636150b4b2161d7dee4ebdc302d06a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusBasicTest.RepostInteger.lastEvent</definition>
+        <argsstring></argsstring>
+        <name>lastEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" line="299" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer_1aac6a92a2a5b5c44433c95dde6ee0cc9e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.EventBusBasicTest.RepostInteger.countEvent</definition>
+        <argsstring></argsstring>
+        <name>countEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" line="300" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer_1ae031ed2f934d5191457ffaff52ba8d41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusBasicTest.RepostInteger.onEvent</definition>
+        <argsstring>(Integer event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>Integer</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" line="303" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" bodystart="303" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" line="298" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBasicTest.java" bodystart="298" bodyend="315"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer_1aac6a92a2a5b5c44433c95dde6ee0cc9e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusBasicTest::RepostInteger</scope><name>countEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer_1a3b636150b4b2161d7dee4ebdc302d06a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusBasicTest::RepostInteger</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_basic_test_1_1_repost_integer_1ae031ed2f934d5191457ffaff52ba8d41" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusBasicTest::RepostInteger</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

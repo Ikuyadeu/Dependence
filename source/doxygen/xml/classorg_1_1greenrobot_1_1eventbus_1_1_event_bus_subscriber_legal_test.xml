@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusSubscriberLegalTest</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.AbstractEventBusTest</basecompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1_1_abstract" prot="public">org::greenrobot::eventbus::EventBusSubscriberLegalTest::Abstract</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1_1_abstract_impl" prot="public">org::greenrobot::eventbus::EventBusSubscriberLegalTest::AbstractImpl</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1a9d9856011471deeed2128dfb1c1a10b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusSubscriberLegalTest.testSubscriberLegal</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberLegal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1a134fd5fa5d941d5506d329cab35e77fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusSubscriberLegalTest.testSubscriberLegalAbstract</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberLegalAbstract</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" line="54" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1abfba6222211a2bf3bd65ead02154fd18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusSubscriberLegalTest.onEvent</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" line="62" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Markus Junginger, greenrobot </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="395">
+        <label>org.greenrobot.eventbus.EventBusSubscriberLegalTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test"/>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="400">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="399">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="401">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="401" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="397">
+        <label>org.greenrobot.eventbus.EventBusSubscriberLegalTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="399" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="400" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="401" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberLegalTest.java" bodystart="25" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1abfba6222211a2bf3bd65ead02154fd18" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1a9d9856011471deeed2128dfb1c1a10b1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>testSubscriberLegal</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_subscriber_legal_test_1a134fd5fa5d941d5506d329cab35e77fc" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>testSubscriberLegalAbstract</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusSubscriberLegalTest</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

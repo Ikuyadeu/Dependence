@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class_with_private_event" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicClassWithPrivateEvent</compoundname>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_with_private_event_in_superclass" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusFallbackToReflectionTest.PublicWithPrivateEventInSuperclass</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class_with_private_event_1a2fadfc8458d8800f6972e9ac755d140a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.PublicClassWithPrivateEvent.onEvent</definition>
+        <argsstring>(PrivateEvent any)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>PrivateEvent</type>
+          <declname>any</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="50" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="591">
+        <label>org.greenrobot.eventbus.EventBusFallbackToReflectionTest.PublicClassWithPrivateEvent</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class_with_private_event"/>
+      </node>
+      <node id="592">
+        <label>org.greenrobot.eventbus.EventBusFallbackToReflectionTest.PublicWithPrivateEventInSuperclass</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_with_private_event_in_superclass"/>
+        <childnode refid="591" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="48" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="48" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class_with_private_event_1a2fadfc8458d8800f6972e9ac755d140a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicClassWithPrivateEvent</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_non_sticky_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusStickyEventTest::NonStickySubscriber</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_non_sticky_subscriber_1aacf1760350322e728249590fa15cec1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.NonStickySubscriber.onEvent</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="180" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_non_sticky_subscriber_1aa81fe251f51eff31c1708f6bd5b4e3ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusStickyEventTest.NonStickySubscriber.onEvent</definition>
+        <argsstring>(IntTestEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_int_test_event" kindref="compound">IntTestEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="185" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="185" bodyend="187"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" line="178" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusStickyEventTest.java" bodystart="178" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_non_sticky_subscriber_1aacf1760350322e728249590fa15cec1e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest::NonStickySubscriber</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_sticky_event_test_1_1_non_sticky_subscriber_1aa81fe251f51eff31c1708f6bd5b4e3ed" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusStickyEventTest::NonStickySubscriber</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

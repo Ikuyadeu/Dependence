@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_my_event_interface_extended" kind="interface" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusInheritanceTest::MyEventInterfaceExtended</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusInheritanceTest.MyEventInterface</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_inheritance_test_1_1_my_event_extended" prot="public" virt="non-virtual">org.greenrobot.eventbus.EventBusInheritanceTest.MyEventExtended</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="503">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.MyEventExtended</label>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.MyEventInterface</label>
+      </node>
+      <node id="501">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.MyEventInterfaceExtended</label>
+        <childnode refid="502" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="505">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.MyEventInterface</label>
+      </node>
+      <node id="504">
+        <label>org.greenrobot.eventbus.EventBusInheritanceTest.MyEventInterfaceExtended</label>
+        <childnode refid="505" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" line="159" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusInheritanceTest.java" bodystart="159" bodyend="160"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

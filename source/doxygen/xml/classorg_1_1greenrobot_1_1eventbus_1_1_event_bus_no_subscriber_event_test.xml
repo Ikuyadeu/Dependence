@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.AbstractEventBusTest</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_no_subscriber_event_test_with_index" prot="public" virt="non-virtual">org.greenrobot.eventbus.indexed.EventBusNoSubscriberEventTestWithIndex</derivedcompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1_1_bad_no_subscriber_subscriber" prot="public">org::greenrobot::eventbus::EventBusNoSubscriberEventTest::BadNoSubscriberSubscriber</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1_1_dummy_subscriber" prot="public">org::greenrobot::eventbus::EventBusNoSubscriberEventTest::DummySubscriber</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ad709d923e7c979bf33d7a265e27c9429" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusNoSubscriberEventTest.testNoSubscriberEvent</definition>
+        <argsstring>()</argsstring>
+        <name>testNoSubscriberEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="29" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ada71d9db884ab42adaa29ded1b145a93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusNoSubscriberEventTest.testNoSubscriberEventAfterUnregister</definition>
+        <argsstring>()</argsstring>
+        <name>testNoSubscriberEventAfterUnregister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="40" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ad8612b3143db86ea94e87d717227b3b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusNoSubscriberEventTest.testBadNoSubscriberSubscriber</definition>
+        <argsstring>()</argsstring>
+        <name>testBadNoSubscriberSubscriber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="48" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ad314c4d9a9598c841bdf103c677ecdce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusNoSubscriberEventTest.onEvent</definition>
+        <argsstring>(NoSubscriberEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event" kindref="compound">NoSubscriberEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="61" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1afe45dead20069c16fdb64fde2e39a9db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusNoSubscriberEventTest.onEvent</definition>
+        <argsstring>(SubscriberExceptionEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_exception_event" kindref="compound">SubscriberExceptionEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="66" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="66" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Markus Junginger, greenrobot </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="293">
+        <label>org.greenrobot.eventbus.indexed.EventBusNoSubscriberEventTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_no_subscriber_event_test_with_index"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+      <node id="291">
+        <label>org.greenrobot.eventbus.EventBusNoSubscriberEventTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test"/>
+        <childnode refid="292" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="297">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="296">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="298">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="298" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="295">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="296" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="297" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="298" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+      <node id="294">
+        <label>org.greenrobot.eventbus.EventBusNoSubscriberEventTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="26" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="26" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ad314c4d9a9598c841bdf103c677ecdce" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1afe45dead20069c16fdb64fde2e39a9db" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ad8612b3143db86ea94e87d717227b3b9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>testBadNoSubscriberSubscriber</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ad709d923e7c979bf33d7a265e27c9429" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>testNoSubscriberEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1ada71d9db884ab42adaa29ded1b145a93" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>testNoSubscriberEventAfterUnregister</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

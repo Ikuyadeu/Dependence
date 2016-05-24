@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusRegistrationRacingTest::SubscriberThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread_1a7678b4bd8078362b6789a38c65d1c986" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>volatile int org.greenrobot.eventbus.EventBusRegistrationRacingTest.SubscriberThread.eventCount</definition>
+        <argsstring></argsstring>
+        <name>eventCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="79" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread_1a01bdb4237efa198c92f235cef58b00de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusRegistrationRacingTest.SubscriberThread.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="82" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="82" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread_1a46a3d714a97930cb7e103c3b549a6681" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusRegistrationRacingTest.SubscriberThread.onEvent</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="96" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="96" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="760">
+        <label>org.greenrobot.eventbus.EventBusRegistrationRacingTest.SubscriberThread</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="761">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="762">
+        <label>org.greenrobot.eventbus.EventBusRegistrationRacingTest.SubscriberThread</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread"/>
+        <childnode refid="763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" line="78" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusRegistrationRacingTest.java" bodystart="78" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread_1a7678b4bd8078362b6789a38c65d1c986" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest::SubscriberThread</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread_1a46a3d714a97930cb7e103c3b549a6681" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest::SubscriberThread</scope><name>onEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_registration_racing_test_1_1_subscriber_thread_1a01bdb4237efa198c92f235cef58b00de" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusRegistrationRacingTest::SubscriberThread</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe" kind="interface" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::Subscribe</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe_1a235410e17350efbe1630fdf1bc2cf5bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref></type>
+        <definition>ThreadMode org.greenrobot.eventbus.Subscribe.threadMode</definition>
+        <argsstring>() default ThreadMode.POSTING</argsstring>
+        <name>threadMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscribe.java" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe_1a56e46d6e3ca77c4c3b0ec71b625f0442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean org.greenrobot.eventbus.Subscribe.sticky</definition>
+        <argsstring>() default false</argsstring>
+        <name>sticky</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, delivers the most recent sticky event (posted with <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1a0858a4e72bf61f54bfb4db98545ca251" kindref="member">EventBus#postSticky(Object)</ref>) to this subscriber (if event available). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscribe.java" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe_1a8c73b1fc7dabfd120cfd97ffca24c41a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int org.greenrobot.eventbus.Subscribe.priority</definition>
+        <argsstring>() default 0</argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subscriber priority to influence the order of event delivery. Within the same delivery thread (<ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref>), higher priority subscribers will receive events before others with a lower priority. The default priority is 0. Note: the priority does <emphasis>NOT</emphasis> affect the order of delivery among subscribers with different <ref refid="enumorg_1_1greenrobot_1_1eventbus_1_1_thread_mode" kindref="compound">ThreadMode</ref>s! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscribe.java" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscribe.java" line="29" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/Subscribe.java" bodystart="29" bodyend="43"/>
+    <listofallmembers>
+      <member refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe_1a8c73b1fc7dabfd120cfd97ffca24c41a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscribe</scope><name>priority</name></member>
+      <member refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe_1a56e46d6e3ca77c4c3b0ec71b625f0442" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscribe</scope><name>sticky</name></member>
+      <member refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_subscribe_1a235410e17350efbe1630fdf1bc2cf5bb" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::Subscribe</scope><name>threadMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

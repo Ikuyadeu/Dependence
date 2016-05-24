@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::util::ExceptionToResourceMapping</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1ac4986adc38919ddc3a12c11333f36713" prot="public" static="no" mutable="no">
+        <type>final Map&lt; Class&lt;?extends Throwable &gt;, Integer &gt;</type>
+        <definition>final Map&lt;Class&lt;? extends Throwable&gt;, Integer&gt; org.greenrobot.eventbus.util.ExceptionToResourceMapping.throwableToMsgIdMap</definition>
+        <argsstring></argsstring>
+        <name>throwableToMsgIdMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" line="36" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1af61ebfc7ad0aad9d87c42cbbb88394f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.util.ExceptionToResourceMapping.ExceptionToResourceMapping</definition>
+        <argsstring>()</argsstring>
+        <name>ExceptionToResourceMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" line="38" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1acd10271c515f510620c9f945c466b5fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer org.greenrobot.eventbus.util.ExceptionToResourceMapping.mapThrowable</definition>
+        <argsstring>(final Throwable throwable)</argsstring>
+        <name>mapThrowable</name>
+        <param>
+          <type>final Throwable</type>
+          <declname>throwable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Looks at the exception and its causes trying to find an ID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" line="43" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" bodystart="43" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1a97e38e4754c094168b36d2afb705a8cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping" kindref="compound">ExceptionToResourceMapping</ref></type>
+        <definition>ExceptionToResourceMapping org.greenrobot.eventbus.util.ExceptionToResourceMapping.addMapping</definition>
+        <argsstring>(Class&lt;?extends Throwable &gt; clazz, int msgId)</argsstring>
+        <name>addMapping</name>
+        <param>
+          <type>Class&lt;?extends Throwable &gt;</type>
+          <declname>clazz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>msgId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" line="85" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1a2091709754dc06faada45a124ee8cd72" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer org.greenrobot.eventbus.util.ExceptionToResourceMapping.mapThrowableFlat</definition>
+        <argsstring>(Throwable throwable)</argsstring>
+        <name>mapThrowableFlat</name>
+        <param>
+          <type>Throwable</type>
+          <declname>throwable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping without checking the cause (done in mapThrowable). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" line="65" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" bodystart="65" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Maps throwables to texts for error dialogs. Use Config to configure the mapping.</para><para><simplesect kind="author"><para>Markus </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="408">
+        <label>Map&lt; Class&lt;?extends Throwable &gt;, Integer &gt;</label>
+      </node>
+      <node id="407">
+        <label>org.greenrobot.eventbus.util.ExceptionToResourceMapping</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping"/>
+        <childnode refid="408" relation="usage">
+          <edgelabel>throwableToMsgIdMap</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" line="34" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/util/ExceptionToResourceMapping.java" bodystart="34" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1a97e38e4754c094168b36d2afb705a8cb" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ExceptionToResourceMapping</scope><name>addMapping</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1af61ebfc7ad0aad9d87c42cbbb88394f7" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ExceptionToResourceMapping</scope><name>ExceptionToResourceMapping</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1acd10271c515f510620c9f945c466b5fb" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ExceptionToResourceMapping</scope><name>mapThrowable</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1a2091709754dc06faada45a124ee8cd72" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ExceptionToResourceMapping</scope><name>mapThrowableFlat</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1util_1_1_exception_to_resource_mapping_1ac4986adc38919ddc3a12c11333f36713" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::util::ExceptionToResourceMapping</scope><name>throwableToMsgIdMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

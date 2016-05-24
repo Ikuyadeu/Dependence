@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus" prot="public" virt="non-virtual">org.greenrobot.eventbusperf.testsubject.PerfTestEventBus</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1ae9fbe3592bf6165a9dc4dd0dbf890b36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.Post.Post</definition>
+        <argsstring>(Context context, TestParams params)</argsstring>
+        <name>Post</name>
+        <param>
+          <type>Context</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_params" kindref="compound">TestParams</ref></type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="88" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1ab7060ce764787f62e84bffcddc1d2bba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.Post.prepareTest</definition>
+        <argsstring>()</argsstring>
+        <name>prepareTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="93" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1a4b1853c3807eb98301184f3713d182ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.Post.runTest</definition>
+        <argsstring>()</argsstring>
+        <name>runTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="98" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="98" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1a07bc22c861fa614f6e9a73f88bf284f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.Post.getDisplayName</definition>
+        <argsstring>()</argsstring>
+        <name>getDisplayName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="120" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="120" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="549">
+        <label>org.greenrobot.eventbusperf.Test</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test"/>
+      </node>
+      <node id="547">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.Post</label>
+        <childnode refid="548" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="548">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus"/>
+        <childnode refid="549" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="554">
+        <label>Serializable</label>
+      </node>
+      <node id="556">
+        <label>AtomicLong</label>
+      </node>
+      <node id="552">
+        <label>org.greenrobot.eventbusperf.Test</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test"/>
+        <childnode refid="553" relation="usage">
+          <edgelabel>params</edgelabel>
+        </childnode>
+        <childnode refid="555" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="556" relation="usage">
+          <edgelabel>eventsReceivedCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="555">
+        <label>Context</label>
+      </node>
+      <node id="550">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus.Post</label>
+        <childnode refid="551" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="551">
+        <label>org.greenrobot.eventbusperf.testsubject.PerfTestEventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus"/>
+        <childnode refid="552" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="553">
+        <label>org.greenrobot.eventbusperf.TestParams</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_params"/>
+        <childnode refid="554" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" line="87" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/testsubject/PerfTestEventBus.java" bodystart="87" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1aadd012e4f848985eadae573654c21c0e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>cancel</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a78d508ab5fa1c7e943d1362b8a09fbbe" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>canceled</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1abdbb7fc3a6e7c286dbc0f050bbebb3bc" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>context</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a18fb87917c635d287d52e422e8925387" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>eventsReceivedCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1a07bc22c861fa614f6e9a73f88bf284f2" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>getDisplayName</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1aab632bd8cedb1489212a02554aa4f0bf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>getOtherTestResults</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a7b27454636c2534e0da6b7ae596c200e" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>getPrimaryResultMicros</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a33c71de2016713f9b891e48921626307" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>getPrimaryResultRate</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a9274b5f74d00d1149b26d07651e79297" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>otherTestResults</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1aef501e9cf699df778904032661ff38f2" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>params</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1a933850d9ef6eccf86e2539db8bdf8ea9" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>PerfTestEventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1ae9fbe3592bf6165a9dc4dd0dbf890b36" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>Post</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1ab7060ce764787f62e84bffcddc1d2bba" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>prepareTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a306fd5067c9f980f4b3a30963479510b" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>primaryResultCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1ab8290752cfd6037a04ddcbb1c508bac6" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>primaryResultMicros</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1testsubject_1_1_perf_test_event_bus_1_1_post_1a4b1853c3807eb98301184f3713d182ed" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>runTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a4384b83909dff855df55497f24cd6c0c" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>Test</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_1a5ea8d9a084512b505524dd3f647e42b2" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbusperf::testsubject::PerfTestEventBus::Post</scope><name>waitForReceivedEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

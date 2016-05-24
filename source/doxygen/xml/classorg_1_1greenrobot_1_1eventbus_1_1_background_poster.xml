@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster" kind="class" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::BackgroundPoster</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1aefa2125f4922ccc2851c3dcfb323417a" prot="private" static="no" mutable="no">
+        <type>final PendingPostQueue</type>
+        <definition>final PendingPostQueue org.greenrobot.eventbus.BackgroundPoster.queue</definition>
+        <argsstring></argsstring>
+        <name>queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="27" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1a1bbd0776222f9386ec7b0df8dcda7d52" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>final EventBus org.greenrobot.eventbus.BackgroundPoster.eventBus</definition>
+        <argsstring></argsstring>
+        <name>eventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1acfc315b0836bd80de110ce5765f48b9b" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>volatile boolean org.greenrobot.eventbus.BackgroundPoster.executorRunning</definition>
+        <argsstring></argsstring>
+        <name>executorRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="30" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1a37ab71c671cbbcf95acfa95286706364" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.BackgroundPoster.BackgroundPoster</definition>
+        <argsstring>(EventBus eventBus)</argsstring>
+        <name>BackgroundPoster</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+          <declname>eventBus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="32" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1a2581bf26f8f0ee58d85dd0332bc6a6c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.BackgroundPoster.enqueue</definition>
+        <argsstring>(Subscription subscription, Object event)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type>Subscription</type>
+          <declname>subscription</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="37" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1af9e1798e9eafcf73a68c0ec875148a74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.BackgroundPoster.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="49" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="49" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Posts events in background.</para><para><simplesect kind="author"><para>Markus </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>org.greenrobot.eventbus.BackgroundPoster</label>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>org.greenrobot.eventbus.BackgroundPoster</label>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/BackgroundPoster.java" bodystart="25" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1a37ab71c671cbbcf95acfa95286706364" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::BackgroundPoster</scope><name>BackgroundPoster</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1a2581bf26f8f0ee58d85dd0332bc6a6c4" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::BackgroundPoster</scope><name>enqueue</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1a1bbd0776222f9386ec7b0df8dcda7d52" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::BackgroundPoster</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1acfc315b0836bd80de110ce5765f48b9b" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::BackgroundPoster</scope><name>executorRunning</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1aefa2125f4922ccc2851c3dcfb323417a" prot="private" virt="non-virtual"><scope>org::greenrobot::eventbus::BackgroundPoster</scope><name>queue</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_background_poster_1af9e1798e9eafcf73a68c0ec875148a74" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::BackgroundPoster</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

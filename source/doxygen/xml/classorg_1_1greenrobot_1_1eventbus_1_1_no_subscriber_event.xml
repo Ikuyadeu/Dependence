@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::NoSubscriberEvent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event_1ad3dc206fbebe278362ae10987222cffa" prot="public" static="no" mutable="no">
+        <type>final <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+        <definition>final EventBus org.greenrobot.eventbus.NoSubscriberEvent.eventBus</definition>
+        <argsstring></argsstring>
+        <name>eventBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref> instance to with the original event was posted to. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" line="25" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event_1aa6d00bfaefb8ceda6e4af56f82d9b615" prot="public" static="no" mutable="no">
+        <type>final Object</type>
+        <definition>final Object org.greenrobot.eventbus.NoSubscriberEvent.originalEvent</definition>
+        <argsstring></argsstring>
+        <name>originalEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The original event that could not be delivered to any subscriber. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" line="28" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event_1a6a628882e13d2431336394db169df10a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.NoSubscriberEvent.NoSubscriberEvent</definition>
+        <argsstring>(EventBus eventBus, Object originalEvent)</argsstring>
+        <name>NoSubscriberEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref></type>
+          <declname>eventBus</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>originalEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" line="30" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This Event is posted by <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus" kindref="compound">EventBus</ref> when no subscriber is found for a posted event.</para><para><simplesect kind="author"><para>Markus </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="510">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="510" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="509">
+        <label>org.greenrobot.eventbus.NoSubscriberEvent</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event"/>
+        <childnode refid="510" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" line="23" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/NoSubscriberEvent.java" bodystart="23" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event_1ad3dc206fbebe278362ae10987222cffa" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::NoSubscriberEvent</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event_1a6a628882e13d2431336394db169df10a" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::NoSubscriberEvent</scope><name>NoSubscriberEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event_1aa6d00bfaefb8ceda6e4af56f82d9b615" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::NoSubscriberEvent</scope><name>originalEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test_1_1_throwing_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusBuilderTest::ThrowingSubscriber</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test_1_1_throwing_subscriber_1a808ee599bb66fbfb5562e2e85da335ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusBuilderTest.ThrowingSubscriber.onEvent</definition>
+        <argsstring>(Object event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>Object</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" line="97" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" bodystart="97" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" line="95" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusBuilderTest.java" bodystart="95" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_builder_test_1_1_throwing_subscriber_1a808ee599bb66fbfb5562e2e85da335ea" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusBuilderTest::ThrowingSubscriber</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

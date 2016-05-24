@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster" kind="class" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::EventBusMainThreadRacingTest::BackgroundPoster</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster_1aa0ba7992ff8e897b57955d1fb21c797d" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>volatile boolean org.greenrobot.eventbus.EventBusMainThreadRacingTest.BackgroundPoster.running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" line="100" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster_1adf441148e36264ea3e312542f49691bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.EventBusMainThreadRacingTest.BackgroundPoster.BackgroundPoster</definition>
+        <argsstring>()</argsstring>
+        <name>BackgroundPoster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" line="102" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster_1aeea54e81a419f77a43f3e64a1beb95bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusMainThreadRacingTest.BackgroundPoster.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" line="107" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" bodystart="107" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="55">
+        <label>org.greenrobot.eventbus.EventBusMainThreadRacingTest.BackgroundPoster</label>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Thread</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="57">
+        <label>org.greenrobot.eventbus.EventBusMainThreadRacingTest.BackgroundPoster</label>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Thread</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" line="99" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusMainThreadRacingTest.java" bodystart="99" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster_1adf441148e36264ea3e312542f49691bf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadRacingTest::BackgroundPoster</scope><name>BackgroundPoster</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster_1aeea54e81a419f77a43f3e64a1beb95bf" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadRacingTest::BackgroundPoster</scope><name>run</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_main_thread_racing_test_1_1_background_poster_1aa0ba7992ff8e897b57955d1fb21c797d" prot="package" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusMainThreadRacingTest::BackgroundPoster</scope><name>running</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

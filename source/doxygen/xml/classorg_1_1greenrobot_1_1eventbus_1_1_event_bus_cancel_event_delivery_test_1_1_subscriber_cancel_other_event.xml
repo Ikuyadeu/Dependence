@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1_1_subscriber_cancel_other_event" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusCancelEventDeliveryTest::SubscriberCancelOtherEvent</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1_1_subscriber_cancel_other_event_1ac1bee32da84f8bd9d1fdaca365fe0726" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusCancelEventDeliveryTest.SubscriberCancelOtherEvent.onEvent</definition>
+        <argsstring>(String event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type>String</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusCancelEventDeliveryTest.java" line="126" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusCancelEventDeliveryTest.java" bodystart="126" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusCancelEventDeliveryTest.java" line="124" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusCancelEventDeliveryTest.java" bodystart="124" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_cancel_event_delivery_test_1_1_subscriber_cancel_other_event_1ac1bee32da84f8bd9d1fdaca365fe0726" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusCancelEventDeliveryTest::SubscriberCancelOtherEvent</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbusperf::TestFinishedEvent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event_1aae75f8ca7ed7b3a8e8ca961cbe058838" prot="public" static="no" mutable="no">
+        <type>final <ref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test" kindref="compound">Test</ref></type>
+        <definition>final Test org.greenrobot.eventbusperf.TestFinishedEvent.test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" line="21" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event_1a79ce1efa508c38a49e56262895bd8d59" prot="public" static="no" mutable="no">
+        <type>final boolean</type>
+        <definition>final boolean org.greenrobot.eventbusperf.TestFinishedEvent.isLastEvent</definition>
+        <argsstring></argsstring>
+        <name>isLastEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" line="22" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event_1ad9e0be59e33d0a73c72ea5a263f89b5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbusperf.TestFinishedEvent.TestFinishedEvent</definition>
+        <argsstring>(Test test, boolean isLastEvent)</argsstring>
+        <name>TestFinishedEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test" kindref="compound">Test</ref></type>
+          <declname>test</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>isLastEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" line="24" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="814">
+        <label>Serializable</label>
+      </node>
+      <node id="816">
+        <label>AtomicLong</label>
+      </node>
+      <node id="812">
+        <label>org.greenrobot.eventbusperf.Test</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test"/>
+        <childnode refid="813" relation="usage">
+          <edgelabel>params</edgelabel>
+        </childnode>
+        <childnode refid="815" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="816" relation="usage">
+          <edgelabel>eventsReceivedCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="815">
+        <label>Context</label>
+      </node>
+      <node id="811">
+        <label>org.greenrobot.eventbusperf.TestFinishedEvent</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event"/>
+        <childnode refid="812" relation="usage">
+          <edgelabel>test</edgelabel>
+        </childnode>
+      </node>
+      <node id="813">
+        <label>org.greenrobot.eventbusperf.TestParams</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_params"/>
+        <childnode refid="814" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" line="19" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusPerformance/src/org/greenrobot/eventbusperf/TestFinishedEvent.java" bodystart="19" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event_1a79ce1efa508c38a49e56262895bd8d59" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::TestFinishedEvent</scope><name>isLastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event_1aae75f8ca7ed7b3a8e8ca961cbe058838" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::TestFinishedEvent</scope><name>test</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbusperf_1_1_test_finished_event_1ad9e0be59e33d0a73c72ea5a263f89b5d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbusperf::TestFinishedEvent</scope><name>TestFinishedEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

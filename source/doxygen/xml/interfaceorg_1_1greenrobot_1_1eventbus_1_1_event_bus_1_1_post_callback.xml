@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_post_callback" kind="interface" language="Java" prot="package">
+    <compoundname>org::greenrobot::eventbus::EventBus::PostCallback</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_post_callback_1a853db263b54575444370000a1488ec87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBus.PostCallback.onPostCompleted</definition>
+        <argsstring>(List&lt; SubscriberExceptionEvent &gt; exceptionEvents)</argsstring>
+        <name>onPostCompleted</name>
+        <param>
+          <type>List&lt; <ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_subscriber_exception_event" kindref="compound">SubscriberExceptionEvent</ref> &gt;</type>
+          <declname>exceptionEvents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="535" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" line="534" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBus/src/org/greenrobot/eventbus/EventBus.java" bodystart="534" bodyend="536"/>
+    <listofallmembers>
+      <member refid="interfaceorg_1_1greenrobot_1_1eventbus_1_1_event_bus_1_1_post_callback_1a853db263b54575444370000a1488ec87" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBus::PostCallback</scope><name>onPostCompleted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

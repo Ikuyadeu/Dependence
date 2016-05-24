@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</compoundname>
+    <basecompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test" prot="public" virt="non-virtual">org.greenrobot.eventbus.AbstractEventBusTest</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_fallback_to_reflection_test_with_index" prot="public" virt="non-virtual">org.greenrobot.eventbus.indexed.EventBusFallbackToReflectionTestWithIndex</derivedcompoundref>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_private_class" prot="private">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PrivateClass</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_private_event" prot="private">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PrivateEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class" prot="public">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicClass</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class_with_private_event" prot="public">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicClassWithPrivateEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_class_with_public_and_private_event" prot="public">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicClassWithPublicAndPrivateEvent</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_with_private_event_in_superclass" prot="public">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicWithPrivateEventInSuperclass</innerclass>
+    <innerclass refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1_1_public_with_private_super_class" prot="public">org::greenrobot::eventbus::EventBusFallbackToReflectionTest::PublicWithPrivateSuperClass</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1aa2b64c0de2c92ca04a9279b9056098b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>org.greenrobot.eventbus.EventBusFallbackToReflectionTest.EventBusFallbackToReflectionTest</definition>
+        <argsstring>()</argsstring>
+        <name>EventBusFallbackToReflectionTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="74" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1ac017155dff26e33952a1ba6b3b2b6b9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.testAnonymousSubscriberClass</definition>
+        <argsstring>()</argsstring>
+        <name>testAnonymousSubscriberClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="79" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="79" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a9e2f616b3a534771c87d27731f1a06d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.testAnonymousSubscriberClassWithPublicSuperclass</definition>
+        <argsstring>()</argsstring>
+        <name>testAnonymousSubscriberClassWithPublicSuperclass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="94" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="94" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a07fbea7b09f4ab2a5cb2188745332bbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.testAnonymousSubscriberClassWithPrivateSuperclass</definition>
+        <argsstring>()</argsstring>
+        <name>testAnonymousSubscriberClassWithPrivateSuperclass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="109" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1aff431946c1cf8619e1cdcde34734c3e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.testSubscriberClassWithPrivateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberClassWithPrivateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="117" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a13c377dcd46d2352024374476f6acc09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.testSubscriberClassWithPublicAndPrivateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberClassWithPublicAndPrivateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="126" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="126" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a547f6a7de8f17c4af5c8c37786a02fa2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusFallbackToReflectionTest.testSubscriberExtendingClassWithPrivateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>testSubscriberExtendingClassWithPrivateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="140" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="140" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="161">
+        <label>org.greenrobot.eventbus.EventBusFallbackToReflectionTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>org.greenrobot.eventbus.indexed.EventBusFallbackToReflectionTestWithIndex</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1indexed_1_1_event_bus_fallback_to_reflection_test_with_index"/>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="167">
+        <label>List&lt; Object &gt;</label>
+      </node>
+      <node id="166">
+        <label>AtomicInteger</label>
+      </node>
+      <node id="168">
+        <label>org.greenrobot.eventbus.EventBus</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus"/>
+        <childnode refid="168" relation="usage">
+          <edgelabel>defaultInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="164">
+        <label>org.greenrobot.eventbus.EventBusFallbackToReflectionTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>org.greenrobot.eventbus.AbstractEventBusTest</label>
+        <link refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test"/>
+        <childnode refid="166" relation="usage">
+          <edgelabel>eventCount</edgelabel>
+        </childnode>
+        <childnode refid="167" relation="usage">
+          <edgelabel>eventsReceived</edgelabel>
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>eventBus</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" line="23" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusFallbackToReflectionTest.java" bodystart="23" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adabfc02ca012b6534e9d2e96f3edefa0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a4840b41329a70509ca9e491b330cc69f" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>AbstractEventBusTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a6d4244b2169c8b1b6f3373d8203dde0d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>assertEventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1ab4fe6476026f816b09c7ff2be2c883a7" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>awaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a89e38130a04d00be6b8f1685331bc514" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>countDownAndAwaitLatch</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a03e283a1bb00d823a1d85b83dbb03cde" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>eventBus</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1aa2b64c0de2c92ca04a9279b9056098b2" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>EventBusFallbackToReflectionTest</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a66bd4811ce114ef4b75cceeb2ca5a462" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>eventCount</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a581de7b9b29c5a4adfe61b2fee9a128e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>eventsReceived</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a7e5d4017359118a6f7888d2e6342030d" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>lastEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a51e292815a5a40fba035c1749a3e1b3e" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>lastThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1aae88fc217cae4c1f66a8cb3221ee3791" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>LONG_TESTS</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a811fc880ea4e3896a561478f062eef6c" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>postInMainThread</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1adf0b214a35cf1669c7f2717ad2f252d1" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>setUpBase</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1ac017155dff26e33952a1ba6b3b2b6b9d" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>testAnonymousSubscriberClass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a07fbea7b09f4ab2a5cb2188745332bbd" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>testAnonymousSubscriberClassWithPrivateSuperclass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a9e2f616b3a534771c87d27731f1a06d3" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>testAnonymousSubscriberClassWithPublicSuperclass</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1aff431946c1cf8619e1cdcde34734c3e0" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>testSubscriberClassWithPrivateEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a13c377dcd46d2352024374476f6acc09" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>testSubscriberClassWithPublicAndPrivateEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_fallback_to_reflection_test_1a547f6a7de8f17c4af5c8c37786a02fa2" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>testSubscriberExtendingClassWithPrivateEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1a879f28eb5c9dae20f8383f42a3c12fc8" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>trackEvent</name></member>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_abstract_event_bus_test_1af6df4ef319a4b6d1c0ca69b7a645e90f" prot="protected" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusFallbackToReflectionTest</scope><name>waitForEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

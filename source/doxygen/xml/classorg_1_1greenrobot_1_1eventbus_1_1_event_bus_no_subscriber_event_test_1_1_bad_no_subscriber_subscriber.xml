@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1_1_bad_no_subscriber_subscriber" kind="class" language="Java" prot="public">
+    <compoundname>org::greenrobot::eventbus::EventBusNoSubscriberEventTest::BadNoSubscriberSubscriber</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1_1_bad_no_subscriber_subscriber_1a169ec4465bb2d1e31580de012ae41e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void org.greenrobot.eventbus.EventBusNoSubscriberEventTest.BadNoSubscriberSubscriber.onEvent</definition>
+        <argsstring>(NoSubscriberEvent event)</argsstring>
+        <name>onEvent</name>
+        <param>
+          <type><ref refid="classorg_1_1greenrobot_1_1eventbus_1_1_no_subscriber_event" kindref="compound">NoSubscriberEvent</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="79" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" line="77" column="1" bodyfile="C:/Users/YukiUeda/Documents/GitHub/EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusNoSubscriberEventTest.java" bodystart="77" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classorg_1_1greenrobot_1_1eventbus_1_1_event_bus_no_subscriber_event_test_1_1_bad_no_subscriber_subscriber_1a169ec4465bb2d1e31580de012ae41e79" prot="public" virt="non-virtual"><scope>org::greenrobot::eventbus::EventBusNoSubscriberEventTest::BadNoSubscriberSubscriber</scope><name>onEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
