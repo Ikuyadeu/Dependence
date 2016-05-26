@@ -1,8 +1,4 @@
-import Dependency
+from DependencyClass import Dependency
 
-class CompoundDependency(Dependency):
+class CompoundDependency(Dependency.Dependency):
     """description of class"""
-    def __init__(self, id,  name, lineno, kind, compound):
-        super.__init__(self, id,  name, lineno, kind, compound)
-
-

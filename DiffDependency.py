@@ -1,8 +1,8 @@
 import sys
 import xml.etree.ElementTree as ET
 from DependencyClass import Dependency as Dp
+from DependencyClass import CompoundDependency as CDp
 import DependencyIndex as DpI
-from typing import TypeVar
  
 def ref_to_XMLname(refid: str):
     """refidからXMLファイル名を生成
@@ -17,12 +17,15 @@ def filter_dict_kind(dd, kind):
     return dict(((id, dd[id]) for id in dd if dd[id].get_kind() == kind))
 
 def output_dependency(dependency_dict: dict):
+    """ 依存関係を出力
+    
+    """
     if len(dependency_dict) == 0:
         print(None)
         return
 
     print("lineno, text")
-    for id, dependency in dependency_dict.items():
+    for __, dependency in dependency_dict.items():
         print(dependency.get_lineno(), dependency, dependency.get_compound())
     print()
 
@@ -46,7 +49,9 @@ else:
     print("Usage: %s filename startlineNomber endlineNumber" % argv[0])
     sys.exit()
 
-dependency_dict = {}
+dependency_dict = {} # すべての依存関係の辞書
+call_dd = {}
+called_dd = {}
 
 # raw文字列(r)にしておくとエスケープが無効になる
 doxygenfile = r'source\doxygen\xml\\'
@@ -99,5 +104,6 @@ output_dependency(filter_dict_kind(dependency_dict, "class"))
 output_dependency(filter_dict_kind(dependency_dict, "function"))
 output_dependency(filter_dict_kind(dependency_dict, "variable"))
 
-for compound in filter_dict_kind(dependency_dict, "class"):
-    pass
+for called_compound in filter_dict_kind(dependency_dict, "class"):
+    for call_compound in index.get_root().findall('./compound'):
+        pass

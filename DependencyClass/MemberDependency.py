@@ -1,6 +1,6 @@
-import Dependency
+from DependencyClass import Dependency
 
-class MemberDependency(Dependency):
+class MemberDependency(Dependency.Dependency):
     """description of class"""
 
 
