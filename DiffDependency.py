@@ -70,11 +70,12 @@ for compounddef in root.findall('./compounddef'):
     innerclass_refid = innerclass.get('refid')
     print(compoundname, innerclass.text)
     
-
+    # ファイルの場所を出力
     for location in compounddef.findall('./location'):
         file = location.get('file')
         print("file = %s" % file)
 
+    # 依存関係を収集
     for line in compounddef.findall("./programlisting/codeline"):
         lineno = int(line.get("lineno"))
     
@@ -97,3 +98,6 @@ for compounddef in root.findall('./compounddef'):
 output_dependency(filter_dict_kind(dependency_dict, "class"))
 output_dependency(filter_dict_kind(dependency_dict, "function"))
 output_dependency(filter_dict_kind(dependency_dict, "variable"))
+
+for compound in filter_dict_kind(dependency_dict, "class"):
+    pass

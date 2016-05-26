@@ -37,6 +37,8 @@ class DependencyIndex(object):
             if tag.get(self.__refidname) == refid:
                 return tag.get(self.__kindname)
 
+        return ""
+
     def get_file_ref(self, filename: str):
         """ファイル名からファイルのrefidを探す
         Args:
