@@ -56,9 +56,8 @@ called_dd = {}
 # raw文字列(r)にしておくとエスケープが無効になる
 doxygenfile = r'source\doxygen\xml\\'
 indexfile = ref_to_XMLname('index')
-indexroot = ET.parse(indexfile).getroot()
 
-index = DpI.DependencyIndex(indexroot) 
+index = DpI.DependencyIndex(indexfile) 
 
 fileref = index.get_file_ref(filename)
 
@@ -104,6 +103,11 @@ output_dependency(filter_dict_kind(dependency_dict, "class"))
 output_dependency(filter_dict_kind(dependency_dict, "function"))
 output_dependency(filter_dict_kind(dependency_dict, "variable"))
 
-for called_compound in filter_dict_kind(dependency_dict, "class"):
-    for call_compound in index.get_root().findall('./compound'):
-        pass
+#for called_compound in filter_dict_kind(dependency_dict, "class"):
+for call_compound in index.get_root().findall('./compound'):
+    filename = ref_to_XMLname(call_compound.get('refid'))
+    compound = CDp.CompoundDependency(filename)
+    compound.search_dependencylist()
+
+    for cd in compound.get_dependency_list():
+            print(cd)

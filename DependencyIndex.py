@@ -1,7 +1,9 @@
+import xml.etree.ElementTree as ET
+
 class DependencyIndex(object):
     """ 依存関係を管理するインデックスを格納 """
-    def __init__(self, root):
-        self.__root = root
+    def __init__(self, rootname):
+        self.__root = ET.parse(rootname).getroot()
         self.__compoundname = './compound'
         self.__membername = '/member'
         self.__refidname = 'refid'
