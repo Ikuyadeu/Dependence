@@ -29,14 +29,24 @@ def output_dependency(dependency_dict: dict):
         print(dependency.get_lineno(), dependency, dependency.get_compound())
     print()
 
-    
-# git blameを利用してレビュアーを分析
-def related_reviewer(linepass):
-    pass
-    
-# 参加したレビュアーに対して要素ごとにカウントを付加
-def count_reviewers_exp(reviewer, paraname):
-    pass
+def get_depencied_compound(compoundref):
+    """依存されているクラスを返す
+    Args:
+        調べるクラスのrefid
+    Returns:
+        compoundのリスト
+    """
+    return []
+
+def get_dependency_compound(compoundref):
+    """依存しているクラスを返す
+    Args:
+        調べるクラスのrefid
+    Returns:
+        compoundのリスト
+    """
+    return []
+
 
 argv = sys.argv
 argc = len(argv)
@@ -83,10 +93,10 @@ for compounddef in root.findall('./compounddef'):
     for line in compounddef.findall("./programlisting/codeline"):
         lineno = int(line.get("lineno"))
     
-        if lineno < sline:
-            continue
-        elif lineno > eline:
-            break
+        #if lineno < sline:
+        #    continue
+        #elif lineno > eline:
+        #    break
         
         for ref in line.findall('./highlight/ref'):
             refid = ref.get('refid')
