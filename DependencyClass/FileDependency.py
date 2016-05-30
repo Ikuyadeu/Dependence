@@ -17,7 +17,6 @@ class FileDependency(Dependency.Dependency):
     def add_innnerclass(self):
         for innerclass in self.__root.findall('./compounddef/innerclass'):
             self.__innerclass_list.append(innerclass.get('refid'))
-        
 
     def get_dependency(self):
         for ref in self.__root.findall('./compounddef/programlisting/codeline/highlight/ref'):
@@ -44,9 +43,6 @@ class FileDependency(Dependency.Dependency):
                 if fdp.in_compound(inner_class):
                    self.__dependencied_dict[compoundref] = CDp.CompoundDependency(compoundref)
         return self.__dependencied_dict
-
-    def get_innerclass_list(self):
-        return self.__innerclass_list
 
     def in_compound(self, refid):
         for ref in self.__root.findall('./compounddef/programlisting/codeline/highlight/ref'):
