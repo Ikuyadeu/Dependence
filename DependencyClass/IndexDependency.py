@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 from DependencyClass import Dependency
+from DependencyClass import FileDependency as FDp
 
 class IndexDependency(Dependency.Dependency):
     """ 依存関係を管理するインデックスを格納 """
@@ -42,16 +43,22 @@ class IndexDependency(Dependency.Dependency):
 
         return ""
 
-    def get_file_ref(self, filename: str):
-        """ファイル名からファイルのrefidを探す
+    def get_kind_compound_list(self, kind):
+        compound_list = []
+        for compound in self.__root.findall(self.__compoundname):
+            if kind == compound.get('kind'):
+                compound_list.append(compound.get('refid'))
+        return compound_list
+
+    def get_file_ref(self, filepass):
+        """ファイルパスからファイルのrefidを探す
         Args:
-            filename:検索するファイル名
+            filepass:検索するファイル名
         Return:
             ファイルのrefid
         """
-        for compound in self.__root.findall(self.__compoundname):
-            if compound.get(self.__kindname) == "file" and filename == compound.find('name').text:
-                return compound.get(self.__refidname)
-
+        for compound in self.get_kind_compound_list('file'):
+            fdp = FDp.FileDependency(compound)
+            if fdp.get_location() == filepass:
+                return compound
         return None
-
