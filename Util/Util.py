@@ -1,8 +1,8 @@
-def __ref_to_XMLname(refid:str):
-        """refid����XML�t�@�C�����𐶐�
-        Args:
-            refid:ref��id
-        Returns:
-            XML�̃t�@�C����
-        """
-        return r'source\doxygen\xml\\' + str(refid) + r".xml"
+def ref_to_XMLname(refid:str):
+    """refidからXMLファイル名を生成
+    Args:
+        refid:refのid
+    Returns:
+        XMLのファイル名
+    """
+    return r'source\doxygen\xml\\' + str(refid) + r".xml"
