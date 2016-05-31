@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 class CompoundDependency(Dependency.Dependency):
     """description of class"""
     def __init__(self, fileref):
-        self.__root = self.getroot(fileref)
+        self.__root = super().__init__(fileref)
 
     def search_dependencylist(self):
         for reftype in self.__root.findall(r'./compounddef/sectiondef/memberdef/type/ref'):

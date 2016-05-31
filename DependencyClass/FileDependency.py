@@ -8,7 +8,7 @@ class FileDependency(Dependency.Dependency):
     """description of class"""
     def __init__(self, fileref):
         self.__ref = fileref
-        self.__root = self.getroot(self.__ref)
+        self.__root = super().__init__(fileref)
         self.__dependency_dict = {}
         self.__dependencied_dict = {}
         self.__innerclass_list = []

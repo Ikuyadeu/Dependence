@@ -1,4 +1,7 @@
-from DependencyClass import IndexDependency as IDp
+import xml.etree.ElementTree as ET
+
+def getroot(fileref):
+    return ET.parse(ref_to_XMLname(fileref)).getroot()
 
 def ref_to_XMLname(refid:str):
     """refidからXMLファイル名を生成
