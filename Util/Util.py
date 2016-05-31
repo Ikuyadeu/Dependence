@@ -1,3 +1,5 @@
+from DependencyClass import IndexDependency as IDp
+
 def ref_to_XMLname(refid:str):
     """refidからXMLファイル名を生成
     Args:
