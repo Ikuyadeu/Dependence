@@ -13,14 +13,14 @@ else:
     print("Usage: %s filename" % argv[0])
     sys.exit()
 
-# indexを生成
+# 依存関係のindexを生成
 index = IDp.IndexDependency('index') 
 
 # ファイルのrefを取得
 fileref = index.get_file_ref(filepass)
 
 if fileref is None:
-    print("can't find" % filepass)
+    print("can't find %s" % repr(filepass))
     sys.exit()
 
 fdp = FDp.FileDependency(fileref) # ファイルの依存
