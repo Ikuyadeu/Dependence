@@ -8,10 +8,11 @@ from Util import Util
 argv = sys.argv
 argc = len(argv)
 
-if argc == 2:
+if argc == 3:
     filepass = (argv[1]) # ファイルパス
+    authorname = (argv[2])
 else:
-    print("Usage: %s filename" % argv[0])
+    print("Usage: %s filename authorname" % argv[0])
     sys.exit()
 
 # 依存関係のindexを生成
@@ -58,6 +59,7 @@ output_dep(cy, "to")
 ed2 = file_to_depdict(ed, False)
 output_dep(ed2, "from_from")
 
+# from(依存されているものに)_to(依存している)
 ed2 = file_to_depdict(ed, True)
 output_dep(ed2, "from_to")
 

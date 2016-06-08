@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import re
 from DependencyClass import Dependency
 from DependencyClass import FileDependency as FDp
 
@@ -59,6 +60,7 @@ class IndexDependency(Dependency.Dependency):
         """
         for compound in self.get_kind_compound_list('file'):
             fdp = FDp.FileDependency(compound)
-            if fdp.get_location() == filepass:
+            # 末尾と一致していたらOK
+            if re.search(filepass + '$',fdp.get_location()):
                 return compound
         return None
