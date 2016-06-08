@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from DependencyClass import CompoundDependency as CDp
 from DependencyClass import FileDependency as FDp
 from DependencyClass import IndexDependency as IDp
+from Util import Util
  
 argv = sys.argv
 argc = len(argv)
@@ -23,49 +24,45 @@ if fileref is None:
     print("can't find %s" % repr(filepass))
     sys.exit()
 
+
+def file_to_depdict(root_dict:dict, is_to_dep:bool):
+    dep_dict = {}
+    for dep in root_dict.values():
+        ref = index.get_file_ref(dep.get_location())
+        fdp = FDp.FileDependency(ref)
+        get_dep = fdp.get_dependency() if is_to_dep else fdp.get_dependencied()
+
+        for id, dp2 in get_dep.items():
+            if not (id in root_dict or id in dep_dict):
+                dep_dict[id] = dp2
+
+
+    return dep_dict
+
+def output_dep(file_dict:dict, state):
+    for no, dp in enumerate(file_dict.values()):
+        print("%s, %s" % (dp.get_location(), state))
+
+
 fdp = FDp.FileDependency(fileref) # ファイルの依存
-filedict = {} # 依存ファイルの辞書
 
-print("依存しているファイル")
-cy = {}
-for id, dp in fdp.get_dependency().items():
-    print(dp.get_location())
-    if id not in filedict:
-        filedict[id] = dp
-        cy[id] = dp
+# from(依存されている)ファイルの辞書
+ed = file_to_depdict({fileref:fdp}, False)
+output_dep(ed, "from")
 
-print("\n依存されているファイル")
-ed = {}
-for id, dp in fdp.get_dependencied().items():
-    print(dp.get_location())
-    if id not in filedict:
-        filedict[id] = dp
-        ed[id] = dp
+# to(依存している)
+cy = file_to_depdict({fileref:fdp}, True)
+output_dep(cy, "to")
 
-print("\n依存しているファイルに依存されているファイル")
-cyed = {}
+# from(依存されているものに)_from(依存されている)
+ed2 = file_to_depdict(ed, False)
+output_dep(ed2, "from_from")
 
-for __, dp in cy.items():
-    ref2 = index.get_file_ref(dp.get_location())
-    fdp2 = FDp.FileDependency(ref2)
-    for id, dp2 in fdp2.get_dependencied().items():
-        if id not in filedict and id not in cyed:
-            cyed[id] = dp2
-            filedict[id] = dp2
+ed2 = file_to_depdict(ed, True)
+output_dep(ed2, "from_to")
 
-for __, dp in cyed.items():
-    print(dp.get_location())
+cy2 = file_to_depdict(cy, False)
+output_dep(cy2, "to_from")
 
-print("\n依存されているファイルに依存しているファイル")
-edcy = {}
-
-for __, dp in ed.items():
-    ref2 = index.get_file_ref(dp.get_location())
-    fdp2 = FDp.FileDependency(ref2)
-    for id, dp2 in fdp2.get_dependency().items():
-        if id not in filedict and id not in edcy:
-            edcy[id] = dp2
-            filedict[id] = dp
-
-for __, dp in edcy.items():
-    print(dp.get_location())
+cy2 = file_to_depdict(cy, True)
+output_dep(cy2, "to_to")
