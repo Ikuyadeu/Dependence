@@ -12,18 +12,6 @@ else:
     print("Usage: %s repopass" % argv[0])
     sys.exit()
 
-def show_tree(tree, indent):
-  """
-  Treeの情報を出力
-  """
-  print ('%shexsha :%s' % (indent, tree.hexsha))
-  print ('%spath :%s' % (indent, tree.path))
-  print ('%sabspath :%s' % (indent, tree.abspath))
-  print ('%smode :%s' % (indent, tree.mode))
-  for t in tree.trees:
-    show_tree(t, indent + '  ')
-
-
 repo = Repo(repopass)
 for item in repo.iter_commits('master', max_count=10):
   print ('==================================')

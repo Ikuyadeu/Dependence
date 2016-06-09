@@ -3,5 +3,7 @@
 /GetDeps/source
 /GetDeps/DependencyClass/__pycache__
 /Doxydeps.sln
+/Doxydeps.pyproj
+/Doxydeps.pyproj.user
 /GetDeps/Util/__pycache__
 /__pycache__
