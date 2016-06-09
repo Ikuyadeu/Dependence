@@ -4,13 +4,19 @@ from GetDeps.DependencyClass import FileDependency as FDp
 from GetDeps.DependencyClass import IndexDependency as IDp
 from GetDeps.Util import Util
  
-class GetDeps(object):
+class GetDependencies(object):
     def __init__(self, filepass):
         # 依存関係のindexを生成
         self.__index = IDp.IndexDependency('index')
         self.__fileref = self.__index.get_file_ref(filepass)
-        
-        self.__fdp = FDp.FileDependency(self.__fileref) # ファイルの依存
+        if self.__fileref != None:
+            self.__fdp = FDp.FileDependency(self.__fileref) # ファイルの依存
+
+    def infdp(self):
+        if self.__fileref == None:
+            return False
+        else:
+            return True
 
     def file_to_depdict(self, root_dict:dict, is_to_dep:bool):
         dep_dict = {}

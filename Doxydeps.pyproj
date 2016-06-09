@@ -13,7 +13,7 @@
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
-    <CommandLineArguments>EventBus/EventBusTest/src/org/greenrobot/eventbus/EventBusSubscriberInJarTest.java mrexample</CommandLineArguments>
+    <CommandLineArguments>C:/Users/YukiUeda/Documents/GitHub/EventBus</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
@@ -29,7 +29,7 @@
     <Compile Include="GetDeps\DependencyClass\IndexDependency.py" />
     <Compile Include="GetDeps\DependencyClass\__init__.py" />
     <Compile Include="Doxydeps.py" />
-    <Compile Include="GetDeps\GetDeps.py" />
+    <Compile Include="GetDeps\GetDependencies.py" />
     <Compile Include="GetDeps\__init__.py">
       <SubType>Code</SubType>
     </Compile>
