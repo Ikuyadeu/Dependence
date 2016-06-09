@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-from Util import Util
+from GetDeps.Util import Util
 
 class Dependency(object):
     """依存関係について格納するクラス"""

@@ -10,4 +10,4 @@ def ref_to_XMLname(refid:str):
     Returns:
         XMLのファイル名
     """
-    return r'source\doxygen\xml\\' + str(refid) + r".xml"
+    return r'GetDeps\source\doxygen\xml\\' + str(refid) + r".xml"

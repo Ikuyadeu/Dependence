@@ -1,6 +1,7 @@
-/__pycache__
+/GetDeps/__pycache__
 /.vs
-/source
-/DependencyClass/__pycache__
+/GetDeps/source
+/GetDeps/DependencyClass/__pycache__
 /Doxydeps.sln
-/Util/__pycache__
+/GetDeps/Util/__pycache__
+/__pycache__

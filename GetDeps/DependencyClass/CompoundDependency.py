@@ -1,4 +1,4 @@
-from DependencyClass import Dependency
+from GetDeps.DependencyClass import Dependency
 import xml.etree.ElementTree as ET
 
 class CompoundDependency(Dependency.Dependency):

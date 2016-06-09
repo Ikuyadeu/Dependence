@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
-from DependencyClass import Dependency
-from DependencyClass import CompoundDependency as CDp
-from DependencyClass import IndexDependency as IDp
-from DependencyClass import FileDependency as FDp
+from GetDeps.DependencyClass import Dependency
+from GetDeps.DependencyClass import CompoundDependency as CDp
+from GetDeps.DependencyClass import IndexDependency as IDp
+from GetDeps.DependencyClass import FileDependency as FDp
 
 class FileDependency(Dependency.Dependency):
     """description of class"""
