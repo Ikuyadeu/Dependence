@@ -12,14 +12,19 @@ else:
     print("Usage: %s repopass" % argv[0])
     sys.exit()
 
+
+gd = GetDependencies.GetDependencies()
+
 repo = Repo(repopass)
-for item in repo.iter_commits('master', max_count=10):
-  print ('==================================')
-  print ("author: %s" % item.author)
-  for file in item.stats.files.keys():
-    gd = GetDependencies.GetDependencies(file)
-    if gd.infdp():
-        print('--------')
-        print("file: %s" % file)
-        print()
-        gd.getdeps()
+
+for commit_no, item in enumerate(repo.iter_commits('master', max_count=10)):
+    d = time.gmtime(item.committed_date)
+    date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))
+
+    for file in item.stats.files.keys():
+        file_loc = gd.get_file_location(file)
+        if file_loc != None:
+            print("%d, %s, %s, root" % (commit_no, file_loc, date))
+
+            if len(item.parents) > 1:
+                gd.get_deps(file, commit_no, date)
