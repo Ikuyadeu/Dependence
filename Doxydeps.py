@@ -21,7 +21,9 @@ gd = GetDependencies.GetDependencies(depwriter)
 
 repo = Repo(repopass)
 
+writer.writerow(("commitNo", "file_location", "date"))
 for commit_no, item in enumerate(repo.iter_commits('master')):
+    print(commit_no)
     repo.git.checkout(item)
     os.system("doxygen GetDeps/source/.config")
     d = time.gmtime(item.committed_date)
@@ -30,6 +32,6 @@ for commit_no, item in enumerate(repo.iter_commits('master')):
     for file in item.stats.files.keys():
         file_loc = gd.get_file_location(file)
         if file_loc != None:
-            writer.writerow((commit_no, file_loc, date, "root"))
+            writer.writerow((commit_no, file_loc, date))
             if len(item.parents) > 1:
                 gd.get_deps(file, commit_no, date)
