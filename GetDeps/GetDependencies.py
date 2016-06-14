@@ -16,12 +16,12 @@ class GetDependencies(object):
         for dep in root_dict.values():
             ref = self.__index.get_file_ref(dep.get_location())
             if ref == None:
-                contnue
+                continue
             fdp = FDp.FileDependency(ref)
             get_dep = fdp.get_dependency() if is_to_dep else fdp.get_dependencied()
 
             for id, dp2 in get_dep.items():
-                if not (id in root_dict or id in dep_dict):
+                if not (id in root_dict or id in dep_dict or id == self.__fileref):
                     dep_dict[id] = dp2
 
         return dep_dict
