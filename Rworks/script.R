@@ -19,7 +19,7 @@ for (dep in 1:nrow(deps)) {
     nc <- subset(nextchange, nextchange$file_location == fl)
     if (nrow(nc) > 0) {
         deps$SubDate[dep] <- min(nc$date) - fd
-        deps$SubNo[dep] <- (fc - max(nc$commitNo))
+        deps$SubNo[dep] <- fc - max(nc$commitNo)
     }
 }
 deps <- na.omit(deps)
@@ -27,15 +27,17 @@ deps <- na.omit(deps)
 
 kindset <- c("from", "to", "from_from", "from_to", "to_from", "to_to")
 
-dates <- list()
-nos <- list()
-for (ki in kindset) {
-    dep2 <- subset(deps, deps$kind == ki)
-    dates <- append(dates, list(dep2$SubDate))
-    nos <- append(nos, list(dep2$SubNo))
-}
 
-pdf("date.pdf")
-boxplot(dates, names = kindset)
-pdf("no.pdf")
-boxplot(nos, names = kindset)
+print(by(deps, deps$kind, summary))
+#dates <- list()
+#nos <- list()
+#for (ki in kindset) {
+    #dep2 <- subset(deps, deps$kind == ki)
+    #dates <- append(dates, list(dep2$SubDate))
+    #nos <- append(nos, list(dep2$SubNo))
+#}
+
+#pdf("date.pdf")
+#boxplot(dates, names = kindset)
+#pdf("no.pdf")
+#boxplot(nos, names = kindset)
