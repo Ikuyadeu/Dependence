@@ -17,6 +17,7 @@ else:
     open
 writer = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
 depwriter = csv.writer(open("dep.csv", "w", encoding="utf-8"), lineterminator="\n")
+os.system("doxygen GetDeps/source/.config")
 gd = GetDependencies.GetDependencies(depwriter)
 
 repo = Repo(repopass)

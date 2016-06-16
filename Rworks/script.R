@@ -19,7 +19,7 @@ for (dep in 1:nrow(deps)) {
     nc <- subset(nextchange, nextchange$file_location == fl)
     if (nrow(nc) > 0) {
         deps$SubDate[dep] <- min(nc$date) - fd
-        deps$SubNo[dep] <- (fc - min(nc$commitNo))
+        deps$SubNo[dep] <- (fc - max(nc$commitNo))
     }
 }
 deps <- na.omit(deps)
@@ -35,7 +35,7 @@ for (ki in kindset) {
     nos <- append(nos, list(dep2$SubNo))
 }
 
-#pdf("data.pdf")
-#boxplot(dates, names = kindset)
-#pdf("no.pdf")
+pdf("date.pdf")
+boxplot(dates, names = kindset)
+pdf("no.pdf")
 boxplot(nos, names = kindset)
