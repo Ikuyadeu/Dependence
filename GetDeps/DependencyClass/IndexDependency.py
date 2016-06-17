@@ -61,6 +61,6 @@ class IndexDependency(Dependency.Dependency):
         for compound in self.get_kind_compound_list('file'):
             fdp = FDp.FileDependency(compound)
             # 末尾と一致していたらOK
-            if re.search(filepass + '$',fdp.get_location()):
+            if re.search(filepass + '$', fdp.get_location()):
                 return compound
         return None

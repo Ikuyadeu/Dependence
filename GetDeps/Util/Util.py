@@ -1,8 +1,9 @@
 import xml.etree.ElementTree as ET
+import os.path
 
 def getroot(fileref):
     filename = ref_to_XMLname(fileref)
-    if filename == None:
+    if filename == None or not os.path.isfile(filename):
         return None
     return ET.parse(filename).getroot()
 

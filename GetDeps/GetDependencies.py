@@ -9,7 +9,7 @@ class GetDependencies(object):
         # 依存関係のindexを生成
         self.__index = IDp.IndexDependency('index')
         self.__writer = writer
-        self.__writer.writerow(("commitNo", "file_location", "date", "kind"))
+        self.__writer.writerow(("commitNo", "file_location", "date", "author", "is_merge", "kind"))
 
     def file_to_depdict(self, root_dict:dict, is_to_dep:bool):
         dep_dict = {}
@@ -26,10 +26,9 @@ class GetDependencies(object):
 
         return dep_dict
 
-    def output_dep(self, file_dict:dict, cono, date, kind):
+    def output_dep(self, file_dict:dict, kind):
         for no, dp in enumerate(file_dict.values()):
-            #print("%d, %s, %s, %s" % (cono, dp.get_location(), date, state))
-            self.__writer.writerow((cono, dp.get_location(), date, kind))
+            self.__writer.writerow((self.__commit_no, dp.get_location(), self.__date, self.__author, self.__is_merge, kind))
 
     def get_file_location(self, filepass):
         fileref = self.__index.get_file_ref(filepass)
@@ -38,29 +37,35 @@ class GetDependencies(object):
 
         return FDp.FileDependency(fileref).get_location()
 
-    def get_deps(self, filepass, cono, date):
+    def set_commitinfo(self, commit_no, date, author, is_merge):
+        self.__commit_no = commit_no
+        self.__date = date
+        self.__author = author
+        self.__is_merge = is_merge
+
+    def get_deps(self, filepass):
         self.__fileref = self.__index.get_file_ref(filepass)
 
         self.__fdp = FDp.FileDependency(self.__fileref) # ファイルの依存
         
         # from(依存されている)ファイルの辞書
         ed = self.file_to_depdict({self.__fileref:self.__fdp}, False)
-        self.output_dep(ed, cono, date, "from")
+        self.output_dep(ed, "from")
 
         # to(依存している)
         cy = self.file_to_depdict({self.__fileref:self.__fdp}, True)
-        self.output_dep(cy, cono, date, "to")
+        self.output_dep(cy, "to")
 
         # from(依存されているものに)_from(依存されている)
         ed2 = self.file_to_depdict(ed, False)
-        self.output_dep(ed2, cono, date, "from_from")
+        self.output_dep(ed2, "from_from")
 
         # from(依存されているものに)_to(依存している)
         ed2 = self.file_to_depdict(ed, True)
-        self.output_dep(ed2, cono, date, "from_to")
+        self.output_dep(ed2, "from_to")
 
         cy2 = self.file_to_depdict(cy, False)
-        self.output_dep(cy2, cono, date, "to_from")
+        self.output_dep(cy2, "to_from")
 
         cy2 = self.file_to_depdict(cy, True)
-        self.output_dep(cy2, cono, date, "to_to")
+        self.output_dep(cy2, "to_to")
