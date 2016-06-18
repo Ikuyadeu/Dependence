@@ -6,7 +6,7 @@ from GetDeps.DependencyClass import FileDependency as FDp
 class IndexDependency(Dependency.Dependency):
     """ 依存関係を管理するインデックスを格納 """
     def __init__(self, fileref):
-        self.__root = super().__init__(fileref)
+        self.__root = super().get_root(fileref)
         self.__compoundname = './compound'
         self.__membername = '/member'
         self.__refidname = 'refid'

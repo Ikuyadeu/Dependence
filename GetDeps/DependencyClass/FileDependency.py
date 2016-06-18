@@ -8,7 +8,7 @@ class FileDependency(Dependency.Dependency):
     """description of class"""
     def __init__(self, fileref):
         self.__ref = fileref
-        self.__root = super().__init__(fileref)
+        self.__root = self.get_root(fileref)
         self.__dependency_dict = {}
         self.__dependencied_dict = {}
         self.__innerclass_list = []
@@ -29,8 +29,12 @@ class FileDependency(Dependency.Dependency):
                 continue
 
             compound = CDp.CompoundDependency(refid)
+            if compound.root_is_none():
+                continue
+
             if compound.get_kind() != "namespace":
                 self.__dependency_dict[refid] = compound
+
         return self.__dependency_dict
 
     def get_dependencied(self):
