@@ -11,24 +11,40 @@ class GetDependencies(object):
         self.__writer = writer
         self.__writer.writerow(("commitNo", "file_location", "date", "author", "is_merge", "kind"))
 
-    def file_to_depdict(self, root_dict:dict, is_to_dep:bool):
-        dep_dict = {}
-        for dep in root_dict.values():
-            ref = self.__index.get_file_ref(dep.get_location())
-            if ref == None:
-                continue
-            fdp = FDp.FileDependency(ref)
-            get_dep = fdp.get_dependency() if is_to_dep else fdp.get_dependencied()
+    def set_commitinfo(self, commit_no, date, author, is_merge):
+        self.__commit_no = commit_no
+        self.__date = date
+        self.__author = author
+        self.__is_merge = is_merge
+        self.__dependency_dict = self.set_dep()
 
-            for id, dp2 in get_dep.items():
-                if not (id in root_dict or id in dep_dict or id == self.__fileref):
-                    dep_dict[id] = dp2
+    def set_dep(self):
+        dependency_dict = {}
+        compound_list = self.__index.get_kind_compound_list('file')
+        for compoundref in compound_list:
+            fdp = FDp.FileDependency(compoundref)
+            dependency_dict[compoundref] = fdp.get_dependency()
+            
+        return dependency_dict
+
+    def file_to_depdict(self, root_list, is_to_dep:bool):
+        dep_dict = []
+        for root in root_list:
+            ref = self.__index.get_file_ref(root)
+            if is_to_dep:
+                dep_dict.extend(self.__dependency_dict[ref].values())
+            else:
+                for id, dep in self.__dependency_dict.items():
+                    if root in dep.values():
+                        dep_dict.append(FDp.FileDependency(id).get_location())
 
         return dep_dict
 
-    def output_dep(self, file_dict:dict, kind):
-        for no, dp in enumerate(file_dict.values()):
-            self.__writer.writerow((self.__commit_no, dp.get_location(), self.__date, self.__author, self.__is_merge, kind))
+    def output_dep(self, file_list, kind):
+        #for no, dp in enumerate(file_dict.values()):
+        #    self.__writer.writerow((self.__commit_no, dp.get_location(), self.__date, self.__author, self.__is_merge, kind))
+        for no, dp in enumerate(file_list):
+            self.__writer.writerow((self.__commit_no, dp, self.__date, self.__author, self.__is_merge, kind))
 
     def get_file_location(self, filepass):
         fileref = self.__index.get_file_ref(filepass)
@@ -37,23 +53,25 @@ class GetDependencies(object):
 
         return FDp.FileDependency(fileref).get_location()
 
-    def set_commitinfo(self, commit_no, date, author, is_merge):
-        self.__commit_no = commit_no
-        self.__date = date
-        self.__author = author
-        self.__is_merge = is_merge
-
     def get_deps(self, filepass):
         self.__fileref = self.__index.get_file_ref(filepass)
 
         self.__fdp = FDp.FileDependency(self.__fileref) # ファイルの依存
         
+        ## from(依存されている)ファイルの辞書
+        #ed = self.file_to_depdict({self.__fileref:self.__fdp}, False)
+        #self.output_dep(ed, "from")
+
+        ## to(依存している)
+        #cy = self.file_to_depdict({self.__fileref:self.__fdp}, True)
+        #self.output_dep(cy, "to")
+
         # from(依存されている)ファイルの辞書
-        ed = self.file_to_depdict({self.__fileref:self.__fdp}, False)
+        ed = self.file_to_depdict([self.__fdp.get_location()], False)
         self.output_dep(ed, "from")
 
         # to(依存している)
-        cy = self.file_to_depdict({self.__fileref:self.__fdp}, True)
+        cy = self.file_to_depdict([self.__fdp.get_location()], True)
         self.output_dep(cy, "to")
 
         # from(依存されているものに)_from(依存されている)

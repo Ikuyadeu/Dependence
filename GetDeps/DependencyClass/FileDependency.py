@@ -33,7 +33,7 @@ class FileDependency(Dependency.Dependency):
                 continue
 
             if compound.get_kind() != "namespace":
-                self.__dependency_dict[refid] = compound
+                self.__dependency_dict[refid] = compound.get_location()
 
         return self.__dependency_dict
 

@@ -25,6 +25,8 @@ repo = Repo(repopass)
 writer.writerow(("commitNo", "file_location", "date", "is_merge", "author"))
 for commit_no, item in enumerate(repo.iter_commits('master')):
     print(commit_no)
+    if commit_no == 2:
+        break
     repo.git.checkout(item)
     os.system("doxygen GetDeps/source/.config")
 
