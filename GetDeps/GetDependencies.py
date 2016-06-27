@@ -32,7 +32,12 @@ class GetDependencies(object):
         for root in root_list:
             ref = self.__index.get_file_ref(root)
             if is_to_dep:
-                dep_dict.extend(self.__dependency_dict[ref].values())
+                try:
+                    dep_dict.extend(self.__dependency_dict.get(ref).values())
+                except:
+                    pass
+                else:
+                    pass
             else:
                 for id, dep in self.__dependency_dict.items():
                     if root in dep.values():
