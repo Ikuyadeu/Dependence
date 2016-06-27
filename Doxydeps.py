@@ -1,6 +1,6 @@
 import sys
 from GetDeps import GetDependencies
-from git import *
+from git import Repo
 import time
 import csv
 import os
@@ -14,15 +14,14 @@ if argc == 3:
 else:
     print("Usage: %s repopass" % argv[0])
     sys.exit()
-    open
-writer = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
-depwriter = csv.writer(open("dep.csv", "w", encoding="utf-8"), lineterminator="\n")
+
+depwriter = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
 os.system("doxygen GetDeps/source/.config")
 gd = GetDependencies.GetDependencies(depwriter)
 
 repo = Repo(repopass)
 
-writer.writerow(("commitNo", "file_location", "date", "is_merge", "author"))
+#writer.writerow(("commitNo", "file_location", "date", "author", "is_merge"))
 for commit_no, item in enumerate(repo.iter_commits('master')):
     print(commit_no)
     repo.git.checkout(item)
@@ -35,9 +34,5 @@ for commit_no, item in enumerate(repo.iter_commits('master')):
     is_merge = (len(item.parents) > 1)
 
     gd.set_commitinfo(commit_no, date, author, is_merge)
-
-    for file in item.stats.files.keys():
-        file_loc = gd.get_file_location(file)
-        if file_loc != None:
-            writer.writerow((commit_no, file_loc, date, author, is_merge))
-            gd.get_deps(file)
+    gd.get_file_location(item.stats.files.keys())
+    gd.get_deps()

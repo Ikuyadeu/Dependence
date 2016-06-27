@@ -22,31 +22,16 @@ class FileDependency(Dependency.Dependency):
         for ref in self.__root.findall('./compounddef/programlisting/codeline/highlight/ref'):
             refid = ref.get('refid')
 
-            if refid in self.__dependency_dict or refid in self.__innerclass_list:
+            if refid in self.__dependency_dict or refid in self.__innerclass_list or ref.get('kindref') != "compound":
                 continue
                 
-            if ref.get('kindref') != "compound":
-                continue
-
             compound = CDp.CompoundDependency(refid)
-            if compound.root_is_none():
+            if compound.root_is_none() or compound.get_kind() == "namespace":
                 continue
 
-            if compound.get_kind() != "namespace":
-                self.__dependency_dict[refid] = compound.get_location()
+            self.__dependency_dict[refid] = compound.get_location()
 
         return self.__dependency_dict
-
-    def get_dependencied(self):
-        compound_list = IDp.IndexDependency('index') .get_kind_compound_list('file')
-        for compoundref in compound_list:
-            if compoundref == self.__ref:
-                continue
-            fdp = FDp.FileDependency(compoundref)
-            for inner_class in self.__innerclass_list:
-                if fdp.in_compound(inner_class):
-                   self.__dependencied_dict[compoundref] = CDp.CompoundDependency(compoundref)
-        return self.__dependencied_dict
 
     def in_compound(self, refid):
         for ref in self.__root.findall('./compounddef/programlisting/codeline/highlight/ref'):
