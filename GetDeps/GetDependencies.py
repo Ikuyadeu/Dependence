@@ -83,12 +83,12 @@ class GetDependencies(object):
         ed2 = self.file_to_depdict(ed, False)
         self.output_dep(ed2, "from_from")
 
-        # from(依存されているものに)_to(依存している)
-        ed2 = self.file_to_depdict(ed, True)
-        self.output_dep(ed2, "from_to")
+        ## from(依存されているものに)_to(依存している)
+        #ed2 = self.file_to_depdict(ed, True)
+        #self.output_dep(ed2, "from_to")
 
-        cy2 = self.file_to_depdict(cy, False)
-        self.output_dep(cy2, "to_from")
+        #cy2 = self.file_to_depdict(cy, False)
+        #self.output_dep(cy2, "to_from")
 
         cy2 = self.file_to_depdict(cy, True)
         self.output_dep(cy2, "to_to")
