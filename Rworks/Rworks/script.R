@@ -25,7 +25,7 @@ for (dep in 1:nrow(deps)) {
 deps <- na.omit(deps)
 
 
-kindset <- c("from", "to", "from_from", "from_to", "to_from", "to_to")
+kindset <- c("root", "dependee", "depender", "dependee2", "depender2", "other")
 
 
 print(by(deps, deps$kind, summary))
