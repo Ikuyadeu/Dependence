@@ -93,3 +93,141 @@ deps$kind: to_to
  Mean   : 131.2   Mean   : 58.84  
  3rd Qu.: 183.0   3rd Qu.: 93.00  
  Max.   :1129.0   Max.   :407.00  
+
+
+
+
+
+
+
+
+
+ deps$kind: dependee
+    commitNo    file_location           date           
+ Min.   :   1   Length:26463       Min.   :2013-08-01  
+ 1st Qu.: 656   Class :character   1st Qu.:2014-07-30  
+ Median :1151   Mode  :character   Median :2015-05-03  
+ Mean   :1107                      Mean   :2015-03-24  
+ 3rd Qu.:1585                      3rd Qu.:2015-11-11  
+ Max.   :2180                      Max.   :2016-06-10  
+                                                       
+               author       is_merge            kind           SubNo        
+ purplefox        :10721   False:19606   dependee :26463   Min.   :   0.00  
+ Julien Viet      : 8238   True : 6857   dependee2:    0   1st Qu.:   0.00  
+ Tim Fox          : 2850                 depender :    0   Median :  12.00  
+ Clement Escoffier: 1305                 depender2:    0   Mean   :  67.37  
+ Norman Maurer    :  751                 other    :    0   3rd Qu.:  64.00  
+ nscavell         :  390                 root     :    0   Max.   :1283.00  
+ (Other)          : 2208                                                    
+    SubDate      
+ Min.   :  0.00  
+ 1st Qu.:  0.00  
+ Median :  4.00  
+ Mean   : 27.66  
+ 3rd Qu.: 28.00  
+ Max.   :491.00  
+                 
+------------------------------------------------------------ 
+deps$kind: dependee2
+    commitNo    file_location           date           
+ Min.   :   1   Length:47531       Min.   :2013-08-01  
+ 1st Qu.: 605   Class :character   1st Qu.:2014-09-05  
+ Median :1055   Mode  :character   Median :2015-05-30  
+ Mean   :1058                      Mean   :2015-04-19  
+ 3rd Qu.:1523                      3rd Qu.:2015-12-09  
+ Max.   :2180                      Max.   :2016-06-10  
+                                                       
+               author       is_merge            kind           SubNo        
+ purplefox        :16990   False:35565   dependee :    0   Min.   :   0.00  
+ Julien Viet      :15790   True :11966   dependee2:47531   1st Qu.:   5.00  
+ Tim Fox          : 5519                 depender :    0   Median :  30.00  
+ Clement Escoffier: 2754                 depender2:    0   Mean   :  95.48  
+ Norman Maurer    : 1837                 other    :    0   3rd Qu.: 106.00  
+ nscavell         :  652                 root     :    0   Max.   :1206.00  
+ (Other)          : 3989                                                    
+    SubDate      
+ Min.   :  0.00  
+ 1st Qu.:  1.00  
+ Median : 12.00  
+ Mean   : 38.27  
+ 3rd Qu.: 46.00  
+ Max.   :487.00  
+                 
+------------------------------------------------------------ 
+deps$kind: depender
+    commitNo    file_location           date           
+ Min.   :   1   Length:42102       Min.   :2013-08-01  
+ 1st Qu.: 673   Class :character   1st Qu.:2014-07-29  
+ Median :1167   Mode  :character   Median :2015-04-17  
+ Mean   :1140                      Mean   :2015-03-11  
+ 3rd Qu.:1587                      3rd Qu.:2015-11-06  
+ Max.   :2180                      Max.   :2016-06-10  
+                                                       
+               author       is_merge            kind           SubNo       
+ purplefox        :15991   False:32318   dependee :    0   Min.   :   0.0  
+ Julien Viet      :14076   True : 9784   dependee2:    0   1st Qu.:   7.0  
+ Tim Fox          : 5252                 depender :42102   Median :  40.0  
+ Clement Escoffier: 1659                 depender2:    0   Mean   : 106.1  
+ Norman Maurer    : 1533                 other    :    0   3rd Qu.: 126.0  
+ nscavell         :  757                 root     :    0   Max.   :1287.0  
+ (Other)          : 2834                                                   
+    SubDate      
+ Min.   :  0.00  
+ 1st Qu.:  2.00  
+ Median : 17.00  
+ Mean   : 45.14  
+ 3rd Qu.: 58.00  
+ Max.   :523.00  
+                 
+------------------------------------------------------------ 
+deps$kind: depender2
+    commitNo    file_location           date           
+ Min.   :   1   Length:70770       Min.   :2013-08-01  
+ 1st Qu.: 631   Class :character   1st Qu.:2014-08-11  
+ Median :1116   Mode  :character   Median :2015-05-18  
+ Mean   :1093                      Mean   :2015-04-02  
+ 3rd Qu.:1554                      3rd Qu.:2015-11-24  
+ Max.   :2180                      Max.   :2016-06-10  
+                                                       
+               author       is_merge            kind           SubNo       
+ purplefox        :25089   False:55419   dependee :    0   Min.   :   0.0  
+ Julien Viet      :24812   True :15351   dependee2:    0   1st Qu.:  14.0  
+ Tim Fox          : 8806                 depender :    0   Median :  58.0  
+ Clement Escoffier: 3444                 depender2:70770   Mean   : 127.5  
+ Norman Maurer    : 2679                 other    :    0   3rd Qu.: 165.0  
+ nscavell         : 1010                 root     :    0   Max.   :1288.0  
+ (Other)          : 4930                                                   
+    SubDate      
+ Min.   :  0.00  
+ 1st Qu.:  5.00  
+ Median : 24.00  
+ Mean   : 53.02  
+ 3rd Qu.: 70.00  
+ Max.   :528.00  
+                 
+------------------------------------------------------------ 
+deps$kind: other
+    commitNo    file_location           date           
+ Min.   :   1   Length:257641      Min.   :2013-08-05  
+ 1st Qu.: 545   Class :character   1st Qu.:2014-06-28  
+ Median :1018   Mode  :character   Median :2015-06-07  
+ Mean   :1105                      Mean   :2015-03-22  
+ 3rd Qu.:1674                      3rd Qu.:2016-02-01  
+ Max.   :2179                      Max.   :2016-06-10  
+                                                       
+               author       is_merge             kind            SubNo       
+ Julien Viet      :89234   False:214904   dependee :     0   Min.   :   1.0  
+ purplefox        :73635   True : 42737   dependee2:     0   1st Qu.:  26.0  
+ Tim Fox          :26155                  depender :     0   Median :  77.0  
+ Clement Escoffier:22859                  depender2:     0   Mean   : 149.1  
+ Norman Maurer    :18003                  other    :257641   3rd Qu.: 193.0  
+ nscavell         : 4636                  root     :     0   Max.   :1291.0  
+ (Other)          :23119                                                     
+    SubDate      
+ Min.   :  0.00  
+ 1st Qu.: 10.00  
+ Median : 33.00  
+ Mean   : 61.57  
+ 3rd Qu.: 82.00  
+ Max.   :543.00  
+                 

@@ -1,5 +1,7 @@
-roots <- read.csv("../root.csv", sep = ',', header = TRUE, row.names = NULL)
-deps <- read.csv("../dep.csv", sep = ',', header = TRUE, row.names = NULL)
+data_set <- read.csv("../../dep.csv", sep = ',', header = TRUE, row.names = NULL)
+
+roots <- subset(data_set, data_set$kind == "root")
+deps <- subset(data_set, data_set$kind != "root")
 
 roots$file_location <- as.character(roots$file_location)
 deps$file_location <- as.character(deps$file_location)
@@ -25,12 +27,14 @@ for (dep in 1:nrow(deps)) {
 deps <- na.omit(deps)
 
 
-kindset <- c("root", "dependee", "depender", "dependee2", "depender2", "other")
 
 
 print(by(deps, deps$kind, summary))
 dates <- list()
 nos <- list()
+
+kindset <- c("dependee", "depender", "dependee2", "depender2", "other")
+
 for (ki in kindset) {
     dep2 <- subset(deps, deps$kind == ki)
     dates <- append(dates, list(dep2$SubDate))
