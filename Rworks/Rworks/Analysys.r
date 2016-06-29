@@ -1,10 +1,11 @@
-deps <- read.csv("dep_2.csv", sep = ',', header = TRUE, row.names = NULL)
-#roots <- read.csv("root_2.csv", sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv("./dep_2.csv", sep = ',', header = TRUE, row.names = NULL)
 
 deps$file_location <- as.character(deps$file_location)
 deps$date <- as.Date(deps$date)
+deps$SubDate <- as.numeric(deps$SubDate)
+deps$SubNo <- as.numeric(deps$SubNo)
 
-#print(by(deps, deps$kind, summary))
+print(by(deps, deps$kind, summary))
 
 dates <- list()
 nos <- list()
