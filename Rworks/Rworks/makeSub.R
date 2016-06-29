@@ -26,22 +26,8 @@ for (dep in 1:nrow(deps)) {
 }
 deps <- na.omit(deps)
 
-
+write.csv(deps, "dep_2.csv", quote=FALSE, row.names = FALSE)
+write.csv(roots, "root_2.csv", quote = FALSE, row.names = FALSE)
 
 
 print(by(deps, deps$kind, summary))
-dates <- list()
-nos <- list()
-
-kindset <- c("dependee", "depender", "dependee2", "depender2", "other")
-
-for (ki in kindset) {
-    dep2 <- subset(deps, deps$kind == ki)
-    dates <- append(dates, list(dep2$SubDate))
-    nos <- append(nos, list(dep2$SubNo))
-}
-
-pdf("date2.pdf")
-boxplot(dates, names = kindset)
-pdf("no2.pdf")
-boxplot(nos, names = kindset)
