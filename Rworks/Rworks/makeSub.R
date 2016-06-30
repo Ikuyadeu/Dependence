@@ -14,10 +14,10 @@ for (dep in 1:nrow(deps)) {
     fl <- deps$file_location[dep]
     fd <- deps$date[dep]
 
-    nc <- subset(roots, roots$file_location == fl && roots$commitNo <= fc)
-    #nc <- subset(nc, nc$file_location == fl)
-    mindate <- min(nc$date)
-    nc <- subset(nc, nc$date == mindate)
+    nc <- subset(roots, roots$commitNo <= fc)
+    nc <- subset(nc, nc$file_location == fl)
+    maxcommit <- max(nc$commitNo)
+    nc <- subset(nc, nc$commitNo == maxcommit)
 
     if (nrow(nc) > 0) {
         #deps$SubDate[dep] <- min(nc$date) - fd
@@ -31,6 +31,5 @@ deps <- na.omit(deps)
 
 write.csv(deps, "dep_3.csv", quote=TRUE, row.names = FALSE)
 write.csv(roots, "root_3.csv", quote = TRUE, row.names = FALSE)
-
 
 print(by(deps, deps$kind, summary))

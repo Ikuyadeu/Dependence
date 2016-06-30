@@ -21,11 +21,9 @@ for (ki in kindset) {
 }
 
 pdf("date.pdf")
-boxplot(dates, names = kindset, ylim = c(0, 200))
-pdf("no.pdf")
-boxplot(nos, names = kindset, ylim = c(0, 300))
-
 #pdf("merge/date_F.pdf")
-#boxplot(dates, names = kindset, ylim = c(0, 200))
+boxplot(dates, names = kindset, ylim = c(0, 200))
+
+pdf("no.pdf")
 #pdf("merge/no_F.pdf")
-#boxplot(nos, names = kindset, ylim = c(0, 300))
+boxplot(nos, names = kindset, ylim = c(0, 300))
