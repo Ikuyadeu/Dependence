@@ -1,5 +1,7 @@
 deps <- read.csv("./dep_2.csv", sep = ',', header = TRUE, row.names = NULL)
 
+#deps <- subset(deps, deps$is_merge == "False")
+
 deps$file_location <- as.character(deps$file_location)
 deps$date <- as.Date(deps$date)
 deps$SubDate <- as.numeric(deps$SubDate)
@@ -18,7 +20,12 @@ for (ki in kindset) {
     nos <- append(nos, list(dep2$SubNo))
 }
 
-pdf("date3.pdf")
-boxplot(dates, names = kindset)
-pdf("no3.pdf")
-boxplot(nos, names = kindset)
+pdf("date.pdf")
+boxplot(dates, names = kindset, ylim = c(0, 200))
+pdf("no.pdf")
+boxplot(nos, names = kindset, ylim = c(0, 300))
+
+#pdf("merge/date_F.pdf")
+#boxplot(dates, names = kindset, ylim = c(0, 200))
+#pdf("merge/no_F.pdf")
+#boxplot(nos, names = kindset, ylim = c(0, 300))

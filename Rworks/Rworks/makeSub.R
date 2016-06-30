@@ -1,33 +1,36 @@
 data_set <- read.csv("../../dep.csv", sep = ',', header = TRUE, row.names = NULL)
+data_set$file_location <- as.character(data_set$file_location)
+data_set$date <- as.Date(data_set$date)
 
 roots <- subset(data_set, data_set$kind == "root")
 deps <- subset(data_set, data_set$kind != "root")
 
-roots$file_location <- as.character(roots$file_location)
-deps$file_location <- as.character(deps$file_location)
-
-roots$date <- as.Date(roots$date)
-deps$date <- as.Date(deps$date)
-
 deps$SubNo <- NA
 deps$SubDate <- NA
+deps$same_author <- NA
 
 for (dep in 1:nrow(deps)) {
     fc <- deps$commitNo[dep]
     fl <- deps$file_location[dep]
     fd <- deps$date[dep]
 
-    nextchange <- subset(roots, roots$commitNo <= fc)
-    nc <- subset(nextchange, nextchange$file_location == fl)
+    nc <- subset(roots, roots$file_location == fl && roots$commitNo <= fc)
+    #nc <- subset(nc, nc$file_location == fl)
+    mindate <- min(nc$date)
+    nc <- subset(nc, nc$date == mindate)
+
     if (nrow(nc) > 0) {
-        deps$SubDate[dep] <- min(nc$date) - fd
-        deps$SubNo[dep] <- fc - max(nc$commitNo)
+        #deps$SubDate[dep] <- min(nc$date) - fd
+        #deps$SubNo[dep] <- fc - max(nc$commitNo)
+        deps$SubDate[dep] <- nc$date[1] - fd
+        deps$SubNo[dep] <- fc - nc$commitNo[1]
+        deps$same_author <- (nc$author[1] == deps$author)
     }
 }
 deps <- na.omit(deps)
 
-write.csv(deps, "dep_2.csv", quote=FALSE, row.names = FALSE)
-write.csv(roots, "root_2.csv", quote = FALSE, row.names = FALSE)
+write.csv(deps, "dep_3.csv", quote=TRUE, row.names = FALSE)
+write.csv(roots, "root_3.csv", quote = TRUE, row.names = FALSE)
 
 
 print(by(deps, deps$kind, summary))
