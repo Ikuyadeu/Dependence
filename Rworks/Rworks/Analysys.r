@@ -1,32 +1,36 @@
 deps <- read.csv("./dep_3.csv", sep = ',', header = TRUE, row.names = NULL)
 
-#deps <- subset(deps, deps$is_merge == "False")
-deps <- subset(deps, deps$same_author == FALSE)
-
 deps$file_location <- as.character(deps$file_location)
 deps$date <- as.Date(deps$date)
 deps$SubDate <- as.numeric(deps$SubDate)
 deps$SubNo <- as.numeric(deps$SubNo)
 
-print(by(deps, deps$kind, summary))
+judgeset <- c(TRUE, FALSE)
+judge_name <- "author"
 
-dates <- list()
-nos <- list()
+for (judge in judgeset){
+    #deps2 <- subset(deps, deps$is_merge == judge)
+    deps2 <- subset(deps, deps$same_author == judge)
+    #print(by(deps, deps$kind, summary))
 
-kindset <- c("dependee", "depender", "dependee2", "depender2", "other")
+    dates <- list()
+    nos <- list()
 
-for (ki in kindset) {
-    dep2 <- subset(deps, deps$kind == ki)
-    dates <- append(dates, list(dep2$SubDate))
-    nos <- append(nos, list(dep2$SubNo))
+    kindset <- c("dependee", "depender", "dependee2", "depender2", "other")
+
+    for (ki in kindset) {
+        dep2 <- subset(deps2, deps2$kind == ki)
+        dates <- append(dates, list(dep2$SubDate))
+        nos <- append(nos, list(dep2$SubNo))
+    }
+
+    dates <- append(dates, list(deps2$SubDate))
+    nos <- append(nos, list(deps2$SubNo))
+    kindset <- append(kindset, c("all"))
+
+    pdf(paste(judge_name, "/date_", judge, ".pdf", sep = ""))
+    boxplot(dates, names = kindset, ylim = c(0, 200))
+
+    pdf(paste(judge_name, "/CommitNo_", judge, ".pdf", sep = ""))
+    boxplot(nos, names = kindset, ylim = c(0, 300))
 }
-
-pdf("date.pdf")
-#pdf("merge/date_F.pdf")
-pdf("author/date_F.pdf")
-boxplot(dates, names = kindset, ylim = c(0, 200))
-
-pdf("no.pdf")
-#pdf("merge/no_F.pdf")
-pdf("author/no_F.pdf")
-boxplot(nos, names = kindset, ylim = c(0, 300))
