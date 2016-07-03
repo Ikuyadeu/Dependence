@@ -27,7 +27,7 @@ for (judge in judgeset){
     dates <- append(dates, list(deps2$SubDate))
     nos <- append(nos, list(deps2$SubNo))
     kindset <- append(kindset, c("all"))
-
+    
     pdf(paste(judge_name, "/date_", judge, ".pdf", sep = ""))
     boxplot(dates, names = kindset, ylim = c(0, 200))
 
