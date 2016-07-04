@@ -8,10 +8,12 @@ deps$SubNo <- as.numeric(deps$SubNo)
 judgeset <- c(TRUE, FALSE)
 #judge_name <- "author"
 judge_name <- "merge"
+#judge_name <- "."
 
 for (judge in judgeset){
-    deps2 <- subset(deps, deps$is_merge == judge)
     #deps2 <- subset(deps, deps$same_author == judge)
+    deps2 <- subset(deps, deps$is_merge == judge)
+    #deps2 <- deps
     #print(by(deps, deps$kind, summary))
 
     dates <- list()
@@ -42,3 +44,4 @@ for (judge in judgeset){
     pdf(paste(judge_name, "/par_", judge, ".pdf", sep = ""))
     barplot(judgepar, names = kindset, ylim = c(0, 1))
 }
+
