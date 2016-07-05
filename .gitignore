@@ -11,3 +11,6 @@
 /env
 *.csv
 *.pdf
+/paper/uml.synctex.gz
+/paper/uml.log
+/paper/uml.aux
