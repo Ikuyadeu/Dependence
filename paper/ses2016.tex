@@ -1,12 +1,27 @@
-\documentclass{jsarticle}
+\documentclass[submit,ses,noauthor]{ipsj} % SES スタイルを適用
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{latexsym}
+\usepackage{fancyhdr}
+
+\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
+\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
+\def\|{\verb|}
+
+
 
 \begin{document}
 \title{依存関係をもつファイルの変更時間への影響分析}
-\author{上田裕己\thanks{島根大学}}
-\date{}
-\maketitle
 
-\section{まえがき}
+\etitle{}
+
+\paffiliate{SU}{島根大学\\
+Shimane University}
+
+
+\author{上田 裕己}{Ueda Yuki}{SU}[s133014@matsu.shimane-u.ac.jp]
+
+\begin{abstract}
 大規模なソフトウェア開発では多くのファイルからソフトウェアが成り立っている.
 そのため,あるファイルを変更した場合ほかのファイルにも影響を及ぼす.
 
@@ -15,10 +30,15 @@
 本研究では,変更されたソースコードの依存関係の依存の向きに着目して,依存関係をもつファイルが次に変更されるまでの期間への影響を調査した.
   結果から変更されているソースコードに依存しているソースコードほど次に変更されるまでの期間が短くなることが分かった.
   
-キーワード　ソフトウェアリポジトリマイニング, オープンソース開発, ソースコード変更, バグ修正, 依存関係, 保守
 
-\section{研究背景・目的} 
+\end{abstract}
 
+\maketitle
+
+%はじめに
+\section{はじめに} 
+現在開発者の経験を図るために多くの研究で開発者がいままでに変更したファイルが利用されている.
+専門レベルをというあるファイルに対してどれだけ
 
 
 しかし，対象ファイル群が依存する他のファイル群（以降，依存ファイル群）に対する専門レベルは考慮されていない．これは，依存ファイルと依存関係にあるファイルに対して十分な検査が行えず，不具合を見逃す恐れがある．
@@ -27,11 +47,15 @@
 
 本論文では変更されたファイルに対して依存関係のあるファイルが変更されるのにかかる時間への影響を分析する.
 
+
+本論文では\ref{調査方法}章で調査方法について書き,\ref{実験結果}章で実験の結果,\ref{考察}章で実験結果についての考察を行う.
+
+%関連研究
 \section{関連研究}
-既存研究では依存関係のあるファイルが影響を受けることが分かっている.
 
 
-\section{調査方法}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+\section{調査方法}\label{調査方法}
 以下の項目について調査を行う.
 \begin{itemize}
 \item RQ1:依存関係の種類によるコードファイルの変更時間
@@ -55,9 +79,6 @@
 バージョン管理システムとはファイルの変更の履歴を保存するためのシステムである.
 現在多くのソフトウェアではバージョンコントロール管理システムが利用されている.
 GitHubなどの分散型のバージョン管理システムでは,多くの開発者が一つのソフトウェアを変更していても,変更の重複を防ぐことができる.
-
-gitでは変更をおこなうことを
-
 
 \subsection{RQ1:依存関係の種類によるコードファイルの変更時間}
 依存関係に種類を定義することによってどの種類がコードファイルの変更時間に影響を与えるのか調査した.
@@ -86,8 +107,10 @@ eclipseプロジェクトには多くのオープンソースソフトウェア�
 
 \subsubsection{出力するデータセット}
 csv形式で時系列とともに出力する.
-出力するデータは以下のとおりである.
+出力するデータを表\ref{tab:初期データセット}に示した.
 
+\begin{table}[htb]
+\caption{出力するデータセット}
 \begin{tabular}{|l|r|r|} \hline
 属性名 & 概要 \\ \hline
 filepass & ファイルの絶対パス \\ \hline
@@ -97,14 +120,22 @@ author & 変更を行った開発者の名前 \\ \hline
 kind & 依存関係の種類 \\ \hline
 ismerge & マージされた後のコミットであるかどうか \\ \hline
 \end{tabular}
+\label{tab:初期データセット}
+\end{table}
+
 
 これらの情報をもとにさらにデータを追加する.
-以下は上のデータをもとに算出するデータである.
+以下の表\ref{tab:加工後データセット}は上のデータをもとに算出するデータである.
+
+\begin{table}[htb]
+\caption{加工後データセット}
 \begin{tabular}{|l|r|r|} \hline
 属性名 & 概要 \\ \hline
 SubDate & 依存関係が発生してから次に変更されるまでの日にち \\ \hline
 SubCommitNo & 依存関係が発生してから次に変更されるまでのコミット数 \\ \hline
 \end{tabular}
+\label{tab:加工後データセット}
+\end{table}
 
 \begin{enumerate}
 \item root 変更されたファイル
@@ -115,30 +146,121 @@ SubCommitNo & 依存関係が発生してから次に変更されるまでのコ
 \item other 上記に当てはまらないファイル
 \end{enumerate}
 
+
+%実験結果
+\section{実験結果}\label{実験結果}
+依存関係別,またmergeされたかどうかによって依存関係を持つファイルが次に変更されるまでの日にち,コミット数を出力した.
+図\ref{fig:subNo},\ref{fig:subdate}はそれぞれ依存関係別にみた依存関係の検出から変更されるまでのコミット数や,日数を箱ひげ図で出力したものである.　　
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{CommitNo.pdf}
+\caption{依存関係の分類ごとの次回変更までの変更回数}
+\label{fig:subNo} 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{date.pdf}
+\caption{依存関係の分類ごとの次回変更までの変更日時}
+\label{fig:subdate} 
+\end{figure}
+
+
 \subsection{RQ2:変更する人物の傾向}
 依存関係をもつファイルを同じ開発者が変更した場合,どのような依存関係が開発の期間に影響を受けるか調査した.
 変更が行われ,依存関係が発生されたときの変更者が,依存関係のファイルを変更した開発者が同じかどうかをチェックしている.
 
-これを調べることにより,mergeされた変更のようにプロジェクトに対してコミット権限をもっていない開発者による変更が及ぼす影響について調べることができる.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{author_CommitNo_TRUE.pdf}
+\caption{同じ開発者の依存関係の分類ごとの次回変更までの変更回数}
+\label{fig:author_true_subNo} 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{author_CommitNo_FALSE.pdf}
+\caption{異なる開発者の依存関係の分類ごとの次回変更までの変更回数}
+\label{fig:author_false_subNo} 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{author_date_TRUE.pdf}
+\caption{開発者の依存関係の分類ごとの次回変更までの変更回数}
+\label{fig:author_true_subdate} 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{author_date_FALSE.pdf}
+\caption{}
+\label{fig:author_false_subdate} 
+\end{figure}
 
 
 \subsection{RQ3:マージされたコミットの傾向}
-一度分岐した変更が統合された場合も変更の一つとされている.
-この
+一度分岐した変更がマージされた場合もバージョン管理システムは変更の一つとして数えている.
+図の\ref{fig:merge_true_subNo} から\refl{fig:merge_false_subNo} はマージされたコミットが与える影響について箱ひげ図で出力している.
+
+図\label{fig:merge_true_subNo} はマージされたコミットのもつ依存関係のあるファイルが次に変更されるまでの図
 
 
 
-\section{実験結果}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{merge_CommitNo_TRUE.pdf}
+\caption{}
+\label{fig:merge_true_subNo} 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{merge_CommitNo_FALSE.pdf}
+\caption{}
+\label{fig:merge_false_subNo} 
+\end{figure}
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{merge_date_TRUE.pdf}
+\caption{}
+\label{fig:merge_true_subNo} 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{merge_date_FALSE.pdf}
+\caption{}
+\label{fig:merge_false_subNo} 
+\end{figure}
+
+
+%考察
+\section{考察}\label{考察}
 \subsection{RQ1:依存関係の種類によるコードファイルの変更時間}
-依存関係別,またmergeされたかどうかによって依存関係を持つファイルが次に変更されるまでの日にち,コミット数を出力した.
-図　は依存関係別にみた依存関係の検出から変更されるまでの日数を箱ひげ図で出力したものである.　　
 
-図　は依存関係別にみた依存関係の検出から変更されるまでのコミット回数を箱ひげ図で出力したものである.
+RQ1 依存関係の種類によるコードファイルの変更時間について考察する.
 
 dependeeやdependee2からわかるように変更されたファイルに依存しているファイルが早く変更される傾向にあることが分かった.
 すべてのファイルの変更されるまでの日付の中央値は２５日なのに対してdependeeは約５日で変更される.
 
 p-valueを求めた結果それぞれ優位差があることがわかる.
+
+dpendeeが早い段階で影響を受けていることが分かった.
+
+otherと比較し,依存関係のあるファイルはそうでないファイルと比較して早い段階で変更されることがわかる.
+
+影響があるのは順に依存関係の向き,依存関係の距離が関係していることがわかる.
+
 
 
 \subsection{RQ2変更する人物の傾向}
@@ -153,13 +275,6 @@ depender2とotherを比較した場合,違い人物が変更した場合には�
 また,マージされていないコミットではdepender2とotherとの差がないことがわかった.
 
 
-
-\section{考察}
-dpendeeが早い段階で影響を受けていることが分かった.
-
-otherと比較し,依存関係のあるファイルはそうでないファイルと比較して早い段階で変更されることがわかる.
-
-影響があるのは順に依存関係の向き,依存関係の距離が関係していることがわかる.
 
 
 同じ人物が変更した場合に中央値が下がることに関して考えられることは,同じ開発者が変更したコミットの大部分は同時に変更をしたものである.
@@ -184,9 +299,20 @@ mergeされたコミットの場合mergeされていないコミットと比較�
 \item 絶対数が少ないため, 変更されにくい
 \end{enumerate}
 
+\section{妥当性の検証}\label{妥当性の検証}
+次に,妥当性について検証を行う.
+\begin{itemize}
+\item 今回の実験で用いたプロジェクトはオープンソースである,eclipseプロジェクトである.
+ほかのオープンソースプロジェクトや商業ソフトウェアで,同様結果が得られるとは限らない.
+
+\item 依存関係についての調査では継承や参照もすべて同じ依存関係であるとした.
+これらを同じように扱うことで別のデータに偏りが発生した可能性がある.
 
 
-\section{まとめ} 
+\end{itemize}
+
+
+\section{まとめ} \label{まとめ}
 本研究では,ファイルの依存関係が位階の変更にどのような時間の影響を受けるか調査した.
 その結果,依存されているファイルほど変更されにくいことが分かった.
 この結果からレビューを行っていない変更の場合は特に依存関係に注意をする必要がある.
@@ -195,12 +321,14 @@ mergeされたコミットの場合mergeされていないコミットと比較�
 
 
 \begin{thebibliography}{10}
-  \bibitem{Balachandram}
-    V. Balachandran: Reducing Human Effort and Improving Quality in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation, ICSE'13, pp. 931-940, 2013.
-  \bibitem{Thongtanunam}
-    Patanamon Thongtanunam, Chakkrit Tantithamthavorn, Raula Gaikovina Kula, Norihiro Yoshida, Hajimu Iida, Ken-ichi Matsumoto: Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review, 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering, 2015.
-  \bibitem{Thongtanunam2}
-    Patanamon Thongtanunam and Shane McIntosh and Ahmed E. Hassan and Hajimu Iida: Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review, Proc. of the International Conference on Software Engineering (ICSE), 2016
+\bibitem{Bird}
+Bird, Christian, et al. "Don't touch my code!: examining the effects of ownership on software quality." Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering. ACM, 2011.
+\bibitem{Balachandram}
+V. Balachandran: Reducing Human Effort and Improving Quality in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation, ICSE'13, pp. 931-940, 2013.
+\bibitem{Thongtanunam}
+Patanamon Thongtanunam, Chakkrit Tantithamthavorn, Raula Gaikovina Kula, Norihiro Yoshida, Hajimu Iida, Ken-ichi Matsumoto: Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review, 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering, 2015.
+\bibitem{Thongtanunam2}
+Patanamon Thongtanunam and Shane McIntosh and Ahmed E. Hassan and Hajimu Iida: Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review, Proc. of the International Conference on Software Engineering (ICSE), 2016
  \end{thebibliography}
 
 \end{document}
