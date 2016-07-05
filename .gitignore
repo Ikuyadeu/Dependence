@@ -11,6 +11,6 @@
 /env
 *.csv
 *.pdf
-/paper/uml.synctex.gz
-/paper/uml.log
-/paper/uml.aux
+/paper/ses2016.synctex.gz
+/paper/ses2016.log
+/paper/ses2016.aux
