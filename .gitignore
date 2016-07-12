@@ -11,9 +11,9 @@
 /env
 *.csv
 *.pdf
-/paper/ses2016.synctex.gz
-/paper/ses2016.log
-/paper/ses2016.aux
-/paper/ses2016.synctex.gz(busy)
-/paper/ses2016.dvi
+*.gz*
+*.log
+*.aux
+*.dvi
+*.zip
 /paper/ses-sample*
