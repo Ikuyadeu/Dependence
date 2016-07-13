@@ -45,13 +45,11 @@ Bird\cite{Bird}らは専門レベルをという開発者があるファイル�
 
 しかし，対象ファイル群が依存する他のファイル群（以降，依存ファイル群）に対する専門レベルは考慮されていない．これは，依存ファイルと依存関係にあるファイルに対して十分な検査が行えず，不具合を見逃す恐れがある．
 
-
-
-依存ファイルがもたらす影響の指針としては開発期間がある.
+本論文では依存ファイルがもたらす影響の指針としては開発期間を利用する.
 
 開発期間が分かればどのような依存関係のあるファイルに開発者が注目すればいいのかがわかることが期待される.
 
-そのため,本論文では変更されたファイルに対して依存関係のあるファイルが変更されるまでの期間への影響を分析する.
+そのため,本論文では変更されたファイルの依存関係が与えるコードファイルの変更時間の間隔（以降,変更時間間隔）への影響について調査を行った.
 
 そのために変更が行われたファイルに対してどのような関係を持っているのかプロジェクトの中で6つに分類を分けそれぞれへの影響を調査する.
 
@@ -78,13 +76,15 @@ Briand\cite{Briand}らは依存関係が変更までの時間に影響を与え�
 \section{リサーチクエスチョン(RQ)}\label{リサーチクエスチョン}
 以下の項目について調査を行う.
 \begin{itemize}
-\item RQ1:依存関係の種類によるコードファイルの変更時間
-\item RQ2:変更する人物の傾向
-\item RQ3:マージされたコミットの傾向
+\item RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる
+\item RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更されるまでの時間は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる
+\item RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更されるまでの時間は、fのコミットが複数のブランチのマージとなったコミットである場合には、異なる場合よりも、短い
 \end{itemize}
 
 \subsection{RQ1:依存関係の種類によるコードファイルの変更時間}
 依存関係に種類を定義することによってどの種類がコードファイルの変更時間に影響を与えるのか調査を行った.
+
+次回変更までの時間間隔の単位は日とし,以降変更時間間隔とする.
 
 また,本研究ではソースコードのうち以下のような記述を依存として扱う.
 変更が行われたファイルに対して以下の例のような記述が存在した場合,クラスAを定義しているファイルに依存しているとする.
@@ -264,21 +264,6 @@ gitなどの分散型のバージョン管理システムでは,多くの開発�
 図の\ref{fig:author_true_subNo},\label{fig:author_true_subdate} はそれぞれ同じ開発者が変更した場合のSubCommitNo, Subdateを出力している.
 また,図の\ref{fig:author_false_subNo},\label{fig:author_false_subdate} はそれぞれ異なる開発者が変更した場合のSubCommitNo, Subdateを出力している.
 
-
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{author_CommitNo_TRUE.pdf}
-\caption{同じ開発者の依存関係の分類ごとの次回変更までの変更回数}
-\label{fig:author_true_subNo} 
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{author_CommitNo_FALSE.pdf}
-\caption{異なる開発者の依存関係の分類ごとの次回変更までの変更回数}
-\label{fig:author_false_subNo} 
-\end{figure}
-
 \begin{figure}
 \centering
 \includegraphics[width=\columnwidth]{author_date_TRUE.pdf}
@@ -299,23 +284,6 @@ gitなどの分散型のバージョン管理システムでは,多くの開発�
 mergeされた変更の開発の期間への影響を調査した.
 図の\ref{fig:merge_true_subNo},\label{fig:merge_true_subdate} はそれぞれmergeされた変更のSubCommitNo, Subdateを出力している.
 また,図の\ref{fig:merge_false_subNo},\label{fig:merge_false_subdate} はそれぞれmergeされていない変更のSubCommitNo, Subdateを出力している.
-
-
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{merge_CommitNo_TRUE.pdf}
-\caption{mergeされたコミットの依存関係の分類ごとの次回変更までの変更回数}
-\label{fig:merge_true_subNo} 
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{merge_CommitNo_FALSE.pdf}
-\caption{mergeされていないコミットの依存関係の分類ごとの次回変更までの変更回数}
-\label{fig:merge_false_subNo} 
-\end{figure}
-
-
 
 \begin{figure}
 \centering
