@@ -7,12 +7,12 @@ deps$SubNo <- as.numeric(deps$SubNo)
 
 judgeset <- c(TRUE, FALSE)
 #judge_name <- "author"
-judge_name <- "merge"
+judge_name <- "author"
 #judge_name <- "."
 
 for (judge in judgeset){
     #deps2 <- subset(deps, deps$same_author == judge)
-    deps2 <- subset(deps, deps$is_merge == judge)
+    #deps2 <- subset(deps, deps$is_merge == judge)
     #deps2 <- deps
     #print(by(deps, deps$kind, summary))
 
@@ -30,18 +30,19 @@ for (judge in judgeset){
     }
 
     dates <- append(dates, list(deps2$SubDate))
-    nos <- append(nos, list(deps2$SubNo))
+    #nos <- append(nos, list(deps2$SubNo))
     judgepar <- append(judgepar, c(nrow(deps2) / nrow(deps)))
 
-    kindset <- append(kindset, c("all"))
+    kindset <- c("depender", "dependee", "depender2", "dependee2", "other", "all")
+    #kindset <- append(kindset, c("all"))
 
-    pdf(paste(judge_name, "/date_", judge, ".pdf", sep = ""))
+    #pdf(paste(judge_name, "/date_", judge, ".pdf", sep = ""))
     boxplot(dates, names = kindset, ylim = c(0, 200))
 
-    pdf(paste(judge_name, "/CommitNo_", judge, ".pdf", sep = ""))
-    boxplot(nos, names = kindset, ylim = c(0, 300))
+    #pdf(paste(judge_name, "/CommitNo_", judge, ".pdf", sep = ""))
+    #boxplot(nos, names = kindset, ylim = c(0, 300))
 
-    pdf(paste(judge_name, "/par_", judge, ".pdf", sep = ""))
-    barplot(judgepar, names = kindset, ylim = c(0, 1))
+    #pdf(paste(judge_name, "/par_", judge, ".pdf", sep = ""))
+    #barplot(judgepar, names = kindset, ylim = c(0, 1))
 }
 
