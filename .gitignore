@@ -17,3 +17,5 @@
 *.dvi
 *.zip
 /paper/ses-sample*
+/paper/example.tex
+/paper/fose*

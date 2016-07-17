@@ -1,25 +1,19 @@
-\documentclass[submit,ses,noauthor]{ipsj} % SES スタイルを適用
+\documentclass{fose2016}           % for pLaTeX2e
+%\documentclass[english]{fose2016} % for English papers
+%\documentclass[ascii]{fose2016}   % for ASCII pTeX 
 
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{latexsym}
-\usepackage{fancyhdr}
+%\usepackage{epsfig}
 
-\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
-\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
-\def\|{\verb|}
-
-
+\title{依存関係の向きを考慮したファイルの変更時間への影響分析}
+\etitle{}% TODO dependency file, vector, develop time, impact analysis
+\author{上田 裕己}{Ueda Yuki, 島根大学}
 
 \begin{document}
-\title{依存関係の向きを考慮したファイルの変更時間への影響分析}
-
-\etitle{}% TODO dependency file, vector, develop time, impact analysis
-
-\affiliate{SU}{島根大学\\
-Shimane University}
 
 
-\author{上田 裕己}{Ueda Yuki}{SU}[s133014@matsu.shimane-u.ac.jp]
+
+\maketitle
 
 \begin{abstract}
 大規模なソフトウェア開発では多くのファイルからソフトウェアが成り立っている.
@@ -34,7 +28,9 @@ Shimane University}
 
 \end{abstract}
 
-\maketitle
+\begin{eabstract}
+
+\end{eabstract}
 
 %はじめに
 \section{はじめに} 
@@ -118,12 +114,12 @@ other & 上記に当てはまらないファイル \\ \hline
 \label{tab:依存関係の分類}
 \end{table}
 
-\begin{figure*}[t]
+\begin{figure}[t]
 \centering
 \includegraphics[width=2\columnwidth]{dependency.pdf}
 \caption{依存関係の分類図}
 \label{fig:dependency} 
-\end{figure*}
+\end{figure}
 
 % RQ2
 \subsection{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
@@ -187,12 +183,12 @@ ismergeとはコミットがmergeされたコミットかどうかを分類し�
 図{fig:gitimage} にコミットの分類を図示する.
 このうちismergeがTrueとなるのは1と2のコミットである.
 
-\begin{figure*}[t]
+\begin{figure}[t]
 \centering
 \includegraphics[width=2\columnwidth]{git_image.pdf}
 \caption{gitによるコミットの分類分け}
 \label{fig:gitimage} 
-\end{figure*}
+\end{figure}
 
 
 これらの情報をもとに変更時間間隔を求める.
@@ -223,10 +219,17 @@ ismergeとはコミットがmergeされたコミットかどうかを分類し�
 
 gitなどの分散型のバージョン管理システムでは,多くの開発者が一つのソフトウェアを変更していても,変更の重複を防ぐことができる.
 
+gitで利用されているものにブランチがある.
+ブランチ
+
 % GitHub
 \subsubsection{GitHub}
 さまざまなオープンソースソフトウェアを管理しているサービスである.
 これを利用して認可のあるプロジェクトや開発者の状況を確認したり, プロジェクトをダウンロードすることができる.
+
+% レビュー
+
+% 
 
 % doxygen
 \subsubsection{doxygen}
