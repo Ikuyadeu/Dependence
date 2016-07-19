@@ -8,6 +8,7 @@
 \title{依存関係の向きを考慮したファイルの変更時間への影響分析}
 \etitle{}% TODO dependency file, vector, develop time, impact analysis
 \author{上田 裕己}{Ueda Yuki, 島根大学}
+\author{神谷 年洋}{Kamiya Toshihiro, 島根大学}
 
 \begin{document}
 
@@ -67,6 +68,12 @@ Briand\cite{Briand}らは依存関係が変更までの時間に影響を与え�
 この問題点は変更されたファイルに対して依存されているファイルに対して調査が行われていない.
 これにより,同じ機能を重複して実装したり, 機能を抽象化するさいの変化を終えていない可能性がある.
 
+
+\subsection{変更波及解析}
+変更波及解析とは
+
+
+
 そこで,我々は依存されているファイルを同様に調査することによって依存関係の向きも考慮した.
 
 
@@ -116,7 +123,7 @@ other & 上記に当てはまらないファイル \\ \hline
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=2\columnwidth]{dependency.pdf}
+\includegraphics[width=\columnwidth]{dependency.pdf}
 \caption{依存関係の分類図}
 \label{fig:dependency} 
 \end{figure}
@@ -138,7 +145,6 @@ other & 上記に当てはまらないファイル \\ \hline
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  % 調査方法
 \section{調査方法}\label{調査方法}
-
 
 \subsection{調査対象のデータセット}
 GitHub上のeclipseプロジェクトの中で最もstar数が多かったvert.vプロジェクトを調査,
@@ -185,7 +191,7 @@ ismergeとはコミットがmergeされたコミットかどうかを分類し�
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=2\columnwidth]{git_image.pdf}
+\includegraphics[width=\columnwidth]{git_image.pdf}
 \caption{gitによるコミットの分類分け}
 \label{fig:gitimage} 
 \end{figure}
@@ -220,16 +226,18 @@ ismergeとはコミットがmergeされたコミットかどうかを分類し�
 gitなどの分散型のバージョン管理システムでは,多くの開発者が一つのソフトウェアを変更していても,変更の重複を防ぐことができる.
 
 gitで利用されているものにブランチがある.
-ブランチ
+ブランチは履歴の流れを分岐して記録していくためのものであり,同じプロジェクトの中で複数の変更を同時に進めていくことを目的としている.
+このブランチをmasterという主となるブランチに対して行われたマージを''マージとなるコミット''とする.
 
 % GitHub
 \subsubsection{GitHub}
 さまざまなオープンソースソフトウェアを管理しているサービスである.
-これを利用して認可のあるプロジェクトや開発者の状況を確認したり, プロジェクトをダウンロードすることができる.
+これを利用して認可のあるプロジェクトや開発者の状況を確認したり,ほかの開発者と議論をすることができる.
 
-% レビュー
+プロジェクト外の開発者もGitHubにあるソースコードを別のブランチとして変更し,その変更を投稿することができる.
+GitHub内で変更が投稿された時,コードレビューという,変更を行った開発者とは別の開発者によるコードの査読が行われる.
+このコードレビューで有用と判断された変更はmasterにマージされる.
 
-% 
 
 % doxygen
 \subsubsection{doxygen}
@@ -248,7 +256,7 @@ gitで利用されているものにブランチがある.
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{date.pdf}
+\includegraphics[width=0.5\columnwidth]{date.pdf}
 \caption{依存関係の分類ごとの変更時間間隔}
 \label{fig:subdate} 
 \end{figure}
@@ -269,16 +277,18 @@ gitで利用されているものにブランチがある.
 
 \begin{figure}
 \centering
+\begin{minipage}{0.49\columnwidth}
+\centering
 \includegraphics[width=\columnwidth]{author_date_TRUE.pdf}
 \caption{同じ開発者の依存関係の分類ごとの変更時間間隔}
 \label{fig:author_true_subdate} 
-\end{figure}
-
-\begin{figure}
+\end{minipage}
+\begin{minipage}{0.49\columnwidth}
 \centering
 \includegraphics[width=\columnwidth]{author_date_FALSE.pdf}
 \caption{異なる開発者の依存関係の分類ごとの変更時間間隔}
 \label{fig:author_false_subdate} 
+\end{minipage}
 \end{figure}
 
 
@@ -290,16 +300,18 @@ gitで利用されているものにブランチがある.
 
 \begin{figure}
 \centering
+\begin{minipage}{0.49\columnwidth}
+\centering
 \includegraphics[width=\columnwidth]{merge_date_TRUE.pdf}
 \caption{マージとなるコミットの依存関係の分類ごとの変更時間間隔}
 \label{fig:merge_true_subdate} 
-\end{figure}
-
-\begin{figure}
+\end{minipage}
+\begin{minipage}{0.49\columnwidth}
 \centering
 \includegraphics[width=\columnwidth]{merge_date_FALSE.pdf}
 \caption{マージではないコミットの依存関係の分類ごとの変更時間間隔}
-\label{fig:merge_false_subdate} 
+\label{fig:merge_false_subdate}
+\end{minipage}
 \end{figure}
 
 
@@ -388,9 +400,13 @@ mergeされたコミットの場合mergeされていないコミットと比較�
 ここから,マージではないコミットほど早く変更されやすいことから,レビューを行わない変更の場合は特に依存関係に注意をする必要がある.
 今回は一つのオープンソースプロジェクトのみを調査した.ほかのプロジェクトでも同じような傾向がみられるか調査する必要がある.
 
+\section*{謝辞}
+本研究はJSPS科研費16K12412の助成を受けたものである.
 
 
 \begin{thebibliography}{10}
+\bibitem{Ryder}
+Ryder, Barbara G., and Frank Tip. "Change impact analysis for object-oriented programs." Proceedings of the 2001 ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering. ACM, 2001.
 \bibitem{Briand}
 Briand, L. C., Labiche, Y., O’Sullivan, L., and Sówka, M. M. (2006). Automated impact analysis of UML models. Journal of Systems and Software, 79(3), 339-352.
 \bibitem{Canfora}
