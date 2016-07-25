@@ -10,7 +10,8 @@ judgeset <- c(TRUE, FALSE)
 judge_name <- "author"
 #judge_name <- "."
 
-for (judge in judgeset){
+for (judge in judgeset) {
+    deps2 <- subset(deps, TRUE)
     #deps2 <- subset(deps, deps$same_author == judge)
     #deps2 <- subset(deps, deps$is_merge == judge)
     #deps2 <- deps
