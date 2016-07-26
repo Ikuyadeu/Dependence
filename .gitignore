@@ -1,14 +1,10 @@
-/GetDeps/__pycache__
 /.vs
 /GetDeps/source
-/GetDeps/DependencyClass/__pycache__
 /Doxydeps.*
-/GetDeps/Util/__pycache__
 /__pycache__
-/Rworks/Rworks.*
-/Rworks/.Rhistory
-/Rworks/Rworks/Rworks.*
-/env
+/DepsR/DepsR.*
+.Rhistory
+*.pyc
 *.csv
 *.pdf
 *.gz*
