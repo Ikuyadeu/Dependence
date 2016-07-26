@@ -11,7 +11,7 @@ judge_name <- "author"
 #judge_name <- "."
 
 for (judge in judgeset) {
-    deps2 <- subset(deps, TRUE)
+    deps2 <- deps
     #deps2 <- subset(deps, deps$same_author == judge)
     #deps2 <- subset(deps, deps$is_merge == judge)
     #deps2 <- deps
@@ -38,7 +38,14 @@ for (judge in judgeset) {
     #kindset <- append(kindset, c("all"))
 
     #pdf(paste(judge_name, "/date_", judge, ".pdf", sep = ""))
+    par(cex.axis = 2.0)
     boxplot(dates, names = kindset, ylim = c(0, 200))
+
+
+    #print(t.test(dates[[1]], dates[[3]]))
+    #print(t.test(dates[[3]], dates[[2]]))
+    #print(t.test(dates[[2]], dates[[4]]))
+    #print(t.test(dates[[4]], dates[[5]]))
 
     #pdf(paste(judge_name, "/CommitNo_", judge, ".pdf", sep = ""))
     #boxplot(nos, names = kindset, ylim = c(0, 300))
