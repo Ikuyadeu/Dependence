@@ -50,27 +50,27 @@
 %はじめに
 \section{はじめに} 
 % 現在開発者の経験を図るために多くの研究で開発者がいままでに変更したファイルが利用されている.
-ソフトウェア開発において開発期間の短縮や不具合の回避のために,開発者に対してそれぞれ適した仕事を割り振る研究が行われている.\cite{Bird,Patanamon}
+ソフトウェア開発において開発期間の短縮や不具合の回避のために,開発者に対してそれぞれ適した仕事を割り振る研究が行われている\cite{Bird,Patanamon}.
 Bird\cite{Bird}らは専門レベルという開発者があるファイルに対してどれだけ詳しいかという度合いによってソフトウェアの故障率に影響を与えるという研究を行った.
 これにより,ソフトウェアプロジェクトの管理者は問題に対して最適な開発者を割り当てることができる.
 しかし，対象ファイル群が依存する他のファイル群（以降，依存ファイル群）に対する専門レベルは考慮されていない．
 このため，変更が行われたファイルと依存関係にあるファイルに対して十分な検査が行えず，不具合を見逃す恐れがある．
 
 影響波及解析はファイルの変更に対して,そのファイルに依存するファイルにも変更が必要になるのか解析するモデルである.
-影響波及解析の研究の一つとして,Briand\cite{Briand}らは依存関係が変更までの時間に影響を与えることを調査した.
+影響波及解析の既存研究として,Briand\cite{Briand}らは依存関係が変更までの時間に影響を与えることを調査した.
 この既存研究では,変更されたファイルに対して依存しているファイルのみを調査している.
-しかし,既存研究では変更されたファイルに対して依存されているファイル,また,依存するファイルに依存するファイルに対して調査が行われていない.
-これにより,同じ機能を重複して実装したり, 機能を抽象化する際の変化を追えていない可能性がある.
-本研究では影響波及解析で仮定されている方向とは逆の変更されたファイルに依存されているファイルや間接的に依存関係のあるファイルに対しても調査する.
+しかし,既存研究では変更されたファイルに対して依存されているファイル,あるいは,依存するファイルに依存するファイルに対して調査が行われていない.
+本研究では影響波及解析で仮定されている方向とは逆の変更されたファイルに依存されているファイルや間接的に依存関係のあるファイルに対しても調査することで,
+従来議論されてこなかった依存関係を遡る向きの影響を調べる.
 
-そのため,本論文では変更されたファイルに対して依存関係のあるファイルが変更されるまでの時間の間隔（以降,変更時間間隔（単位：日））への影響について調査を行った.
+そのため,本論文では変更されたファイルに対して依存関係のあるファイルが変更されるまでの時間の間隔（以降,変更時間間隔,単位は日）への影響について調査を行った.
 ある変更が行われてから,早い変更時間間隔で変更が行われるファイルには, 不具合が発生やリファクタリングが起きていると考えられる.
 変更時間間隔を調査することにより,どのような依存関係のあるファイルに開発者が注目すればいいのかが,わかることが期待される.
 
-そのために変更が行われたファイルに対して,プロジェクト内のすべてのファイルがどのような依存関係を持っているのか6つに分類を分けそれぞれの変更時間間隔への影響を調査する.
+調査の手法としては,対象とするソフトウェアプロジェクトにおいて,変更が行われたファイルに対して,プロジェクト内のすべてのファイルがどのような依存関係を持っているのか6つに分類を分けそれぞれの変更時間間隔への影響を調査する.
 また,　プロジェクトに権限を持っている人物による変更であることによる変更時間間隔への影響を調査するために,同じ人物が変更した場合,マージとなった変更の場合でも同様の調査を行った.
 
-本論文では\ref{関連研究}章で関連研究について書き,\ref{ツール・サービス}章では利用したツール・サービスについて,\ref{アプローチ}章で問題へのアプローチ,\ref{調査対象のデータセット}章では調査対象のデータセットについて,\ref{実験}章で実験の内容と結果,\ref{考察}章で実験結果についての考察,\ref{妥当性の検証}章では実験の妥当性についての検証,最後に\ref{まとめ}章でまとめを行う.
+本論文では\ref{関連研究}章で関連研究について述べ,\ref{ツール・サービス}章では利用したツール・サービスについて,\ref{アプローチ}章で問題へのアプローチ,\ref{調査対象のデータセット}章では調査対象のデータセットについて,\ref{実験}章で実験の内容と結果,\ref{考察}章で実験結果についての考察,\ref{妥当性の検証}章では実験の妥当性についての検証,最後に\ref{まとめ}章でまとめを行う.
 
 
 %関連研究
@@ -80,7 +80,7 @@ Bird\cite{Bird}らは専門レベルという開発者があるファイルに�
 そこで行われる影響波及解析では変更の影響を受ける部分の識別が行われる.
 影響波及解析にはさまざまな手法が提案されているが\cite{Ryder,Kondo},本研究では変更による影響を受けたファイルを特定するため,ファイルと粒度の近いクラス単位での解析\cite{Ryder}を行う.
 ソフトウェアの依存関係を評価する方法として,システムのモジュール間での依存関係をマトリクス表示するDSM(Dependency Structure Matrix)がある.\cite{Nord}
-本論文ではこの評価方法を利用して依存関係を求める.
+本論文ではこの評価方法と類似した方法により依存関係を求める.
 
 % 利用したツール
 %「分散バージョン管理システムにおけるバージョンの概念」や「プルリクエスト」を説明するものにしましょう。図１や図２の説明に繋がるように。
@@ -103,10 +103,10 @@ gitで利用されているものにブランチがある.
 さまざまなオープンソースソフトウェアを管理しているサービスである.
 これを利用して認可のあるプロジェクトや開発者の状況を確認したり,ほかの開発者と議論をすることができる.
 
-プロジェクト外の開発者もGitHubにあるソースコードを別のブランチとして変更し,その変更を投稿することができる.
+GitHubを用いたオープンソース開発プロジェクトの特徴として,プロジェクト外の開発者もGitHubにあるソースコードを別のブランチとして変更し,その変更を投稿することができる.
 この投稿はプルリクエストと呼ばれている.
-GitHub内でプルリクエストが投稿された時,コードレビューという,変更を行った開発者とは別の開発者によるコードの査読が行われる.
-このコードレビューで有用と判断された変更はmasterにマージされる.
+GitHub内でプルリクエストが投稿された時,コードレビューという,プロジェクト内の開発者(すなわち変更を行った開発者)とは別の開発者によるコードの査読が行われる.
+このコードレビューでプロジェクト内の開発者が有用と判断した変更はmasterにマージされる.
 
 
 % アプローチ
@@ -119,7 +119,7 @@ GitHub内でプルリクエストが投稿された時,コードレビューと�
 \end{itemize}
 % RQ1
 \subsection{RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる}
-依存関係に種類を定義することによってどの種類がファイルの変更時間間隔に影響を与えるのか調査を行った..
+依存関係に種類を定義することによってどの種類がファイルの変更時間間隔に影響を与えるのか調査を行った.
 
 ここでは,以下のことについて調査を行う.
 \begin{enumerate}
@@ -142,7 +142,7 @@ GitHub内でプルリクエストが投稿された時,コードレビューと�
 
 \begin{table}
 \caption{依存関係の分類}
-\begin{tabular}{|l|r|r|} \hline
+\begin{tabular}{|l|l|} \hline
 分類名 & 概要 \\ \hline
 root & 変更されたファイル \\ \hline
 dependee & rootが依存するファイル \\ \hline
@@ -178,9 +178,9 @@ other & 上記に当てはまらないファイル \\ \hline
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  % 調査方法
 \section{調査対象のデータセット}\label{調査対象のデータセット}
-GitHub上のeclipseプロジェクトの中で最もstar数が多かったvert.vプロジェクトを調査,
+GitHub上のeclipseに関するプロジェクトの中で最もstar数が多かったvert.vプロジェクトを調査の対象とした,
 vert.vプロジェクトは2013年から2016年まで変更され続け,合計2000以上のコミットが行われている.
-eclipseプロジェクトには多くのオープンソースソフトウェアがあり,今後ほかのプロジェクトと比較するのに適していると考えた
+eclipseプロジェクトには多くのオープンソースソフトウェアがあり,今後ほかのプロジェクトと比較するのに適していると考えたことも選定した理由のひとつである.
 
 % コミットの分類
 \subsection{コミットの分類}
@@ -206,65 +206,66 @@ eclipseプロジェクトには多くのオープンソースソフトウェア�
 \ref{enum:mergedbranch}のコミットはマージされ\ref{enum:basedcommit}としてmasterに存在するため,\ref{enum:basedcommit}のコミットのみを分析する.
 
 %　データセット・取得データ
-\subsection{取得データ}
-csv形式で時系列とともに出力する.
-出力するデータを表\ref{tab:初期データセット}に示した.
-
+\subsection{取得データファイルの属性}
+個々のソースファイルから表\ref{tab:初期データセット}に示す属性を取得した.
 
 \begin{table}[htb]
 \caption{出力するデータセット}
-\begin{tabular}{|l|r|r|} \hline
+\begin{tabular}{|l|l|} \hline
 属性名 & 概要 \\ \hline
-filepass & ファイルの絶対パス \\ \hline
-commit\_no & HEADからのコミットの距離 \\ \hline
+commit\_no & 最新のコミットの間に存在するコミット数 \\ \hline
+file\_path & ファイルの絶対パス \\ \hline
 date & 変更が行われた日付 \\ \hline
 author & 変更を行った開発者の名前 \\ \hline
-kind & 依存関係の種類 \\ \hline
 is\_merge & マージされた後のコミットであるかどうか \\ \hline
 \end{tabular}
 \label{tab:初期データセット}
 \end{table}
 
-filepassとは出力するファイルのファイルパスである.
+commit\_noとは最新のコミット該当するコミットの間にあるコミットの数を示している.データ型は数値型である.
+file\_pathとは出力するファイルのファイルシステム上でのファイルパスである.
 同一のcommitNoに対してその時点でのプロジェクトでのすべてのjavaファイルを出力している.
-このファイルパスは一意ではなく,同じfilepassとcommitNoでもkindが別のものがある.
-データ型は文字列型である.
-
-commit\_noとは最新の変更からの変更の距離を示している.データ型は数値型である.
+一つのファイルが表\ref{tab:依存関係の分類}で示した依存関係の分類に複数該当する場合があるため,主キーとはならない.
+%このファイルパスは一意ではなく,同じfilepassとcommitNoでもkindが別のものがある.データ型は文字列型である.
+%kidを使わない説明
 dateとは変更が行われた日付を出力している.データ型は日付型である.
 authorとは変更を行った開発者の名前を出力している.データ型は文字列型である.
-kindとは表{tab:依存関係の分類}で示した依存関係の分類を出力している.データ型は文字列型である.
-is\_mergeとはコミットがmergeされたコミットかどうかを分類しているものであり,論理型の値を得る.
+%kindとは表\ref{tab:依存関係の分類}で示した依存関係の分類を出力している.データ型は文字列型である.
+is\_mergeとはコミットがマージとなるコミットかどうかを分類しているものであり,論理型の値を得る.
 図\ref{fig:gitimage}で示されているとおり,\ref{enum:basedcommit}と\ref{enum:mergecommit}のコミットを識別している.
 
 
-これらの情報をもとに変更時間間隔を求める.
-データ型は数値型である.
-このデータはkindがrootのもの以外に対してつけられる.
-
+これらの情報をもとに,各ファイルfについて,ｆをrootとしたときの
+f以外のファイルについて,fからの相対的な変更時間間隔を求める.
+データ型は数値型,単位は日である.
 %実験
 \section{実験}\label{実験}
 
 %実験・手順
-\subsection{手順}
-以下の手順でデータ取得を行う.
+\subsection{実装}
+対象となるプロジェクトのgitレポジトリからデータを取得し,表\ref{tab:初期データセット}のデータを取得する処理の内容を以下に記す.
 \begin{enumerate}
-\item プロジェクトの状態を一つ過去のものに戻す.
-\item その状態のプロジェクト内のファイルの情報,をXML形式で出力する.
-\item 生成されたXMLファイルから依存関係を求める.
-\item その状態のプロジェクト内のすべてのファイルの情報,表\ref{tab:初期データセット}をcsvファイルに出力する.
-\item すべての過去の変更を調べるまで１に戻る
+\item ファイルの絶対パスをキーとし、ファイルの属性を値とするテーブル(file\_path → 属性)を用意する.
+\item 最新リビジョンを対象とする.
+\item そのリビジョンのコミット番号を調べる(commit\_no).
+\item そのリビジョンがマージされたブランチかを調べる(is\_merge).
+\item そのリビジョンに含まれるファイルの集合をFとする.
+\item Fに含まれる各ファイルについて、ファイルの絶対パス(filepass)、変更が行われた日付(date)、変更を行った開発者の名前(author)を調べる.
+\item Fに含まれるファイルのすべての組み合わせ(f, g)について,
+\begin{enumerate}
+\item fをrootとしたときのgの依存関係の種類を調べ\label{enum:依存関係の種類を調べる}
+\item もしgがそのリビジョンで変更されていなくて,かつ,もしgがテーブルに含まれていれば,fとテーブルに記録されているgと同じパスのファイル（gの次のバージョンのファイル）との相対的な変更時間間隔を求める.
 \end{enumerate}
-これにより得られたデータ量は141MGとなった.
+\item テーブルをFに含まれるそれぞれのファイルfの属性によって更新する.
+\item ひとつ前のリビジョンが存在すれば、そのリビジョンを対象として3に戻る.存在しなければ終了する.
+\end{enumerate}
 
-% doxygen
-\subsection{doxygen}
-ソースコード解析ツール.XML形式でファイルごとに宣言や状況などを出力することができる.
-今回の研究では依存関係を検出するために利用した.
+この処理のうち,\ref{enum:依存関係の種類を調べる}で2つのファイル間の依存関係を求めるのに,ソースコード解析ツールdoxygenを利用した.
 
-
+%実験結果
 \subsection{実験結果}
 依存関係の分類別,また同じ開発者が変更を行っているか,マージとなるコミットであるかによって依存関係を持つファイルの変更時間間隔を出力した.
+これにより得られたデータ量は141MGとなった.
 
 %実験・RQ1
 \subsubsection{RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる}
@@ -280,16 +281,15 @@ is\_mergeとはコミットがmergeされたコミットかどうかを分類し
 
 %ここでのp-value検定の表もだす
 
-
-図\ref{fig:subdate}から依存関係別で優位に差があることが判明した.
-よって以下のRQ2,RQ3でも,この依存関係の分類を用いることにする.
+p-value検定を行った結果,図\ref{fig:subdate}から依存関係別で優位に差があることが判明した.
+よって仮定が正しいことが確認できたため,以下のRQ2,RQ3でも,この依存関係の分類を用いることにする.
 
 
 %実験・RQ2
 \subsubsection{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
 依存関係をもつファイルを同じ開発者が変更した場合の変更時間間隔への影響を調査した.
-図の\label{fig:author_true_subdate} は同じ開発者が変更した場合の変更時間間隔を出力している.
-また,図の\label{fig:author_false_subdate} は異なる開発者が変更した場合の変更時間間隔を出力している.
+図\ref{fig:author_true_subdate} は同じ開発者が変更した場合の変更時間間隔を出力している.
+また,図\ref{fig:author_false_subdate} は異なる開発者が変更した場合の変更時間間隔を出力している.
 
 \begin{figure}
 \centering
@@ -306,13 +306,13 @@ is\_mergeとはコミットがmergeされたコミットかどうかを分類し
 \label{fig:author_false_subdate} 
 \end{minipage}
 \end{figure}
-
+二つの図を比較した結果,仮定が正しいことがわかった.
 
 %実験・RQ3
 \subsubsection{RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
 マージとなるコミットの変更時間間隔の影響を調査した.
-図の,\label{fig:merge_true_subdate} はマージとなるコミットの変更時間間隔を出力している.
-また,図の\label{fig:merge_false_subdate} はマージではないコミットの変更時間間隔を出力している.
+図\ref{fig:merge_true_subdate} はマージとなるコミットの変更時間間隔を出力している.
+また,図\ref{fig:merge_false_subdate} はマージではないコミットの変更時間間隔を出力している.
 
 \begin{figure}
 \centering
@@ -329,7 +329,7 @@ is\_mergeとはコミットがmergeされたコミットかどうかを分類し
 \label{fig:merge_false_subdate}
 \end{minipage}
 \end{figure}
-
+二つの図を比較した結果,仮定が正しいことが分かった.
 
 %考察
 \section{考察}\label{考察}
@@ -337,12 +337,12 @@ is\_mergeとはコミットがmergeされたコミットかどうかを分類し
 %考察 RQ1
 \subsection{RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる}
 図\ref{fig:subdate}について考察する.
-
 最も開発期間が長いものがotherであることから依存関係があるものは依存関係の向きや長さを問わず早く変更される傾向にあると考えられる.
+
 \subsubsection{RQ1-1ファイルfがファイルgに依存するとき、gが変更されたあとfが変更されるまでの時間は、依存関係がないファイルと比較して短い}
 dependerやdepender2からわかるように変更されたファイルに依存しているファイルが早く変更される傾向にあることが分かった.
 すべてのファイルの変更されるまでの日付の中央値は２５日なのに対してdependerは約５日で変更される.
-このことから依存関係の距離よりも依存関係の向きが開発機関に影響を与えることが分かった.
+このことから依存関係の距離よりも依存関係の向きが変更時間間隔に影響を与えることが分かった.
 基本的に変更によって影響を受けるものは変更されたファイルに依存関係をもつファイルであることが予測できるため,妥当な結果であるといえる.
 
 \subsubsection{RQ1-2 ファイルfがファイルgに依存するとき、fが変更されたあとgが変更されるまでの時間は、依存関係がないファイルと同じである}
@@ -350,13 +350,12 @@ dependerやdepender2からわかるように変更されたファイルに依存
 変更する理由としては変更後に同じ機能を実装した場合や必要なデータが増えたことが予測される.
 自然言語処理やコードクローンの調査を行うことによってファイルや変更の種類について発見が期待される.
 
-以上から,影響があるのは順に依存関係の向き,依存関係の距離が関係していることがわかる.
+以上から,影響の大きい順に依存関係の向き,依存関係の距離が関係していることがわかる.
 
 
 % 考察 RQ2
 \subsection{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
 図\ref{fig:author_true_subdate} と\ref{fig:author_false_subdate} について考察する
-
 同じ人物が変更した場合と比較し,違う人物が変更したファイルは全体的に中央値が高い結果になっている.
 dependee2とotherを比較した場合,違い人物が変更した場合には大きな差がないのに対して,同じ人物が変更した場合は20日近く差があることが分かった.
 
@@ -369,16 +368,15 @@ dependee2とotherを比較した場合,違い人物が変更した場合には�
 %考察　ＲＱ３
 \subsection{RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
 図\ref{fig:merge_true_subdate} と\ref{fig:merge_false_subdate} について考察する
+マージとなるコミットほど変更されるタイミングが遅くなる.
+また,マージではないコミットではdependee2とotherとの差がないことがわかった.
 
-マージされたコミットほど変更されるタイミングが遅くなる.
-また,マージされていないコミットではdependee2とotherとの差がないことがわかった.
 
-
-mergeされたコミットの場合mergeされていないコミットと比較して次に変更される時期が遅くなる傾向がある.
+マージとなるコミットの場合mergeされていないコミットと比較して次に変更される時期が遅くなる傾向がある.
 以下はその理由を考察した.
 \begin{enumerate}
 \item レビューを通してから変更を適用するために信頼性が高く,変更の必要がなくなる
-\item mergeされ終わり, 作業が減る
+\item マージされ終わり, 作業が減る
 \item 変更を行ったのがコアコミッターではないため不具合があったとしても修正に時間がかかる
 \end{enumerate}
 
@@ -395,20 +393,20 @@ mergeされたコミットの場合mergeされていないコミットと比較�
 次に,妥当性について検証を行う.
 
 \subsection{単一のプロジェクトでの検証}
-今回の実験で用いたプロジェクトはオープンソースである,eclipseのプロジェクトである.
-ほかのオープンソースプロジェクトや商業ソフトウェアで,同様結果が得られるとは限らない.
+今回の実験で対象としたプロジェクトはeclipseに関係するオープンソースプロジェクトであるvert.vであった.
+比較が容易であると推測されるeclipseに関係するvertv以外のプロジェクトや,ほかのオープンソースプロジェクトや商業ソフトウェアで,同様結果が得られるとは限らない.
 特にソフトウェアの規模によっては開発者の違いや全体的な開発期間に影響があることが予測される.
 
 \subsection{依存関係の扱いについての影響}
 依存関係についての調査では継承や参照もすべて同じ依存関係であるとした.
-依存関係の種類\cite{小谷}別に調査することによって変更時間間隔に影響がでる可能性がある.
+依存関係の種類\cite{Kotani}別に調査することによって変更時間間隔に影響がでる可能性がある.
 
 \subsection{開発者の専門性についての考慮}
 Patanamonは開発者の経験についてレビュー・開発経験についての影響について考慮した研究を行った\cite{Patanamon2}.
 同じ開発者やマージされた変更であっても開発者の経験によって変更時間間隔に影響が考えられる.
 
 \subsection{ほかのメトリクスとの比較}
-影響波及解析の研究として他に依存関係の構造をもとにしたPropagation Cost(PC)を図る研究などもある.\cite{Nord}
+影響波及解析の研究として他に依存関係の構造をもとにしたPropagation Cost(PC)を図る研究などもある\cite{Nord}.
 このような過去のメトリクスとの比較をすることで本研究の有効性を理解することができるのではないかと考えている.
 
 \subsection{dependeeとdependerの関係}
@@ -432,7 +430,7 @@ dependeeはdependerにも含まれる要素の影響のみでotherとの差が�
 
 \begin{thebibliography}{10}
 \bibitem{Ryder}
-Ryder, Barbara G., and Frank Tip. "Change impact analysis for object-oriented programs." Proceedings of the 2001 ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering. ACM, 2001.
+Ryder, Barbara G., and Frank Tip. `'Change impact analysis for object-oriented programs." Proceedings of the 2001 ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering. ACM, 2001.
 \bibitem{Briand}
 Briand, L. C., Labiche, Y., O’Sullivan, L., and Sówka, M. M. (2006). Automated impact analysis of UML models. Journal of Systems and Software, 79(3), 339-352.
 \bibitem{Canfora}
@@ -440,7 +438,7 @@ Briand, L. C., Labiche, Y., O’Sullivan, L., and Sówka, M. M. (2006). Automate
 \bibitem{Budgen}
 Budgen, D., Burn, A. J., Brereton, O. P., Kitchenham, B. A., and Pretorius, R. (2011). Empirical evidence about the UML: a systematic literature review. Software: Practice and Experience, 41(4), 363-392.
 \bibitem{Bird}
-Bird, Christian, et al. "Don't touch my code!: examining the effects of ownership on software quality." Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering. ACM, 2011.
+Bird, Christian, et al. `'Don't touch my code!: examining the effects of ownership on software quality." Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering. ACM, 2011.
 \bibitem{Balachandram}
 V. Balachandran: Reducing Human Effort and Improving Quality in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation, ICSE'13, pp. 931-940, 2013.
 \bibitem{Thongtanunam}
@@ -448,16 +446,16 @@ Patanamon Thongtanunam, Chakkrit Tantithamthavorn, Raula Gaikovina Kula, Norihir
 \bibitem{Thongtanunam2}
 Patanamon Thongtanunam and Shane McIntosh and Ahmed E. Hassan and Hajimu Iida: Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review, Proc. of the International Conference on Software Engineering (ICSE), 2016
 \bibitem{Kotani}
-小谷正行, and 落水浩一郎. "UML 記述の変更波及解析に利用可能な依存関係の自動生成." (2008).
+小谷正行, and 落水浩一郎. `'UML 記述の変更波及解析に利用可能な依存関係の自動生成." (2008).
 \bibitem{Kondo}
-近藤和弘, 大畑文明, and 井上克郎. "オブジェクト指向プログラム変更時の影響波及解析手法の提案." 電子情報通信学会技術研究報告. SS, ソフトウェアサイエンス 101.628 (2002): 33-40.
+近藤和弘, 大畑文明, and 井上克郎. `'オブジェクト指向プログラム変更時の影響波及解析手法の提案." 電子情報通信学会技術研究報告. SS, ソフトウェアサイエンス 101.628 (2002): 33-40.
 \bibitem{Patanamon} 
 Patanamon Thongtanunam, etc...
 Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review
 \bibitem{Patanamon2}
 Patanamon Thongtanunam1, Shane McIntosh, Ahmed E. Hassan, Hajimu Iida Revisiting Code Ownership and its Relationship with Software Quality in the Scope of Modern Code Review
 \bibitem{Nord}
-Nord, Robert L., et al. "Variations on using propagation cost to measure architecture modifiability properties." Software Maintenance (ICSM), 2013 29th IEEE International Conference on. IEEE, 2013.
+Nord, Robert L., et al. `'Variations on using propagation cost to measure architecture modifiability properties." Software Maintenance (ICSM), 2013 29th IEEE International Conference on. IEEE, 2013.
 
 
 \end{thebibliography}
