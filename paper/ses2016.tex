@@ -12,29 +12,14 @@
 
 \begin{document}
 
-
-
 \maketitle
 
 \begin{abstract}
-%大規模なソフトウェア開発では多くのファイルからソフトウェアが成り立っている.
-%そのため,あるファイルを変更した場合ほかのファイルにも影響を及ぼす.
+変更波及解析はソースコードの依存関係を利用する分析手法のひとつである.
+ソースファイルを対象とする変更波及解析の場合には、あるソースファイルが変更されると,そのソースファイルに依存している
+ソースファイルの振る舞いも影響を受けるという仮説に基づき、テストや変更が必要になるソースファイルを予測する.
 
-%既存研究では依存関係がソフトウェアの品質や開発者の経験に影響を与えることがわかっている.
-
-%本研究では,変更されたソースコードの依存関係の依存の向きに着目して,依存関係をもつファイルが次に変更されるまでの期間への影響を調査した.
- 
-%実験結果から変更されているソースコードに依存関係の向きや変更を行った人物によって開発期間に大きく影響を与えることが分かった.
-
-
-ソースコードの依存関係はソフトウェアの保守プロセスにおいて,ソースコードの同時変更の予測や,
-不具合の修正や機能拡張のためにソースコードを変更する際の担当者の割り当てなどに利用されている.
-影響波及解析(change impact anlysis)はこのような応用の基礎となっているモデルである.
-影響波及解析では、あるソースファイルが変更されると,そのソースファイルに依存している
-別のソースファイルも変更が必要となるというモデルであり,
-既存研究により実験的な評価が行われている.
-
-本研究では、依存関係の依存の向きに着目し,影響波及解析で仮定されている方向と逆向きの関係も含めて,
+本研究では、依存関係の依存の向きに着目し,変更波及解析で仮定されている方向と逆向きの関係も含めて,
 あるソースファイルの変更と,依存関係がある他のソースファイルの変更の時間間隔を,
 オープンソースプロダクトのリポジトリを対象として調査した.
 また,近年の分散開発においてはプロダクトの開発チーム外の
@@ -43,9 +28,9 @@
 
 \end{abstract}
 
-\begin{eabstract}
+%\begin{eabstract}
 
-\end{eabstract}
+%\end{eabstract}
 
 %はじめに
 \section{はじめに} 
@@ -56,11 +41,10 @@ Bird\cite{Bird}らは専門レベルという開発者があるファイルに�
 しかし，対象ファイル群が依存する他のファイル群（以降，依存ファイル群）に対する専門レベルは考慮されていない．
 このため，変更が行われたファイルと依存関係にあるファイルに対して十分な検査が行えず，不具合を見逃す恐れがある．
 
-影響波及解析はファイルの変更に対して,そのファイルに依存するファイルにも変更が必要になるのか解析するモデルである.
-影響波及解析の既存研究として,Briand\cite{Briand}らは依存関係が変更までの時間に影響を与えることを調査した.
-この既存研究では,変更されたファイルに対して依存しているファイルのみを調査している.
-しかし,既存研究では変更されたファイルに対して依存されているファイル,あるいは,依存するファイルに依存するファイルに対して調査が行われていない.
-本研究では影響波及解析で仮定されている方向とは逆の変更されたファイルに依存されているファイルや間接的に依存関係のあるファイルに対しても調査することで,
+変更波及解析はファイルの変更に対して,そのファイルに依存するファイルにも変更が必要になるのか解析するモデルである.
+変更波及解析の既存研究として,Briand\cite{Briand}らは依存関係が変更までの時間に影響を与えることを調査した.
+既存研究では.依存関係の逆向きに変更の必要が起きる事例について議論したものは少ない\cite{Omori}.
+本研究では変更波及解析で仮定されている方向とは逆の変更されたファイルに依存されているファイルや間接的に依存関係のあるファイルに対しても調査することで,
 従来議論されてこなかった依存関係を遡る向きの影響を調べる.
 
 そのため,本論文では変更されたファイルに対して依存関係のあるファイルが変更されるまでの時間の間隔（以降,変更時間間隔,単位は日）への影響について調査を行った.
@@ -77,14 +61,14 @@ Bird\cite{Bird}らは専門レベルという開発者があるファイルに�
 \section{関連研究}\label{関連研究}
 開発者はソフトウェアに対して多くの変更を行う.
 その過程で,変更した部分だけでなく,変更されていない部分へも何らかの影響があることが考えられる.
-そこで行われる影響波及解析では変更の影響を受ける部分の識別が行われる.
-影響波及解析にはさまざまな手法が提案されているが\cite{Ryder,Kondo},本研究では変更による影響を受けたファイルを特定するため,ファイルと粒度の近いクラス単位での解析\cite{Ryder}を行う.
+そこで行われる変更波及解析では変更の影響を受ける部分の識別が行われる.
+変更波及解析にはさまざまな手法が提案されているが\cite{Ryder,Kondo},本研究では変更による影響を受けたファイルを特定するため,ファイルと粒度の近いクラス単位での解析\cite{Ryder}を行う.
 ソフトウェアの依存関係を評価する方法として,システムのモジュール間での依存関係をマトリクス表示するDSM(Dependency Structure Matrix)がある\cite{Nord}.
 本論文ではこの評価方法と類似した方法により依存関係を求める.
 
 % 利用したツール
 %「分散バージョン管理システムにおけるバージョンの概念」や「プルリクエスト」を説明するものにしましょう。図１や図２の説明に繋がるように。
-\section{利用したツール・サービス}\label{ツール・サービス}
+\section{分散バージョン管理システム・サービス}\label{ツール・サービス}
 % git
 \subsection{バージョン管理システム, git}
 バージョン管理システムとはファイルの変更の履歴を保存するためのシステムである.
@@ -113,9 +97,9 @@ GitHub内でプルリクエストが投稿された時,コードレビューと�
 \section{アプローチ}\label{アプローチ}
 変更時間間隔に影響を受ける依存関係,開発者,gitの利用状況についての傾向を調査するために,以下の項目について調査を行う.
 \begin{itemize}
-\item RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる
-\item RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも,短くなる
-\item RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる
+\item RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる.
+\item RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも,短くなる.
+\item RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる.
 \end{itemize}
 % RQ1
 \subsection{RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる}
@@ -135,11 +119,11 @@ GitHub内でプルリクエストが投稿された時,コードレビューと�
 \item 継承 (例: ClassB extends ClassA)
 \end{itemize}
 
-\subsubsection{依存関係の分類}
 依存関係があるファイルにも依存関係の方向や間接的な依存関係をもつものを考慮するためにプロジェクト内のすべてのファイルに対し,与えられた変更を起点として表\ref{tab:依存関係の分類}に示したような分類を付与する.
 本論文ではこの分類を依存関係の分類と呼ぶことにする.図\ref{fig:dependency}に依存関係の分類についての概要を示した.
 
 \begin{table}
+\begin{center}
 \caption{依存関係の分類}
 \begin{tabular}{|l|l|} \hline
 分類名 & 概要 \\ \hline
@@ -150,6 +134,7 @@ dependee2 & dependeeが依存するファイル \\ \hline
 depender2 & dependerが依存されるファイル \\ \hline
 other & 上記に当てはまらないファイル \\ \hline
 \end{tabular}
+\end{center}
 \label{tab:依存関係の分類}
 \end{table}
 
@@ -161,13 +146,13 @@ other & 上記に当てはまらないファイル \\ \hline
 \end{figure}
 
 % RQ2
-\subsection{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
+\subsection{RQ2:依存関係があるファイル(fがgに依存)の変更において,gが変更されたあとfが変更時間間隔は,fとgの開発者が同じ場合には、異なる場合よりも,短くなる}
 同一人物が変更を行った場合とそうでない場合でRQ1と同じく変更時間間隔への影響を調査した.
 これを調べることにより,　依存関係による影響を解決している人物はどのような依存関係に集中しているのか,
 また,同じ開発者であることによって,どのような依存関係のあるファイルが影響を受けるかをＲＱ１と同様に調査する.
 
 % RQ3
-\subsection{RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
+\subsection{RQ3:依存関係があるファイル(fがgに依存)の変更において,gが変更されたあとfが変更時間間隔は.fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
 マージとなるコミットの場合はプルリクエストが投稿された後,コードレビューがされているコミットである可能性が高い.
 これに対して,マージとなるコミット以外のコミットの場合, コードレビューを経ていない可能性が高い.
 前者と後者の変更時間間隔を比較すると, 後者はコードレビューを経ていないため品質が低く,
@@ -177,7 +162,7 @@ other & 上記に当てはまらないファイル \\ \hline
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  % 調査方法
 \section{調査対象のデータセット}\label{調査対象のデータセット}
-GitHub上のeclipseに関するプロジェクトの中で最もstar数が多かったvert.vプロジェクトを調査の対象とした,
+GitHub上のeclipseに関するプロジェクトの中で最もstar数が多かったvert.vプロジェクトを調査の対象とした.
 vert.vプロジェクトは2013年から2016年まで変更され続け,合計2000以上のコミットが行われている.
 eclipseプロジェクトには多くのオープンソースソフトウェアがあり,今後ほかのプロジェクトと比較するのに適していると考えたことも選定した理由のひとつである.
 
@@ -209,6 +194,7 @@ eclipseプロジェクトには多くのオープンソースソフトウェア�
 個々のソースファイルから表\ref{tab:初期データセット}に示す属性を取得した.
 
 \begin{table}[htb]
+\begin{center}
 \caption{出力するデータセット}
 \begin{tabular}{|l|l|} \hline
 属性名 & 概要 \\ \hline
@@ -218,6 +204,7 @@ date & 変更が行われた日付 \\ \hline
 author & 変更を行った開発者の名前 \\ \hline
 is\_merge & マージされた後のコミットであるかどうか \\ \hline
 \end{tabular}
+\end{center}
 \label{tab:初期データセット}
 \end{table}
 
@@ -232,7 +219,6 @@ authorとは変更を行った開発者の名前を出力している.データ�
 %kindとは表\ref{tab:依存関係の分類}で示した依存関係の分類を出力している.データ型は文字列型である.
 is\_mergeとはコミットがマージとなるコミットかどうかを分類しているものであり,論理型の値を得る.
 図\ref{fig:gitimage}で示されているとおり,\ref{enum:basedcommit}と\ref{enum:mergecommit}のコミットを識別している.
-
 
 これらの情報をもとに,各ファイルfについて,ｆをrootとしたときの
 f以外のファイルについて,fからの相対的な変更時間間隔を求める.
@@ -249,12 +235,12 @@ f以外のファイルについて,fからの相対的な変更時間間隔を�
 \item そのリビジョンのコミット番号を調べる(commit\_no).
 \item そのリビジョンがマージされたブランチかを調べる(is\_merge).
 \item そのリビジョンに含まれるファイルの集合をFとする.
-\item Fに含まれる各ファイルについて、ファイルの絶対パス(filepass)、変更が行われた日付(date)、変更を行った開発者の名前(author)を調べる.
+\item Fに含まれる各ファイルについて、ファイルの絶対パス(file\_path)、変更が行われた日付(date)、変更を行った開発者の名前(author)を調べる.
 \item Fに含まれるファイルのすべての組み合わせ(f, g)について,
 \begin{enumerate}
 \item fをrootとしたときのgの依存関係の種類を調べ\label{enum:依存関係の種類を調べる}
 \item もしgがそのリビジョンで変更されていなくて,かつ,もしgがテーブルに含まれていれば,fとテーブルに記録されているgと同じパスのファイル（gの次のバージョンのファイル）との相対的な変更時間間隔を求める.
-\item  もしgがそのリビジョンで変更されていて,ｆよりあとの日付で変更されていれば, fとgの変更の日付から相対的な変更時間間隔を求める.
+\item  もしgがそのリビジョンで変更されていて,ｆより後の日付で変更されていれば, fとgの変更の日付から相対的な変更時間間隔を求める.
 \end{enumerate}
 \item テーブルをFに含まれるそれぞれのファイルfの属性によって更新する.
 \item ひとつ前のリビジョンが存在すれば、そのリビジョンを対象として3に戻る.存在しなければ終了する.
@@ -266,9 +252,10 @@ f以外のファイルについて,fからの相対的な変更時間間隔を�
 \subsection{実験結果}
 依存関係の分類別,また同じ開発者が変更を行っているか,マージとなるコミットであるかによって依存関係を持つファイルの変更時間間隔を出力した.
 これにより得られたデータ量は141MBとなった.
+以下に,実験結果が示す各RQの成否を示す.
 
 %実験・RQ1
-\subsubsection{RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる}
+\subsubsection*{RQ1:変更されたファイルに依存関係のあるファイルが変更されるまでの時間は依存関係のないファイルより短くなる}
 図\ref{fig:subdate}はそれぞれ依存関係別にみた依存関係の検出から変更時間間隔を箱ひげ図で出力したものである.　　
 
 \begin{figure}
@@ -278,57 +265,74 @@ f以外のファイルについて,fからの相対的な変更時間間隔を�
 \label{fig:subdate} 
 \end{figure}
 
-
-%ここでのp-value検定の表もだす
-
 各依存関係の分類ごとに二標本t検定を行った結果,p値は0.05よりも小さいため,図\ref{fig:subdate}から依存関係別で有意に差があることが判明した.
-よって仮定が正しいことが確認できたため,以下のRQ2,RQ3でも,この依存関係の分類を用いることにする.
+よって仮定RQ1-1については正しいことが確認できたがRQ1-2は成り立たないことが確認できた.
+以下のRQ2,RQ3でも,この依存関係の分類を用いることにする.
 
 
 %実験・RQ2
-\subsubsection{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
+\subsubsection*{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
 依存関係をもつファイルを同じ開発者が変更した場合の変更時間間隔への影響を調査した.
-図\ref{fig:author_true_subdate} は同じ開発者が変更した場合の変更時間間隔を出力している.
-また,図\ref{fig:author_false_subdate} は異なる開発者が変更した場合の変更時間間隔を出力している.
+%図\ref{fig:author_true_subdate} は同じ開発者が変更した場合の変更時間間隔を出力している.
+%また,図\ref{fig:author_false_subdate} は異なる開発者が変更した場合の変更時間間隔を出力している.
+図\ref{fig:author_subdate} は同じ開発者によるコミットと異なる開発者によるコミットの変更時間間隔の箱ひげ図を出力している.
 
+
+%\begin{comment}
+%\begin{figure}
+%\centering
+%\begin{minipage}{0.49\columnwidth}
+%\centering
+%\includegraphics[width=\columnwidth]{author_date_TRUE.pdf}
+%\caption{同じ開発者の依存関係の分類ごとの変更時間間隔}
+%\label{fig:author_true_subdate} 
+%\end{minipage}
+%\begin{minipage}{0.49\columnwidth}
+%\centering
+%\includegraphics[width=\columnwidth]{author_date_FALSE.pdf}
+%\caption{異なる開発者の依存関係の分類ごとの変更時間間隔}
+%\label{fig:author_false_subdate} 
+%\end{minipage}
+%\end{figure}
 \begin{figure}
 \centering
-\begin{minipage}{0.49\columnwidth}
-\centering
-\includegraphics[width=\columnwidth]{author_date_TRUE.pdf}
-\caption{同じ開発者の依存関係の分類ごとの変更時間間隔}
-\label{fig:author_true_subdate} 
-\end{minipage}
-\begin{minipage}{0.49\columnwidth}
-\centering
-\includegraphics[width=\columnwidth]{author_date_FALSE.pdf}
-\caption{異なる開発者の依存関係の分類ごとの変更時間間隔}
-\label{fig:author_false_subdate} 
-\end{minipage}
+\includegraphics[width=\columnwidth]{author.pdf}
+\caption{開発者を考慮した依存関係の分類ごとの変更時間間隔}
+\label{fig:author_subdate} 
 \end{figure}
+
+
 二つの図を比較した結果,この実験では仮定が正しいことがわかった.
 
 %実験・RQ3
-\subsubsection{RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
+\subsubsection*{RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
 マージとなるコミットの変更時間間隔の影響を調査した.
-図\ref{fig:merge_true_subdate} はマージとなるコミットの変更時間間隔を出力している.
-また,図\ref{fig:merge_false_subdate} はマージではないコミットの変更時間間隔を出力している.
+%図\ref{fig:merge_true_subdate} はマージとなるコミットの変更時間間隔を出力している.
+%また,図\ref{fig:merge_false_subdate} はマージではないコミットの変更時間間隔を出力している.
+図\ref{fig:merge_subdate} はマージとなるコミットとマージではないコミットの変更時間間隔の箱ひげ図を出力している.
+%\begin{figure}
+%\centering
+%\begin{minipage}{0.49\columnwidth}
+%\centering
+%\includegraphics[width=\columnwidth]{merge_date_TRUE.pdf}
+%\caption{マージとなるコミットの依存関係の分類ごとの変更時間間隔}
+%\label{fig:merge_true_subdate} 
+%\end{minipage}
+%\begin{minipage}{0.49\columnwidth}
+%\centering
+%\includegraphics[width=\columnwidth]{merge_date_FALSE.pdf}
+%\caption{マージではないコミットの依存関係の分類ごとの変更時間間隔}
+%\label{fig:merge_false_subdate}
+%\end{minipage}
+%\end{figure}
 
 \begin{figure}
 \centering
-\begin{minipage}{0.49\columnwidth}
-\centering
-\includegraphics[width=\columnwidth]{merge_date_TRUE.pdf}
-\caption{マージとなるコミットの依存関係の分類ごとの変更時間間隔}
-\label{fig:merge_true_subdate} 
-\end{minipage}
-\begin{minipage}{0.49\columnwidth}
-\centering
-\includegraphics[width=\columnwidth]{merge_date_FALSE.pdf}
-\caption{マージではないコミットの依存関係の分類ごとの変更時間間隔}
-\label{fig:merge_false_subdate}
-\end{minipage}
+\includegraphics[width=\columnwidth]{merge.pdf}
+\caption{マージを考慮した依存関係の分類ごとの変更時間間隔}
+\label{fig:merge_subdate} 
 \end{figure}
+
 二つの図を比較した結果,この実験では仮定が正しいことが分かった.
 
 %考察
@@ -339,13 +343,13 @@ f以外のファイルについて,fからの相対的な変更時間間隔を�
 図\ref{fig:subdate}について考察する.
 最も開発期間が長いものがotherであることから依存関係があるものは依存関係の向きや長さを問わず早く変更される傾向にあると考えられる.
 
-\subsubsection{RQ1-1ファイルfがファイルgに依存するとき、gが変更されたあとfが変更されるまでの時間は、依存関係がないファイルと比較して短い}
+\subsubsection*{RQ1-1ファイルfがファイルgに依存するとき、gが変更されたあとfが変更されるまでの時間は、依存関係がないファイルと比較して短い}
 dependerやdepender2からわかるように変更されたファイルに依存しているファイルが早く変更される傾向にあることが分かった.
 すべてのファイルの変更されるまでの日付の中央値は25日なのに対してdependerは約5日で変更される.
 このことから依存関係の距離よりも依存関係の向きのほうが変更時間間隔に影響を与える影響が大きいことが分かった.
 基本的に変更によって影響を受けるものは変更されたファイルに依存関係をもつファイルであることが予測できるため,妥当な結果であるといえる.
 
-\subsubsection{RQ1-2 ファイルfがファイルgに依存するとき、fが変更されたあとgが変更されるまでの時間は、依存関係がないファイルと同じである}
+\subsubsection*{RQ1-2 ファイルfがファイルgに依存するとき、fが変更されたあとgが変更されるまでの時間は、依存関係がないファイルと同じである}
 dependeeやdependee2もotherよりは開発期間が短くなることから,　変更されたファイルに対して依存されているファイルも影響を受けることが分かった.
 変更する理由としては変更後に同じ機能を実装した場合や必要なデータが増えたことが予測される.
 
@@ -354,24 +358,24 @@ dependeeやdependee2もotherよりは開発期間が短くなることから,　
 
 % 考察 RQ2
 \subsection{RQ2:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fとgの開発者が同じ場合には、異なる場合よりも、短くなる}
-図\ref{fig:author_true_subdate} と\ref{fig:author_false_subdate} について考察する.
-同じ人物が変更した場合と比較し,違う人物が変更したファイルは全体的に中央値が高い結果になっている.
-dependee2とotherを比較した場合,違い人物が変更した場合には大きな差がないのに対して,同じ人物が変更した場合は20日近く差があることが分かった.
+図\ref{fig:author_subdate}  について考察する.
+同じ人物が変更した場合と比較し,異なる人物が変更したファイルは全体的に中央値が高い結果になっている.
+dependee2とotherを比較した場合,異なる人物が変更した場合には大きな差がないのに対して,同じ人物が変更した場合は20日近く差があることが分かった.
 
 同じ人物が変更した場合に中央値が下がることに関して考えられる理由は,同じ開発者が変更したコミットの大部分は同時に変更をしたことがある.
 多くの開発者が不具合がでないように他の依存関係のあるファイルを変更するので妥当な結果といえる.
 
-別の開発者が変更をした場合にはdependee2とotherに対して大きく差がでる.
-これは同じパッケージに入っているために影響がでることが考えられる.
+同じ開発者が変更をした場合には,そうでないときと比較してdependee2とotherの差が大きくなる.
+これは同じパッケージに入っているためと考えられる.
 
 %考察　ＲＱ３
 \subsection{RQ3:依存関係があるファイル(fがgに依存)の変更において、gが変更されたあとfが変更時間間隔は、fのコミットが複数のブランチのマージとなったコミットである場合には,異なる場合よりも,長くなる}
-図\ref{fig:merge_true_subdate} と\ref{fig:merge_false_subdate} について考察する
+図\ref{fig:merge_subdate} について考察する
 マージとなるコミットほど変更されるタイミングが遅くなる.
 また,マージではないコミットではdependee2とotherとの差がないことがわかった.
 
 
-マージとなるコミットの場合mergeされていないコミットと比較して次に変更される時期が遅くなる傾向がある.
+マージとなるコミットの場合マージされていないコミットと比較して次に変更される時期が遅くなる傾向がある.
 考えられる理由を以下に示す.
 \begin{enumerate}
 \item レビューを通してから変更を適用するために信頼性が高く,変更の必要がなくなる
@@ -379,7 +383,7 @@ dependee2とotherを比較した場合,違い人物が変更した場合には�
 \item 変更を行ったのがコアコミッターではないため不具合があったとしても修正に時間がかかる
 \end{enumerate}
 
-特にmergeされたコミットではdependee2はotherと中央値が近い数値を出している.
+特にマージされたコミットではdependee2はotherと中央値が近い数値を出している.
 考えられる理由を以下に示す.
 \begin{enumerate}
 \item 外部からの変更ではあまり抽象的になりがちなファイルを変更しづらい
@@ -390,37 +394,36 @@ dependee2とotherを比較した場合,違い人物が変更した場合には�
 \section{妥当性の検証}\label{妥当性の検証}
 次に,妥当性について検証を行う.
 
-\subsection{単一のプロジェクトでの検証}
+\subsection*{単一のプロジェクトでの検証}
 今回の実験で対象としたプロジェクトはeclipseに関係するオープンソースプロジェクトであるvert.vであった.
 比較が容易であると推測されるeclipseに関係するvertv以外のプロジェクトや,ほかのオープンソースプロジェクトや商業ソフトウェアで,同様結果が得られるとは限らない.
 特にソフトウェアの規模によっては開発者の違いや全体的な開発期間に影響があることが予測される.
 
-\subsection{依存関係の扱いについての影響}
+\subsection*{依存関係の扱いについての影響}
 依存関係についての調査では継承や参照もすべて同じ依存関係であるとした.
 依存関係の種類\cite{Kotani}別に調査することによって変更時間間隔に影響がでる可能性がある.
 
-\subsection{開発者の専門性についての考慮}
+\subsection*{開発者の専門性についての考慮}
 Patanamonは開発者の経験についてレビュー・開発経験についての影響について考慮した研究を行った\cite{Patanamon2}.
 同じ開発者やマージされた変更であっても開発者の経験によって変更時間間隔に影響が考えられる.
 
-\subsection{ほかのメトリクスとの比較}
-影響波及解析の研究として他に依存関係の構造をもとにしたPropagation Cost(PC)を図る研究などもある\cite{Nord}.
+\subsection*{ほかのメトリクスとの比較}
+変更波及解析の研究として他に依存関係の構造をもとにしたPropagation Cost(PC)を図る研究などもある\cite{Nord}.
 このような過去のメトリクスとの比較をすることで本研究の有効性を理解することができるのではないかと考えている.
 
-\subsection{dependeeとdependerの関係}
+\subsection*{dependeeとdependerの関係}
 DSMではファイルがお互いに依存しあうことも考慮されている.
 そのため本研究では変更されたファイルが依存するファイルであるdependeeと変更されたファイルが依存されるファイルであるdependeeが互いに同じ要素を持っていることが考えられる.
 dependeeはdependerにも含まれる要素の影響のみでotherとの差が生まれていることも考えられる.
 
 % まとめ
 \section{まとめ} \label{まとめ}
-本研究では,ファイルの依存関係が変更時間間隔に与える影響について調査した.
-その結果,依存関係の向きや距離によって変更時間間隔が変化し,
-同一の開発者によって変更が行われた場合のようにどのようなファイルでも変更時間間隔が短くなる要素と
-,マージではないコミットの場合に依存関係のあるファイルに対して特に変更時間間隔が短くなる要素があることが分かった.
+本研究では,ファイルの依存関係とその向きが変更時間間隔に与える影響について調査した.
+コミットがマージであることや同じ開発者によるコミットほど変更時間間隔は短くなり,
+それぞれ依存関係の分類によって,影響の度合いが変化した.
+本研究により,開発者やコードレビューでのレビュアーは影響に注意すべきファイルを識別できることが期待される.
 
-ここから,マージではないコミットほど早く変更されやすいことから,レビューを行わない変更の場合は特に依存関係に注意をする必要がある.
-今回は一つのオープンソースプロジェクトのみを調査した.ほかのプロジェクトでも同じような傾向がみられるか調査する必要がある.
+本研究の今後の改善点としては,(1)他のプロジェクトでも同じような傾向がみられるかについての調査,(2)変更時間間隔以外での影響の調査をあげる.
 
 \section*{謝辞}
 本研究はJSPS科研費16K12412の助成を受けたものである.
@@ -428,33 +431,44 @@ dependeeはdependerにも含まれる要素の影響のみでotherとの差が�
 
 \begin{thebibliography}{10}
 \bibitem{Ryder}
-Ryder, Barbara G., and Frank Tip. `'Change impact analysis for object-oriented programs." Proceedings of the 2001 ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering. ACM, 2001.
+Ryder, Barbara G., and Frank Tip. ``Change impact analysis for object-oriented programs." Proceedings of the 2001 ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering. ACM, 2001.
 \bibitem{Briand}
-Briand, L. C., Labiche, Y., O’Sullivan, L., and Sówka, M. M. (2006). Automated impact analysis of UML models. Journal of Systems and Software, 79(3), 339-352.
+Briand, L. C., Labiche, Y., O’Sullivan, L., and Sówka, M. M. (2006). 
+``Automated impact analysis of UML models. Journal of Systems and Software''
+, 79(3), 339-352.
 \bibitem{Canfora}
- Canfora, G., Ceccarelli, M., Cerulo, L., and Di Penta, M. (2010, September). Using multivariate time series and association rules to detect logical change coupling: An empirical study. In Software Maintenance (ICSM), 2010 IEEE International Conference on (pp. 1-10). IEEE.
+ Canfora, G., Ceccarelli, M., Cerulo, L., and Di Penta, M. (2010, September). 
+``Using multivariate time series and association rules to detect logical change coupling: An empirical study. In Software Maintenance''
+  (ICSM), 2010 IEEE International Conference on (pp. 1-10). IEEE.
 \bibitem{Budgen}
-Budgen, D., Burn, A. J., Brereton, O. P., Kitchenham, B. A., and Pretorius, R. (2011). Empirical evidence about the UML: a systematic literature review. Software: Practice and Experience, 41(4), 363-392.
+Budgen, D., Burn, A. J., Brereton, O. P., Kitchenham, B. A., and Pretorius, R. (2011). 
+``Empirical evidence about the UML: a systematic literature review. Software: Practice and Experience''
+, 41(4), 363-392.
 \bibitem{Bird}
-Bird, Christian, et al. `'Don't touch my code!: examining the effects of ownership on software quality." Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering. ACM, 2011.
+Bird, Christian, et al. ``Don't touch my code!: examining the effects of ownership on software quality." Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering. ACM, 2011.
 \bibitem{Balachandram}
-V. Balachandran: Reducing Human Effort and Improving Quality in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation, ICSE'13, pp. 931-940, 2013.
+V. Balachandran: ``Reducing Human Effort and Improving Quality in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation'', ICSE'13, pp. 931-940, 2013.
 \bibitem{Thongtanunam}
 Patanamon Thongtanunam, Chakkrit Tantithamthavorn, Raula Gaikovina Kula, Norihiro Yoshida, Hajimu Iida, Ken-ichi Matsumoto: Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review, 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering, 2015.
 \bibitem{Thongtanunam2}
-Patanamon Thongtanunam and Shane McIntosh and Ahmed E. Hassan and Hajimu Iida: Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review, Proc. of the International Conference on Software Engineering (ICSE), 2016
+Patanamon Thongtanunam and Shane McIntosh and Ahmed E. Hassan and Hajimu Iida: 
+``Revisiting Code Ownership and Its Relationship with Software Quality in the Scope of Modern Code Review''
+Proc. of the International Conference on Software Engineering (ICSE), 2016
 \bibitem{Kotani}
-小谷正行, and 落水浩一郎. `'UML 記述の変更波及解析に利用可能な依存関係の自動生成." (2008).
+小谷正行, and 落水浩一郎. ``UML 記述の変更波及解析に利用可能な依存関係の自動生成." (2008).
 \bibitem{Kondo}
-近藤和弘, 大畑文明, and 井上克郎. `'オブジェクト指向プログラム変更時の影響波及解析手法の提案." 電子情報通信学会技術研究報告. SS, ソフトウェアサイエンス 101.628 (2002): 33-40.
+近藤和弘, 大畑文明, and 井上克郎. ``オブジェクト指向プログラム変更時の影響波及解析手法の提案." 電子情報通信学会技術研究報告. SS, ソフトウェアサイエンス 101.628 (2002): 33-40.
 \bibitem{Patanamon} 
 Patanamon Thongtanunam, etc...
-Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review
+``Who Should Review My Code? A File Location-Based Code-Reviewer Recommendation Approach for Modern Code Review''
 \bibitem{Patanamon2}
-Patanamon Thongtanunam1, Shane McIntosh, Ahmed E. Hassan, Hajimu Iida Revisiting Code Ownership and its Relationship with Software Quality in the Scope of Modern Code Review
+Patanamon Thongtanunam1, Shane McIntosh, Ahmed E. Hassan, Hajimu Iida 
+``Revisiting Code Ownership and its Relationship with Software Quality in the Scope of Modern Code Review''
 \bibitem{Nord}
-Nord, Robert L., et al. `'Variations on using propagation cost to measure architecture modifiability properties." Software Maintenance (ICSM), 2013 29th IEEE International Conference on. IEEE, 2013.
-
+Nord, Robert L., et al. ``Variations on using propagation cost to measure architecture modifiability properties." Software Maintenance (ICSM), 2013 29th IEEE International Conference on. IEEE, 2013.
+\bibitem{Omori}
+大森 隆行, 丸山 勝久, 林 晋平, 沢田 篤史, ``ソフトウェア進化研究の分類と動向, コンピュータソフトウェア''
+, Vol.29, No.3 (2012), pp.3–28.
 
 \end{thebibliography}
 
