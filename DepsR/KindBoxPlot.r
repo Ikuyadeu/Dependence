@@ -1,9 +1,10 @@
 deps <- read.csv("./dep_3.csv", sep = ',', header = TRUE, row.names = NULL)
+deps$kind <- factor(deps$kind, levels 
+    = c("depender", "depender2", "dependee", "dependee2", "other"))
 
-deps$file_location <- as.character(deps$file_location)
-deps$date <- as.Date(deps$date)
+#deps$date <- as.Date(deps$date)
 deps$SubDate <- as.numeric(deps$SubDate)
-deps$SubNo <- as.numeric(deps$SubNo)
+#deps$SubNo <- as.numeric(deps$SubNo)
 
 judgeset <- c(TRUE, FALSE)
 #judge_name <- "author"
