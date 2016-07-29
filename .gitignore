@@ -12,6 +12,8 @@
 *.aux
 *.dvi
 *.zip
+*.sty
+*.cls
+*.eps
 /paper/ses-sample*
 /paper/example.tex
-/paper/fose*
