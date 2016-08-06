@@ -1,4 +1,4 @@
-data_set <- read.csv("../../dep.csv", sep = ',', header = TRUE, row.names = NULL)
+data_set <- read.csv("../newdep.csv", sep = ',', header = TRUE, row.names = NULL)
 data_set$file_location <- as.character(data_set$file_location)
 data_set$author <- as.character(data_set$author)
 data_set$date <- as.Date(data_set$date)
@@ -29,7 +29,7 @@ for (dep in 1:nrow(deps)) {
 }
 deps <- na.omit(deps)
 
-write.csv(deps, "dep_3.csv", quote=TRUE, row.names = FALSE)
-write.csv(roots, "root_3.csv", quote = TRUE, row.names = FALSE)
+write.csv(deps, "newdep_2.csv", quote=TRUE, row.names = FALSE)
+write.csv(roots, "newroot_2.csv", quote = TRUE, row.names = FALSE)
 
-print(by(deps, deps$kind, summary))
+#print(by(deps, deps$kind, summary))

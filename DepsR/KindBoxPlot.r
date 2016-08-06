@@ -3,6 +3,7 @@ deps <- read.csv("./dep_3.csv", sep = ',', header = TRUE, row.names = NULL)
 kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
 
 deps$kind <- factor(deps$kind, levels = kindset)
+data_set$file_location <- as.character(data_set$file_location)
 
 dups <- deps[duplicated(data.frame(deps$commitNo, deps$file_location)),]
 deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
