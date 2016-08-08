@@ -22,7 +22,7 @@ gd = GetDependencies.GetDependencies(depwriter)
 repo = Repo(repopass)
 
 #writer.writerow(("commitNo", "file_location", "date", "author", "is_merge"))
-for commit_no, item in enumerate(repo.iter_commits('master')):
+for commit_no, item in enumerate(repo.iter_commits('4.1')):
     print(commit_no)
     repo.git.checkout(item)
     os.system("doxygen GetDeps/source/.config")
