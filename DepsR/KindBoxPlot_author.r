@@ -32,18 +32,6 @@ for (judge in c(TRUE, FALSE)) {
         #plot(judgepar, ylim = c(0, 100), add = TRUE, xaxt = "n", yaxt = "n")
         boxplot(deps2$SubDate ~ kind, data = deps2, boxwex = 0.25, at = 1:7 + 0.4, col = cols[i], ylim = c(0, 100), add = TRUE, xaxt = "n", yaxt = "n")
     }
-
-    #2•W–{ŒŸ’è
-    #print(t.test(dates[[1]], dates[[3]]))
-    #print(t.test(dates[[3]], dates[[2]]))
-    #print(t.test(dates[[2]], dates[[4]]))
-    #print(t.test(dates[[4]], dates[[5]]))
-
-    #pdf(paste(judge_name, "/CommitNo_", judge, ".pdf", sep = ""))
-    #boxplot(nos, names = kindset, ylim = c(0, 300))
-
-    #pdf(paste(judge_name, "/par_", judge, ".pdf", sep = ""))
-    #barplot(judgepar, names = kindset, ylim = c(0, 1))
 }
 
 par(family = "Japan1GothicBBB")

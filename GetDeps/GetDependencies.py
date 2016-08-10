@@ -83,13 +83,6 @@ class GetDependencies(object):
         cy2 = self.filelist_to_deplist(cy, True)
         self.output_dep(cy2, "dependee2")
 
-        ## from(依存されているものに)_to(依存している)
-        #ed3 = self.filelist_to_deplist(ed, True)
-        #self.output_dep(ed3, "dee_der")
-
-        #cy3 = self.filelist_to_deplist(cy, False)
-        #self.output_dep(cy3, "der_dee")
-
         all = list(set(ed + cy + ed2 + cy2 + self.__root_list))
         other = [x for x in self.__allfilepass.values() if x not in all]
         self.output_dep(other, "other")
