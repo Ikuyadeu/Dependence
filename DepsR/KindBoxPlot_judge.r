@@ -32,10 +32,10 @@ for (judge in c(TRUE, FALSE)) {
             judgepar <- append(judgepar, c(nrow(subset(deps2, deps2$kind == ki)) / nrow(subset(deps, deps$kind == ki))))
         }
         par(cex.axis = 2)
-        boxplot(deps2$SubDate ~ kind, data = deps2, boxwex = 0.25, at = 1:7 - 0.2, col = cols[i], ylim = c(0, 200))
+        boxplot(deps2$SubDate ~ kind, data = deps2, boxwex = 0.25, at = 1:7, col = cols[i], ylim = c(0, 200))
     } else {
         #plot(judgepar, ylim = c(0, 100), add = TRUE, xaxt = "n", yaxt = "n")
-        boxplot(deps2$SubDate ~ kind, data = deps2, boxwex = 0.25, at = 1:7 + 0.2, col = cols[i], ylim = c(0, 200), add = TRUE, xaxt = "n", yaxt = "n")
+        boxplot(deps2$SubDate ~ kind, data = deps2, boxwex = 0.25, at = 1:7 + 0.4, col = cols[i], ylim = c(0, 200), add = TRUE, xaxt = "n", yaxt = "n")
     }
 
     #2•W–{ŒŸ’è
