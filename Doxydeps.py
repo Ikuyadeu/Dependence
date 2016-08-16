@@ -15,16 +15,18 @@ else:
     print("Usage: %s repopass" % argv[0])
     sys.exit()
 
+doxygen_command = "doxygen GetDeps/source/.config"
 depwriter = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
-os.system("doxygen GetDeps/source/.config")
+os.system(doxygen_command)
 gd = GetDependencies.GetDependencies(depwriter)
 
 repo = Repo(repopass)
+branch_name = '4.1'
 
-for commit_no, item in enumerate(repo.iter_commits('4.1')):
+for commit_no, item in enumerate(repo.iter_commits(branch_name)):
     print(commit_no)
     repo.git.checkout(item)
-    os.system("doxygen GetDeps/source/.config")
+    os.system(doxygen_command)
 
     d = time.gmtime(item.committed_date)
     date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))

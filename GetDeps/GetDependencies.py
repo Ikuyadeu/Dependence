@@ -60,23 +60,21 @@ class GetDependencies(object):
 
         self.output_dep(self.__root_list, "root")
 
-        # from(依存されている)ファイルの辞書
+        # depender(依存されている)ファイルの辞書
         ed = self.filelist_to_deplist(self.__root_list, False)
         self.output_dep(ed, "depender")
 
-        # from(依存されているものに)_from(依存されている)
+        # depender2(依存されているものに依存されている)
         ed2 = self.filelist_to_deplist(ed, False)
         self.output_dep(ed2, "depender2")
 
-        # from(依存されているものに)_from(依存されている)
         ed3 = self.filelist_to_deplist(ed2, False)
         self.output_dep(ed3, "depender3")
 
-        # from(依存されているものに)_from(依存されている)
         ed3 = self.filelist_to_deplist(ed3, False)
         self.output_dep(ed3, "depender4")
 
-        # to(依存している)
+        # dependee(依存している)
         cy = self.filelist_to_deplist(self.__root_list, True)
         self.output_dep(cy, "dependee")
 
