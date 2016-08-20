@@ -9,6 +9,6 @@ deps$SubDate <- as.numeric(deps$SubDate)
 
 library(xts)
 library(zoo)
-ts <- zoo(deps$Subdate, deps$date)
-
-plot(sqrt(251) * apply.monthly(as.xts(diff(log(ts))), sd), ylim = c(0, 1.0))
+ts <- xts(deps$Subdate, deps$date)
+print(head(deps))
+#plot(apply.monthly(ts, mean), ylim = c(0, 200))
