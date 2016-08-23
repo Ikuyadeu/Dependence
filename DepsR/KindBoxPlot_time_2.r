@@ -2,7 +2,7 @@ deps <- read.csv("./newdep_2.csv", sep = ',', header = TRUE, row.names = NULL)
 
 # 7 colors
 #kindset <- c("depender", "depender2", "depender3", "depender4", "dependee", "dependee2", "other")
-#cols <- c("#FF0000", "#00FF00", "#00008FF", "#FFFF00", "#FF00FF", "#00FFFF", "#000000", "#FFFFFF")
+#cols <- c("#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF", "#000000", "#FFFFFF")
 
 # 5 colors
 #kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
