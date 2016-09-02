@@ -1,6 +1,6 @@
-deps <- read.csv("./newdep_2.csv", sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv("./nettydep_2.csv", sep = ',', header = TRUE, row.names = NULL)
 
-kindset <- c("depender", "depender2","depender3","depender4", "dependee", "dependee2", "other")
+kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
 kindnum <- c()
 
 deps$kind <- factor(deps$kind, levels = kindset)
@@ -26,9 +26,4 @@ print(by(deps$SubDate, deps$kind, summary))
 #pdf("author_test.pdf")
 
 #boxplot(deps$SubDate ~ kind, data = deps, ylim = c(0, 200))
-for (ki in kindset) {
-    deps2 <- subset(deps, deps$kind == ki)
-    dates <- append(dates, list(deps2$SubDate))
-    judgepar <- append(judgepar, c(nrow(dep2) / nrow(subset(deps, deps$kind == ki))))
-}
-plot(dates, names = kindset)
+boxplot(deps$SubDate ~ kind, data = deps, ylim = c(0, 100))
