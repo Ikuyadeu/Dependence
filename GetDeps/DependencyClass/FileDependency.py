@@ -10,7 +10,6 @@ class FileDependency(Dependency.Dependency):
         self.__ref = fileref
         self.__root = self.get_root(fileref)
         self.__dependency_dict = {}
-        self.__dependencied_dict = {}
         self.__innerclass_list = []
         self.add_innnerclass()
 
