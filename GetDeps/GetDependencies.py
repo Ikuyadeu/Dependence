@@ -61,26 +61,26 @@ class GetDependencies(object):
         self.output_dep(self.__root_list, "root")
 
         # depender(依存されている)ファイルの辞書
-        ed = self.filelist_to_deplist(self.__root_list, False)
-        self.output_dep(ed, "depender")
+        ee = self.filelist_to_deplist(self.__root_list, False)
+        self.output_dep(ee, "ee")
 
         # depender2(依存されているものに依存されている)
-        ed2 = self.filelist_to_deplist(ed, False)
-        self.output_dep(ed2, "depender2")
+        eeee = self.filelist_to_deplist(ee, False)
+        self.output_dep(eeee, "eeee")
 
-        ed3 = self.filelist_to_deplist(ed2, False)
-        self.output_dep(ed3, "depender3")
-
-        ed3 = self.filelist_to_deplist(ed3, False)
-        self.output_dep(ed3, "depender4")
+        eeer = self.filelist_to_deplist(ee, True)
+        self.output_dep(eeer, "eeer")
 
         # dependee(依存している)
-        cy = self.filelist_to_deplist(self.__root_list, True)
-        self.output_dep(cy, "dependee")
+        er = self.filelist_to_deplist(self.__root_list, True)
+        self.output_dep(er, "er")
 
-        cy2 = self.filelist_to_deplist(cy, True)
-        self.output_dep(cy2, "dependee2")
+        eree = self.filelist_to_deplist(er, False)
+        self.output_dep(eree, "eree")
 
-        all = list(set(ed + cy + ed2 + cy2 + self.__root_list))
+        erer = self.filelist_to_deplist(er, True)
+        self.output_dep(erer, "erer")
+
+        all = list(set(ee + er + eeee + eeer + erer + eree))
         other = [x for x in self.__allfilepass.values() if x not in all]
         self.output_dep(other, "other")
