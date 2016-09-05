@@ -1,4 +1,4 @@
-deps <- read.csv("./newdep_2.csv", sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv("./nettydep_2.csv", sep = ',', header = TRUE, row.names = NULL)
 
 # times
 # 2016-6-24 3.3.0
