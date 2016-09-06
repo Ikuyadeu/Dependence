@@ -17,11 +17,11 @@ else:
 
 doxygen_command = "doxygen GetDeps/source/.config"
 depwriter = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
-os.system(doxygen_command)
+#os.system(doxygen_command)
 gd = GetDependencies.GetDependencies(depwriter)
 
 repo = Repo(repopass)
-branch_name = '4.1'
+branch_name = 'master'
 
 for commit_no, item in enumerate(repo.iter_commits(branch_name)):
     print(commit_no)
@@ -31,9 +31,12 @@ for commit_no, item in enumerate(repo.iter_commits(branch_name)):
     d = time.gmtime(item.committed_date)
     date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))
 
-    author = item.author
+    author = str(item.author).replace(",", "")
     is_merge = (len(item.parents) > 1)
 
     gd.set_commitinfo(commit_no, date, author, is_merge)
     gd.get_file_location(item.stats.files.keys())
     gd.get_deps()
+
+    if commit_no > 2:
+        break

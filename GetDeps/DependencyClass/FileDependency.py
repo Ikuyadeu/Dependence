@@ -10,9 +10,11 @@ class FileDependency(Dependency.Dependency):
         self.__ref = fileref
         self.__root = self.get_root(fileref)
         self.__dependency_dict = {}
+        self.__depvec = []
         self.__innerclass_list = []
         self.add_innnerclass()
 
+        # 自分自身のクラスを取得
     def add_innnerclass(self):
         for innerclass in self.__root.findall('./compounddef/innerclass'):
             self.__innerclass_list.append(innerclass.get('refid'))
@@ -28,9 +30,13 @@ class FileDependency(Dependency.Dependency):
             if compound.root_is_none() or compound.get_kind() == "namespace":
                 continue
 
-            self.__dependency_dict[refid] = compound.get_location()
+            #self.__dependency_dict[refid] = compound.get_location()
+            self.__depvec.append([self.get_location(), compound.get_location()])
+            self.__innerclass_list.append(refid)
 
-        return self.__dependency_dict
+        #return self.__dependency_dict
+        #print(self.__depvec)
+        return self.__depvec
 
     def in_compound(self, refid):
         for ref in self.__root.findall('./compounddef/programlisting/codeline/highlight/ref'):

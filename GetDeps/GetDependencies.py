@@ -14,34 +14,29 @@ class GetDependencies(object):
         self.__date = date
         self.__author = author
         self.__is_merge = is_merge
-        self.__dependency_dict = {}
         self.__allfilepass = {}
+        self.__depvector = []
         self.set_dep()
 
     def set_dep(self):
         compound_list = self.__index.get_kind_compound_list('file')
         for compoundref in compound_list:
             fdp = FDp.FileDependency(compoundref)
-            self.__dependency_dict[compoundref] = fdp.get_dependency()
             self.__allfilepass[compoundref] = fdp.get_location()
+            self.__depvector.extend(fdp.get_dependency())
+        self.__depvector = [x for x in self.__depvector if x != []]
 
-    def filelist_to_deplist(self, root_list, is_depender):
-        dep_list = []
-        for root in root_list:
-            if is_depender:
-                ref = self.__index.get_file_ref(root)
-                try:
-                    dep_list.extend(self.__dependency_dict.get(ref).values())
-                except:
-                    pass
-                else:
-                    pass
-            else:
-                for id, dep in self.__dependency_dict.items():
-                    if root in dep.values():
-                        dep_list.append(self.__allfilepass[id])
-
-        return list(set(dep_list))
+    def filelist_to_deplist(self, root_list, is_depender, notrecurusion):
+        if is_depender:
+            i = 1
+            j = 0
+        else:
+            i = 0
+            j = 1
+        if notrecurusion:
+            return [x[i] for x in self.__depvector if x[j] in root_list]
+        else:
+            return [x[i] for x in self.__depvector if x[j] in root_list and x[i] not in root_list]
 
     def output_dep(self, file_list, kind):
         for dp in file_list:
@@ -54,6 +49,10 @@ class GetDependencies(object):
             if fileref != None:
                 self.__root_list.append(self.__allfilepass[fileref])
 
+    # rootにある要素がない
+    def is_dev_recursion(self, devlist):
+        return len(set(self.__root_list) & set(devlist)) < 2
+
     def get_deps(self):
         if len(self.__root_list) < 1:
             return
@@ -61,24 +60,24 @@ class GetDependencies(object):
         self.output_dep(self.__root_list, "root")
 
         # depender(依存されている)ファイルの辞書
-        ee = self.filelist_to_deplist(self.__root_list, False)
+        ee = self.filelist_to_deplist(self.__root_list, False, False)
         self.output_dep(ee, "ee")
 
         # depender2(依存されているものに依存されている)
-        eeee = self.filelist_to_deplist(ee, False)
+        eeee = self.filelist_to_deplist(ee, False, True)
         self.output_dep(eeee, "eeee")
 
-        eeer = self.filelist_to_deplist(ee, True)
+        eeer = self.filelist_to_deplist(ee, True, True)
         self.output_dep(eeer, "eeer")
 
         # dependee(依存している)
-        er = self.filelist_to_deplist(self.__root_list, True)
+        er = self.filelist_to_deplist(self.__root_list, True, False)
         self.output_dep(er, "er")
 
-        eree = self.filelist_to_deplist(er, False)
+        eree = self.filelist_to_deplist(er, False, True)
         self.output_dep(eree, "eree")
 
-        erer = self.filelist_to_deplist(er, True)
+        erer = self.filelist_to_deplist(er, True, True)
         self.output_dep(erer, "erer")
 
         all = list(set(ee + er + eeee + eeer + erer + eree))
