@@ -9,7 +9,6 @@ class FileDependency(Dependency.Dependency):
     def __init__(self, fileref):
         self.__ref = fileref
         self.__root = self.get_root(fileref)
-        self.__dependency_dict = {}
         self.__depvec = []
         self.__innerclass_list = []
         self.add_innnerclass()
@@ -23,7 +22,7 @@ class FileDependency(Dependency.Dependency):
         for ref in self.__root.findall('./compounddef/programlisting/codeline/highlight/ref'):
             refid = ref.get('refid')
 
-            if refid in self.__dependency_dict or refid in self.__innerclass_list or ref.get('kindref') != "compound":
+            if refid in self.__innerclass_list or ref.get('kindref') != "compound":
                 continue
                 
             compound = CDp.CompoundDependency(refid)

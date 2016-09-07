@@ -38,5 +38,5 @@ for commit_no, item in enumerate(repo.iter_commits(branch_name)):
     gd.get_file_location(item.stats.files.keys())
     gd.get_deps()
 
-    if commit_no > 2:
-        break
+    #if commit_no > 2:
+    #    break

@@ -27,9 +27,9 @@ class GetDependencies(object):
         self.__depvector = [x for x in self.__depvector if x != []]
 
     def filelist_to_deplist(self, root_list, is_depender, notrecurusion):
-        if is_depender:
-            i = 1
-            j = 0
+        if is_depender: #　dependerを取得する
+            i = 1 # 取得するほう(１は依存されているもの)
+            j = 0 # 元の依存関係のもの
         else:
             i = 0
             j = 1
@@ -37,6 +37,17 @@ class GetDependencies(object):
             return [x[i] for x in self.__depvector if x[j] in root_list]
         else:
             return [x[i] for x in self.__depvector if x[j] in root_list and x[i] not in root_list]
+
+    def filelist_to_rec(self, root_list, is_depender):
+        if is_depender: #　dependerを取得する
+            i = 1 # 取得するほう(１は依存されているもの)
+            j = 0 # 元の依存関係のもの
+        else:
+            i = 0
+            j = 1
+        return  [x[i] for x in self.__depvector if x[j] in root_list and x[i] not in root_list and 
+                 not(x[i] in self.__root_list and 
+                     len([y for y in self.__depvector if y[j] == x[j] and y[i] in self.__root_list]) < 2)]
 
     def output_dep(self, file_list, kind):
         for dp in file_list:
@@ -61,25 +72,27 @@ class GetDependencies(object):
 
         # depender(依存されている)ファイルの辞書
         ee = self.filelist_to_deplist(self.__root_list, False, False)
-        self.output_dep(ee, "ee")
+        self.output_dep(ee, "e")
 
         # depender2(依存されているものに依存されている)
         eeee = self.filelist_to_deplist(ee, False, True)
-        self.output_dep(eeee, "eeee")
+        self.output_dep(eeee, "ee")
 
-        eeer = self.filelist_to_deplist(ee, True, True)
-        self.output_dep(eeer, "eeer")
+        #eeer = self.filelist_to_deplist(ee, True, True)
+        eeer = self.filelist_to_rec(ee, True)
+        self.output_dep(eeer, "er")
 
         # dependee(依存している)
         er = self.filelist_to_deplist(self.__root_list, True, False)
-        self.output_dep(er, "er")
+        self.output_dep(er, "r")
 
-        eree = self.filelist_to_deplist(er, False, True)
-        self.output_dep(eree, "eree")
+        #eree = self.filelist_to_deplist(er, False, True)
+        eree = self.filelist_to_rec(er, False)
+        self.output_dep(eree, "re")
 
         erer = self.filelist_to_deplist(er, True, True)
-        self.output_dep(erer, "erer")
+        self.output_dep(erer, "rr")
 
         all = list(set(ee + er + eeee + eeer + erer + eree))
         other = [x for x in self.__allfilepass.values() if x not in all]
-        self.output_dep(other, "other")
+        self.output_dep(other, "o")
