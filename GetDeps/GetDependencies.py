@@ -79,7 +79,7 @@ class GetDependencies(object):
         self.output_dep(eeee, "ee")
 
         #eeer = self.filelist_to_deplist(ee, True, True)
-        eeer = self.filelist_to_rec(ee, True, True)
+        eeer = self.filelist_to_rec(ee, True)
         self.output_dep(eeer, "er")
 
         # dependee(依存している)
@@ -87,7 +87,7 @@ class GetDependencies(object):
         self.output_dep(er, "r")
 
         #eree = self.filelist_to_deplist(er, False, True)
-        eree = self.filelist_to_rec(er, False, True)
+        eree = self.filelist_to_rec(er, False)
         self.output_dep(eree, "re")
 
         erer = self.filelist_to_deplist(er, True, True)
