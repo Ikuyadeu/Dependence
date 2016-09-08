@@ -34,9 +34,9 @@ class GetDependencies(object):
             i = 0
             j = 1
         if notrecurusion:
-            return [x[i] for x in self.__depvector if x[j] in root_list]
-        else:
             return [x[i] for x in self.__depvector if x[j] in root_list and x[i] not in root_list]
+        else:
+            return [x[i] for x in self.__depvector if x[j] in root_list]
 
     def filelist_to_rec(self, root_list, is_depender):
         if is_depender: #　dependerを取得する
@@ -79,7 +79,7 @@ class GetDependencies(object):
         self.output_dep(eeee, "ee")
 
         #eeer = self.filelist_to_deplist(ee, True, True)
-        eeer = self.filelist_to_rec(ee, True)
+        eeer = self.filelist_to_rec(ee, True, True)
         self.output_dep(eeer, "er")
 
         # dependee(依存している)
@@ -87,7 +87,7 @@ class GetDependencies(object):
         self.output_dep(er, "r")
 
         #eree = self.filelist_to_deplist(er, False, True)
-        eree = self.filelist_to_rec(er, False)
+        eree = self.filelist_to_rec(er, False, True)
         self.output_dep(eree, "re")
 
         erer = self.filelist_to_deplist(er, True, True)

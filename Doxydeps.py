@@ -17,7 +17,7 @@ else:
 
 doxygen_command = "doxygen GetDeps/source/.config"
 depwriter = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
-#os.system(doxygen_command)
+os.system(doxygen_command)
 gd = GetDependencies.GetDependencies(depwriter)
 
 repo = Repo(repopass)
