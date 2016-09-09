@@ -1,7 +1,6 @@
-deps <- read.csv("./nettydep_2.csv", sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv("vert/deps.csv", sep = ',', header = TRUE, row.names = NULL)
 
-kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
-kindnum <- c()
+kindset <- c("ee", "e", "r","rr", "o")
 
 deps$kind <- factor(deps$kind, levels = kindset)
 deps$file_location <- as.character(deps$file_location)
