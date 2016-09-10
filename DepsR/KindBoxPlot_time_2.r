@@ -1,4 +1,4 @@
-deps <- read.csv("egit/deps.csv", sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv("vert/deps.csv", sep = ',', header = TRUE, row.names = NULL)
 
 # times
 # 2016-6-24 3.3.0
@@ -13,11 +13,11 @@ deps <- read.csv("egit/deps.csv", sep = ',', header = TRUE, row.names = NULL)
 
 
 # 7 colors
-kindset <- c("depender", "depender2", "depender3", "depender4", "dependee", "dependee2", "other")
+kindset <- c("r", "rr", "e", "ee", "er", "re", "o")
 cols <- c("#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF", "#000000", "#FFFFFF")
 
 # 5 colors
-kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
+kindset <- c("r", "rr", "e", "ee", "o")
 cols <- c("#FF0000", "#00FF00", "#0000FF", "#00FFFF", "#FF00FF")
 
 # 3 colors
@@ -25,19 +25,19 @@ kindset <- c("r", "e", "o")
 cols <- c("#FF0000", "#00FF00", "#0000FF")
 
 ## 2 colors
-#kindset <- c("other", "dependee")
+#kindset <- c("o", "e")
 #cols <- c("#FF0000", "#00FF00")
 
 ## 2 colors
-#kindset <- c("depender", "other")
+#kindset <- c("r", "o")
 #cols <- c("#FF0000", "#0000FF")
 
 ## 2 colors
-#kindset <- c("depender", "dependee")
+#kindset <- c("r", "e")
 #cols <- c("#FF0000", "#00FF00")
 
 # 2 colors
-#kindset <- c("dependee", "dependee2")
+#kindset <- c("e", "ee")
 #cols <- c("#FF0000", "#00FF00")
 
 deps$kind <- factor(deps$kind, levels = kindset)
