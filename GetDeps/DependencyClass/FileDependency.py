@@ -1,8 +1,5 @@
-import xml.etree.ElementTree as ET
 from GetDeps.DependencyClass import Dependency
 from GetDeps.DependencyClass import CompoundDependency as CDp
-from GetDeps.DependencyClass import IndexDependency as IDp
-from GetDeps.DependencyClass import FileDependency as FDp
 
 class FileDependency(Dependency.Dependency):
     """description of class"""
@@ -25,7 +22,7 @@ class FileDependency(Dependency.Dependency):
 
             if refid in self.__innerclass_list or ref.get('kindref') != "compound":
                 continue
-                
+
             compound = CDp.CompoundDependency(refid)
             if compound.root_is_none() or compound.get_kind() == "namespace":
                 continue

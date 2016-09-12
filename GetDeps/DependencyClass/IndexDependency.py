@@ -1,4 +1,3 @@
-import xml.etree.ElementTree as ET
 import re
 from GetDeps.DependencyClass import Dependency
 from GetDeps.DependencyClass import FileDependency as FDp
@@ -12,13 +11,10 @@ class IndexDependency(Dependency.Dependency):
         self.__refidname = 'refid'
         self.__kindname = 'kind'
 
-    def get_root(self):
-        return self.__root
-
     def ref_to_compound(self, refid: str, kindref: str) -> str:
         if kindref == "compound":
             return refid
-  
+
         for compound in self.__root.findall(self.__compoundname):
             for member in compound.findall('.' + self.__membername):
                 if member.get(self.__refidname) == refid:

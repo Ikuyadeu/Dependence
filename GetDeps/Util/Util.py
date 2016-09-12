@@ -3,9 +3,10 @@ import os.path
 
 def getroot(fileref):
     filename = ref_to_XMLname(fileref)
-    if filename == None or not os.path.isfile(filename):
+    if filename is None or not os.path.isfile(filename):
         return None
     return ET.parse(filename).getroot()
+
 
 def ref_to_XMLname(refid:str):
     """refidからXMLファイル名を生成
@@ -14,6 +15,6 @@ def ref_to_XMLname(refid:str):
     Returns:
         XMLのファイル名
     """
-    if refid == None:
+    if refid is None:
         return None
     return r'GetDeps\source\doxygen\xml\\' + str(refid) + r".xml"

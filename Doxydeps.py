@@ -1,31 +1,31 @@
 import sys
-from GetDeps import GetDependencies
-from git import Repo
 import time
 import csv
 import os
+from GetDeps import GetDependencies
+from git import Repo
 
-argv = sys.argv
-argc = len(argv)
+ARGV = sys.argv
+ARGC = len(ARGV)
 
-if argc == 4:
-    repopass = (argv[1]) # ファイルパス
-    csvpass = (argv[2])
-    branch_name = (argv[3])
+if ARGC == 4:
+    REPOPASS = (ARGV[1]) # ファイルパス
+    CSVPASS = (ARGV[2])
+    BRANCH_NAME = (ARGV[3])
 else:
-    print("Usage: %s repopass" % argv[0])
+    print("Usage: %s repopass" % ARGV[0])
     sys.exit()
 
-doxygen_command = "doxygen GetDeps/source/.config"
+DOXYGEN_COMMAND = "doxygen GetDeps/source/.config"
 
-repo = Repo(repopass)
-depwriter = csv.writer(open(csvpass, "w", encoding="utf-8"), lineterminator="\n")
-gd = GetDependencies.GetDependencies(depwriter)
+REPO = Repo(REPOPASS)
+DEPWRITER = csv.writer(open(CSVPASS, "w", encoding="utf-8"), lineterminator="\n")
+GD = GetDependencies.GetDependencies(DEPWRITER)
 
-for commit_no, item in enumerate(repo.iter_commits(branch_name)):
+for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     print(commit_no)
-    os.system(doxygen_command)
-    repo.git.checkout(item)
+    os.system(DOXYGEN_COMMAND)
+    REPO.git.checkout(item)
 
     d = time.gmtime(item.committed_date)
     date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))
@@ -33,6 +33,6 @@ for commit_no, item in enumerate(repo.iter_commits(branch_name)):
     author = str(item.author).replace(",", "")
     is_merge = (len(item.parents) > 1)
 
-    gd.set_commitinfo(commit_no, date, author, is_merge)
-    gd.get_file_location(item.stats.files.keys())
-    gd.get_deps()
+    GD.set_commitinfo(commit_no, date, author, is_merge)
+    GD.get_file_location(item.stats.files.keys())
+    GD.get_deps()

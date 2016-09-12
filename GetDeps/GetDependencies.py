@@ -1,7 +1,6 @@
-import xml.etree.ElementTree as ET
 from GetDeps.DependencyClass import FileDependency as FDp
 from GetDeps.DependencyClass import IndexDependency as IDp
- 
+
 class GetDependencies(object):
     def __init__(self, writer):
         # 依存関係のindexを生成
@@ -50,8 +49,8 @@ class GetDependencies(object):
                      len([y for y in self.__depvector if y[j] == x[j] and y[i] in self.__root_list]) < 2)]
 
     def output_dep(self, file_list, kind):
-        for dp in file_list:
-            self.__writer.writerow((self.__commit_no, dp, self.__date, self.__author, self.__is_merge, kind))
+        for linedep in file_list:
+            self.__writer.writerow((self.__commit_no, linedep, self.__date, self.__author, self.__is_merge, kind))
 
     def get_file_location(self, filelist):
         self.__root_list = []
@@ -89,6 +88,6 @@ class GetDependencies(object):
         erer = self.filelist_to_deplist(er, True, True)
         self.output_dep(erer, "rr")
 
-        all = list(set(ee + er + eeee + eeer + erer + eree))
-        other = [x for x in self.__allfilepass.values() if x not in all]
+        all_dep = list(set(ee + er + eeee + eeer + erer + eree))
+        other = [x for x in self.__allfilepass.values() if x not in all_dep]
         self.output_dep(other, "o")
