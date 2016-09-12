@@ -1,12 +1,12 @@
 deps <- read.csv("vert/deps.csv", sep = ',', header = TRUE, row.names = NULL)
 
-kindset <- c("ee", "e", "r","rr", "o")
+kindset <- c("e", "ee", "r","rr","er","re", "o")
 
 deps$kind <- factor(deps$kind, levels = kindset)
 deps$file_location <- as.character(deps$file_location)
 
 #dups <- deps[duplicated(data.frame(deps$commitNo, deps$file_location)),]
-#deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
+deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
 
 #deps$date <- as.Date(deps$date)
 deps$SubDate <- as.numeric(deps$SubDate)
