@@ -60,10 +60,6 @@ class GetDependencies(object):
             if fileref != None:
                 self.__root_list.append(self.__allfilepass[fileref])
 
-    # rootにある要素がない
-    def is_dev_recursion(self, devlist):
-        return len(set(self.__root_list) & set(devlist)) < 2
-
     def get_deps(self):
         if len(self.__root_list) < 1:
             return

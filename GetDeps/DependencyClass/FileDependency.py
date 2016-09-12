@@ -12,6 +12,7 @@ class FileDependency(Dependency.Dependency):
         self.__depvec = []
         self.__innerclass_list = []
         self.add_innnerclass()
+        self.__location = self.get_location()
 
         # 自分自身のクラスを取得
     def add_innnerclass(self):
@@ -29,12 +30,9 @@ class FileDependency(Dependency.Dependency):
             if compound.root_is_none() or compound.get_kind() == "namespace":
                 continue
 
-            #self.__dependency_dict[refid] = compound.get_location()
-            self.__depvec.append([self.get_location(), compound.get_location()])
+            self.__depvec.append([self.__location, compound.get_location()])
             self.__innerclass_list.append(refid)
 
-        #return self.__dependency_dict
-        #print(self.__depvec)
         return self.__depvec
 
     def in_compound(self, refid):
