@@ -1,4 +1,5 @@
-data_set <- read.csv("../vert.csv", sep = ',', header = TRUE, row.names = NULL)
+data_set <- read.csv("../netty.csv", sep = ',', header = TRUE, row.names = NULL)
+
 data_set$file_location <- as.character(data_set$file_location)
 data_set$author <- as.character(data_set$author)
 data_set$date <- as.Date(data_set$date)
@@ -10,26 +11,32 @@ deps$SubNo <- NA
 deps$SubDate <- NA
 deps$same_author <- NA
 
+for (fl in levels(deps$file_location)) {
+    froots <- subset(roots, roots$filelocation == fl)
+    for (froot in froots[order(froots$commitNo), ]) {
+        for (fdep in deps[supply(deps$file_location == fl & deps$commitNo >= froot$commitNo), ])
+            fdep$Subdate <- froot$date - fdep$date
+    }
+}
+
+
+
 for (dep in 1:nrow(deps)) {
     d <- deps[dep,]
     nc <- subset(roots, roots$commitNo <= d$commitNo & roots$file_location == d$file_location)
-    #nc <- subset(nc, nc$file_location == d$file_location)
 
-
+    if (dep%1000 == 0) {
+        print(dep)
+    }
     if (nrow(nc) > 0) {
-        maxcommit <- max(nc$commitNo)
-        nc2 <- subset(nc, nc$commitNo == maxcommit)
-        n <- nc2[1,]
-        #deps$SubDate[dep] <- min(nc2$date) - fd
-        #deps$SubNo[dep] <- fc - max(nc2$commitNo)
+        # ソートを行って一番上
+        n <- subset(nc, nc$commitNo == max(nc$commitNo))[1,]
         deps$SubDate[dep] <- n$date - d$date
-        deps$SubNo[dep] <- d$commitNo - maxcommit
+        deps$SubNo[dep] <- d$commitNo - n$commitNo
         deps$same_author[dep] <- (n$author == d$author)
     }
 }
 deps <- na.omit(deps)
 
-write.csv(deps, "vert/deps.csv", quote=TRUE, row.names = FALSE)
-write.csv(roots, "vert/roots.csv", quote = TRUE, row.names = FALSE)
-
-#print(by(deps, deps$kind, summary))
+write.csv(deps, "netty/deps.csv", quote=TRUE, row.names = FALSE)
+write.csv(roots, "netty/roots.csv", quote = TRUE, row.names = FALSE)
