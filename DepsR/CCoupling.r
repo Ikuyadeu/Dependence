@@ -1,4 +1,5 @@
 roots <- read.csv("vert/roots.csv", sep = ',', header = TRUE, row.names = NULL)
+library(dplyr)
 
 flist <- levels(roots$file_location)
 flist <- flist[grep(".java$", flist)]
@@ -6,36 +7,28 @@ flist <- flist[grep(".java$", flist)]
 cc <- expand.grid(entity = flist, coupled = flist)
 cc <- subset(cc, unclass(entity) < unclass(coupled))
 
-
 entity_num <- function(x) {
-    return(nrow(subset(roots, x == roots$file_location)))
+    return(sum(roots$file_location == x))
 }
 
-f <- data.frame(list = flist, num = lapply(flist, entity_num))
+num <- lapply(flist, entity_num)
+f <- data.frame(list = flist, num = sapply(num, "[", 1))
 
 
 entity <- function(x) {
-    return(subset(f, f$list == x[1])$num)
+    return(f[f$list == x[1], 2])
 }
 
 couple <- function(x) {
-    return(nrow(subset(cc2, x[1] == cc2$entity & x[2] == cc2$coupled)))
+    return(as.numeric(sum(cc2$entity == x[1] & cc2$coupled == x[2])[1]))
 }
-
-#count <- function(x) {
-    #return(list(
-    #subset(f, f$list == x[1])$num,
-    #nrow(subset(cc2, x[1] == cc2$entity & x[2] == cc2$coupled))
-    #)
-    #)
-#}
 
 cc2 <- data.frame()
 
 commitNum <- max(roots$commitNo)
 for (no in 0:commitNum) {
     flist2 <- subset(roots, roots$commitNo == no)$file_location
-    flist2 <- flist[grep(".java$", flist2)]
+    flist2 <- flist2[grep(".java$", flist2)]
     couples <- expand.grid(entity = flist2, coupled = flist2)
     cc2 <- rbind(cc2, subset(couples, unclass(entity) < unclass(coupled)))
     if (no %% 1000 == 0) {
@@ -43,16 +36,13 @@ for (no in 0:commitNum) {
     }
 }
 
-print(nrow(cc))
-
-#cccount <- apply(cc, 1, count)
-#cc$entity.count <- cccount[1]
-#cc$coupled.count <- cccount[2]
+print(nrow(cc2))
 
 cc$entity.count <- apply(cc, 1, entity)
 print("GET ENTITY")
 
 cc$coupled.count <- apply(cc, 1, couple)
+cc[is.na(cc)] <- 0
 
 print(head(cc))
 write.csv(cc, "vert/cc.csv", quote = TRUE, row.names = FALSE)
