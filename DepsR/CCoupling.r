@@ -38,11 +38,13 @@ for (no in 0:commitNum) {
 
 print(nrow(cc2))
 
+cc$coupled.count <- apply(cc, 1, couple)
+cc <- subset(cc,cc$coupled.count != 0)
+print("GET_COUPLE")
+
+
 cc$entity.count <- apply(cc, 1, entity)
 print("GET ENTITY")
 
-cc$coupled.count <- apply(cc, 1, couple)
-cc[is.na(cc)] <- 0
-
 print(head(cc))
-write.csv(cc, "vert/cc.csv", quote = TRUE, row.names = FALSE)
+write.csv(cc, "vert/cc4.csv", quote = TRUE, row.names = FALSE)
