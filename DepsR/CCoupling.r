@@ -1,4 +1,8 @@
-roots <- read.csv("vert/roots.csv", sep = ',', header = TRUE, row.names = NULL)
+project.name <- "vert"
+project.roots <- paste(project.name, "roots.csv", sep = "/")
+project.deps <- paste(project.name, "deps.csv", sep = "/")
+
+roots <- read.csv(project.roots, sep = ',', header = TRUE, row.names = NULL)
 library(dplyr)
 
 flist <- levels(roots$file_location)
@@ -39,7 +43,7 @@ for (no in 0:commitNum) {
 print(nrow(cc2))
 
 cc$coupled.count <- apply(cc, 1, couple)
-cc <- subset(cc,cc$coupled.count != 0)
+cc <- subset(cc, cc$coupled.count != 0)
 print("GET_COUPLE")
 
 
@@ -47,4 +51,4 @@ cc$entity.count <- apply(cc, 1, entity)
 print("GET ENTITY")
 
 print(head(cc))
-write.csv(cc, "vert/cc4.csv", quote = TRUE, row.names = FALSE)
+write.csv(cc, paste(project.name, "cc.csv", sep = "/"), quote = TRUE, row.names = FALSE)

@@ -1,4 +1,7 @@
-deps <- read.csv("netty/deps.csv", sep = ',', header = TRUE, row.names = NULL)
+project.name <- "netty"
+project.deps <- paste(project.name, "deps.csv", sep = "/")
+
+deps <- read.csv(project.deps, sep = ',', header = TRUE, row.names = NULL)
 
 kindset <- c("r", "rr", "e", "ee", "o")
 kindnum <- c()

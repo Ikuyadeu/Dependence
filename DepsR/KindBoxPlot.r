@@ -1,3 +1,7 @@
+project.name <- "vert"
+project.roots <- paste(project.name, "roots.csv", sep = "/")
+project.deps <- paste(project.name, "deps.csv", sep = "/")
+
 deps <- read.csv("./newdep_2.csv", sep = ',', header = TRUE, row.names = NULL)
 
 ## 7 colors

@@ -1,4 +1,9 @@
-data_set <- read.csv("../netty.csv", sep = ',', header = TRUE, row.names = NULL)
+project.name <- "netty"
+project.original <- paste("../", project.name, ".csv", sep = "")
+project.roots <- paste(project.name, "roots.csv", sep = "/")
+project.deps <- paste(project.name, "deps.csv", sep = "/")
+
+data_set <- read.csv(project.original, sep = ',', header = TRUE, row.names = NULL)
 
 data_set$file_location <- as.character(data_set$file_location)
 data_set$author <- as.character(data_set$author)
@@ -38,5 +43,5 @@ for (dep in 1:nrow(deps)) {
 }
 deps <- na.omit(deps)
 
-write.csv(deps, "netty/deps.csv", quote=TRUE, row.names = FALSE)
-write.csv(roots, "netty/roots.csv", quote = TRUE, row.names = FALSE)
+write.csv(deps, project.deps, quote=TRUE, row.names = FALSE)
+write.csv(roots, project.roots, quote = TRUE, row.names = FALSE)

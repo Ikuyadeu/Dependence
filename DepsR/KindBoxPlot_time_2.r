@@ -1,4 +1,7 @@
-deps <- read.csv("vert/deps.csv", sep = ',', header = TRUE, row.names = NULL)
+project.name <- "vert"
+project.deps <- paste(project.name, "deps.csv", sep = "/")
+
+deps <- read.csv(project.deps, sep = ',', header = TRUE, row.names = NULL)
 
 # times
 # 2016-6-24 3.3.0
