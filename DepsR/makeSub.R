@@ -1,4 +1,4 @@
-project.name <- "netty"
+project.name <- "egit"
 project.original <- paste("../", project.name, ".csv", sep = "")
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
