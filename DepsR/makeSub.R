@@ -16,22 +16,14 @@ deps$SubNo <- NA
 deps$SubDate <- NA
 deps$same_author <- NA
 
-for (fl in levels(deps$file_location)) {
-    froots <- subset(roots, roots$filelocation == fl)
-    for (froot in froots[order(froots$commitNo), ]) {
-        for (fdep in deps[supply(deps$file_location == fl & deps$commitNo >= froot$commitNo), ])
-            fdep$Subdate <- froot$date - fdep$date
-    }
-}
+i <- nrow(deps)
 
-
-
-for (dep in 1:nrow(deps)) {
+for (dep in 1:i) {
     d <- deps[dep,]
     nc <- subset(roots, roots$commitNo <= d$commitNo & roots$file_location == d$file_location)
 
-    if (dep%1000 == 0) {
-        print(dep)
+    if (dep%%1000 == 0) {
+        print(i - dep)
     }
     if (nrow(nc) > 0) {
         # ソートを行って一番上
