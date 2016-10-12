@@ -1,4 +1,4 @@
-project.name <- "vert"
+project.name <- "egit"
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 
@@ -41,9 +41,9 @@ for (no in 0:commitNum) {
 }
 
 print(nrow(cc2))
+newcc <- count(cc2, entity, coupled)
 
-cc$coupled.count <- apply(cc, 1, couple)
-cc <- subset(cc, cc$coupled.count != 0)
+cc <- data.frame(entity = newcc$entity, coupled = newcc$coupled, coupled.count = newcc$n)
 print("GET_COUPLE")
 
 
