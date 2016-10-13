@@ -9,12 +9,20 @@ deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
 kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
 
 for (ki in kindset) {
-    d1 <- subset(deps, deps$kind == ki)$SubDate
-    for (ki2 in kindset) {
-        d2 <- subset(deps, deps$kind == ki2)$SubDate
-        if (ki != ki2) {
-            print(c(ki2, ki))
-            print(wilcox.test(d1, d2))
-        }
-    }
+    d1 <- subset(deps, deps$kind == ki)
+    d2 <- nrow(subset(d1, d1$SubDate == 0))
+    print(ki)
+    print(d2)
+    print(nrow(d1))
+    print(d2 / nrow(d1))
+
+
+    #d1 <- subset(deps, deps$kind == ki)$SubDate
+    #for (ki2 in kindset) {
+        #d2 <- subset(deps, deps$kind == ki2)$SubDate
+        #if (ki != ki2) {
+            #print(c(ki2, ki))
+            #print(wilcox.test(d1, d2))
+        #}
+    #}
 }
