@@ -1,7 +1,7 @@
-from GetDeps.DependencyClass import Dependency
-from GetDeps.DependencyClass import CompoundDependency as CDp
+from GetDeps.DependencyClass.Dependency import Dependency
+from GetDeps.DependencyClass.CompoundDependency import CompoundDependency
 
-class FileDependency(Dependency.Dependency):
+class FileDependency(Dependency):
     """description of class"""
     def __init__(self, fileref):
         self.__ref = fileref
@@ -23,7 +23,7 @@ class FileDependency(Dependency.Dependency):
             if refid in self.__innerclass_list or ref.get('kindref') != "compound":
                 continue
 
-            compound = CDp.CompoundDependency(refid)
+            compound = CompoundDependency(refid)
             if compound.root_is_none() or compound.get_kind() == "namespace":
                 continue
 

@@ -1,5 +1,5 @@
-from GetDeps.DependencyClass import FileDependency as FDp
-from GetDeps.DependencyClass import IndexDependency as IDp
+from GetDeps.DependencyClass.FileDependency import FileDependency as FDp
+from GetDeps.DependencyClass.IndexDependency import IndexDependency as IDp
 
 class GetDependencies(object):
     def __init__(self, writer):
@@ -8,7 +8,7 @@ class GetDependencies(object):
         self.__writer.writerow(("commitNo", "file_location", "date", "author", "is_merge", "kind"))
 
     def set_commitinfo(self, commit_no, date, author, is_merge):
-        self.__index = IDp.IndexDependency('index')
+        self.__index = IDp('index')
         self.__commit_no = commit_no
         self.__date = date
         self.__author = author
@@ -20,7 +20,7 @@ class GetDependencies(object):
     def set_dep(self):
         compound_list = self.__index.get_kind_compound_list('file')
         for compoundref in compound_list:
-            fdp = FDp.FileDependency(compoundref)
+            fdp = FDp(compoundref)
             self.__allfilepass[compoundref] = fdp.get_location()
             self.__depvector.extend(fdp.get_dependency())
         self.__depvector = [x for x in self.__depvector if x != []]
@@ -52,10 +52,10 @@ class GetDependencies(object):
         for linedep in file_list:
             self.__writer.writerow((self.__commit_no, linedep, self.__date, self.__author, self.__is_merge, kind))
 
-    def get_file_location(self, filelist):
+    def get_file_location(self, file_list):
         self.__root_list = []
-        for filepass in filelist:
-            fileref = self.__index.get_file_ref(filepass)
+        for file_pass in file_list:
+            fileref = self.__index.get_file_ref(file_pass)
             if fileref != None:
                 self.__root_list.append(self.__allfilepass[fileref])
 

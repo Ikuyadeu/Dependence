@@ -1,6 +1,6 @@
-from GetDeps.DependencyClass import Dependency
+from GetDeps.DependencyClass.Dependency import Dependency
 
-class CompoundDependency(Dependency.Dependency):
+class CompoundDependency(Dependency):
     """description of class"""
     def __init__(self, fileref):
         self.__root = self.get_root(fileref)

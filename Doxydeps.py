@@ -2,8 +2,8 @@ import sys
 import time
 import csv
 import os
-from GetDeps import GetDependencies
 from git import Repo
+from GetDeps.GetDependencies import GetDependencies
 
 ARGV = sys.argv
 ARGC = len(ARGV)
@@ -13,17 +13,22 @@ if ARGC == 4:
     CSVPASS = (ARGV[2])
     BRANCH_NAME = (ARGV[3])
 else:
-    print("Usage: %s repopass" % ARGV[0])
+    print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
     sys.exit()
 
 DOXYGEN_COMMAND = "doxygen GetDeps/source/.config"
 
 REPO = Repo(REPOPASS)
 DEPWRITER = csv.writer(open(CSVPASS, "w", encoding="utf-8"), lineterminator="\n")
-GD = GetDependencies.GetDependencies(DEPWRITER)
+GD = GetDependencies(DEPWRITER)
 
 for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
+    file_list = [x for x in item.stats.files.keys() if os.path.splitext(x)[1] == ".java"]
+    if len(file_list) == 0:
+        continue
+    
     print(commit_no)
+
     os.system(DOXYGEN_COMMAND)
     REPO.git.checkout(item)
 
@@ -34,5 +39,5 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     is_merge = (len(item.parents) > 1)
 
     GD.set_commitinfo(commit_no, date, author, is_merge)
-    GD.get_file_location(item.stats.files.keys())
+    GD.get_file_location(file_list)
     GD.get_deps()

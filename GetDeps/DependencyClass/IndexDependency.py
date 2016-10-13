@@ -1,8 +1,8 @@
 import re
-from GetDeps.DependencyClass import Dependency
-from GetDeps.DependencyClass import FileDependency as FDp
+from GetDeps.DependencyClass.Dependency import Dependency
+from GetDeps.DependencyClass.FileDependency import FileDependency as FDp
 
-class IndexDependency(Dependency.Dependency):
+class IndexDependency(Dependency):
     """ 依存関係を管理するインデックスを格納 """
     def __init__(self, fileref):
         self.__root = super().get_root(fileref)
@@ -55,7 +55,7 @@ class IndexDependency(Dependency.Dependency):
             ファイルのrefid
         """
         for compound in self.get_kind_compound_list('file'):
-            fdp = FDp.FileDependency(compound)
+            fdp = FDp(compound)
             # 末尾と一致していたらOK
             if re.search(filepass + '$', fdp.get_location()):
                 return compound
