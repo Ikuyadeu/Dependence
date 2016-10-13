@@ -1,13 +1,15 @@
-project.name <- "vert"
+project.name <- "egit"
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 
-deps <- read.csv("./newdep_2.csv", sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv(project.deps, sep = ',', header = TRUE, row.names = NULL)
 
 ## 7 colors
-#kindset <- c("e", "ee", "r", "rr", "o")
+kindset <- c("e", "ee", "r", "rr", "o", "er", "re")
+kind.name <- c(c("e", "ee", "r", "rr", "o", "er", "re"))
+
 # 5 colors
-kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
+#kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
 
 ## 3 colors
 ##kindset <- c("r", "e", "o")
@@ -24,21 +26,21 @@ kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
 ## 2 colors
 ##kindset <- c("e", "ee")
 
+kind.num <- length(kindset)
+
 deps$kind <- factor(deps$kind, levels = kindset)
 deps$date <- as.Date(deps$date)
 deps$SubDate <- as.numeric(deps$SubDate)
 
 deps$file_location <- as.character(deps$file_location)
-deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
-plot.new()
+#deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
+
 par(cex.axis = 2.5)
 par(tck = 1)
-par(family = "Japan1")
-par(mai = c(0.5, 0.75, 0.5, 4))
+
 par(xpd = F)
 boxplot(deps$SubDate ~ kind, data = deps, 
     ylim = c(0, 200), 
-    names = c("depender", "depender2", "dependee", "dependee2", "other"), 
     xaxt = "n",
     lwd = 2.5,
     yaxp = c(0, 200, 4),
@@ -53,16 +55,16 @@ axis(side = 2,
      yaxp = c(0, 200, 20)
      )
 axis(side = 1,
-     at = 1:5, 
-     labels = c("r", "rr", "e", "ee", "o"))
+     at = 1:kind.num, 
+     labels = kindset)
 par(xpd = T)
-legend(x = par()$usr[2] * 0.7, y = par()$usr[4], 
-     legend = c("r   :depender", "rr  :depender2", "e  :dependee", "ee:dependee2", "o  :other"),
-     cex = 2.5,
-     bty = "n",
-     xjust = 0,
-     inset = c(0, 0)
-     )
+#legend(x = par()$usr[2] * 0.7, y = par()$usr[4], 
+     #legend = c("r   :depender", "rr  :depender2", "e  :dependee", "ee:dependee2", "o  :other"),
+     #cex = 2.5,
+     #bty = "n",
+     #xjust = 0,
+     #inset = c(0, 0)
+     #)
 
 #print(by(deps, deps$kind, summary))
 #i = 0
