@@ -19,8 +19,9 @@ else:
 DOXYGEN_COMMAND = "doxygen GetDeps/source/.config"
 
 REPO = Repo(REPOPASS)
-DEPWRITER = csv.writer(open(CSVPASS, "w", encoding="utf-8"), lineterminator="\n")
-GD = GetDependencies(DEPWRITER)
+DEP_WRITER = csv.writer(open(CSVPASS, "w", encoding="utf-8"), lineterminator="\n")
+GD = GetDependencies(DEP_WRITER)
+DEP_WRITER.writerow(("commitNo", "file_location", "date", "author", "is_merge", "kind"))
 
 for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     file_list = [x for x in item.stats.files.keys() if os.path.splitext(x)[1] == ".java"]
@@ -28,6 +29,7 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
         continue
     
     print(commit_no)
+    #print(file_list)
 
     os.system(DOXYGEN_COMMAND)
     REPO.git.checkout(item)
@@ -41,3 +43,4 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     GD.set_commitinfo(commit_no, date, author, is_merge)
     GD.get_file_location(file_list)
     GD.get_deps()
+    break

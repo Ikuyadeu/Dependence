@@ -1,11 +1,11 @@
 from GetDeps.DependencyClass.file_dependency import FileDependency as FDp
 from GetDeps.DependencyClass.index_dependency import IndexDependency as IDp
+import re
 
 class GetDependencies(object):
     def __init__(self, writer):
         # 依存関係のindexを生成
         self.__writer = writer
-        self.__writer.writerow(("commitNo", "file_location", "date", "author", "is_merge", "kind"))
 
     def set_commitinfo(self, commit_no, date, author, is_merge):
         self.__index = IDp('index')
@@ -13,29 +13,35 @@ class GetDependencies(object):
         self.__date = date
         self.__author = author
         self.__is_merge = is_merge
-        self.__allfilepass = {}
+        self.__allfilepass = []
         self.__depvector = []
+        self.__root_list = []
         self.set_dep()
 
-    def set_dep(self):
-        compound_list = self.__index.get_kind_compound_list('file')
-        for compoundref in compound_list:
-            fdp = FDp(compoundref)
-            self.__allfilepass[compoundref] = fdp.get_location()
-            self.__depvector.extend(fdp.get_dependency())
-        self.__depvector = [x for x in self.__depvector if x != []]
+    def get_file_location(self, file_list):
+        for file_pass in file_list:
+            for fpass in self.__allfilepass:
+                # 末尾と一致していたらOK
+                if re.search(file_pass + '$', fpass):
+                    self.__root_list.append(fpass)
 
-    def filelist_to_deplist(self, root_list, is_depender, notrecurusion):
+    def set_dep(self):
+        compound_dict = self.__index.ref_to_location()
+        file_ref_list = self.__index.get_file_list()
+        for compoundref in file_ref_list:
+            fdp = FDp(compoundref)
+            self.__allfilepass.append(fdp.location)
+            self.__depvector.extend(fdp.get_dependency(compound_dict))
+        self.__depvector = [x for x in self.__depvector if len(x) != 0]
+
+    def filelist_to_deplist(self, root_list, is_depender):
         if is_depender: #　dependerを取得する
             i = 1 # 取得するほう(１は依存されているもの)
             j = 0 # 元の依存関係のもの
         else:
             i = 0
             j = 1
-        if notrecurusion:
-            return [x[i] for x in self.__depvector if x[j] in root_list and x[i] not in root_list]
-        else:
-            return [x[i] for x in self.__depvector if x[j] in root_list]
+        return [x[i] for x in self.__depvector if x[j] in root_list]
 
     def filelist_to_rec(self, root_list, is_depender):
         if is_depender: #　dependerを取得する
@@ -44,50 +50,38 @@ class GetDependencies(object):
         else:
             i = 0
             j = 1
-        return  [x[i] for x in self.__depvector if x[j] in root_list and x[i] not in root_list and 
-                 not(x[i] in self.__root_list and 
-                     len([y for y in self.__depvector if y[j] == x[j] and y[i] in self.__root_list]) < 2)]
+        return [x[i] for x in self.__depvector if x[j] in root_list and 
+                len([y for y in self.__depvector if y[j] == x[j]]) > 1]
 
     def output_dep(self, file_list, kind):
         for linedep in file_list:
             self.__writer.writerow((self.__commit_no, linedep, self.__date, self.__author, self.__is_merge, kind))
 
-    def get_file_location(self, file_list):
-        self.__root_list = []
-        for file_pass in file_list:
-            fileref = self.__index.get_file_ref(file_pass)
-            if fileref != None:
-                self.__root_list.append(self.__allfilepass[fileref])
 
-    def get_deps(self):
-        if len(self.__root_list) < 1:
-            return
-
-        self.output_dep(self.__root_list, "root")
-
+    def get_deps(self):        
         # depender(依存されている)ファイルの辞書
-        ee = self.filelist_to_deplist(self.__root_list, False, False)
-        self.output_dep(ee, "e")
+        dependee = self.filelist_to_deplist(self.__root_list, False)
 
         # depender2(依存されているものに依存されている)
-        eeee = self.filelist_to_deplist(ee, False, True)
-        self.output_dep(eeee, "ee")
+        dependee2 = self.filelist_to_deplist(dependee, False)
 
-        #eeer = self.filelist_to_deplist(ee, True, True)
-        eeer = self.filelist_to_rec(ee, True)
-        self.output_dep(eeer, "er")
+        deeder = self.filelist_to_rec(dependee, True)
 
         # dependee(依存している)
-        er = self.filelist_to_deplist(self.__root_list, True, False)
-        self.output_dep(er, "r")
+        depender = self.filelist_to_deplist(self.__root_list, True)
 
-        #eree = self.filelist_to_deplist(er, False, True)
-        eree = self.filelist_to_rec(er, False)
-        self.output_dep(eree, "re")
+        depender2 = self.filelist_to_deplist(depender, True)
 
-        erer = self.filelist_to_deplist(er, True, True)
-        self.output_dep(erer, "rr")
+        derdee = self.filelist_to_rec(depender, False)
 
-        all_dep = list(set(ee + er + eeee + eeer + erer + eree))
-        other = [x for x in self.__allfilepass.values() if x not in all_dep]
-        self.output_dep(other, "o")
+        all_dep = list(set(dependee + dependee2 + deeder + depender + depender2 + derdee))
+        other = [x for x in self.__allfilepass if x not in all_dep]
+
+        dep_list = [self.__root_list, dependee, dependee2, deeder, depender, depender2, derdee, other]
+        KIND_NAME = ["root", "e", "ee", "er", "r", "rr", "re", "o"]
+
+        for (dep_files, kind) in zip(dep_list, KIND_NAME):
+            for dep_file in set(dep_files):
+                self.__writer.writerow((self.__commit_no, dep_file, self.__date, self.__author, self.__is_merge, kind))
+    
+

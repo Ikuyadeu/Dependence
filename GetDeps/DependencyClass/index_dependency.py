@@ -1,27 +1,27 @@
 import re
-from GetDeps.DependencyClass.super_dependency import Dependency
-from GetDeps.DependencyClass.file_dependency import FileDependency as FDp
+from GetDeps.DependencyClass.super_dependency import SuperDependency
+from GetDeps.DependencyClass.compound_dependency import CompoundDependency as CDp
 
-class IndexDependency(Dependency):
+class IndexDependency(SuperDependency):
     """ 依存関係を管理するインデックスを格納 """
     def __init__(self, fileref):
-        self.__root = super().get_root(fileref)
-        self.__compoundname = './compound'
-        self.__membername = '/member'
-        self.__refidname = 'refid'
-        self.__kindname = 'kind'
+        super().__init__(fileref)
+        self.__compound_name = './compound'
+        self.__member_name = '/member'
+        self.__refid_name = 'refid'
+        self.__kind_name = 'kind'
 
     def ref_to_compound(self, refid: str, kindref: str) -> str:
         if kindref == "compound":
             return refid
 
-        for compound in self.__root.findall(self.__compoundname):
-            for member in compound.findall('.' + self.__membername):
-                if member.get(self.__refidname) == refid:
+        for compound in self.root.findall(self.__compound_name):
+            for member in compound.findall('.' + self.__member_name):
+                if member.get(self.__refid_name) == refid:
                     return compound.find('name').text
                     # return compound.get(self.__refidname)
 
-    def id_to_kind(self, refid: str, kindref: str) -> str:
+    def ref_to_kind(self, refid: str, kindref: str) -> str:
         """refidからrefの種類(class, function, variable)を取得する
         Args:
             refid:検索するid
@@ -30,33 +30,29 @@ class IndexDependency(Dependency):
             refの種類(class, function, variable)
         """
 
-        findtag = self.__compoundname
+        findtag = self.__compound_name
         if kindref == "member":
-            findtag += self.__membername
+            findtag += self.__member_name
 
-        for tag in self.__root.findall(findtag):
-            if tag.get(self.__refidname) == refid:
-                return tag.get(self.__kindname)
+        for tag in self.root.findall(findtag):
+            if tag.get(self.__refid_name) == refid:
+                return tag.get(self.__kind_name)
 
         return ""
 
-    def get_kind_compound_list(self, kind):
-        compound_list = []
-        for compound in self.__root.findall(self.__compoundname):
-            if kind == compound.get('kind'):
-                compound_list.append(compound.get('refid'))
-        return compound_list
+    def ref_to_location(self):
+        compound_dict = {}
+        for compound in self.root.findall(self.__compound_name):
+            id = compound.get('refid')
+            location = CDp(id).location
+            if location is not None:
+                compound_dict[id] = location
 
-    def get_file_ref(self, filepass):
-        """ファイルパスからファイルのrefidを探す
-        Args:
-            filepass:検索するファイル名
-        Return:
-            ファイルのrefid
-        """
-        for compound in self.get_kind_compound_list('file'):
-            fdp = FDp(compound)
-            # 末尾と一致していたらOK
-            if re.search(filepass + '$', fdp.get_location()):
-                return compound
-        return None
+        return compound_dict
+
+    def get_file_list(self):
+        file_list = []
+        for compound in self.root.findall(self.__compound_name):
+            if compound.get('kind') == 'file':
+                file_list.append(compound.get('refid'))
+        return file_list

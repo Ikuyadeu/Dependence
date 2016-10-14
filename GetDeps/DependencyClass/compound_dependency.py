@@ -1,19 +1,14 @@
-from GetDeps.DependencyClass.super_dependency import Dependency
+from GetDeps.DependencyClass.super_dependency import SuperDependency
 
-class CompoundDependency(Dependency):
+class CompoundDependency(SuperDependency):
     """description of class"""
     def __init__(self, fileref):
-        self.__root = self.get_root(fileref)
+        super().__init__(fileref)
+        self.location = super().get_location()
 
     def root_is_none(self):
-        return self.__root is None
+        return self.root is None
 
     def get_kind(self):
-        for compounddef in self.__root.findall(r'./compounddef'):
+        for compounddef in self.root.findall(r'./compounddef'):
             return compounddef.get('kind')
-
-    def get_location(self):
-        for location in self.__root.findall(r'./compounddef/location'):
-            file_name = location.get('file')
-            return file_name
-        return ""
