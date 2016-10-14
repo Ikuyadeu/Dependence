@@ -1,4 +1,3 @@
-import re
 from GetDeps.DependencyClass.super_dependency import SuperDependency
 from GetDeps.DependencyClass.compound_dependency import CompoundDependency as CDp
 
@@ -43,10 +42,10 @@ class IndexDependency(SuperDependency):
     def ref_to_location(self):
         compound_dict = {}
         for compound in self.root.findall(self.__compound_name):
-            id = compound.get('refid')
-            location = CDp(id).location
-            if location is not None:
-                compound_dict[id] = location
+            if compound.get('kind') != 'namespace':
+                ref_id = compound.get('refid')
+                location = CDp(ref_id).location
+                compound_dict[ref_id] = location
 
         return compound_dict
 
