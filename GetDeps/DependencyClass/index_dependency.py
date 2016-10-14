@@ -1,6 +1,6 @@
 import re
-from GetDeps.DependencyClass.Dependency import Dependency
-from GetDeps.DependencyClass.FileDependency import FileDependency as FDp
+from GetDeps.DependencyClass.super_dependency import Dependency
+from GetDeps.DependencyClass.file_dependency import FileDependency as FDp
 
 class IndexDependency(Dependency):
     """ 依存関係を管理するインデックスを格納 """

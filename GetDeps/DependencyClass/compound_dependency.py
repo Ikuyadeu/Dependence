@@ -1,4 +1,4 @@
-from GetDeps.DependencyClass.Dependency import Dependency
+from GetDeps.DependencyClass.super_dependency import Dependency
 
 class CompoundDependency(Dependency):
     """description of class"""

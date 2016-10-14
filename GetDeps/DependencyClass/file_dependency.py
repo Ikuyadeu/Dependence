@@ -1,5 +1,5 @@
-from GetDeps.DependencyClass.Dependency import Dependency
-from GetDeps.DependencyClass.CompoundDependency import CompoundDependency
+from GetDeps.DependencyClass.super_dependency import Dependency
+from GetDeps.DependencyClass.compound_dependency import CompoundDependency
 
 class FileDependency(Dependency):
     """description of class"""

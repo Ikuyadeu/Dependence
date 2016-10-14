@@ -1,5 +1,5 @@
-from GetDeps.DependencyClass.FileDependency import FileDependency as FDp
-from GetDeps.DependencyClass.IndexDependency import IndexDependency as IDp
+from GetDeps.DependencyClass.file_dependency import FileDependency as FDp
+from GetDeps.DependencyClass.index_dependency import IndexDependency as IDp
 
 class GetDependencies(object):
     def __init__(self, writer):

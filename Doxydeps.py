@@ -3,7 +3,7 @@ import time
 import csv
 import os
 from git import Repo
-from GetDeps.GetDependencies import GetDependencies
+from GetDeps.get_dependencies import GetDependencies
 
 ARGV = sys.argv
 ARGC = len(ARGV)
