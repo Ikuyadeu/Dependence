@@ -9,8 +9,8 @@ ARGV = sys.argv
 ARGC = len(ARGV)
 
 if ARGC == 4:
-    REPOPASS = (ARGV[1]) # ファイルパス
-    CSVPASS = (ARGV[2])
+    REPO_PASS = (ARGV[1]) # ファイルパス
+    CSV_PASS = (ARGV[2])
     BRANCH_NAME = (ARGV[3])
 else:
     print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
@@ -18,8 +18,8 @@ else:
 
 DOXYGEN_COMMAND = "doxygen GetDeps/source/.config"
 
-REPO = Repo(REPOPASS)
-DEP_WRITER = csv.writer(open(CSVPASS, "w", encoding="utf-8"), lineterminator="\n")
+REPO = Repo(REPO_PASS)
+DEP_WRITER = csv.writer(open(CSV_PASS, "w", encoding="utf-8"), lineterminator="\n")
 DEP_WRITER.writerow(("commitNo", "file_location", "date", "author", "is_merge", "kind"))
 
 KIND_NAME = ["root", "e", "ee", "er", "r", "rr", "re", "o"]
@@ -31,8 +31,8 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
 
     print(commit_no)
 
-    os.system(DOXYGEN_COMMAND)
     REPO.git.checkout(item)
+    os.system(DOXYGEN_COMMAND)
 
     d = time.gmtime(item.committed_date)
     date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))
