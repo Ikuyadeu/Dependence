@@ -36,7 +36,7 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
 
     REPO.git.checkout(item)
 
-    commit_info ="%d/%d commits  %d files changed" % (commit_no, COMMITS_LEN, flistlen)
+    commit_info ="%d/%d commit changed %d files" % (commit_no, COMMITS_LEN, flistlen)
     sys.stdout.write("\r%s Running Doxygen..." % commit_info)
     os.system(DOXYGEN_COMMAND)
     sys.stdout.write("\r%s Get Dependencies..." % commit_info)
