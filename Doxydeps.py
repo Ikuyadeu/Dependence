@@ -53,3 +53,4 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     for (dep_files, kind) in zip(get_dep.get_deps(), KIND_NAME):
         for dep_file in dep_files:
             DEP_WRITER.writerow((commit_no, dep_file, date, author, is_merge, kind))
+print("Finished", datetime.datetime.today())
