@@ -36,11 +36,10 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
 
     REPO.git.checkout(item)
 
-    sys.stdout.write("\r%d/%d commits %d files Running Doxygen..."
-                     % (commit_no, COMMITS_LEN, flistlen))
+    commit_info ="%d/%d commits  %d files changed" % (commit_no, COMMITS_LEN, flistlen)
+    sys.stdout.write("\r%s Running Doxygen..." % commit_info)
     os.system(DOXYGEN_COMMAND)
-    sys.stdout.write("\r%d/%d commits %d files Get Dependencies..."
-                     % (commit_no, COMMITS_LEN, flistlen))
+    sys.stdout.write("\r%s Get Dependencies..." % commit_info)
 
     d = time.gmtime(item.committed_date)
     date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))
@@ -49,8 +48,7 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     is_merge = (len(item.parents) > 1)
     get_dep = GetDependencies()
     get_dep.get_file_location(file_list)
-    sys.stdout.write("\r%d/%d commits %d files Output Dependency..."
-                     % (commit_no, COMMITS_LEN, flistlen))
+    sys.stdout.write("\r%s Output Dependency..." % commit_info)
 
     for (dep_files, kind) in zip(get_dep.get_deps(), KIND_NAME):
         for dep_file in dep_files:
