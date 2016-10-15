@@ -2,6 +2,7 @@ import sys
 import time
 import csv
 import os
+import datetime
 from git import Repo
 from GetDeps.get_dependencies import GetDependencies
 
@@ -25,6 +26,8 @@ DEP_WRITER.writerow(("commitNo", "file_location", "date", "author", "is_merge", 
 KIND_NAME = ["root", "e", "ee", "er", "r", "rr", "re", "o"]
 COMMITS_LEN = len(list(REPO.iter_commits(BRANCH_NAME)))
 
+print("Start", datetime.datetime.today())
+
 for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     file_list = [x for x in item.stats.files.keys() if os.path.splitext(x)[1] == ".java"]
     flistlen = len(file_list)
@@ -32,9 +35,12 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
         continue
 
     REPO.git.checkout(item)
-    sys.stdout.write("\r%d / %d commits  %d files Running Doxygen..." % (commit_no, COMMITS_LEN, flistlen))
+
+    sys.stdout.write("\r%d/%d commits %d files Running Doxygen..."
+                     % (commit_no, COMMITS_LEN, flistlen))
     os.system(DOXYGEN_COMMAND)
-    sys.stdout.write("\r%d / %d commits  %d files Get Dependencies..." % (commit_no, COMMITS_LEN, flistlen))
+    sys.stdout.write("\r%d/%d commits %d files Get Dependencies..."
+                     % (commit_no, COMMITS_LEN, flistlen))
 
     d = time.gmtime(item.committed_date)
     date = ("%d-%d-%d" % (d.tm_year, d.tm_mon, d.tm_mday))
@@ -43,7 +49,8 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     is_merge = (len(item.parents) > 1)
     get_dep = GetDependencies()
     get_dep.get_file_location(file_list)
-    sys.stdout.write("\r%d / %d commits  %d files Output Dependency..." % (commit_no, COMMITS_LEN, flistlen))
+    sys.stdout.write("\r%d/%d commits %d files Output Dependency..."
+                     % (commit_no, COMMITS_LEN, flistlen))
 
     for (dep_files, kind) in zip(get_dep.get_deps(), KIND_NAME):
         for dep_file in dep_files:
