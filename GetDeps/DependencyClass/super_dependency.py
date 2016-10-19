@@ -13,7 +13,10 @@ class SuperDependency(object):
 
         if fileref is not None:
             filename = r'GetDeps\source\doxygen\xml\\' + str(fileref) + r".xml"
-            return ET.parse(filename).getroot() if os.path.isfile(filename) else None
+            try:
+                return ET.parse(filename).getroot() if os.path.isfile(filename) else None
+            except:
+                return None
 
         return None
 

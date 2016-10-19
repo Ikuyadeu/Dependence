@@ -9,10 +9,10 @@ from GetDeps.get_dependencies import GetDependencies
 ARGV = sys.argv
 ARGC = len(ARGV)
 
-if ARGC == 4:
-    REPO_PASS = (ARGV[1]) # ファイルパス
-    CSV_PASS = (ARGV[2])
-    BRANCH_NAME = (ARGV[3])
+if ARGC == 3:
+    REPO_PASS = "C:\\Users\\YukiUeda\Documents\\GitHub\\" +(ARGV[1]) # ファイルパス
+    CSV_PASS = (ARGV[1]) + ".csv"
+    BRANCH_NAME = (ARGV[2])
 else:
     print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
     sys.exit()
@@ -36,7 +36,7 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
 
     REPO.git.checkout(item)
 
-    commit_info ="%d/%d commit changed %d files" % (commit_no, COMMITS_LEN, flistlen)
+    commit_info ="%d/%d commit changed %d files" % (commit_no + 1, COMMITS_LEN, flistlen)
     sys.stdout.write("\r%s Running Doxygen..." % commit_info)
     os.system(DOXYGEN_COMMAND)
     sys.stdout.write("\r%s Get Dependencies..." % commit_info)
