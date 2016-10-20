@@ -1,5 +1,4 @@
-project.name <- "egit"
-project.roots <- paste(project.name, "roots.csv", sep = "/")
+project.name <- "retrofit"
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 
 deps <- read.csv(project.deps, sep = ',', header = TRUE, row.names = NULL)
@@ -33,7 +32,7 @@ deps$date <- as.Date(deps$date)
 deps$SubDate <- as.numeric(deps$SubDate)
 
 deps$file_location <- as.character(deps$file_location)
-#deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
+deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location), fromLast = TRUE),]
 
 par(cex.axis = 2.5)
 par(tck = 1)
