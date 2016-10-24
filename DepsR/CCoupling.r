@@ -1,15 +1,15 @@
-project.name <- "egit"
-project.roots <- paste(project.name, "roots.csv", sep = "/")
-project.deps <- paste(project.name, "deps.csv", sep = "/")
-
-roots <- read.csv(project.roots, sep = ',', header = TRUE, row.names = NULL)
 library(dplyr)
+
+project.name <- "vert2"
+project.roots <- paste(project.name, "roots.csv", sep = "/")
+roots <- read.csv(project.roots, sep = ',', header = TRUE, row.names = NULL)
 
 flist <- levels(roots$file_location)
 flist <- flist[grep(".java$", flist)]
 
 cc <- expand.grid(entity = flist, coupled = flist)
 cc <- subset(cc, unclass(entity) < unclass(coupled))
+
 
 entity_num <- function(x) {
     return(sum(roots$file_location == x))
@@ -45,7 +45,6 @@ newcc <- count(cc2, entity, coupled)
 
 cc <- data.frame(entity = newcc$entity, coupled = newcc$coupled, coupled.count = newcc$n)
 print("GET_COUPLE")
-
 
 cc$entity.count <- apply(cc, 1, entity)
 print("GET ENTITY")
