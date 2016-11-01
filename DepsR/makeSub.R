@@ -1,4 +1,4 @@
-project.name <- "egit"
+project.name <- "guava"
 project.original <- paste("../", project.name, ".csv", sep = "")
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
@@ -18,11 +18,22 @@ deps$same_author <- NA
 
 i <- nrow(deps)
 
+makesub <- function(x) {
+    nc <- subset(roots, roots$commitNo <= x["commitNo"] & roots$file_location == x["file_location"])
+    if (nrow(nc) > 0) {
+        # ソートを行って一番上
+        n <- subset(nc, nc$commitNo == max(nc$commitNo))[1,]
+        x$SubDate <- n$date - x["date"]
+        x$SubNo <- x["commitNo"] - n$commitNo
+        x$same_author <- (n$author == x["author"])
+    }
+}
+
 for (dep in 1:i) {
     d <- deps[dep,]
     nc <- subset(roots, roots$commitNo <= d$commitNo & roots$file_location == d$file_location)
 
-    if (dep%%1000 == 0) {
+    if (dep%%10000 == 0) {
         print(i - dep)
     }
     if (nrow(nc) > 0) {
