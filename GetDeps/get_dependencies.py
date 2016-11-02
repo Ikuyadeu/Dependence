@@ -34,7 +34,7 @@ class GetDependencies(object):
         else:
             i = 0
             j = 1
-        return list(set([x[i] for x in self.__depvector if x[j] in root_list]))
+        return list([x[i] for x in self.__depvector if x[j] in root_list])
 
     def filelist_to_rec(self, root_list, is_depender):
         if is_depender: #　dependerを取得する
@@ -43,8 +43,8 @@ class GetDependencies(object):
         else:
             i = 0
             j = 1
-        return list(set([x[i] for x in self.__depvector if x[j] in root_list and
-                         len([y for y in self.__depvector if y[j] == x[j]]) > 1]))
+        return list([x[i] for x in self.__depvector if x[j] in root_list and
+                         len([y for y in self.__depvector if y[j] == x[j]]) > 1])
 
     def get_deps(self):
         # depender(依存されている)ファイルの辞書
