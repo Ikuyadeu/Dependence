@@ -9,10 +9,10 @@ from GetDeps.get_dependencies import GetDependencies
 ARGV = sys.argv
 ARGC = len(ARGV)
 
-if ARGC == 3:
-    REPO_PASS = "C:\\Users\\YukiUeda\Documents\\GitHub\\" +(ARGV[1]) # ファイルパス
+if ARGC == 4:
+    REPO_PASS =  (ARGV[2]) + (ARGV[1]) # ファイルパス
     CSV_PASS = (ARGV[1]) + ".csv"
-    BRANCH_NAME = (ARGV[2])
+    BRANCH_NAME = (ARGV[3])
 else:
     print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
     sys.exit()
