@@ -19,6 +19,7 @@ class GetDependencies(object):
             self.__allfilepass.append(fdp.location)
             self.__depvector.extend(fdp.get_dependency(compound_dict))
         self.__depvector = [x for x in self.__depvector if len(x) != 0]
+        self.__depvector = map(list,(set(map(tuple, self.__depvector))))
 
     def get_file_location(self, file_list):
         for file_pass in file_list:
@@ -34,7 +35,7 @@ class GetDependencies(object):
         else:
             i = 0
             j = 1
-        return list([x[i] for x in self.__depvector if x[j] in root_list])
+        return [x[i] for x in self.__depvector if x[j] in root_list]
 
     def filelist_to_rec(self, root_list, is_depender):
         if is_depender: #　dependerを取得する
@@ -43,8 +44,8 @@ class GetDependencies(object):
         else:
             i = 0
             j = 1
-        return list([x[i] for x in self.__depvector if x[j] in root_list and
-                         len([y for y in self.__depvector if y[j] == x[j]]) > 1])
+        return [x[i] for x in self.__depvector if x[j] in root_list and
+                len([y for y in self.__depvector if y[j] == x[j]]) > 1]
 
     def get_deps(self):
         # depender(依存されている)ファイルの辞書

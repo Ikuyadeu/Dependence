@@ -1,10 +1,10 @@
-project.name <- "guava"
+project.name <- "vert.x"
 project.original <- paste("../", project.name, ".csv", sep = "")
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 
 data_set <- read.csv(project.original, sep = ',', header = TRUE, row.names = NULL)
-
+#data_set <- head(data_set, 200)
 data_set$file_location <- as.character(data_set$file_location)
 data_set$author <- as.character(data_set$author)
 data_set$date <- as.Date(data_set$date)
@@ -18,16 +18,18 @@ deps$same_author <- NA
 
 i <- nrow(deps)
 
-makesub <- function(x) {
-    nc <- subset(roots, roots$commitNo <= x["commitNo"] & roots$file_location == x["file_location"])
-    if (nrow(nc) > 0) {
-        # ソートを行って一番上
-        n <- subset(nc, nc$commitNo == max(nc$commitNo))[1,]
-        x$SubDate <- n$date - x["date"]
-        x$SubNo <- x["commitNo"] - n$commitNo
-        x$same_author <- (n$author == x["author"])
-    }
-}
+#makesub <- function(x) {
+    #nc <- subset(roots, roots$commitNo <= x["commitNo"] & roots$file_location == x["file_location"])
+    #if (nrow(nc) > 0) {
+        ## ソートを行って一番上
+        #n <- subset(nc, nc$commitNo == max(nc$commitNo))[1,]
+        #x$SubDate <- n$date - x["date"]
+        #x$SubNo <- x["commitNo"] - n$commitNo
+        #x$same_author <- (n$author == x["author"])
+    #}
+#}
+
+#deps$SubDate <- apply(deps, 1, makesub)
 
 for (dep in 1:i) {
     d <- deps[dep,]
