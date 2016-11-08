@@ -19,7 +19,7 @@ class GetDependencies(object):
             self.__allfilepass.append(fdp.location)
             self.__depvector.extend(fdp.get_dependency(compound_dict))
         self.__depvector = [x for x in self.__depvector if len(x) != 0]
-        self.__depvector = map(list,(set(map(tuple, self.__depvector))))
+        self.__depvector = list(map(list,(set(map(tuple, self.__depvector)))))
 
     def get_file_location(self, file_list):
         for file_pass in file_list:
