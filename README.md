@@ -7,5 +7,5 @@ doxygenから全コミットの依存関係を出力
 
 ## 実行方法
 ```{r}
-python3 Doxydeps.py 依存関係元ファイルパス 出力先　調査するブランチ名(master)
+python3 Doxydeps.py 調査対象プロジェクトファイルパス 出力先　調査するブランチ名(master)
 ```

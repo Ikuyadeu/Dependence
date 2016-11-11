@@ -3,14 +3,25 @@ project.original <- paste("../", project.name, ".csv", sep = "")
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 
-data_set <- read.csv(project.original, sep = ',', header = TRUE, row.names = NULL)
-#data_set <- head(data_set, 200)
-data_set$file_location <- as.character(data_set$file_location)
-data_set$author <- as.character(data_set$author)
-data_set$date <- as.Date(data_set$date)
+#data_set <- read.csv(project.original, sep = ',', header = TRUE, row.names = NULL)
+##data_set <- head(data_set, 200)
+#data_set$file_location <- as.character(data_set$file_location)
+#data_set$author <- as.character(data_set$author)
+#data_set$date <- as.Date(data_set$date)
 
-roots <- subset(data_set, data_set$kind == "root")
-deps <- subset(data_set, data_set$kind != "root")
+#roots <- subset(data_set, data_set$kind == "root")
+#deps <- subset(data_set, data_set$kind != "root")
+
+roots <- read.csv(project.roots, sep = ',', header = TRUE, row.names = NULL)
+deps <- read.csv(paste(project.name, "cia.csv", sep = "/"), sep = ',', header = TRUE, row.names = NULL)
+deps$file_location <- as.character(deps$file_location)
+deps$author <- as.character(deps$author)
+deps$date <- as.Date(deps$date)
+
+roots$file_location <- as.character(roots$file_location)
+roots$author <- as.character(roots$author)
+roots$date <- as.Date(roots$date)
+
 
 deps$SubNo <- NA
 deps$SubDate <- NA
@@ -49,4 +60,4 @@ for (dep in 1:i) {
 deps <- na.omit(deps)
 
 write.csv(deps, project.deps, quote=TRUE, row.names = FALSE)
-write.csv(roots, project.roots, quote = TRUE, row.names = FALSE)
+#write.csv(roots, project.roots, quote = TRUE, row.names = FALSE)
