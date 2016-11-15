@@ -1,0 +1,16 @@
+﻿> sum(roots$e) / nrow(roots)
+[1] 0.4393443
+> sum(roots$r) / nrow(roots)
+[1] 0.3809836
+> sum(roots$ee) / nrow(roots)
+[1] 0.4327869
+> sum(roots$rr) / nrow(roots)
+[1] 0.3606557
+> sum(roots$o) / nrow(roots)
+[1] 0.5127869
+> sum(roots$re) / nrow(roots)
+[1] 0.584918
+> sum(roots$er) / nrow(roots)
+[1] 0.5285246
+> nrow(roots)
+[1] 1525
