@@ -40,8 +40,7 @@ for (i in 1:rootslen) {
             roots[i,][k] <- sum(deps$kind == k & 
                                deps$file_location == root$file_location & 
                                deps$commitNo > root$commitNo & 
-                               deps$commitNo < beforeNo & 
-                               deps$same_author == TRUE)
+                               deps$commitNo < beforeNo)
         }
 
     }
