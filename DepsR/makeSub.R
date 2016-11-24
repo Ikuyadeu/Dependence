@@ -1,11 +1,15 @@
-project.name <- "vert.x"
+library(reshape2)
+library(plyr)
+
+project.name <- "fose"
 project.original <- paste("../", project.name, ".csv", sep = "")
 project.roots <- paste(project.name, "roots.csv", sep = "/")
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 
-data_set <- read.csv(project.original, sep = ',', header = TRUE, row.names = NULL)
+#data_set <- read.csv(project.original, sep = ',', header = TRUE, row.names = NULL)
 
-data_set <- head(data_set, 500)
+data_set <- read.csv("../newdep.csv", sep = ',', header = TRUE, row.names = NULL)
+
 data_set$file_location <- as.character(data_set$file_location)
 data_set$author <- as.character(data_set$author)
 data_set$date <- as.Date(data_set$date)
@@ -18,17 +22,17 @@ deps <- subset(data_set, data_set$kind != "root")
 
 deps$SubNo <- NA
 deps$SubDate <- NA
-deps$same_author <- NA
+deps$same_author <- TRUE
 
-deps <- dcast(data = deps, formula = commitNo + file_location + date + author ~ kind, 
-              fun.aggregate = length, value.var = TRUE, fill = 0)
-print("casted")
+#deps <- dcast(data = deps, formula = commitNo + file_location + date + author ~ kind, 
+              #fun.aggregate = length, value.var = "same_author", fill = 0)
+#print("casted")
 
 i <- nrow(deps)
 
 for (dep in 1:i) {
     d <- deps[dep,]
-    nc <- subset(roots, commitNo <= d$commitNo & file_location == d$file_location)
+    nc <- roots[roots$commitNo <= d$commitNo & roots$file_location == d$file_location,]
 
     if (dep%%10000 == 0) {
         print(i - dep)
