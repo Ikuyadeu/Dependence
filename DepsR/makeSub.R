@@ -18,7 +18,7 @@ roots <- subset(data_set, data_set$kind == "root")
 write.csv(roots, project.roots, quote = TRUE, row.names = FALSE)
 
 deps <- subset(data_set, data_set$kind != "root")
-#deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location, deps$kind)),]
+deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location, deps$kind), fromLast = T),]
 
 deps$SubNo <- NA
 deps$SubDate <- NA
