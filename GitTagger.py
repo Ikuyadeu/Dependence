@@ -26,9 +26,5 @@ for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     
     commitmessage = item.message.replace('\n','')
 
-
-    #tags = treetaggerwrapper.make_tags(tagger.tag_text(commitmessage), exclude_nottags=True)
-    #clemma = [x.lemma for x in tags]
-    #print(clemma)
     WRITER.writerow((commit_no, commitmessage))
 
