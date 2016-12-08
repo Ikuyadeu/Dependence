@@ -7,8 +7,8 @@ ARGV = sys.argv
 ARGC = len(ARGV)
 
 if ARGC == 4:
-    REPO_PASS =  (ARGV[2]) + (ARGV[1]) # ƒtƒ@ƒCƒ‹ƒpƒX
-    CSV_PASS = (ARGV[1]) + "message.csv"
+    REPO_PASS =  (ARGV[2]) + (ARGV[1]) # ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½pï¿½X
+    CSV_PASS = "DepsR\\" + (ARGV[1]) + "\\" + x + "message.txt"
     BRANCH_NAME = (ARGV[3])
 else:
     print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
@@ -21,7 +21,7 @@ COMMITS_LEN = len(list(REPO.iter_commits(BRANCH_NAME)))
 
 WRITER = csv.writer(open(CSV_PASS, "w", encoding="utf-8"), lineterminator="\n")
 tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
-
+WRITER.writerow(("commitNo", "message"))
 for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     
     commitmessage = item.message.replace('\n','')

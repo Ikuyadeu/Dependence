@@ -1,7 +1,9 @@
 import sys
 import csv
-from git import Repo
+import math
 import treetaggerwrapper
+from collections import Counter 
+from operator import itemgetter
 
 ARGV = sys.argv
 ARGC = len(ARGV)
@@ -14,31 +16,112 @@ else:
     print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
     sys.exit()
 
-REPO = Repo(REPO_PASS)
+#REPO = Repo(REPO_PASS)
 
-COMMITS_LEN = len(list(REPO.iter_commits(BRANCH_NAME)))
+#COMMITS_LEN = len(list(REPO.iter_commits(BRANCH_NAME)))
 
-DEPFILE = open("DepsR\\" + (ARGV[1]) + "\\deps.csv", 'r')
-DEP = csv.DictReader(DEPFILE)
+#DEPFILE = open("DepsR\\" + (ARGV[1]) + "\\eemessage.csv", 'r')
+#DEP = csv.DictReader(DEPFILE)
 
-MESSAGE = csv.DictReader(open(MESSAGE_PASS, 'r'))
+#MESSAGE = csv.DictReader(open(MESSAGE_PASS, 'r'))
+tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
 
-for row in DEP:
-    print(int(row['commitNo']) - int(row['SubNo']))
-    #print(row)
+kindlist = ["e", "ee", "r", "rr", "o"]
+txtlist = ["DepsR\\" + (ARGV[1]) + "\\" + x + "message.txt" for x in kindlist]
+print(txtlist)
+#messages = open("DepsR\\" + (ARGV[1]) + "\\eemessage.txt", 'r')
+messages = [open(x, 'r', encoding = 'utf-8').read() for x in txtlist]
+#messages = []
+#for t in txtlist:
+#    messages.append(open(t, 'r', 'utf-8').read())
+#print(messages)
+
+#print(messages[1])
+
+txt_num = len(messages)
+  
+fv_tf = []                      # ある文書中の単語の出現回数を格納するための配列
+fv_df = {}                      # 単語の出現文書数を格納するためのディクショナリ
+fv_df2 = Counter({})                      # 単語の出現回数を格納するためのディクショナリ
+word_count = []                 # 単語の総出現回数を格納するための配列
+  
+fv_tf_idf = []                  # ある文書中の単語の特徴量を格納するための配列
+  
+count_flag = {}                 # fv_dfを計算する上で必要なフラグを格納するためのディクショナリ
 
 
+# 各文書の形態素解析と、単語の出現回数の計算
+for txt_id, txt in enumerate(messages):
+    # MeCabを使うための初期化
+    tags= treetaggerwrapper.make_tags(tagger.tag_text(txt), exclude_nottags=True)
+    lemmas = [x.word for x in tags]
 
-#WRITER = csv.writer(open(CSV_PASS, "w", encoding="utf-8"), lineterminator="\n")
-#tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
+    fv = {}                     # 単語の出現回数を格納するためのディクショナリ
+    words = 0                   # ある文書の単語の総出現回数
+     
+    for word in fv_df.keys():
+        count_flag[word] = False
+
+    for lemma in lemmas:
+        surface = lemma # 形態素解析により得られた単語
+  
+        words += 1
+  
+        fv[surface] = fv.get(surface, 0) + 1 # fvにキー値がsurfaceの要素があれば、それに1を加え、なければ新しくキー値がsurfaceの要素をディクショナリに加え、値を1にする
+  
+        if surface in fv_df.keys(): # fv_dfにキー値がsurfaceの要素があれば
+            if count_flag[surface] == False: # フラグを確認し，Falseであれば
+                fv_df[surface] += 1 # 出現文書数を1増やす
+                count_flag[surface] = True # フラグをTrueにする
+        else:                 # fv_dfにキー値がsurfaceの要素がなければ
+            fv_df[surface] = 1 # 新たにキー値がsurfaceの要素を作り，値として1を代入する
+            count_flag[surface] = True # フラグをTrueにする
+    
+    fv_df2 = fv_df2 + Counter(fv)
+    fv_tf.append(fv)
+    word_count.append(words)
+
+fv_df2 = dict(fv_df2)
+  
+# tf, idf, tf-idfなどの計算
+for txt_id, fv in enumerate(fv_tf):
+    tf = {}
+    tf2 = {}
+    idf = {}
+    tf_idf = {}
+    for key in fv.keys():
+        tf[key] = float(fv[key]) / word_count[txt_id] # tfの計算
+        idf[key] = math.log(float(txt_num) / fv_df[key]) # idfの計算
+        tf2[key] = float(fv[key]) / float(fv_df2[key]) # tfの計算
+        
+
+        tf_idf[key] = (tf2[key], tf[key] * idf[key], tf[key], idf[key], fv[key], fv_df[key]) # tf-idfその他の計算
+    tf_idf = sorted(tf_idf.items(), key=lambda x:(x[1][0],x[1][1]), reverse=True) # 得られたディクショナリtf-idfを、tf[key]*idf[key](tf-idf値)で降順ソート(処理後にはtf-idfはリストオブジェクトになっている)
+    fv_tf_idf.append(tf_idf)
+  
+# 出力
+for txt_id, fv in enumerate(fv_tf_idf):
+    print("\n")
+    print('This is the tf-idf of text', txt_id)
+    print('total words:', word_count[txt_id])
+    print(kindlist[txt_id])
+    print("\n")
+    for id, (word, tf_idf) in enumerate(fv):
+        if(id > 10):
+            break
+        print('%s\toriginal:%lf\ttf-idf:%lf\ttf:%lf\tidf:%lf\tterm_count:%d\tdocument_count:%d' % (word, tf_idf[0], tf_idf[1], tf_idf[2], tf_idf[3], tf_idf[4], tf_idf[5])) # 左から順に、単語、original, tf-idf値、tf値、idf値、その文書中の単語の出現回数、その単語の出現文書数(これは単語ごとに同じ値をとる)
+
+
+#for row in DEP:
+#    for tag in tagger:
+#        tags = treetaggerwrapper.make_tags(tagger.tag_text(commitmessage), exclude_nottags=True)
+#        clemma = [x.lemma for x in tags]
+#        print(clemma)
 
 #for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     
 #    commitmessage = item.message.replace('\n','')
 
 
-#    tags = treetaggerwrapper.make_tags(tagger.tag_text(commitmessage), exclude_nottags=True)
-#    clemma = [x.lemma for x in tags]
-#    print(clemma)
 
-DEPFILE.close()
+#DEPFILE.close()
