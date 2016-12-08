@@ -8,7 +8,7 @@ ARGC = len(ARGV)
 
 if ARGC == 4:
     REPO_PASS =  (ARGV[2]) + (ARGV[1]) # �t�@�C���p�X
-    CSV_PASS = "DepsR\\" + (ARGV[1]) + "\\" + x + "message.txt"
+    CSV_PASS = "DepsR\\" + (ARGV[1]) + "\\message.csv"
     BRANCH_NAME = (ARGV[3])
 else:
     print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])

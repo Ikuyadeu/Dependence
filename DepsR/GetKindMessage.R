@@ -1,4 +1,4 @@
-project.name <- "netty"
+project.name <- "okhttp"
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 project.messages <- paste(project.name, "message.csv", sep = "/")
 
