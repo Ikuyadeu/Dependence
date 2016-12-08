@@ -1,5 +1,4 @@
 import sys
-import csv
 import math
 import treetaggerwrapper
 from collections import Counter 
@@ -8,35 +7,19 @@ from operator import itemgetter
 ARGV = sys.argv
 ARGC = len(ARGV)
 
-if ARGC == 4:
-    REPO_PASS =  (ARGV[2]) + (ARGV[1]) # �t�@�C���p�X
-    MESSAGE_PASS = (ARGV[1]) + "message.csv"
-    BRANCH_NAME = (ARGV[3])
+kindlist = ["e", "ee", "r", "rr", "o"]
+if ARGC >= 2:
+    txtlist = ["DepsR\\" + (ARGV[1]) + "\\" + x + "message.txt" for x in kindlist]
 else:
-    print("Usage: %s repopass csvpass master_branch_name" % ARGV[0])
+    print("Usage: %s projectname" % ARGV[0])
     sys.exit()
 
-#REPO = Repo(REPO_PASS)
 
-#COMMITS_LEN = len(list(REPO.iter_commits(BRANCH_NAME)))
-
-#DEPFILE = open("DepsR\\" + (ARGV[1]) + "\\eemessage.csv", 'r')
-#DEP = csv.DictReader(DEPFILE)
-
-#MESSAGE = csv.DictReader(open(MESSAGE_PASS, 'r'))
 tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
 
-kindlist = ["e", "ee", "r", "rr", "o"]
-txtlist = ["DepsR\\" + (ARGV[1]) + "\\" + x + "message.txt" for x in kindlist]
-print(txtlist)
-#messages = open("DepsR\\" + (ARGV[1]) + "\\eemessage.txt", 'r')
-messages = [open(x, 'r', encoding = 'utf-8').read() for x in txtlist]
-#messages = []
-#for t in txtlist:
-#    messages.append(open(t, 'r', 'utf-8').read())
-#print(messages)
 
-#print(messages[1])
+print((ARGV[1]),kindlist)
+messages = [open(x, 'r', encoding = 'utf-8').read() for x in txtlist]
 
 txt_num = len(messages)
   
@@ -96,16 +79,16 @@ for txt_id, fv in enumerate(fv_tf):
         
 
         tf_idf[key] = (tf2[key], tf[key] * idf[key], tf[key], idf[key], fv[key], fv_df[key]) # tf-idfその他の計算
-    tf_idf = sorted(tf_idf.items(), key=lambda x:(x[1][0],x[1][1]), reverse=True) # 得られたディクショナリtf-idfを、tf[key]*idf[key](tf-idf値)で降順ソート(処理後にはtf-idfはリストオブジェクトになっている)
+    tf_idf = sorted(tf_idf.items(), key=lambda x:(x[1][1],x[1][0]), reverse=True) # 得られたディクショナリtf-idfを、tf[key]*idf[key](tf-idf値)で降順ソート(処理後にはtf-idfはリストオブジェクトになっている)
     fv_tf_idf.append(tf_idf)
   
 # 出力
 for txt_id, fv in enumerate(fv_tf_idf):
-    print("\n")
+    print('\n')
     print('This is the tf-idf of text', txt_id)
     print('total words:', word_count[txt_id])
     print(kindlist[txt_id])
-    print("\n")
+    print("")
     for id, (word, tf_idf) in enumerate(fv):
         if(id > 10):
             break
