@@ -18,7 +18,7 @@ else:
 tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
 
 
-print((ARGV[1]),kindlist)
+print((ARGV[1]))
 messages = [open(x, 'r', encoding = 'utf-8').read() for x in txtlist]
 
 txt_num = len(messages)
@@ -69,42 +69,39 @@ fv_df2 = dict(fv_df2)
 # tf, idf, tf-idfなどの計算
 for txt_id, fv in enumerate(fv_tf):
     tf = {}
-    tf2 = {}
+    idf2 = {}
     idf = {}
     tf_idf = {}
     for key in fv.keys():
         tf[key] = float(fv[key]) / word_count[txt_id] # tfの計算
         idf[key] = math.log(float(txt_num) / fv_df[key]) # idfの計算
-        tf2[key] = float(fv[key]) / float(fv_df2[key]) # tfの計算
+        idf2[key] = float(fv[key]) / fv_df2[key] # tfの計算
         
 
-        tf_idf[key] = (tf2[key], tf[key] * idf[key], tf[key], idf[key], fv[key], fv_df[key]) # tf-idfその他の計算
+        tf_idf[key] = (tf[key]* idf2[key], tf[key] * idf[key], tf[key], idf[key], fv[key], fv_df[key]) # tf-idfその他の計算
     tf_idf = sorted(tf_idf.items(), key=lambda x:(x[1][1],x[1][0]), reverse=True) # 得られたディクショナリtf-idfを、tf[key]*idf[key](tf-idf値)で降順ソート(処理後にはtf-idfはリストオブジェクトになっている)
     fv_tf_idf.append(tf_idf)
   
 # 出力
-for txt_id, fv in enumerate(fv_tf_idf):
-    print('\n')
-    print('This is the tf-idf of text', txt_id)
-    print('total words:', word_count[txt_id])
-    print(kindlist[txt_id])
-    print("")
-    for id, (word, tf_idf) in enumerate(fv):
-        if(id > 10):
-            break
-        print('%s\toriginal:%lf\ttf-idf:%lf\ttf:%lf\tidf:%lf\tterm_count:%d\tdocument_count:%d' % (word, tf_idf[0], tf_idf[1], tf_idf[2], tf_idf[3], tf_idf[4], tf_idf[5])) # 左から順に、単語、original, tf-idf値、tf値、idf値、その文書中の単語の出現回数、その単語の出現文書数(これは単語ごとに同じ値をとる)
+
+print(kindlist)
+
+for id in range(0,10):
+    for fv in fv_tf_idf:
+        print(fv[id][0], end='')
+        for i in range(0, (16 - len(fv[id][0]))):
+            print(' ', end='')
+        print('',end=',')
+    print('')
 
 
-#for row in DEP:
-#    for tag in tagger:
-#        tags = treetaggerwrapper.make_tags(tagger.tag_text(commitmessage), exclude_nottags=True)
-#        clemma = [x.lemma for x in tags]
-#        print(clemma)
-
-#for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
-    
-#    commitmessage = item.message.replace('\n','')
-
-
-
-#DEPFILE.close()
+#for txt_id, fv in enumerate(fv_tf_idf):
+#    print('\n')
+#    print('This is the tf-idf of text', txt_id)
+#    print('total words:', word_count[txt_id])
+#    print(kindlist[txt_id])
+#    print("")
+#    for id, (word, tf_idf) in enumerate(fv):
+#        if(id > 10):
+#            break
+#        print('%s\toriginal:%lf\ttf-idf:%lf\ttf:%lf\tidf:%lf\tterm_count:%d\tdocument_count:%d' % (word, tf_idf[0], tf_idf[1], tf_idf[2], tf_idf[3], tf_idf[4], tf_idf[5])) # 左から順に、単語、original, tf-idf値、tf値、idf値、その文書中の単語の出現回数、その単語の出現文書数(これは単語ごとに同じ値をとる)
