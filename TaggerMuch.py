@@ -37,7 +37,7 @@ count_flag = {}                 # fv_dfを計算する上で必要なフラグ�
 for txt_id, txt in enumerate(messages):
     # MeCabを使うための初期化
     tags= treetaggerwrapper.make_tags(tagger.tag_text(txt), exclude_nottags=True)
-    lemmas = [x.word for x in tags]
+    lemmas = [x.lemma for x in tags]
 
     fv = {}                     # 単語の出現回数を格納するためのディクショナリ
     words = 0                   # ある文書の単語の総出現回数
