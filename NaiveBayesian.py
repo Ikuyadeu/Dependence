@@ -1,6 +1,7 @@
 import sys
 import csv
 import math
+import re
 from git import Repo
 import treetaggerwrapper
 
@@ -21,7 +22,7 @@ tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
 
 def getwords(doc):
     tags = treetaggerwrapper.make_tags(tagger.tag_text(doc), exclude_nottags=True)
-    return [x.lemma for x in tags]
+    return [x.lemma for x in tags if not re.search("[0-9a-f]{10,}|[^0-9A-Za-z]", x.lemma)]
   
 def wordcountup(doc, wordcount):
     counted = {}
