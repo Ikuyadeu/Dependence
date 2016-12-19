@@ -19,12 +19,11 @@ REPO = Repo(REPO_PASS)
 COMMITS_LEN = len(list(REPO.iter_commits(BRANCH_NAME)))
 
 
-WRITER = csv.writer(open(CSV_PASS, "w", encoding="utf-8"), lineterminator="\n")
-tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
+WRITER = csv.writer(open(CSV_PASS, "w", encoding="utf-8"), lineterminator="\n", quoting=csv.QUOTE_ALL)
 WRITER.writerow(("commitNo", "message"))
 for commit_no, item in enumerate(REPO.iter_commits(BRANCH_NAME)):
     
     commitmessage = item.message.replace('\n','')
 
-    WRITER.writerow((commit_no, commitmessage))
+    WRITER.writerow((commit_no, str(commitmessage)))
 
