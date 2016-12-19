@@ -1,4 +1,4 @@
-project.name <- "okhttp"
+project.name <- "vert.x"
 project.deps <- paste(project.name, "deps.csv", sep = "/")
 project.messages <- paste(project.name, "message.csv", sep = "/")
 
@@ -11,7 +11,6 @@ messages$message <-as.character(messages$message)
 kinds <- levels(deps$kind)
 for (kind2 in 1:length(kinds)) {
     future <- subset(deps, deps$kind == kinds[kind2])$futureNo
-    mes2 <- subset(messages, messages$commitNo %in% future)$message
-    write(mes2, paste(project.name, paste(kinds[kind2], "message.txt", sep = ""), sep = "/"))
-
+    messages$iskind <- messages$commitNo %in% future
+    write.csv(messages, paste(project.name, paste(kinds[kind2], "message.csv", sep = ""), sep = "/"), quote = TRUE, row.names = FALSE)
 }
