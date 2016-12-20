@@ -22,7 +22,9 @@ tagger = treetaggerwrapper.TreeTagger(TAGLANG='en',TAGDIR='C:\TreeTagger')
 
 def getwords(doc):
     tags = treetaggerwrapper.make_tags(tagger.tag_text(doc), exclude_nottags=True)
-    return [x.lemma for x in tags if not re.search("[0-9a-f]{10,}|[^0-9A-Za-z]", x.lemma)]
+    #return [x.lemma for x in tags if not re.search("[0-9a-f]{10,}|[^0-9A-Za-z]", x.lemma)]
+    tags = [x.lemma for x in tags if not re.search("[0-9a-f]{10,}|[^0-9A-Za-z]", x.lemma)]
+    return  [tags[0]] if len(tags) > 0 else list()
   
 def wordcountup(doc, wordcount):
     counted = {}
@@ -42,7 +44,7 @@ def wordcountup(doc, wordcount):
 word_count = {}
 row_num = 0
 csv_name = CSV_PASS + "message.csv"
-with open(csv_name) as csvfile:
+with open(csv_name, encoding="utf-8") as csvfile:
     rows = 0
     reader = csv.DictReader(csvfile, lineterminator="\n", quoting=csv.QUOTE_ALL)
     for row in [x['message'] for x in reader]:
@@ -51,11 +53,12 @@ with open(csv_name) as csvfile:
     row_num = rows
     print(row_num)
 print(len(word_count))
+
 for kind in KIND_NAMES:
     word_kind_count = {}
     csvname = CSV_PASS + kind + "message.csv"
     csvname_w = CSV_PASS + kind + "messager.csv"
-    with open(csvname) as csvfile:
+    with open(csvname, encoding="utf-8") as csvfile:
         dep_writer = csv.writer(open(csvname_w, "w", encoding="utf-8"), lineterminator="\n")
         kind_reader = csv.DictReader(csvfile)
         kind_message = [x['message'] for x in kind_reader if x['iskind'] == 'TRUE']
@@ -68,9 +71,6 @@ for kind in KIND_NAMES:
             #dep_writer.writerow((row['commit_no'], row['iskind'], row['message'], probscore(self, row['message'])))
 
         for word, score in word_kind_count.items():
-            if word_count[word] == 0:
-                print(word)
-                break
             word_kind_count[word] = float(score) / kind_num * p_kind / (float(word_count[word]) / row_num) 
         
         # 出力
