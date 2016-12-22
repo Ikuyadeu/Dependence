@@ -1,19 +1,19 @@
-kinds <- c("e", "ee", "r", "rr", "er", "re", "o")
+kinds <- c("e", "ee", "r", "rr")
 project.name <- "eclipse"
 
 kind_message <- data.frame()
 allorone <- "one_"
 
-message.name <- paste(project.name, paste(allorone, "message.csv", sep = ""), sep = "/")
-kind_message <- read.csv(message.name, sep = ',', header = TRUE, row.names = NULL)
-
-for (kind in kinds) {
-    project.messages <- paste(project.name, paste(allorone, paste(kind, "message.csv", sep = ""), sep = ""), sep = "/")
-    messages <- read.csv(project.messages, sep = ',', header = TRUE, row.names = NULL)
-    colnames(messages) <- c("word", kind)
-    kind_message <- merge(kind_message, messages, by = "word", all = T)
+getmax <- function(x) {
+    kinds.order <- order(c(x["e"], x["ee"], x["r"], x["rr"]))
+    return(paste(paste(kinds[kinds.order[1]], kinds[kinds.order[2]], sep = "_"), kinds[kinds.order[3]], sep = "_"))
 }
-kind_message <- kind_message[order(kind_message$score, decreasing = T),]
-kind_message[is.na(kind_message)] <- 0
-write.csv(kind_message, paste(project.name, paste(allorone, "message2.csv"), sep = "/")
+
+
+message.name <- paste(project.name, paste(allorone, "message2.csv", sep = ""), sep = "/")
+kind_message <- read.csv(message.name, sep = ',', header = TRUE, row.names = NULL)
+kind_message$maxkind <- apply(kind_message, 1, getmax)
+
+
+write.csv(kind_message, paste(project.name, paste(allorone, "message3.csv", sep = ""), sep = "/")
             , quote = TRUE, row.names = FALSE)
