@@ -1,4 +1,31 @@
-projects <- c("egit", "egit-github", "guava", "netty", "retrofit")
+#projects <- c("egit", "egit-github", "vert.x")
+projects <- c("guava", "retrofit", "okhttp")
+
+## 7 colors
+kindset <- c("e", "ee", "r", "rr", "o")
+
+kindname <- c("depender", "depender2", "dependee", "dependee2", "other")
+#cols <- c("#FF8888","#FF8800","#888888","#888888" ,"#FFFFFF")
+## 7 colors
+#kindset <- c("e", "ee", "o")
+#cols <- c("#FF8888", "#FF8800", "#FFFFFF")
+# 5 colors
+#kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
+#kindname <- kindset
+cols <- c("#FF8888", "#CC99FF", "#00CC88", "#0088FF", "#CCCCCC")
+cols <- c("#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF")
+### 2 colors
+##kindset <- c("o", "e")
+
+### 2 colors
+##kindset <- c("r", "o")
+
+### 2 colors
+##kindset <- c("r", "e")
+
+## 2 colors
+##kindset <- c("e", "ee")
+
 for (i in 1:length(projects)) {
     project.name <- projects[i]
     #project.name <- ""
@@ -7,19 +34,6 @@ for (i in 1:length(projects)) {
 
     #deps <- read.csv("newdep_2.csv", sep = ',', header = TRUE, row.names = NULL) # for fose
     deps <- read.csv(project.deps, sep = ',', header = TRUE, row.names = NULL)
-
-    ## 7 colors
-    kindset <- c("e", "ee", "r", "rr", "o")
-
-    kindname <- c("depender", "depender2", "dependee", "dependee2", "other")
-    #cols <- c("#FF8888","#FF8800","#888888","#888888" ,"#FFFFFF")
-    ## 7 colors
-    #kindset <- c("e", "ee", "o")
-    #cols <- c("#FF8888", "#FF8800", "#FFFFFF")
-    # 5 colors
-    #kindset <- c("depender", "depender2", "dependee", "dependee2", "other")
-    #kindname <- kindset
-    cols <- c("#FF8888", "#CC99FF", "#00CC88", "#0088FF", "#CCCCCC")
 
     ## 3 colors
     ##kindset <- c("r", "e", "o")
@@ -30,22 +44,11 @@ for (i in 1:length(projects)) {
     #}
 
     #deps$kind <- apply(deps$kind, 2,toother)
-
-    #write.csv(deps, paste(project.name, "deps2.csv", sep = "/"), quote = TRUE, row.names = FALSE)
-    ### 2 colors
-    ##kindset <- c("o", "e")
-
-    ### 2 colors
-    ##kindset <- c("r", "o")
-
-    ### 2 colors
-    ##kindset <- c("r", "e")
-
-    ## 2 colors
-    ##kindset <- c("e", "ee")
-
+    
     kind.num <- length(kindset)
     deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
+
+    #print(by(deps, deps$kind, summary))
 
     deps$kind <- factor(deps$kind, levels = kindset)
     deps$commitNo <- as.numeric(deps$commitNo)

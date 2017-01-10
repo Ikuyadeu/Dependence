@@ -1,10 +1,10 @@
-projects <- c("okhttp", "egit", "egit-github", "guava", "netty", "retrofit")
-
-project.name <- "okhttp"
+#projects <- c("vert.x", "egit", "egit-github")
+projects <- c("guava", "retrofit", "okhttp")
 
 
 getpar <- function(x) {
-    return(sum(x) / length(x))
+    #return(sum(x) / length(x))
+    return(sum(x))
 }
 
 for (i in 1:length(projects)) {
@@ -27,16 +27,17 @@ for (i in 1:length(projects)) {
     ##kind_par <- kind_par / nrow(roots)
 
     kind_par <- tapply(deps$same_author, deps$kind, getpar)
-
-
+    #print(levels(deps$kind))
+    kind_par <- append(kind_par, sum(kind_par))
+    print(kind_par)
 
     #prop.table
 
-    deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location), fromLast = TRUE),]
-    kind_par2 <- tapply(deps$same_author, deps$kind, getpar)
+    #deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location), fromLast = TRUE),]
+    #kind_par2 <- tapply(deps$same_author, deps$kind, getpar)
 
-    #kind_par2 <- 1 - kind_par
+    ##kind_par2 <- 1 - kind_par
 
-    kind_par <- rbind(kind_par, kind_par2)
-    barplot(kind_par, beside = T, ylim = c(0.0, 1.0))
+    #kind_par <- rbind(kind_par, kind_par2)
+    #barplot(kind_par, beside = T, ylim = c(0.0, 1.0))
 }
