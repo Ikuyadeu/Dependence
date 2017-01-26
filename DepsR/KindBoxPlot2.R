@@ -1,5 +1,6 @@
 #projects <- c("egit", "egit-github", "vert.x")
-projects <- c("guava", "retrofit", "okhttp")
+#projects <- c("guava", "retrofit", "okhttp")
+projects <- c("guava", "retrofit", "okhttp","egit", "egit-github", "vert.x")
 
 ## 7 colors
 kindset <- c("e", "ee", "r", "rr", "o")
@@ -46,19 +47,22 @@ for (i in 1:length(projects)) {
     #deps$kind <- apply(deps$kind, 2,toother)
     
     kind.num <- length(kindset)
-    deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
+    #deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location), fromLast = TRUE),]
 
     #print(by(deps, deps$kind, summary))
 
     deps$kind <- factor(deps$kind, levels = kindset)
+    deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location, deps$kind), fromLast = FALSE),]
+
     deps$commitNo <- as.numeric(deps$commitNo)
 
     deps$date <- as.Date(deps$date)
     deps$SubDate <- as.numeric(deps$SubDate)
 
     #deps$file_location <- as.character(deps$file_location)
-    #deps2 <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location), fromLast = TRUE),]
-
+    pdf(paste("C:/Users/YukiUeda/Documents/reserch/mypaper/graduate/fig", paste(project.name, "dupbox.pdf", sep = "/"), sep = "/"),
+        width=16,height=8)
+    #width=1627, height=857
     par(cex.axis = 2.5)
     par(tck = 1)
     par(mar = c(3, 4, 2, 1) + 0.1)
@@ -84,6 +88,7 @@ for (i in 1:length(projects)) {
     at = 1:kind.num,
     labels = kindname)
     par(xpd = T)
+    dev.off()
     #legend(x = par()$usr[2] * 0.7, y = par()$usr[4], 
     #legend = c("r   :depender", "rr  :depender2", "e  :dependee", "ee:dependee2", "o  :other"),
     #cex = 2.5,

@@ -1,5 +1,7 @@
+library(xts)
 #projects <- c("egit", "egit-github", "vert.x")
 projects <- c("guava", "retrofit", "okhttp")
+projects <- c("guava", "retrofit", "okhttp", "egit", "egit-github", "vert.x")
 ## 7 colors
 #kindset <- c("r", "rr", "e", "ee", "er", "re", "o")
 #cols <- c("#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF", "#000000", "#FFFFFF")
@@ -10,13 +12,13 @@ projects <- c("guava", "retrofit", "okhttp")
 
 # 3 colors
 kindset <- c("r", "e", "o")
-kindname <- c("depender", "dependee", "other")
+kindname <- c("dependee", "depender", "other")
 cols <- c("#FF0000", "#00FF00", "#0000FF")
 
-# 3 colors
-kindset <- c("e", "ee", "o")
-kindname <- c("dependee", "dependee2", "other")
-cols <- c("#FF0000", "#00FF00", "#0000FF")
+## 3 colors
+#kindset <- c("e", "ee", "o")
+#kindname <- c("dependee", "dependee2", "other")
+#cols <- c("#FF0000", "#00FF00", "#0000FF")
 
 ## 2 colors
 #kindset <- c("o", "e")
@@ -36,6 +38,7 @@ cols <- c("#FF0000", "#00FF00", "#0000FF")
 
 for (i in 1:length(projects)) {
     project.name <- projects[i]
+    print(project.name)
     project.deps <- paste(project.name, "deps.csv", sep = "/")
 
     deps <- read.csv(project.deps, sep = ',', header = TRUE, row.names = NULL)
@@ -57,11 +60,13 @@ for (i in 1:length(projects)) {
     deps$SubDate <- as.numeric(deps$SubDate)
 
     deps$file_location <- as.character(deps$file_location)
-    deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location)),]
+    deps <- deps[!duplicated(data.frame(deps$commitNo, deps$file_location), fromLast = TRUE),]
 
-    library(xts)
     i = 1
+
     plot.new()
+    pdf(paste("C:/Users/YukiUeda/Documents/reserch/mypaper/graduate/fig", paste(project.name, "time.pdf", sep = "/"), sep = "/"),
+        width = 16, height = 8)
     for (ki in kindset) {
         dep2 <- subset(deps, deps$kind == ki)
         ts <- apply.yearly(xts(dep2$SubDate, dep2$date), median)
@@ -75,4 +80,5 @@ for (i in 1:length(projects)) {
 
     plot.zoo(last_ts, ylim = c(0, 600), col = cols, plot.type = "single", ylab = "next changed date", xlab = "date")
     legend("topleft", legend = kindname, fill = cols, cex = 1.0)
+    dev.off()
 }

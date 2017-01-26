@@ -48,33 +48,33 @@ with open(csv_name, encoding="utf-8") as csvfile:
     print(row_num)
 print(len(word_count))
 
-csvname = CSV_PASS + "one_" + "message.csv"
-with open(csvname, "w", encoding="utf-8") as csvfile:
-        dep_writer = csv.writer(csvfile, lineterminator="\n")
-        dep_writer.writerow(('word', 'score'))
-        for word, score in sorted(word_count.items(), key=lambda x:x[1], reverse=True):
-            dep_writer.writerow((word, score))
-
-#for kind in KIND_NAMES:
-#    word_kind_count = {}
-#    csvname = CSV_PASS + kind + "message.csv"
-#    csvname_w = CSV_PASS + "all_" + kind + "message.csv"
-#    with open(csvname, encoding="utf-8") as csvfile:
-#        dep_writer = csv.writer(open(csvname_w, "w", encoding="utf-8"), lineterminator="\n")
-#        kind_reader = csv.DictReader(csvfile)
-#        kind_message = [x['message'] for x in kind_reader if x['iskind'] == 'TRUE']
-#        kind_num = len(kind_message)
-#        p_kind = float(kind_num) / row_num
-#        print(p_kind)
-
-#        for row in kind_message:
-#            word_kind_count = wordcountup(row, word_kind_count)
-#            #dep_writer.writerow((row['commit_no'], row['iskind'], row['message'], probscore(self, row['message'])))
-
-#        for word, score in word_kind_count.items():
-#            word_kind_count[word] = float(score) / kind_num * p_kind / (float(word_count[word]) / row_num) 
-        
-#        # 出力
+#csvname = CSV_PASS + "one_" + "message.csv"
+#with open(csvname, "w", encoding="utf-8") as csvfile:
+#        dep_writer = csv.writer(csvfile, lineterminator="\n")
 #        dep_writer.writerow(('word', 'score'))
-#        for word, score in sorted(word_kind_count.items(), key=lambda x:x[1], reverse=True):
+#        for word, score in sorted(word_count.items(), key=lambda x:x[1], reverse=True):
 #            dep_writer.writerow((word, score))
+
+for kind in KIND_NAMES:
+    word_kind_count = {}
+    csvname = CSV_PASS + kind + "message_b.csv"
+    csvname_w = CSV_PASS + "one_" + kind + "message_b.csv"
+    with open(csvname, encoding="utf-8") as csvfile:
+        dep_writer = csv.writer(open(csvname_w, "w", encoding="utf-8"), lineterminator="\n")
+        kind_reader = csv.DictReader(csvfile)
+        kind_message = [x['message'] for x in kind_reader if x['iskind'] == 'TRUE']
+        kind_num = len(kind_message)
+        p_kind = float(kind_num) / row_num
+        print(p_kind)
+
+        for row in kind_message:
+            word_kind_count = wordcountup(row, word_kind_count)
+            #dep_writer.writerow((row['commit_no'], row['iskind'], row['message'], probscore(self, row['message'])))
+
+        for word, score in word_kind_count.items():
+            word_kind_count[word] = float(score) / kind_num * p_kind / (float(word_count[word]) / row_num) 
+        
+        # 出力
+        dep_writer.writerow(('word', 'score'))
+        for word, score in sorted(word_kind_count.items(), key=lambda x:x[1], reverse=True):
+            dep_writer.writerow((word, score))
