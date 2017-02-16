@@ -1,12 +1,14 @@
 from GetDeps.DependencyClass.super_dependency import SuperDependency
 
 class FileDependency(SuperDependency):
-    """description of class"""
+    """ファイルの依存関係を格納する"""
     def __init__(self, fileref):
+        """ファイルのidからファイルパスを取得"""
         super().__init__(fileref)
         self.location = super().get_location()
 
     def get_dependency(self, compound_dict):
+        """ファイル間の依存関係の取得"""
         dev_vec = []
         innerclass_list = []
         for innerclass in self.root.findall('./compounddef/innerclass'):

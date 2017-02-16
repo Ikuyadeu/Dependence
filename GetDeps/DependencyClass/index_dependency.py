@@ -11,6 +11,7 @@ class IndexDependency(SuperDependency):
         self.__kind_name = 'kind'
 
     def ref_to_compound(self, refid: str, kindref: str) -> str:
+        """refidからクラス名を取得"""
         if kindref == "compound":
             return refid
 
@@ -40,6 +41,7 @@ class IndexDependency(SuperDependency):
         return ""
 
     def ref_to_location(self):
+        """ファイルidからファイルパスを取得"""
         compound_dict = {}
         for compound in self.root.findall(self.__compound_name):
             if compound.get('kind') != 'namespace':
@@ -50,6 +52,7 @@ class IndexDependency(SuperDependency):
         return compound_dict
 
     def get_file_list(self):
+        """ファイルのリストを取得"""
         file_list = []
         for compound in self.root.findall(self.__compound_name):
             if compound.get('kind') == 'file':

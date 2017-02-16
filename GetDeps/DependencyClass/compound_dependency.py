@@ -1,7 +1,7 @@
 from GetDeps.DependencyClass.super_dependency import SuperDependency
 
 class CompoundDependency(SuperDependency):
-    """description of class"""
+    """クラス単位の依存関係を格納する"""
     def __init__(self, fileref):
         super().__init__(fileref)
         self.location = super().get_location()
