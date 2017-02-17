@@ -52,3 +52,10 @@ Gitで追加された行数と削除された行数を出力する
 ## NaiveBaysian.py
 
 ## Double_NaiveBaysian.py_
+変更原因と変更結果を出力
+### 実行方法
+`python3 リポジトリパス 出力先フォルダ 調査するブランチ名(master)`
+
+### 出力
+`before_word`,`after_word`, `score`
+変更原因,変更結果,出現回数
