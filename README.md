@@ -12,7 +12,7 @@ doxygenから全コミットの依存関係を出力
 python3 Doxydeps.py 調査対象プロジェクトファイルパス 出力先　調査するブランチ名(master)
 ```
 
-### 出力結果
+### 出力
 太字は主キー
 
 **`commitNo`**, **`file_location`**, `date`, `author`, `is_merge`, **`kind`**
@@ -33,7 +33,7 @@ Gitで追加された行数と削除された行数を出力する
 ### 実行方法
 `python3 リポジトリパス 出力先フォルダ 調査するブランチ名(master)`
 
-### 出力結果
+### 出力
 太字は主キー
 
 **`commit_no`**, **`file_path`**, `deletions`, `insertions`, `lines`
@@ -41,6 +41,13 @@ Gitで追加された行数と削除された行数を出力する
 **コミット番号**,**ファイルパス**,削除行数,挿入行数,合計行
 
 ## GitTagger.py
+コミットメッセージとメッセージ内容を出力
+
+### 実行方法
+`python3 リポジトリパス 出力先フォルダ 調査するブランチ名(master)`
+
+### 出力
+`commit_no`,`message`
 
 ## NaiveBaysian.py
 
