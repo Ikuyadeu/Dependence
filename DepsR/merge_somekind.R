@@ -1,3 +1,4 @@
+# •¡”‚ÌˆË‘¶ŠÖŒW‚Ìî•ñ‚ğ‚Â‚È‚°‚é
 kinds <- c("e", "ee", "r", "rr")
 project.name <- "eclipse"
 

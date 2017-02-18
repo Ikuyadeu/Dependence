@@ -1,4 +1,5 @@
-projects <- c("vert.x","egit","egit-github")
+# 複数プロジェクトの情報をつなげる
+projects <- c("vert.x", "egit", "egit-github")
 kinds <- c("e", "ee", "r", "rr", "er", "re", "o")
 merge_name <- "eclipse"
 
